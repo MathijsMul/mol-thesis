@@ -9,7 +9,7 @@ import progressbar as pb
 
 ##################################################################
 
-# SETTINGS
+# GLOBAL SETTINGS
 
 train_data_file = 'data/fol_data1_animals_train.txt'
 test_data_file = 'data/fol_data1_animals_test.txt'
@@ -33,8 +33,10 @@ rels = train_data.relation_list
 net = tRNN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim)
 
 criterion = nn.NLLLoss()
+
+# TODO: check optimizer
 #optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
-#optimizer = optim.Adadelta(net.parameters(), lr=0.001) # not sure about this
+#optimizer = optim.Adadelta(net.parameters(), lr=0.001)
 optimizer = optim.Adagrad(filter(lambda p: p.requires_grad, net.parameters()),
                                        lr=0.2, weight_decay=0.1)
 

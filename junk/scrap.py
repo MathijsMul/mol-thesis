@@ -22,8 +22,18 @@ import torch.nn.functional as F
 #     inputs, labels = data
 #     #labels = [Variable(torch.LongTensor([rels.index(label)])) for label in labels]
 #     net(inputs)
+#
+# x = torch.rand(5, 3)
+# y = torch.rand(5, 3)
+# print(x)
+# print(y)
 
-x = torch.rand(5, 3)
-y = torch.rand(5, 3)
-print(x)
-print(y)
+l_act = torch.ones(3)
+l_act = 0.5 * l_act
+r_act = torch.ones(3)
+print(l_act)
+print(r_act)
+
+kron = torch.ger(l_act, r_act).view(-1)
+print(kron)
+# np.ravel(np.outer(l_act, r_act))

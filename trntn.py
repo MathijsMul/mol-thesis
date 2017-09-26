@@ -22,14 +22,12 @@ class tRNTN(nn.Module):
         # composition matrix
         self.cps = nn.Linear(2 * self.word_dim, self.word_dim)
 
-        # TODO: CHECK
         # composition tensor
         self.cps_t = nn.Linear(self.word_dim * self.word_dim, self.word_dim)
 
         # comparison matrix
         self.cpr = nn.Linear(2 * self.word_dim, self.cpr_dim)
 
-        # TODO: CHECK
         # comparison tensor
         self.cpr_t = nn.Linear(self.word_dim * self.word_dim, self.cpr_dim)
 
@@ -57,13 +55,15 @@ class tRNTN(nn.Module):
         outputs = Variable(torch.rand(len(inputs), self.num_rels))
 
         for idx, input in enumerate(inputs):
-
             left = input[0]
             right = input[1]
             left_cps = self.compose(left)
             right_cps = self.compose(right)
             apply_cpr = self.cpr(torch.cat((left_cps, right_cps)))
-            apply_cpr_t = self.cpr_t(left_cps, right_cps)
+
+            # compute kronecker product for child nodes, multiply this with cps tensor
+            kron = torch.ger(left_cps,right_cps).view(-1)
+            apply_cpr_t = self.cpr_t(kron)
             activated_cpr = self.relu(apply_cpr + apply_cpr_t)
             to_softmax = self.sm(activated_cpr).view(1, self.num_rels)
             output = F.softmax(to_softmax)
@@ -79,8 +79,9 @@ class tRNTN(nn.Module):
         else:
             cps = self.cps(torch.cat((self.compose(tree[0]), self.compose(tree[1]))))
 
-            # TODO: implement kronecker product for child nodes, give this to cps tensor
-            cps_t = self.cps_t(self.compose(tree[0]), self.compose(tree[1]))
+            # compute kronecker product for child nodes
+            kron = torch.ger(self.compose(tree[0]), self.compose(tree[0])).view(-1)
+            cps_t = self.cps_t(kron)
             activated_cps = self.tanh(cps + cps_t)
             return activated_cps
 

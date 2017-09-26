@@ -14,8 +14,10 @@ from test import show_accuracy
 # GLOBAL SETTINGS
 
 tensors = False # tensors on or off
-train_data_file = 'data/fol_datasmall_people_train.txt'
-test_data_file = 'data/fol_datasmall_people_test.txt'
+# train_data_file = 'data/fol_datasmall_people_train.txt'
+# test_data_file = 'data/fol_datasmall_people_test.txt'
+train_data_file = 'data/nl_data1_animals_train.txt'
+test_data_file = 'data/nl_data1_animals_test.txt'
 word_dim = 25 # dimensionality of word embeddings
 cpr_dim = 75 # output dimensionality of comparison layer
 num_epochs = 4
@@ -45,10 +47,10 @@ else:
 criterion = nn.NLLLoss()
 
 # TODO: check optimizer
-#optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
+optimizer = optim.SGD(net.parameters(), lr=0.02, momentum=0.9)
 #optimizer = optim.Adadelta(net.parameters(), lr=0.001)
-optimizer = optim.Adagrad(filter(lambda p: p.requires_grad, net.parameters()),
-                                       lr=0.2, weight_decay=0.1)
+#optimizer = optim.Adagrad(filter(lambda p: p.requires_grad, net.parameters()),
+#                                       lr=0.2, weight_decay=0.1)
 
 ##################################################################
 
@@ -82,9 +84,9 @@ for epoch in range(num_epochs):  # loop over the dataset multiple times
 
         # print statistics
         running_loss += loss.data[0]
-        if i % 2000 == 1999:    # print every 2000 mini-batches
+        if i % 200 == 199:    # print every 200 mini-batches
             print('[%d, %5d] loss: %.3f' %
-                  (epoch + 1, i + 1, running_loss / 2000))
+                  (epoch + 1, i + 1, running_loss / 200))
             running_loss = 0.0
 
         #bar.update(i + 1)

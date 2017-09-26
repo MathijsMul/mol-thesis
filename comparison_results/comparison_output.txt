@@ -1,0 +1,37 @@
+SAMPLE 0
+?	#	 ( ( not_all ( not warthogs ) ) move )	 ( ( all mammals ) walk )
+?	#	 ( ( some reptiles ) ( not move ) )	 ( ( not_all mammals ) ( not swim ) )
+v	#	 ( ( not_all ( not reptiles ) ) growl )	 ( ( not_all ( not warthogs ) ) ( not swim ) )
+?	#	 ( ( all ( not turtles ) ) ( not walk ) )	 ( ( all reptiles ) ( not growl ) )
+?	#	 ( ( all ( not mammals ) ) ( not growl ) )	 ( ( no ( not pets ) ) ( not growl ) )
+?	#	 ( ( some warthogs ) ( not move ) )	 ( ( some pets ) move )
+?	|	 ( ( all ( not turtles ) ) ( not move ) )	 ( ( some ( not turtles ) ) swim )
+?	#	 ( ( all ( not turtles ) ) ( not growl ) )	 ( ( not_all mammals ) swim )
+?	#	 ( ( not_all warthogs ) ( not swim ) )	 ( ( not_all ( not reptiles ) ) ( not walk ) )
+NL ? vs. FOL # present 8 times 
+NL < vs. FOL # present 1 times 
+
+SAMPLE 1
+?	#	 ( ( no ( not mammals ) ) swim )	 ( ( all ( not turtles ) ) move )
+?	#	 ( ( all ( not mammals ) ) ( not swim ) )	 ( ( some mammals ) ( not growl ) )
+?	#	 ( ( not_all pets ) ( not walk ) )	 ( ( all ( not pets ) ) move )
+?	#	 ( ( not_all ( not warthogs ) ) growl )	 ( ( some ( not mammals ) ) ( not swim ) )
+?	#	 ( ( no ( not warthogs ) ) ( not walk ) )	 ( ( all mammals ) ( not move ) )
+?	#	 ( ( all warthogs ) move )	 ( ( no turtles ) growl )
+?	#	 ( ( all mammals ) ( not move ) )	 ( ( not_all ( not pets ) ) walk )
+?	#	 ( ( all ( not mammals ) ) growl )	 ( ( no pets ) ( not walk ) )
+?	#	 ( ( all warthogs ) ( not move ) )	 ( ( no turtles ) growl )
+NL ? vs. FOL # present 8 times 
+
+SAMPLE 2
+?	#	 ( ( no ( not pets ) ) ( not growl ) )	 ( ( no mammals ) ( not swim ) )
+?	#	 ( ( all ( not pets ) ) growl )	 ( ( no turtles ) ( not swim ) )
+?	#	 ( ( some pets ) ( not swim ) )	 ( ( all ( not turtles ) ) ( not swim ) )
+?	#	 ( ( all ( not mammals ) ) ( not swim ) )	 ( ( all ( not turtles ) ) ( not walk ) )
+?	#	 ( ( no pets ) walk )	 ( ( all warthogs ) growl )
+?	#	 ( ( no turtles ) growl )	 ( ( not_all ( not pets ) ) ( not growl ) )
+?	#	 ( ( some mammals ) ( not growl ) )	 ( ( some ( not warthogs ) ) growl )
+?	#	 ( ( no turtles ) ( not swim ) )	 ( ( not_all mammals ) swim )
+?	#	 ( ( not_all ( not pets ) ) walk )	 ( ( all ( not warthogs ) ) ( not growl ) )
+NL ? vs. FOL # present 10 times 
+

@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b72f4c1e-b8c1-4f94-9a46-30994c92b225" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/trntn.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/junk/scrap.py" afterPath="$PROJECT_DIR$/junk/scrap.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trnn.py" afterPath="$PROJECT_DIR$/trnn.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="thesis_code.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,8 +29,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="3.8697789" vertical-offset="0" max-vertical-offset="1695">
-              <caret line="105" column="35" selection-start-line="105" selection-start-column="35" selection-end-line="105" selection-end-column="35" />
+            <state vertical-scroll-proportion="-1.8796068" vertical-offset="1065" max-vertical-offset="1695">
+              <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -57,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/trnn.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1200">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <caret line="15" column="64" selection-start-line="13" selection-start-column="33" selection-end-line="15" selection-end-column="64" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -456,16 +451,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1200">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/nl_data1_animals_train.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-380.55554" vertical-offset="0" max-vertical-offset="416520">
@@ -500,10 +485,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/trnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1200">
+          <caret line="15" column="64" selection-start-line="13" selection-start-column="33" selection-end-line="15" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.8697789" vertical-offset="0" max-vertical-offset="1695">
-          <caret line="105" column="35" selection-start-line="105" selection-start-column="35" selection-end-line="105" selection-end-column="35" />
+        <state vertical-scroll-proportion="-1.8796068" vertical-offset="1065" max-vertical-offset="1695">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>

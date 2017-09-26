@@ -16,8 +16,8 @@ from test import show_accuracy
 tensors = False # tensors on or off
 train_data_file = 'data/fol_datasmall_people_train.txt'
 test_data_file = 'data/fol_datasmall_people_test.txt'
-word_dim = 25
-cpr_dim = 75
+word_dim = 25 # dimensionality of word embeddings
+cpr_dim = 75 # output dimensionality of comparison layer
 num_epochs = 4
 batch_size = 32
 shuffle_samples = False

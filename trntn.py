@@ -4,9 +4,9 @@ from torch.autograd import Variable
 import torch.nn as nn
 import torch.nn.functional as F
 
-class tRNN(nn.Module):
+class tRNTN(nn.Module):
     """
-    tree-shaped recurrent neural network
+    tree-shaped recurrent neural tensor network
     """
 
     def __init__(self, vocab, rels, word_dim, cpr_dim):
@@ -22,8 +22,16 @@ class tRNN(nn.Module):
         # composition matrix
         self.cps = nn.Linear(2 * self.word_dim, self.word_dim)
 
+        # TODO: CHECK
+        # composition tensor
+        self.cps_t = nn.Linear(self.word_dim * self.word_dim, self.word_dim)
+
         # comparison matrix
         self.cpr = nn.Linear(2 * self.word_dim, self.cpr_dim)
+
+        # TODO: CHECK
+        # comparison tensor
+        self.cpr_t = nn.Linear(self.word_dim * self.word_dim, self.cpr_dim)
 
         # matrix to softmax layer
         self.sm = nn.Linear(self.cpr_dim, self.num_rels)
@@ -55,7 +63,8 @@ class tRNN(nn.Module):
             left_cps = self.compose(left)
             right_cps = self.compose(right)
             apply_cpr = self.cpr(torch.cat((left_cps, right_cps)))
-            activated_cpr = self.relu(apply_cpr)
+            apply_cpr_t = self.cpr_t(left_cps, right_cps)
+            activated_cpr = self.relu(apply_cpr + apply_cpr_t)
             to_softmax = self.sm(activated_cpr).view(1, self.num_rels)
             output = F.softmax(to_softmax)
             outputs[idx,:] = output
@@ -69,6 +78,9 @@ class tRNN(nn.Module):
             return self.voc(word_onehot) # get word embedding
         else:
             cps = self.cps(torch.cat((self.compose(tree[0]), self.compose(tree[1]))))
-            activated_cps = self.tanh(cps)
+
+            # TODO: implement kronecker product for child nodes, give this to cps tensor
+            cps_t = self.cps_t(self.compose(tree[0]), self.compose(tree[1]))
+            activated_cps = self.tanh(cps + cps_t)
             return activated_cps
 

@@ -5,19 +5,23 @@ import torch.nn as nn
 import torch.optim as optim
 import datamanager as dat
 from trnn import tRNN
+from trntn import tRNTN
 import progressbar as pb
+from test import show_accuracy
 
 ##################################################################
 
 # GLOBAL SETTINGS
 
-train_data_file = 'data/fol_data1_animals_train.txt'
-test_data_file = 'data/fol_data1_animals_test.txt'
+tensors = False # tensors on or off
+train_data_file = 'data/fol_datasmall_people_train.txt'
+test_data_file = 'data/fol_datasmall_people_test.txt'
 word_dim = 25
 cpr_dim = 75
-num_epochs = 10
+num_epochs = 4
 batch_size = 32
 shuffle_samples = False
+test_all_epochs = True # intermediate accuracy computation after each epoch
 
 ##################################################################
 
@@ -30,7 +34,13 @@ batches.create_batches()
 vocab = train_data.word_list
 rels = train_data.relation_list
 
-net = tRNN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim)
+test_data = dat.SentencePairsDataset(test_data_file)
+test_data.load_data()
+
+if tensors:
+    net = tRNTN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim)
+else:
+    net = tRNN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim)
 
 criterion = nn.NLLLoss()
 
@@ -77,8 +87,13 @@ for epoch in range(num_epochs):  # loop over the dataset multiple times
                   (epoch + 1, i + 1, running_loss / 2000))
             running_loss = 0.0
 
-        bar.update(i + 1)
+        #bar.update(i + 1)
     bar.finish()
+    print('\n')
+
+    if test_all_epochs and epoch < (num_epochs - 1):
+        show_accuracy(test_data, rels, net)
+
     print('\n')
 
 print('Finished Training \n')
@@ -88,19 +103,5 @@ print('Finished Training \n')
 
 # TESTING
 
-test_data = dat.SentencePairsDataset(test_data_file)
-test_data.load_data()
-
-correct = 0
-total = 0
-for i, data in enumerate(test_data.tree_data, 0):
-    input, label = [[data[1], data[2]]], [rels.index(data[0])]
-    label = torch.LongTensor(label)
-    outputs = net(input)
-    _, predicted = torch.max(outputs.data, 1)
-    total += 1 # because test batch size is always 1
-    correct += (predicted == label).sum()
-
-print('Accuracy of the network on the %d test images: %d %%' % (
-    total, 100 * correct / total))
+show_accuracy(test_data, rels, net)
 

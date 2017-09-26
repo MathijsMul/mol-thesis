@@ -22,3 +22,8 @@ import torch.nn.functional as F
 #     inputs, labels = data
 #     #labels = [Variable(torch.LongTensor([rels.index(label)])) for label in labels]
 #     net(inputs)
+
+x = torch.rand(5, 3)
+y = torch.rand(5, 3)
+print(x)
+print(y)

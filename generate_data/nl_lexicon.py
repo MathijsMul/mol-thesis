@@ -27,7 +27,8 @@ det_matrix = [
 ]
 
 adverbs = ['', 'not']
-
+# for short sentences only:
+# adverbs = ['']
 
 # ANIMALS
 

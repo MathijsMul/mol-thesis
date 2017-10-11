@@ -3,13 +3,14 @@ import torch
 from torch.autograd import Variable
 import torch.nn as nn
 import torch.nn.functional as F
+import torch.nn.init as init
 
 class tRNTN(nn.Module):
     """
     tree-shaped recurrent neural tensor network
     """
 
-    def __init__(self, vocab, rels, word_dim, cpr_dim):
+    def __init__(self, vocab, rels, word_dim, cpr_dim, bound_layers, bound_embeddings):
         super().__init__()
         self.word_dim = word_dim # dimensionality of word embeddings
         self.cpr_dim = cpr_dim # output dimensionality of comparison layer
@@ -43,6 +44,35 @@ class tRNTN(nn.Module):
         # activation functions
         self.relu = nn.LeakyReLU() # cpr layer, negative slope is 0.01, which is standard
         self.tanh = nn.Tanh() # cps layers
+
+        self.bound_layers = bound_layers
+        self.bound_embeddings = bound_embeddings
+
+    def initialize(self):
+        """
+        Uniform weight initialization
+
+        :return:
+        """
+
+        init.uniform(self.voc.weight, -1*self.bound_embeddings, self.bound_embeddings)
+        init.uniform(self.voc.bias, -1*self.bound_embeddings, self.bound_embeddings)
+
+        init.uniform(self.cps.weight, -1*self.bound_layers, self.bound_layers)
+        init.uniform(self.cps.bias, -1*self.bound_layers, self.bound_layers)
+
+        init.uniform(self.cps_t.weight, -1*self.bound_layers, self.bound_layers)
+        init.uniform(self.cps_t.bias, -1*self.bound_layers, self.bound_layers)
+
+        init.uniform(self.cpr.weight, -1*self.bound_layers, self.bound_layers)
+        init.uniform(self.cpr.bias, -1*self.bound_layers, self.bound_layers)
+
+        init.uniform(self.cpr_t.weight, -1*self.bound_layers, self.bound_layers)
+        init.uniform(self.cpr_t.bias, -1*self.bound_layers, self.bound_layers)
+
+        init.uniform(self.sm.weight, -1*self.bound_layers, self.bound_layers)
+        init.uniform(self.sm.bias, -1*self.bound_layers, self.bound_layers)
+
 
     def forward(self, inputs):
         """

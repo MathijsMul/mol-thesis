@@ -8,6 +8,7 @@ import pickle
 import nltk
 import textwrap
 import io
+import random
 
 class SentencePairsDataset(Dataset):
     """Sentence pairs dataset."""
@@ -35,7 +36,7 @@ class SentencePairsDataset(Dataset):
     #
     #     return sample
 
-    def load_data(self):
+    def load_data(self, print_result=False):
         """
         Read data from file and convert to required tree format, to be stored in self.tree_data.
 
@@ -65,7 +66,7 @@ class SentencePairsDataset(Dataset):
                 wordset = wordset.union(set(t1.leaves()))
                 wordset = wordset.union(set(t2.leaves()))
 
-            relation_list = sorted(relset)
+            self.relation_list = sorted(relset)
             self.word_list = sorted(wordset)
             # self.word_list = wordlist
             # word_dict = {i:j for j,i in enumerate(wordlist)}
@@ -75,10 +76,9 @@ class SentencePairsDataset(Dataset):
             # print("Dictionary: ", len(word_dict))
             # print("Relations:  ", len(relation_list))
 
-            self.relation_list = relation_list
-
-        print("Vocabulary: \n", self.word_list)
-        print("Relations:  \n", self.relation_list)
+        if print_result:
+            print("Vocabulary: \n", self.word_list)
+            print("Relations:  \n", self.relation_list)
 
 # The below class is necessary because the built-in pytorch DataLoader class doesn't work for the tree-shaped data
 class BatchData():
@@ -93,18 +93,20 @@ class BatchData():
 
     def create_batches(self):
         if self.shuffle:
-            indices = np.random.shuffle(range(self.num_samples))
+            random.shuffle(self.unbatched_data)
 
-        for start_idx in range(0, self.num_samples - self.batch_size + 1, self.batch_size):
-            if self.shuffle:
-                batch = indices[start_idx:start_idx + self.batch_size]
+        last_idx = self.num_samples - (self.num_samples % self.batch_size)
+
+        for start_idx in range(0, last_idx + 1, self.batch_size):
+            if start_idx == last_idx:
+                batch_data = [[sample[1], sample[2]] for sample in self.unbatched_data[start_idx : self.num_samples - 1]]
+                batch_labels = [sample[0] for sample in self.unbatched_data[start_idx : self.num_samples - 1]]
             else:
-                batch = slice(start_idx, start_idx + self.batch_size)
+                batch_data = [[sample[1], sample[2]] for sample in self.unbatched_data[start_idx : start_idx + self.batch_size]]
+                batch_labels = [sample[0] for sample in self.unbatched_data[start_idx : start_idx + self.batch_size]]
 
-            # alternatively with a generator, but this is probably slower?
-            #yield [[sample[1], sample[2]] for sample in self.unbatched_data[batch]],\
-            #      [sample[0] for sample in self.unbatched_data[batch]]
+            self.batched_data.append(batch_data)
+            self.batched_labels.append(batch_labels)
 
-            self.batched_data.append([[sample[1], sample[2]] for sample in self.unbatched_data[batch]])
-            self.batched_labels.append([sample[0] for sample in self.unbatched_data[batch]])
             self.num_batches += 1
+

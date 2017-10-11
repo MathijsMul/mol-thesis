@@ -32,7 +32,7 @@ mace = Mace(end_size=10)
 INDY_DOWNSAMPLE_RATIO = 0.05
 MATLAB_OUTPUT = True
 PROVER_ON = True # set to False in case we just want to list sentence combinations without running the theorem prover
-FILENAME_STEM = "fol_data1_people"
+FILENAME_STEM = "nothing"
 
 SAMPLE_DATA = False
 if SAMPLE_DATA:
@@ -40,7 +40,7 @@ if SAMPLE_DATA:
 else:
     sample_probability = 1.00
 
-TAXONOMY = "people"
+TAXONOMY = "animals"
 dets, adverbs, nouns, verbs, noun_matrix, verb_matrix = fol_lex.get_taxonomy(TAXONOMY)
 fol_lexicon = fol_lex.get_lexicon(nouns, verbs, noun_matrix, verb_matrix)
 

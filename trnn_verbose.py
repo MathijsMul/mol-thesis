@@ -36,6 +36,9 @@ class tRNN(nn.Module):
             # create one-hot encodings for words in vocabulary
             self.word_dict[word] = Variable(torch.eye(self.voc_size)[:,vocab.index(word)], requires_grad=True)
 
+            # self.word_dict[word] = Variable(torch.zeros(self.voc_size), requires_grad=True)
+            # self.word_dict[word][vocab.index(word)] = 1
+
         # activation functions
         self.relu = nn.LeakyReLU() # cpr layer, negative slope is 0.01, which is standard
         self.tanh = nn.Tanh() # cps layers
@@ -64,6 +67,7 @@ class tRNN(nn.Module):
             init.xavier_uniform(self.sm.weight)
 
         if mode == 'xavier_normal':
+            # much beter results
             init.xavier_normal(self.voc.weight)
             init.xavier_normal(self.cps.weight, gain = 5/3)
             init.xavier_normal(self.cpr.weight, gain = math.sqrt(2/(1 + (0.01**2))))
@@ -84,30 +88,69 @@ class tRNN(nn.Module):
 
         # handles multiple inputs, inserted as list
         outputs = Variable(torch.rand(len(inputs), self.num_rels))
+        #outputs = torch.rand(len(inputs), self.num_rels)
+        # print('initialized outputs:')
+        # print(outputs)
 
         for idx, input in enumerate(inputs):
+            # print('input')
+            # print(input)
+            # print('comparing')
+            # print(input)
             left = input[0]
             right = input[1]
             left_cps = self.compose(left)
+            # print('left cps')
+            # print(left_cps)
             right_cps = self.compose(right)
+            # print('right cps')
+            # print(right_cps)
+            # print('left and right cps concat')
+            # print(torch.cat((left_cps, right_cps)))
             apply_cpr = self.cpr(torch.cat((left_cps, right_cps)))
+            # print('cpr')
+            # print(apply_cpr)
             activated_cpr = self.relu(apply_cpr)
+            # print('activated cpr')
+            # print(activated_cpr)
             to_softmax = self.sm(activated_cpr).view(1, self.num_rels)
-            #output = F.softmax(to_softmax)
-            output = F.log_softmax(to_softmax)
+
+            #to_softmax = self.sm(apply_cpr).view(1, self.num_rels)
+
+            output = F.softmax(to_softmax)
+            # print('output')
+            # print(output)
             outputs[idx,:] = output
+            #outputs = Variable(outputs, requires_grad=True)
+ #        print('outputs')
+ #        print(outputs)
+ #        print('\n')
         return(outputs) # size batch_size x num_classes
 
 
     def compose(self, tree):
         if tree.label() == '.': # leaf nodes
             word_onehot = self.word_dict[tree[0]]
+            # print('one hot encoding for:')
+            # print(tree[0])
+            # print(word_onehot)
+            # print('gives word embedding:')
+            # print(self.voc(word_onehot))
             emb = self.voc(word_onehot)
-            return emb # get word embedding
+            return self.voc(word_onehot) # get word embedding
         else:
+            # print('composing')
+            # print(tree[0])
+            # print(tree[1])
             concat = torch.cat((self.compose(tree[0]), self.compose(tree[1])))
+            # print('concatenated vectors:')
+            # print(concat)
             cps = self.cps(concat)
+            # print('gives cps')
+            # print(cps)
             activated_cps = self.tanh(cps)
+            # print('activated cps')
+            # print(activated_cps)
             return activated_cps
-
+            #return cps
 

@@ -1,0 +1,172 @@
+Loading data from  data/nl_short_smalltrain.txt
+Vocabulary: 
+ ['all', 'growl', 'lt_three', 'lt_two', 'mammals', 'most', 'move', 'no', 'not_all', 'not_most', 'pets', 'reptiles', 'some', 'swim', 'three', 'turtles', 'two', 'walk', 'warthogs']
+Relations:  
+ ['#', '<', '=', '>', '^', 'v', '|']
+Loading data from  data/nl_short_smalltrain.txt
+Vocabulary: 
+ ['all', 'growl', 'lt_three', 'lt_two', 'mammals', 'most', 'move', 'no', 'not_all', 'not_most', 'pets', 'reptiles', 'some', 'swim', 'three', 'turtles', 'two', 'walk', 'warthogs']
+Relations:  
+ ['#', '<', '=', '>', '^', 'v', '|']
+L2 penalty:
+0
+Before training:
+Accuracy of the network on the 102 test instances: 10 %
+Start training
+EPOCH  1
+Accuracy of the network on the 102 test instances: 23 %
+EPOCH  2
+Accuracy of the network on the 102 test instances: 28 %
+EPOCH  3
+Accuracy of the network on the 102 test instances: 35 %
+EPOCH  4
+Accuracy of the network on the 102 test instances: 36 %
+EPOCH  5
+Accuracy of the network on the 102 test instances: 37 %
+EPOCH  6
+Accuracy of the network on the 102 test instances: 41 %
+EPOCH  7
+Accuracy of the network on the 102 test instances: 41 %
+EPOCH  8
+Accuracy of the network on the 102 test instances: 46 %
+EPOCH  9
+Accuracy of the network on the 102 test instances: 49 %
+EPOCH  10
+Finished Training 
+
+Accuracy of the network on the 102 test instances: 51 %
+L2 penalty:
+0.0002
+Before training:
+Accuracy of the network on the 102 test instances: 8 %
+Start training
+EPOCH  1
+Accuracy of the network on the 102 test instances: 18 %
+EPOCH  2
+Accuracy of the network on the 102 test instances: 29 %
+EPOCH  3
+Accuracy of the network on the 102 test instances: 35 %
+EPOCH  4
+Accuracy of the network on the 102 test instances: 36 %
+EPOCH  5
+Accuracy of the network on the 102 test instances: 35 %
+EPOCH  6
+Accuracy of the network on the 102 test instances: 36 %
+EPOCH  7
+Accuracy of the network on the 102 test instances: 36 %
+EPOCH  8
+Accuracy of the network on the 102 test instances: 40 %
+EPOCH  9
+Accuracy of the network on the 102 test instances: 41 %
+EPOCH  10
+Finished Training 
+
+Accuracy of the network on the 102 test instances: 43 %
+L2 penalty:
+0.001
+Before training:
+Accuracy of the network on the 102 test instances: 9 %
+Start training
+EPOCH  1
+Accuracy of the network on the 102 test instances: 14 %
+EPOCH  2
+Accuracy of the network on the 102 test instances: 20 %
+EPOCH  3
+Accuracy of the network on the 102 test instances: 32 %
+EPOCH  4
+Accuracy of the network on the 102 test instances: 38 %
+EPOCH  5
+Accuracy of the network on the 102 test instances: 40 %
+EPOCH  6
+Accuracy of the network on the 102 test instances: 41 %
+EPOCH  7
+Accuracy of the network on the 102 test instances: 47 %
+EPOCH  8
+Accuracy of the network on the 102 test instances: 51 %
+EPOCH  9
+Accuracy of the network on the 102 test instances: 53 %
+EPOCH  10
+Finished Training 
+
+Accuracy of the network on the 102 test instances: 56 %
+L2 penalty:
+0.002
+Before training:
+Accuracy of the network on the 102 test instances: 19 %
+Start training
+EPOCH  1
+Accuracy of the network on the 102 test instances: 30 %
+EPOCH  2
+Accuracy of the network on the 102 test instances: 35 %
+EPOCH  3
+Accuracy of the network on the 102 test instances: 34 %
+EPOCH  4
+Accuracy of the network on the 102 test instances: 34 %
+EPOCH  5
+Accuracy of the network on the 102 test instances: 35 %
+EPOCH  6
+Accuracy of the network on the 102 test instances: 37 %
+EPOCH  7
+Accuracy of the network on the 102 test instances: 37 %
+EPOCH  8
+Accuracy of the network on the 102 test instances: 40 %
+EPOCH  9
+Accuracy of the network on the 102 test instances: 43 %
+EPOCH  10
+Finished Training 
+
+Accuracy of the network on the 102 test instances: 45 %
+L2 penalty:
+0.02
+Before training:
+Accuracy of the network on the 102 test instances: 17 %
+Start training
+EPOCH  1
+Accuracy of the network on the 102 test instances: 32 %
+EPOCH  2
+Accuracy of the network on the 102 test instances: 31 %
+EPOCH  3
+Accuracy of the network on the 102 test instances: 31 %
+EPOCH  4
+Accuracy of the network on the 102 test instances: 30 %
+EPOCH  5
+Accuracy of the network on the 102 test instances: 30 %
+EPOCH  6
+Accuracy of the network on the 102 test instances: 30 %
+EPOCH  7
+Accuracy of the network on the 102 test instances: 30 %
+EPOCH  8
+Accuracy of the network on the 102 test instances: 30 %
+EPOCH  9
+Accuracy of the network on the 102 test instances: 30 %
+EPOCH  10
+Finished Training 
+
+Accuracy of the network on the 102 test instances: 30 %
+L2 penalty:
+0.2
+Before training:
+Accuracy of the network on the 102 test instances: 13 %
+Start training
+EPOCH  1
+Accuracy of the network on the 102 test instances: 14 %
+EPOCH  2
+Accuracy of the network on the 102 test instances: 18 %
+EPOCH  3
+Accuracy of the network on the 102 test instances: 21 %
+EPOCH  4
+Accuracy of the network on the 102 test instances: 22 %
+EPOCH  5
+Accuracy of the network on the 102 test instances: 22 %
+EPOCH  6
+Accuracy of the network on the 102 test instances: 23 %
+EPOCH  7
+Accuracy of the network on the 102 test instances: 24 %
+EPOCH  8
+Accuracy of the network on the 102 test instances: 26 %
+EPOCH  9
+Accuracy of the network on the 102 test instances: 27 %
+EPOCH  10
+Finished Training 
+
+Accuracy of the network on the 102 test instances: 29 %

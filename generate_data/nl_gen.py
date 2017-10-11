@@ -26,15 +26,15 @@ MATLAB_OUTPUT = True
 
 DISTINGUISH_UNIONS_FROM_INDY = True
 
-FILENAME_STEM = "f5_"
+FILENAME_STEM = "aux"
 
 # uncomment to run independently
 
-# import nl_lexicon as nl_lex
-# TAXONOMY = "people"
-# dets, adverbs, nouns, verbs, noun_matrix, verb_matrix = nl_lex.get_taxonomy(TAXONOMY)
-# nl_dets, nl_det_matrix = nl_lex.dets, nl_lex.det_matrix
-# nl_lexicon = nl_lex.get_lexicon(nouns, verbs, nl_dets, noun_matrix, verb_matrix, nl_det_matrix)
+import nl_lexicon as nl_lex
+TAXONOMY = "animals"
+dets, adverbs, nouns, verbs, noun_matrix, verb_matrix = nl_lex.get_taxonomy(TAXONOMY)
+nl_dets, nl_det_matrix = nl_lex.dets, nl_lex.det_matrix
+lexicon = nl_lex.get_lexicon(nouns, verbs, nl_dets, noun_matrix, verb_matrix, nl_det_matrix)
 
 
 if not DISTINGUISH_UNIONS_FROM_INDY:
@@ -107,6 +107,10 @@ def left_projectivity(left_proj, right):
 
 def interpret(tree, lexicon, projectivity, fa=fa_left_first):
     """Recursively interpret the tree."""
+
+    # tree is of form:
+    # tree = [[(d1, d2), [(na1, na2), (n1, n2)]], [(va1, va2), (v1, v2)]]
+
     # For atomic cases:
     if isinstance(tree, tuple):
         val = (lexicon.get(tree), projectivity[tree[0]])
@@ -197,6 +201,11 @@ projectivity = defaultdict(list)
 projectivity['not'] = [
     {EQ: EQ, FOR: REV, REV: FOR, NEG: NEG, ALT: COV, COV: ALT, INDY: INDY}]
 
+# NOT AS in MacCartney: (Mathijs)
+# projectivity['not'] = [
+#     {EQ: EQ, FOR: REV, REV: FOR, NEG: ALT, ALT: INDY, COV: ALT, INDY: INDY}]
+
+
 projectivity[''] = [
     {EQ: EQ, FOR: FOR, REV: REV, NEG: NEG, ALT: ALT, COV: COV, INDY: INDY}]
 
@@ -246,15 +255,21 @@ projectivity['lt_three'] = lt_numeric
 
 def all_sentences(ignore_unk=True):
     """Generator for the current grammar and lexicon. Yields dicts with useful info."""
+
     for d1, d2, na1, na2, n1, n2, va1, va2, v1, v2 in product(dets, dets, adverbs, adverbs, nouns, nouns, adverbs, adverbs, verbs, verbs):
+
+    #for d1, d2, n1, n2, v1, v2 in product(dets, dets, nouns, nouns, verbs, verbs):
         d = {}
         s = [[(d1, d2), [(na1, na2), (n1, n2)]], [(va1, va2), (v1, v2)]]
+        #s = [[(d1, d2), (n1, n2)], (v1, v2)]
+
         d['sentence'] = s
         d['premise'] = leaves(s, 0)
         d['hypothesis'] = leaves(s, 1)
         d['relation'] = interpret(s, lexicon, projectivity)[0]
 
         if ignore_unk and d['relation'] != UNK:
+            #if random.random() < 0.03:
             yield d
 
 
@@ -296,15 +311,25 @@ if __name__ == '__main__':
         counters = {}
         data = all_sentences()
 
-        print('This many items:') #60384
-        print(len(list(data)))
+        # print('This many items:') #60384
+        # print(len(list(data)))
+        # num_ind = 0
+        # total = 0
 
         sentences = set()
         for counter, d in enumerate(data):
-            if counter % 1000 == 0:
-                print(counter)
+            #if counter % 1000 == 0:
+            #    print(counter)
             sentences.add(tuple(d['premise']))
             sentences.add(tuple(d['hypothesis']))
+        #     if d['relation'] == '#':
+        #         num_ind += 1
+        #     total += 1
+        # print('total:')
+        # print(total)
+        # print('independent:')
+        # print(num_ind)
+
 
         sentence_list = list(sentences)
         random.shuffle(sentence_list)

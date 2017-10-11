@@ -164,3 +164,4 @@ if __name__ == '__main__':
 
     if VISUALIZE:
         visualize(counters)
+

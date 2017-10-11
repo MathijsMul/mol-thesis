@@ -27,4 +27,4 @@ def show_accuracy(test_data, rels, net, print_outputs):
         #correct += torch.eq(predicted, label)
         total += 1 # because test batch size is always 1
 
-    print('Accuracy of the network on the %d test instances: %d %%' % (total, 100 * correct / total))
+    print('Accuracy of the network on the %d test instances: %.2f %%' % (total, 100 * correct / total))

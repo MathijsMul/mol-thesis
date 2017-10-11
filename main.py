@@ -129,6 +129,7 @@ for epoch in range(num_epochs):  # loop over the dataset multiple times
     if shuffle_samples and epoch > 0:
         batches = dat.BatchData(train_data, batch_size, shuffle_samples)
         batches.create_batches()
+
     for i in range(batches.num_batches):
         if show_progressbar:
             bar.update(i)
@@ -168,8 +169,6 @@ for epoch in range(num_epochs):  # loop over the dataset multiple times
 
     if save_params:
         params[epoch + 1] = list(net.parameters())
-
-    #print(params)
 
 print('Finished Training \n')
 

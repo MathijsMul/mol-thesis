@@ -2,39 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b72f4c1e-b8c1-4f94-9a46-30994c92b225" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/analyze_data.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junk/arithmgen.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/compare_datafiles.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junk/easydatagen.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junk/easynet.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junk/easynet2.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/mini2.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/minitest.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/minitrain.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generate_data/nl_data1_animals_test.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generate_data/nl_data1_animals_train.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/nl_most.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generate_data/nl_to_fol.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/onesentence.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scrap.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/trnn_verbose.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/fol_data1_animals_test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/fol_data1_animals_train.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/fol_data1_peopletest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/fol_data1_peopletrain.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/nl_data1_animals_test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/nl_data1_animals_train.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/compare_nl_fol.py" afterPath="$PROJECT_DIR$/generate_data/compare_nl_fol.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datamanager.py" afterPath="$PROJECT_DIR$/datamanager.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/fol_gen.py" afterPath="$PROJECT_DIR$/generate_data/fol_gen.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/nl_animals_1011.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/shorttest_1011.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/testrun.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scrap.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/nl_gen.py" afterPath="$PROJECT_DIR$/generate_data/nl_gen.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/nl_lexicon.py" afterPath="$PROJECT_DIR$/generate_data/nl_lexicon.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/junk/scrap.py" afterPath="$PROJECT_DIR$/junk/scrap.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trnn.py" afterPath="$PROJECT_DIR$/trnn.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trntn.py" afterPath="$PROJECT_DIR$/trntn.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="thesis_code.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,8 +35,8 @@
       <file leaf-file-name="trnn.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1155" max-vertical-offset="1785">
-              <caret line="95" column="13" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="988" max-vertical-offset="1755">
+              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -73,8 +47,8 @@
       <file leaf-file-name="nl_gen.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/generate_data/nl_gen.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-117.48148" vertical-offset="1373" max-vertical-offset="5400">
-              <caret line="303" column="26" selection-start-line="303" selection-start-column="0" selection-end-line="303" selection-end-column="26" />
+            <state vertical-scroll-proportion="-5.185185" vertical-offset="3490" max-vertical-offset="5400">
+              <caret line="242" column="0" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
               <folding>
                 <element signature="e#127#156#0" expanded="true" />
               </folding>
@@ -85,8 +59,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="78.62963" vertical-offset="2483" max-vertical-offset="2835">
-              <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+            <state vertical-scroll-proportion="-35.555557" vertical-offset="450" max-vertical-offset="2820">
+              <caret line="94" column="23" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -94,10 +68,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="trnn_verbose.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.740634" vertical-offset="178" max-vertical-offset="525">
+              <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="trnn_verbose.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trnn_verbose.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.762533" vertical-offset="1946" max-vertical-offset="2325">
+            <state vertical-scroll-proportion="0.0" vertical-offset="836" max-vertical-offset="2325">
               <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
               <folding />
             </state>
@@ -126,8 +110,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scrap.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrap.py">
+      <file leaf-file-name="graveyard.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/graveyard.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="3958" max-vertical-offset="4455">
               <caret line="215" column="0" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="0" />
@@ -151,16 +135,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="313" max-vertical-offset="735">
               <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="analyze_data.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/analyze_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -195,21 +169,21 @@
         <option value="$PROJECT_DIR$/generate_data/compare_nl_fol.py" />
         <option value="$PROJECT_DIR$/compare_datafiles.py" />
         <option value="$PROJECT_DIR$/trnn_verbose.py" />
-        <option value="$PROJECT_DIR$/generate_data/nl_gen.py" />
-        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/data/onesentence.txt" />
         <option value="$PROJECT_DIR$/analyze_data.py" />
-        <option value="$PROJECT_DIR$/trnn.py" />
         <option value="$PROJECT_DIR$/data/nl_most.txt" />
         <option value="$PROJECT_DIR$/scrap.py" />
         <option value="$PROJECT_DIR$/datamanager.py" />
+        <option value="$PROJECT_DIR$/trnn.py" />
+        <option value="$PROJECT_DIR$/generate_data/nl_gen.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/test.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="13" />
-    <option name="y" value="23" />
+    <option name="x" value="-23" />
+    <option name="y" value="28" />
     <option name="width" value="1290" />
     <option name="height" value="720" />
   </component>
@@ -251,6 +225,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="thesis_code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thesis_code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thesis_code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="generate_data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -531,18 +519,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="13" y="23" width="1290" height="720" extended-state="0" />
-    <editor active="true" />
+    <frame x="-23" y="28" width="1290" height="720" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25813952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25813952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47877014" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37480798" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42396313" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -809,7 +797,7 @@
         <state vertical-scroll-proportion="1.1201298" vertical-offset="315" max-vertical-offset="2595">
           <caret line="44" column="43" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
           <folding>
-            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#0#21#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -848,14 +836,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
-          <caret line="29" column="81" selection-start-line="29" selection-start-column="81" selection-end-line="29" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/onesentence.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
@@ -880,7 +860,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrap.py">
+    <entry file="file://$PROJECT_DIR$/graveyard.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3358" max-vertical-offset="4455">
           <caret line="215" column="0" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="0" />
@@ -906,26 +886,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1155" max-vertical-offset="1785">
-          <caret line="95" column="13" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generate_data/nl_gen.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-117.48148" vertical-offset="1373" max-vertical-offset="5400">
-          <caret line="303" column="26" selection-start-line="303" selection-start-column="0" selection-end-line="303" selection-end-column="26" />
-          <folding>
-            <element signature="e#127#156#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/minitrain.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="15075">
@@ -934,20 +894,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/trnn_verbose.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="78.62963" vertical-offset="2483" max-vertical-offset="2835">
-          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="836" max-vertical-offset="2325">
+          <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generate_data/nl_gen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.185185" vertical-offset="3490" max-vertical-offset="5400">
+          <caret line="242" column="0" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
+          <folding>
+            <element signature="e#127#156#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="988" max-vertical-offset="1755">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trnn_verbose.py">
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.762533" vertical-offset="1946" max-vertical-offset="2325">
-          <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+        <state vertical-scroll-proportion="-35.555557" vertical-offset="450" max-vertical-offset="2820">
+          <caret line="94" column="23" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.740634" vertical-offset="178" max-vertical-offset="525">
+          <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
           <folding />
         </state>
       </provider>

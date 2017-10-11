@@ -43,10 +43,9 @@ class tRNN(nn.Module):
         self.bound_layers = bound_layers
         self.bound_embeddings = bound_embeddings
 
-
     def initialize(self, mode):
         """
-        Uniform weight initialization
+        Initialization of parameters
 
         :return:
         """
@@ -60,7 +59,7 @@ class tRNN(nn.Module):
             # much beter results
             init.xavier_uniform(self.voc.weight)
             init.xavier_uniform(self.cps.weight, gain = 5/3) # recommended gain for tanh
-            init.xavier_uniform(self.cpr.weight, gain = math.sqrt(2/(1 + (0.01**2)))) # rec gain for leakyrelu
+            init.xavier_uniform(self.cpr.weight, gain = math.sqrt(2/(1 + (0.01**2)))) # rec. gain for leakyrelu
             init.xavier_uniform(self.sm.weight)
 
         if mode == 'xavier_normal':
@@ -82,7 +81,7 @@ class tRNN(nn.Module):
         :return: outputs, tensor of dimensions batch_size x num_classes
         """
 
-        # handles multiple inputs, inserted as list
+        # handles batch with multiple inputs, inserted as list
         outputs = Variable(torch.rand(len(inputs), self.num_rels))
 
         for idx, input in enumerate(inputs):
@@ -93,11 +92,10 @@ class tRNN(nn.Module):
             apply_cpr = self.cpr(torch.cat((left_cps, right_cps)))
             activated_cpr = self.relu(apply_cpr)
             to_softmax = self.sm(activated_cpr).view(1, self.num_rels)
-            #output = F.softmax(to_softmax)
+            # NLL loss function requires log probabilities! so must use log_softmax here instead of softmax:
             output = F.log_softmax(to_softmax)
             outputs[idx,:] = output
-        return(outputs) # size batch_size x num_classes
-
+        return(outputs) # size: batch_size x num_classes
 
     def compose(self, tree):
         if tree.label() == '.': # leaf nodes

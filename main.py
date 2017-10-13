@@ -16,17 +16,23 @@ import sys
 
 # GLOBAL SETTINGS
 
-tensors = False # tensors on or off
+tensors = True # tensors on or off
 
 # NL ANIMALS
-train_data_file = 'data/final/nl/nl_data1_animals_train.txt'
-test_data_file = 'data/final/nl/nl_data1_animals_test.txt'
+# train_data_file = 'data/final/nl/nl_data1_animals_train.txt'
+# test_data_file = 'data/final/nl/nl_data1_animals_test.txt'
+
+# from command line:
+# python3 main.py 'data/final/nl/nl_data1_animals_train.txt' 'data/final/nl/nl_data1_animals_test.txt' > nl_animals_date.txt
 
 # FOL ANIMALS (translated from NL data)
 # train_data_file = './data/final/fol/fol_animals_train_translated_from_nl.txt'
 # test_data_file = './data/final/fol/fol_animals_test_translated_from_nl.txt'
 
-# FOL ANIMALS (new)
+# from command line:
+# python3 main.py 'data/final/fol/fol_animals_train_translated_from_nl.txt' 'data/final/fol/fol_animals_test_translated_from_nl.txt' > fol_animals_date.txt
+
+# FOL ANIMALS (new, do not use for now)
 # train_data_file = './data/final/fol/fol_data1_animals_train.txt'
 # test_data_file = './data/final/fol/fol_data1_animals_test.txt'
 
@@ -34,17 +40,20 @@ test_data_file = 'data/final/nl/nl_data1_animals_test.txt'
 # train_data_file = './data/final/fol/fol_data1_peopletrain.txt'
 # test_data_file = './data/final/fol/fol_data1_peopletest.txt'
 
+# from command line:
+# python3 main.py 'data/final/fol/fol_data1_peopletrain.txt' 'data/final/fol/fol_data1_peopletest.txt' > fol_people_date.txt
+
 # train_data_file = './data/minitrain.txt'
 # test_data_file = train_data_file
 
 # uncomment for execution from command line:
-# if __name__ == '__main__':
-#     train_data_file = sys.argv[1]
-#     test_data_file = sys.argv[2]
+if __name__ == '__main__':
+    train_data_file = sys.argv[1]
+    test_data_file = sys.argv[2]
 
 word_dim = 25 # dimensionality of word embeddings
 cpr_dim = 75 # output dimensionality of comparison layer
-num_epochs = 100
+num_epochs = 5
 batch_size = 32 # Bowman takes 32
 shuffle_samples = True
 test_all_epochs = True # intermediate accuracy computation after each epoch
@@ -89,8 +98,8 @@ criterion = nn.NLLLoss()
 optimizer = optim.Adadelta(net.parameters(), weight_decay = l2_penalty)
 
 ##################################################################
-
 # print hyperparameters
+
 print("\n")
 print("MODEL SETTINGS")
 print("Tensors on/off:        ", tensors)
@@ -179,4 +188,3 @@ print('Finished Training \n')
 show_accuracy(test_data, rels, net, print_outputs=False)
 
 print('\n')
-

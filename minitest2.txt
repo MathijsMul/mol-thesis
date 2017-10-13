@@ -1,0 +1,8 @@
+Loading data from  data/mini2.txt
+Vocabulary: 
+ ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'Z']
+Relations:  
+ ['#', '>']
+Loading data from  data/mini2.txt’ 
+#> minitest1.txt
+#python3 main.py data/mini2.txt data/mini2.txt’

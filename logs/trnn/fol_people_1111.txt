@@ -1,0 +1,231 @@
+Loading data from  data/final/fol/fol_data1_peopletrain.txt
+Vocabulary: 
+ ['Europeans', 'Germans', 'Italians', 'Romans', 'all', 'children', 'clean', 'laugh', 'lt_three', 'lt_two', 'no', 'not', 'not_all', 'some', 'teach', 'three', 'two', 'work']
+Relations:  
+ ['#', '<', '=', '>', '^', 'v', '|']
+Loading data from  data/final/fol/fol_data1_peopletest.txt
+
+
+MODEL SETTINGS
+Tensors on/off:         False
+Train data:             data/final/fol/fol_data1_peopletrain.txt
+Test data:              data/final/fol/fol_data1_peopletest.txt
+Num. epochs:            50
+Word dim.:              25
+Cpr. dim.:              75
+Batch size:             32
+Shuffle samples:        True
+Weight initialization:  xavier_uniform
+Optimizer:              <torch.optim.adadelta.Adadelta object at 0x1120360b8>
+L2 penalty:             0.001
+
+
+Before training:
+Accuracy of the network on the 6872 test instances: 19.56 %
+
+
+Start training
+EPOCH  1
+
+
+Accuracy of the network on the 6872 test instances: 70.55 %
+EPOCH  2
+
+
+Accuracy of the network on the 6872 test instances: 72.51 %
+EPOCH  3
+
+
+Accuracy of the network on the 6872 test instances: 72.54 %
+EPOCH  4
+
+
+Accuracy of the network on the 6872 test instances: 74.36 %
+EPOCH  5
+
+
+Accuracy of the network on the 6872 test instances: 76.28 %
+EPOCH  6
+
+
+Accuracy of the network on the 6872 test instances: 77.68 %
+EPOCH  7
+
+
+Accuracy of the network on the 6872 test instances: 78.46 %
+EPOCH  8
+
+
+Accuracy of the network on the 6872 test instances: 79.32 %
+EPOCH  9
+
+
+Accuracy of the network on the 6872 test instances: 78.80 %
+EPOCH  10
+
+
+Accuracy of the network on the 6872 test instances: 79.80 %
+EPOCH  11
+
+
+Accuracy of the network on the 6872 test instances: 81.85 %
+EPOCH  12
+
+
+Accuracy of the network on the 6872 test instances: 81.87 %
+EPOCH  13
+
+
+Accuracy of the network on the 6872 test instances: 81.97 %
+EPOCH  14
+
+
+Accuracy of the network on the 6872 test instances: 82.58 %
+EPOCH  15
+
+
+Accuracy of the network on the 6872 test instances: 84.68 %
+EPOCH  16
+
+
+Accuracy of the network on the 6872 test instances: 87.76 %
+EPOCH  17
+
+
+Accuracy of the network on the 6872 test instances: 91.53 %
+EPOCH  18
+
+
+Accuracy of the network on the 6872 test instances: 93.25 %
+EPOCH  19
+
+
+Accuracy of the network on the 6872 test instances: 94.14 %
+EPOCH  20
+
+
+Accuracy of the network on the 6872 test instances: 95.71 %
+EPOCH  21
+
+
+Accuracy of the network on the 6872 test instances: 95.31 %
+EPOCH  22
+
+
+Accuracy of the network on the 6872 test instances: 95.59 %
+EPOCH  23
+
+
+Accuracy of the network on the 6872 test instances: 95.59 %
+EPOCH  24
+
+
+Accuracy of the network on the 6872 test instances: 96.26 %
+EPOCH  25
+
+
+Accuracy of the network on the 6872 test instances: 96.45 %
+EPOCH  26
+
+
+Accuracy of the network on the 6872 test instances: 96.10 %
+EPOCH  27
+
+
+Accuracy of the network on the 6872 test instances: 96.49 %
+EPOCH  28
+
+
+Accuracy of the network on the 6872 test instances: 95.95 %
+EPOCH  29
+
+
+Accuracy of the network on the 6872 test instances: 95.79 %
+EPOCH  30
+
+
+Accuracy of the network on the 6872 test instances: 97.00 %
+EPOCH  31
+
+
+Accuracy of the network on the 6872 test instances: 97.31 %
+EPOCH  32
+
+
+Accuracy of the network on the 6872 test instances: 96.93 %
+EPOCH  33
+
+
+Accuracy of the network on the 6872 test instances: 96.97 %
+EPOCH  34
+
+
+Accuracy of the network on the 6872 test instances: 96.77 %
+EPOCH  35
+
+
+Accuracy of the network on the 6872 test instances: 97.09 %
+EPOCH  36
+
+
+Accuracy of the network on the 6872 test instances: 97.15 %
+EPOCH  37
+
+
+Accuracy of the network on the 6872 test instances: 96.96 %
+EPOCH  38
+
+
+Accuracy of the network on the 6872 test instances: 97.19 %
+EPOCH  39
+
+
+Accuracy of the network on the 6872 test instances: 97.06 %
+EPOCH  40
+
+
+Accuracy of the network on the 6872 test instances: 97.40 %
+EPOCH  41
+
+
+Accuracy of the network on the 6872 test instances: 97.45 %
+EPOCH  42
+
+
+Accuracy of the network on the 6872 test instances: 97.44 %
+EPOCH  43
+
+
+Accuracy of the network on the 6872 test instances: 97.25 %
+EPOCH  44
+
+
+Accuracy of the network on the 6872 test instances: 97.09 %
+EPOCH  45
+
+
+Accuracy of the network on the 6872 test instances: 97.00 %
+EPOCH  46
+
+
+Accuracy of the network on the 6872 test instances: 97.21 %
+EPOCH  47
+
+
+Accuracy of the network on the 6872 test instances: 97.28 %
+EPOCH  48
+
+
+Accuracy of the network on the 6872 test instances: 96.70 %
+EPOCH  49
+
+
+Accuracy of the network on the 6872 test instances: 97.77 %
+EPOCH  50
+
+
+Finished Training 
+
+Accuracy of the network on the 6872 test instances: 97.13 %
+
+

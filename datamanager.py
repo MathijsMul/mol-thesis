@@ -95,10 +95,16 @@ class BatchData():
         if self.shuffle:
             random.shuffle(self.unbatched_data)
 
+        # start index of last batch
         last_idx = self.num_samples - (self.num_samples % self.batch_size)
+
+        # case where all batches are full
+        if last_idx == self.num_samples:
+            last_idx -= self.batch_size
 
         for start_idx in range(0, last_idx + 1, self.batch_size):
             if start_idx == last_idx:
+                # last, possibly incomplete batch
                 batch_data = [[sample[1], sample[2]] for sample in self.unbatched_data[start_idx : self.num_samples - 1]]
                 batch_labels = [sample[0] for sample in self.unbatched_data[start_idx : self.num_samples - 1]]
             else:

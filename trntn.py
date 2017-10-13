@@ -4,6 +4,7 @@ from torch.autograd import Variable
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.nn.init as init
+import math
 
 class tRNTN(nn.Module):
     """
@@ -38,8 +39,7 @@ class tRNTN(nn.Module):
         self.word_dict = {}
         for word in vocab:
             # create one-hot encodings for words in vocabulary
-            self.word_dict[word] = Variable(torch.zeros(self.voc_size))
-            self.word_dict[word][vocab.index(word)] = 1
+	        self.word_dict[word] = Variable(torch.eye(self.voc_size)[:,vocab.index(word)], requires_grad=True)
 
         # activation functions
         self.relu = nn.LeakyReLU() # cpr layer, negative slope is 0.01, which is standard
@@ -48,30 +48,36 @@ class tRNTN(nn.Module):
         self.bound_layers = bound_layers
         self.bound_embeddings = bound_embeddings
 
-    def initialize(self):
+    def initialize(self, mode):
         """
-        Uniform weight initialization
+        Initialization of parameters
 
         :return:
         """
 
-        init.uniform(self.voc.weight, -1*self.bound_embeddings, self.bound_embeddings)
-        init.uniform(self.voc.bias, -1*self.bound_embeddings, self.bound_embeddings)
+        # always initialize biases as zero vectors:
+        self.cps.bias.data.fill_(0)
+        self.cpr.bias.data.fill_(0)
+        self.sm.bias.data.fill_(0)
 
-        init.uniform(self.cps.weight, -1*self.bound_layers, self.bound_layers)
-        init.uniform(self.cps.bias, -1*self.bound_layers, self.bound_layers)
+        if mode == 'xavier_uniform':
+            # much beter results
+            init.xavier_uniform(self.voc.weight)
+            init.xavier_uniform(self.cps.weight, gain = 5/3) # recommended gain for tanh
+            init.xavier_uniform(self.cpr.weight, gain = math.sqrt(2/(1 + (0.01**2)))) # rec. gain for leakyrelu
+            init.xavier_uniform(self.sm.weight)
 
-        init.uniform(self.cps_t.weight, -1*self.bound_layers, self.bound_layers)
-        init.uniform(self.cps_t.bias, -1*self.bound_layers, self.bound_layers)
+        if mode == 'xavier_normal':
+            init.xavier_normal(self.voc.weight)
+            init.xavier_normal(self.cps.weight, gain = 5/3)
+            init.xavier_normal(self.cpr.weight, gain = math.sqrt(2/(1 + (0.01**2))))
+            init.xavier_normal(self.sm.weight)
 
-        init.uniform(self.cpr.weight, -1*self.bound_layers, self.bound_layers)
-        init.uniform(self.cpr.bias, -1*self.bound_layers, self.bound_layers)
-
-        init.uniform(self.cpr_t.weight, -1*self.bound_layers, self.bound_layers)
-        init.uniform(self.cpr_t.bias, -1*self.bound_layers, self.bound_layers)
-
-        init.uniform(self.sm.weight, -1*self.bound_layers, self.bound_layers)
-        init.uniform(self.sm.bias, -1*self.bound_layers, self.bound_layers)
+        if mode == 'uniform':
+            init.uniform(self.voc.weight, -1*self.bound_embeddings, self.bound_embeddings)
+            init.uniform(self.cps.weight, -1*self.bound_layers, self.bound_layers)
+            init.uniform(self.cpr.weight, -1*self.bound_layers, self.bound_layers)
+            init.uniform(self.sm.weight, -1*self.bound_layers, self.bound_layers)
 
 
     def forward(self, inputs):
@@ -96,7 +102,7 @@ class tRNTN(nn.Module):
             apply_cpr_t = self.cpr_t(kron)
             activated_cpr = self.relu(apply_cpr + apply_cpr_t)
             to_softmax = self.sm(activated_cpr).view(1, self.num_rels)
-            output = F.softmax(to_softmax)
+            output = F.log_softmax(to_softmax)
             outputs[idx,:] = output
 
         return(outputs) # size batch_size x num_classes
@@ -107,10 +113,12 @@ class tRNTN(nn.Module):
             word_onehot = self.word_dict[tree[0]]
             return self.voc(word_onehot) # get word embedding
         else:
-            cps = self.cps(torch.cat((self.compose(tree[0]), self.compose(tree[1]))))
+            cps_l = self.compose(tree[0])
+            cps_r = self.compose(tree[1])
+            cps = self.cps(torch.cat((cps_l, cps_r)))
 
             # compute kronecker product for child nodes
-            kron = torch.ger(self.compose(tree[0]), self.compose(tree[0])).view(-1)
+            kron = torch.ger(cps_l, cps_r).view(-1)
             cps_t = self.cps_t(kron)
             activated_cps = self.tanh(cps + cps_t)
             return activated_cps

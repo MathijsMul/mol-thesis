@@ -1,0 +1,231 @@
+Loading data from  data/final/fol/fol_animals_train_translated_from_nl.txt
+Vocabulary: 
+ ['all', 'growl', 'lt_three', 'lt_two', 'mammals', 'move', 'no', 'not', 'not_all', 'pets', 'reptiles', 'some', 'swim', 'three', 'turtles', 'two', 'walk', 'warthogs']
+Relations:  
+ ['#', '<', '=', '>', '^', 'v', '|']
+Loading data from  data/final/fol/fol_animals_test_translated_from_nl.txt
+
+
+MODEL SETTINGS
+Tensors on/off:         False
+Train data:             data/final/fol/fol_animals_train_translated_from_nl.txt
+Test data:              data/final/fol/fol_animals_test_translated_from_nl.txt
+Num. epochs:            50
+Word dim.:              25
+Cpr. dim.:              75
+Batch size:             32
+Shuffle samples:        True
+Weight initialization:  xavier_uniform
+Optimizer:              <torch.optim.adadelta.Adadelta object at 0x10f71c8d0>
+L2 penalty:             0.001
+
+
+Before training:
+Accuracy of the network on the 4494 test instances: 27.08 %
+
+
+Start training
+EPOCH  1
+
+
+Accuracy of the network on the 4494 test instances: 71.74 %
+EPOCH  2
+
+
+Accuracy of the network on the 4494 test instances: 78.95 %
+EPOCH  3
+
+
+Accuracy of the network on the 4494 test instances: 83.00 %
+EPOCH  4
+
+
+Accuracy of the network on the 4494 test instances: 84.96 %
+EPOCH  5
+
+
+Accuracy of the network on the 4494 test instances: 87.85 %
+EPOCH  6
+
+
+Accuracy of the network on the 4494 test instances: 87.14 %
+EPOCH  7
+
+
+Accuracy of the network on the 4494 test instances: 88.52 %
+EPOCH  8
+
+
+Accuracy of the network on the 4494 test instances: 89.50 %
+EPOCH  9
+
+
+Accuracy of the network on the 4494 test instances: 90.16 %
+EPOCH  10
+
+
+Accuracy of the network on the 4494 test instances: 90.28 %
+EPOCH  11
+
+
+Accuracy of the network on the 4494 test instances: 90.70 %
+EPOCH  12
+
+
+Accuracy of the network on the 4494 test instances: 92.01 %
+EPOCH  13
+
+
+Accuracy of the network on the 4494 test instances: 91.43 %
+EPOCH  14
+
+
+Accuracy of the network on the 4494 test instances: 92.90 %
+EPOCH  15
+
+
+Accuracy of the network on the 4494 test instances: 92.46 %
+EPOCH  16
+
+
+Accuracy of the network on the 4494 test instances: 92.17 %
+EPOCH  17
+
+
+Accuracy of the network on the 4494 test instances: 92.99 %
+EPOCH  18
+
+
+Accuracy of the network on the 4494 test instances: 93.12 %
+EPOCH  19
+
+
+Accuracy of the network on the 4494 test instances: 94.13 %
+EPOCH  20
+
+
+Accuracy of the network on the 4494 test instances: 93.86 %
+EPOCH  21
+
+
+Accuracy of the network on the 4494 test instances: 94.01 %
+EPOCH  22
+
+
+Accuracy of the network on the 4494 test instances: 94.59 %
+EPOCH  23
+
+
+Accuracy of the network on the 4494 test instances: 94.77 %
+EPOCH  24
+
+
+Accuracy of the network on the 4494 test instances: 95.15 %
+EPOCH  25
+
+
+Accuracy of the network on the 4494 test instances: 93.97 %
+EPOCH  26
+
+
+Accuracy of the network on the 4494 test instances: 94.86 %
+EPOCH  27
+
+
+Accuracy of the network on the 4494 test instances: 95.53 %
+EPOCH  28
+
+
+Accuracy of the network on the 4494 test instances: 95.26 %
+EPOCH  29
+
+
+Accuracy of the network on the 4494 test instances: 95.13 %
+EPOCH  30
+
+
+Accuracy of the network on the 4494 test instances: 95.28 %
+EPOCH  31
+
+
+Accuracy of the network on the 4494 test instances: 96.35 %
+EPOCH  32
+
+
+Accuracy of the network on the 4494 test instances: 95.88 %
+EPOCH  33
+
+
+Accuracy of the network on the 4494 test instances: 95.93 %
+EPOCH  34
+
+
+Accuracy of the network on the 4494 test instances: 96.40 %
+EPOCH  35
+
+
+Accuracy of the network on the 4494 test instances: 96.82 %
+EPOCH  36
+
+
+Accuracy of the network on the 4494 test instances: 96.35 %
+EPOCH  37
+
+
+Accuracy of the network on the 4494 test instances: 96.51 %
+EPOCH  38
+
+
+Accuracy of the network on the 4494 test instances: 97.02 %
+EPOCH  39
+
+
+Accuracy of the network on the 4494 test instances: 96.66 %
+EPOCH  40
+
+
+Accuracy of the network on the 4494 test instances: 97.37 %
+EPOCH  41
+
+
+Accuracy of the network on the 4494 test instances: 97.33 %
+EPOCH  42
+
+
+Accuracy of the network on the 4494 test instances: 96.95 %
+EPOCH  43
+
+
+Accuracy of the network on the 4494 test instances: 96.91 %
+EPOCH  44
+
+
+Accuracy of the network on the 4494 test instances: 97.35 %
+EPOCH  45
+
+
+Accuracy of the network on the 4494 test instances: 96.95 %
+EPOCH  46
+
+
+Accuracy of the network on the 4494 test instances: 97.95 %
+EPOCH  47
+
+
+Accuracy of the network on the 4494 test instances: 97.57 %
+EPOCH  48
+
+
+Accuracy of the network on the 4494 test instances: 97.53 %
+EPOCH  49
+
+
+Accuracy of the network on the 4494 test instances: 97.69 %
+EPOCH  50
+
+
+Finished Training 
+
+Accuracy of the network on the 4494 test instances: 97.73 %
+
+

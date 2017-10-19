@@ -6,7 +6,7 @@ import torch.optim as optim
 import datamanager as dat
 from trnn import tRNN
 from trntn import tRNTN
-import progressbar as pb
+#import progressbar as pb
 from test import compute_accuracy
 import numpy as np
 import random
@@ -66,7 +66,7 @@ bound_layers = 0.05 # bound for uniform initialization of layer parameters
 bound_embeddings = 0.01  # bound for uniform initialization of embeddings
 l2_penalty = 1e-3 #customary: 2e-3 # weight_decay, l2 regularization term
 save_params = False # store params at each epoch
-show_progressbar = True
+show_progressbar = False
 show_loss = False # show loss every 200 batches
 
 ##################################################################

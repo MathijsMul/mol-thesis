@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b72f4c1e-b8c1-4f94-9a46-30994c92b225" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/binary_exp2.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generate_data/fol_gen_complex.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generate_data/split_data.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/generate_data/auxtest.txt" afterPath="$PROJECT_DIR$/data/auxtest.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/generate_data/auxtrain.txt" afterPath="$PROJECT_DIR$/data/auxtrain.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/analyze_data.py" afterPath="$PROJECT_DIR$/analyze_data.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/fol_lexicon.py" afterPath="$PROJECT_DIR$/generate_data/fol_lexicon.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graveyard.py" afterPath="$PROJECT_DIR$/graveyard.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run.sh" afterPath="$PROJECT_DIR$/run.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="thesis_code.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,15 +26,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.310651" vertical-offset="1687" max-vertical-offset="2220">
-              <caret line="197" column="12" selection-start-line="197" selection-start-column="12" selection-end-line="197" selection-end-column="12" />
+            <state vertical-scroll-proportion="16.185184" vertical-offset="557" max-vertical-offset="2835">
+              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
               <folding>
-                <marker date="1508419038000" expanded="false" signature="400:1716" placeholder="..." />
-                <marker date="1508419038000" expanded="false" signature="3750:4374" placeholder="..." />
+                <element signature="e#0#37#0" expanded="true" />
+                <marker date="1508424077000" expanded="true" signature="401:1717" placeholder="..." />
+                <marker date="1508424077000" expanded="false" signature="3752:4376" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="binary_exp2.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/binary_exp2.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7561644" vertical-offset="1629" max-vertical-offset="1995">
+              <caret line="127" column="120" selection-start-line="127" selection-start-column="120" selection-end-line="127" selection-end-column="120" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -65,16 +65,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1710">
               <caret line="106" column="49" selection-start-line="106" selection-start-column="49" selection-end-line="106" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fol_data1_peopletrain.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/final/fol/fol_data1_peopletrain.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="446880">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -659,14 +649,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/final/nl/nl_data1_animals_train.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1027.7778" vertical-offset="2685" max-vertical-offset="416520">
-          <caret line="2029" column="30" selection-start-line="2029" selection-start-column="5" selection-end-line="2029" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/generate_data/compare_nl_fol.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.1201298" vertical-offset="315" max-vertical-offset="2595">
@@ -734,14 +716,6 @@
           <folding>
             <element signature="e#127#156#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/final/fol/fol_animals_train_translated_from_nl.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="327583" max-vertical-offset="327930">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -873,14 +847,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/final/fol/fol_animals_test_translated_from_nl.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-114.78045" vertical-offset="66917" max-vertical-offset="67500">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/binary_exp_bulk.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="236700">
@@ -934,14 +900,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/binary_exp2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1629" max-vertical-offset="1995">
-          <caret line="127" column="120" selection-start-line="127" selection-start-column="120" selection-end-line="127" selection-end-column="120" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/datamanager.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1710">
@@ -958,14 +916,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/final/fol/fol_data1_peopletrain.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="446880">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/graveyard.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="5965" max-vertical-offset="6330">
@@ -976,12 +926,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.310651" vertical-offset="1687" max-vertical-offset="2220">
-          <caret line="197" column="12" selection-start-line="197" selection-start-column="12" selection-end-line="197" selection-end-column="12" />
+        <state vertical-scroll-proportion="16.185184" vertical-offset="557" max-vertical-offset="2835">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
           <folding>
-            <marker date="1508419038000" expanded="false" signature="400:1716" placeholder="..." />
-            <marker date="1508419038000" expanded="false" signature="3750:4374" placeholder="..." />
+            <element signature="e#0#37#0" expanded="true" />
+            <marker date="1508424077000" expanded="true" signature="401:1717" placeholder="..." />
+            <marker date="1508424077000" expanded="false" signature="3752:4376" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/binary_exp2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7561644" vertical-offset="1629" max-vertical-offset="1995">
+          <caret line="127" column="120" selection-start-line="127" selection-start-column="120" selection-end-line="127" selection-end-column="120" />
+          <folding />
         </state>
       </provider>
     </entry>

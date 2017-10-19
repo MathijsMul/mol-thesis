@@ -17,7 +17,7 @@
 echo TRNN, BINARY DATA
 python3 main.py './data/binary/split/binary1_train.txt' './data/binary/split/binary1_test.txt' False > binary_trnn1.txt
 
-ECHO TRNTN, BINARY DATA
+echo TRNTN, BINARY DATA
 python3 main.py './data/binary/split/binary1_train.txt' './data/binary/split/binary1_test.txt' True > binary_trntn1.txt
 
 

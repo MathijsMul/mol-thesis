@@ -55,9 +55,9 @@ if __name__ == '__main__':
 
 #tensors = False # tensors on or off (False -> tRNN, True -> tRNTN)
 
-word_dim = 5 # dimensionality of word embeddings
-cpr_dim = 5 # output dimensionality of comparison layer
-num_epochs = 10 # number of epochs
+word_dim = 25 # dimensionality of word embeddings
+cpr_dim = 75 # output dimensionality of comparison layer
+num_epochs = 50 # number of epochs
 batch_size = 32 # Bowman takes 32
 shuffle_samples = True
 test_all_epochs = True # intermediate accuracy computation after each epoch
@@ -117,6 +117,7 @@ print("Shuffle samples:       ", shuffle_samples)
 print("Weight initialization: ", init_mode)
 print("Optimizer:             ", optimizer.__class__.__name__)
 print("L2 penalty:            ", l2_penalty)
+print("Num. train instances:  ", len(train_data.tree_data))
 print("Num. test instances:   ", len(test_data.tree_data))
 print("\n")
 

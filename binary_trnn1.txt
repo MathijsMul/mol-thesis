@@ -1,15 +1,15 @@
-Loading data from  ./data/binary_exp2.txt
+Loading data from  ./data/binary/split/binary1_train.txt
 Vocabulary: 
  ['Europeans', 'Germans', 'Italians', 'Romans', 'all', 'children', 'fear', 'hate', 'like', 'love', 'not', 'some']
 Relations:  
- ['#', '<', '>']
-Loading data from  ./data/binary_exp2.txt
+ ['#', '<', '=', '>', '^', 'v', '|']
+Loading data from  ./data/binary/split/binary1_test.txt
 
 
 MODEL SETTINGS
 Tensors on/off:         False
-Train data:             ./data/binary_exp2.txt
-Test data:              ./data/binary_exp2.txt
+Train data:             ./data/binary/split/binary1_train.txt
+Test data:              ./data/binary/split/binary1_test.txt
 Num. epochs:            10
 Word dim.:              5
 Cpr. dim.:              5
@@ -18,18 +18,18 @@ Shuffle samples:        True
 Weight initialization:  xavier_uniform
 Optimizer:              Adadelta
 L2 penalty:             0.001
-Num. test instances:    128
+Num. test instances:    6173
 
 
 EPOCH 	 ACCURACY
-0 	 9.38
-1 	 59.38
-2 	 94.53
-3 	 97.66
-4 	 97.66
-5 	 97.66
-6 	 97.66
-7 	 97.66
-8 	 97.66
-9 	 97.66
-10 	 97.66
+0 	 18.52
+1 	 56.76
+2 	 58.55
+3 	 59.11
+4 	 57.82
+5 	 58.71
+6 	 58.80
+7 	 59.84
+8 	 61.30
+9 	 61.80
+10 	 63.73

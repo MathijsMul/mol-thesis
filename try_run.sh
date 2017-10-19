@@ -18,7 +18,7 @@ echo First try on dummy files
 echo TRNN, BINARY DATA
 python3 main.py './data/binary_exp2.txt' './data/binary_exp2.txt' False > binary_trnn1.txt
 
-ECHO TRNTN, BINARY DATA
+echo TRNTN, BINARY DATA
 python3 main.py './data/binary_exp2.txt' './data/binary_exp2.txt' True > binary_trntn1.txt
 
 

@@ -15,9 +15,9 @@
 #test_data_file = './data/binary/split/binary1_test.txt'
 
 echo TRNN, BINARY DATA
-python3 main.py './data/binary_exp2.txt' './data/binary_exp2.txt' False > binary_trnn_exp.txt
+python3 main.py './data/binary/split/binary1_train.txt' './data/binary/split/binary1_test.txt' False > binary_trnn1.txt
 
 ECHO TRNTN, BINARY DATA
-python3 main.py './data/binary_exp2.txt' './data/binary_exp2.txt' True > binary_trntn_exp.txt
+python3 main.py './data/binary/split/binary1_train.txt' './data/binary/split/binary1_test.txt' True > binary_trntn1.txt
 
 

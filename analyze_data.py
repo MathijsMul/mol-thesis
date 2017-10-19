@@ -1,5 +1,6 @@
 #data_file = 'junk/arithmdat.txt'
-data_file = 'data/final/fol/fol_data1_animals_train.txt'
+#data_file = 'data/final/fol/fol_data1_animals_train.txt'
+data_file = 'generate_data/binary1_train.txt'
 
 rels = ['=', '<', '>', 'v', '^', '|', '#']
 # rels = [0,1,2,3,4]

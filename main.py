@@ -7,7 +7,7 @@ import datamanager as dat
 from trnn import tRNN
 from trntn import tRNTN
 import progressbar as pb
-from test import show_accuracy
+from test import compute_accuracy
 import numpy as np
 import random
 import sys
@@ -15,8 +15,6 @@ import sys
 ##################################################################
 
 # GLOBAL SETTINGS
-
-tensors = True # tensors on or off
 
 # NL ANIMALS
 # train_data_file = 'data/final/nl/nl_data1_animals_train.txt'
@@ -46,14 +44,20 @@ tensors = True # tensors on or off
 # train_data_file = './data/minitrain.txt'
 # test_data_file = train_data_file
 
+train_data_file = './data/binary/split/binary1_train.txt'
+test_data_file = './data/binary/split/binary1_test.txt'
+
 # uncomment for execution from command line:
 if __name__ == '__main__':
     train_data_file = sys.argv[1]
     test_data_file = sys.argv[2]
+    tensors = sys.argv[3]
 
-word_dim = 25 # dimensionality of word embeddings
-cpr_dim = 75 # output dimensionality of comparison layer
-num_epochs = 5
+#tensors = False # tensors on or off (False -> tRNN, True -> tRNTN)
+
+word_dim = 5 # dimensionality of word embeddings
+cpr_dim = 5 # output dimensionality of comparison layer
+num_epochs = 10 # number of epochs
 batch_size = 32 # Bowman takes 32
 shuffle_samples = True
 test_all_epochs = True # intermediate accuracy computation after each epoch
@@ -111,24 +115,25 @@ print("Cpr. dim.:             ", cpr_dim)
 print("Batch size:            ", batch_size)
 print("Shuffle samples:       ", shuffle_samples)
 print("Weight initialization: ", init_mode)
-print("Optimizer:             ", optimizer)
+print("Optimizer:             ", optimizer.__class__.__name__)
 print("L2 penalty:            ", l2_penalty)
+print("Num. test instances:   ", len(test_data.tree_data))
 print("\n")
 
 ##################################################################
 
-print('Before training:')
-show_accuracy(test_data, rels, net, print_outputs=False)
-print("\n")
+acc_before_training = compute_accuracy(test_data, rels, net, print_outputs=False)
+print("EPOCH", "\t", "ACCURACY")
+print(str(0), '\t', str(acc_before_training))
 
 ##################################################################
 
 # TRAINING
 
-print('Start training')
+#print('Start training')
 
 for epoch in range(num_epochs):  # loop over the dataset multiple times
-    print('EPOCH ', str(epoch + 1))
+    #print('EPOCH ', str(epoch + 1))
     running_loss = 0.0
 
     if show_progressbar:
@@ -169,22 +174,25 @@ for epoch in range(num_epochs):  # loop over the dataset multiple times
                 running_loss = 0.0
 
         #bar.update(i + 1)
+
     if show_progressbar:
         bar.finish()
-        print('\n')
+        #print('\n')
 
     if test_all_epochs and epoch < (num_epochs - 1):
-        show_accuracy(test_data, rels, net, print_outputs=False)
+        acc = compute_accuracy(test_data, rels, net, print_outputs=False)
+        print(str(epoch + 1), '\t', str(acc))
 
     if save_params:
         params[epoch + 1] = list(net.parameters())
 
-print('Finished Training \n')
+#print('Finished Training \n')
 
 ##################################################################
 
-# TESTING
+# (FINAL) TESTING
 
-show_accuracy(test_data, rels, net, print_outputs=False)
+final_acc = compute_accuracy(test_data, rels, net, print_outputs=False)
+print(str(epoch + 1), '\t', str(final_acc))
 
-print('\n')
+#print('\n')

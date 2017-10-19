@@ -1,67 +1,67 @@
 from __future__ import print_function
-import torch
-from torch.autograd import Variable
-import torch.nn as nn
-import torch.optim as optim
-import datamanager as dat
-from trnn import tRNN
-from trntn import tRNTN
-import progressbar as pb
-from test import show_accuracy
-import numpy as np
-import random
+# import torch
+# from torch.autograd import Variable
+# import torch.nn as nn
+# import torch.optim as optim
+# import datamanager as dat
+# from trnn import tRNN
+# from trntn import tRNTN
+# import progressbar as pb
+# from test import show_accuracy
+# import numpy as np
+# import random
+#
+# ##################################################################
+#
+# # GLOBAL SETTINGS
+#
+# tensors = False # tensors on or off
+# # train_data_file = 'data/fol_datasmall_people_train.txt'
+# # # test_data_file = 'data/fol_datasmall_people_test.txt'
+# train_data_file = 'data/nl_data1_animals_train.txt'
+# test_data_file = 'data/nl_data1_animals_test.txt'
+# # train_data_file = 'data/mini2.txt'
+# # test_data_file = 'data/mini2.txt'
+# # train_data_file = 'data/minitrain.txt'
+# # test_data_file = train_data_file
+# word_dim = 25 # dimensionality of word embeddings
+# cpr_dim = 75 # output dimensionality of comparison layer
+# num_epochs = 100
+# batch_size = 32
+# shuffle_samples = True
+# test_all_epochs = True # intermediate accuracy computation after each epoch
+# # bound_layers = 3 # bound for uniform initialization of layer parameters
+# # bound_embeddings = 2  # bound for uniform initialization of embeddings
+# bound_layers = 1 # bound for uniform initialization of layer parameters
+# bound_embeddings = 3  # bound for uniform initialization of embeddings
+# #learning_rate = 0.01
+# l2_penalty = 2e-3 # weight_decay, l2 regularization term
+#
+# save_params = False # store params at each epoch
+# show_progressbar = False
 
 ##################################################################
 
-# GLOBAL SETTINGS
-
-tensors = False # tensors on or off
-# train_data_file = 'data/fol_datasmall_people_train.txt'
-# # test_data_file = 'data/fol_datasmall_people_test.txt'
-train_data_file = 'data/nl_data1_animals_train.txt'
-test_data_file = 'data/nl_data1_animals_test.txt'
-# train_data_file = 'data/mini2.txt'
-# test_data_file = 'data/mini2.txt'
-# train_data_file = 'data/minitrain.txt'
-# test_data_file = train_data_file
-word_dim = 25 # dimensionality of word embeddings
-cpr_dim = 75 # output dimensionality of comparison layer
-num_epochs = 100
-batch_size = 32
-shuffle_samples = True
-test_all_epochs = True # intermediate accuracy computation after each epoch
-# bound_layers = 3 # bound for uniform initialization of layer parameters
-# bound_embeddings = 2  # bound for uniform initialization of embeddings
-bound_layers = 1 # bound for uniform initialization of layer parameters
-bound_embeddings = 3  # bound for uniform initialization of embeddings
-#learning_rate = 0.01
-l2_penalty = 2e-3 # weight_decay, l2 regularization term
-
-save_params = False # store params at each epoch
-show_progressbar = False
-
-##################################################################
-
-# PREPARING DATA, NETWORK, LOSS FUNCTION AND OPTIMIZER
-
-train_data = dat.SentencePairsDataset(train_data_file)
-train_data.load_data()
-batches = dat.BatchData(train_data, batch_size, shuffle_samples)
-batches.create_batches()
-vocab = train_data.word_list
-rels = train_data.relation_list
-#print(rels)
-#rels = ['>', '=']
-
-test_data = dat.SentencePairsDataset(test_data_file)
-test_data.load_data()
-
-if tensors:
-    net = tRNTN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,
-                bound_layers=bound_layers, bound_embeddings=bound_embeddings)
-else:
-    net = tRNN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,
-               bound_layers=bound_layers, bound_embeddings=bound_embeddings)
+# # PREPARING DATA, NETWORK, LOSS FUNCTION AND OPTIMIZER
+#
+# train_data = dat.SentencePairsDataset(train_data_file)
+# train_data.load_data()
+# batches = dat.BatchData(train_data, batch_size, shuffle_samples)
+# batches.create_batches()
+# vocab = train_data.word_list
+# rels = train_data.relation_list
+# #print(rels)
+# #rels = ['>', '=']
+#
+# test_data = dat.SentencePairsDataset(test_data_file)
+# test_data.load_data()
+#
+# if tensors:
+#     net = tRNTN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,
+#                 bound_layers=bound_layers, bound_embeddings=bound_embeddings)
+# else:
+#     net = tRNN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,
+#                bound_layers=bound_layers, bound_embeddings=bound_embeddings)
 
 # if save_params:
 #     params = {} # dictionary for storing params if desired
@@ -87,12 +87,12 @@ else:
 
 
 # negative log likelihood
-criterion = nn.NLLLoss()
-
-# TODO: check optimizer
-#optimizer = optim.SGD(net.parameters(), lr=learning_rate, weight_decay=l2_penalty)
-
-optimizer = optim.Adagrad(net.parameters(), weight_decay=l2_penalty)
+# criterion = nn.NLLLoss()
+#
+# # TODO: check optimizer
+# #optimizer = optim.SGD(net.parameters(), lr=learning_rate, weight_decay=l2_penalty)
+#
+# optimizer = optim.Adagrad(net.parameters(), weight_decay=l2_penalty)
 # got effect
 ##################################################################
 
@@ -301,3 +301,116 @@ optimizer = optim.Adagrad(net.parameters(), weight_decay=l2_penalty)
 #             #      [sample[0] for sample in self.unbatched_data[batch]]
 #
 #             self.num_batches += 1
+
+#import fol_lexicon as fol_lex
+
+# from itertools import product
+# from operator import itemgetter
+# from collections import defaultdict
+# from collections import Counter
+# import random
+#
+# from nltk.inference import Prover9
+# from nltk.inference import Mace
+# from nltk.sem import Expression
+#
+# read_expr = Expression.fromstring
+#
+# s = 'all x. all y. (P (x, y) -> Q (x, y))'
+# t = read_expr(s)
+# print(t)
+#
+# s2 = 'all x. (N(x) ->  not exists y. (B(y) and V(x,y)))'
+# t2 = read_expr(s2)
+# print(t2)
+
+
+def sentence_to_fol(sentence):
+    """Formalizes list of sentence compounds as recognizable FOL wff, without MOST/NOT_MOST"""
+
+    print(sentence)
+
+    adv_det_subj = sentence[0]
+    det_subj = sentence[1]
+    adv_subj = sentence[2]
+    noun_subj = sentence[3]
+    adv_verb = sentence[4]
+    verb = sentence[5]
+    det_obj = sentence[6]
+    adv_obj = sentence[7]
+    noun_obj = sentence[8]
+
+    if adv_subj == 'not':
+        subj = 'not ' + noun_subj
+    else:
+        subj = noun_subj
+
+    if adv_obj == 'not':
+        obj = 'not ' + noun_obj
+    else:
+        obj = noun_obj
+
+    if adv_det_subj == 'not':
+        parse = 'not '
+    else:
+        parse = ''
+
+    if det_subj == 'some':
+        parse += 'exists x. ( ' + subj + '(x) and '
+
+    elif det_subj == 'all':
+        parse += 'all x. ( ' + obj + '(x) ->'
+
+    if adv_verb == 'not':
+            parse += 'not '
+
+    if det_obj == 'some':
+        parse += 'exists y. (' + obj + '(y) and ' + verb + '(x,y)))'
+
+    elif det_obj == 'all':
+        parse += 'all y. (' + obj + '(y) -> ' + verb + '(x,y)))'
+
+
+    # elif det_subj in ['two', 'lt_two']:
+    #     parse_start = 'exists x. exists y. ('
+    #
+    #     if sentence[1] == 'not':
+    #         parse_mid = '( not ' + sentence[2] + '(x)) and ( not ' + sentence[2] + '(y))'
+    #     else:
+    #         parse_mid = sentence[2] + '(x) and ' + sentence[2] + '(y)'
+    #
+    #     if sentence[3] == 'not':
+    #         parse_end = '( not ' + sentence[4] + '(x)) and ( not ' + sentence[4] + '(y))'
+    #     else:
+    #         parse_end = sentence[4] + '(x) and ' + sentence[4] + '(y)'
+    #     parse_end += 'and x != y'
+    #
+    # elif det in ['three', 'lt_three']:
+    #     parse_start = 'exists x. exists y. exists z. ('
+    #
+    #     if sentence[1] == 'not':
+    #         parse_mid = '( not ' + sentence[2] + '(x)) and ( not ' + sentence[2] + '(y)) and ( not ' + sentence[2] + '(z))'
+    #     else:
+    #         parse_mid = sentence[2] + '(x) and ' + sentence[2] + '(y) and ' + sentence[2] + '(z)'
+    #
+    #     if sentence[3] == 'not':
+    #         parse_end = '( not ' + sentence[4] + '(x)) and ( not ' + sentence[4] + '(y))  and ( not ' + sentence[4] + '(z))'
+    #     else:
+    #         parse_end = sentence[4] + '(x) and ' + sentence[4] + '(y) and ' + sentence[4] + '(z)'
+    #     parse_end += 'and x != y and x != z and y != z'
+
+    # Universal statements take implication
+    # if det in ['all', 'not_all']:
+    #     parse = parse_start + parse_mid + ' -> ' + parse_end + ')'
+    #
+    # # Existential statements take conjunction
+    # else:
+    #     parse = parse_start + parse_mid + ' and ' + parse_end + ')'
+    #
+    # # Negate sentence for negated quantifiers
+    # if det in ['not_all', 'no', 'lt_two', 'lt_three']:
+    #     parse = 'not (' + parse + ')'
+
+#     return parse
+# s = sentence_to_fol(['not', 'all', 'not', 'warthogs', 'not', 'eat', 'some', 'not', 'mammals'])
+# print(read_expr(s))

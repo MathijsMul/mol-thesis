@@ -9,6 +9,9 @@ EQ = "="
 INDY = "#"
 
 dets = ['all', 'not_all', 'some', 'no', 'two', 'lt_two', 'three', 'lt_three']
+#decomp_dets = ['all', 'some', 'two', 'three']
+decomp_dets = ['all', 'some']
+
 
 nl_dets = ['all', 'not_all', 'some', 'no', 'most',
         'not_most', 'two', 'lt_two', 'three', 'lt_three']
@@ -53,6 +56,7 @@ verb_matrix_animals = [
 # people
 
 nouns_people = ['Romans', 'Italians', 'Europeans', 'Germans', 'children']
+#nouns_people = ['Romans', 'Italians']
 noun_matrix_people = [
     # romans italians europeans germans children
     [EQ,       FOR,    FOR,    ALT,     INDY],  # romans
@@ -71,6 +75,15 @@ verb_matrix_people = [
     [INDY, INDY, ALT, EQ]    # laugh
 ]
 
+verbs_binary_people = ['fear', 'hate', 'like', 'love']
+verbs_binary_matrix_people = [
+    #fear hate like love
+    [EQ,   INDY,  ALT, ALT],  # fear
+    [INDY,  EQ,   ALT, ALT],  # hate
+    [ALT,  ALT,  EQ,  REV],  # like
+    [ALT, ALT, FOR, EQ]    # love
+]
+
 def get_taxonomy(name):
     """
 
@@ -84,6 +97,8 @@ def get_taxonomy(name):
         return(dets, adverbs, nouns_animals, verbs_animals, noun_matrix_animals, verb_matrix_animals)
     if name == 'people':
         return(dets, adverbs, nouns_people, verbs_people, noun_matrix_people, verb_matrix_people)
+    if name == 'people_binary_decompquant':
+        return(decomp_dets, adverbs, nouns_people, verbs_binary_people, noun_matrix_people, verbs_binary_matrix_people)
 
 def get_lexicon(nouns, verbs, noun_matrix, verb_matrix):
 

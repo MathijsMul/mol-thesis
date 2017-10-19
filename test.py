@@ -1,6 +1,6 @@
 import torch
 
-def show_accuracy(test_data, rels, net, print_outputs):
+def compute_accuracy(test_data, rels, net, print_outputs):
     correct = 0.0
     total = 0
     for i, data in enumerate(test_data.tree_data, 0):
@@ -27,4 +27,9 @@ def show_accuracy(test_data, rels, net, print_outputs):
         #correct += torch.eq(predicted, label)
         total += 1 # because test batch size is always 1
 
-    print('Accuracy of the network on the %d test instances: %.2f %%' % (total, 100 * correct / total))
+    acc = 100 * correct / total
+    acc = "%.2f" % round(acc, 2)
+    #
+    # print('Accuracy of the network on the %d test instances: %.2f %%' % (total, acc))
+
+    return(acc)

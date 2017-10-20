@@ -29,11 +29,11 @@ mace = Mace(end_size=10)
 INDY_DOWNSAMPLE_RATIO = 0.05
 MATLAB_OUTPUT = True
 PROVER_ON = True # set to False in case we just want to list sentence combinations without running the theorem prover
-FILENAME_STEM = "binary_exp_1percent_"
+FILENAME_STEM = "binary_neg_det1_verb_"
 
 SAMPLE_DATA = False
 if SAMPLE_DATA:
-    sample_probability = 0.01
+    sample_probability = 0.0001
 else:
     sample_probability = 1.00
 
@@ -46,7 +46,7 @@ fol_lexicon = fol_lex.get_lexicon(nouns, verbs, noun_matrix, verb_matrix)
 # learned representation is similar for negated quantifiers/nouns/verbs
 adverbs_det1 = adverbs
 adverbs_noun1 = ['']
-adverbs_verb = adverbs
+adverbs_verb = adverbs # seems to have same function as adverbs_det2, so they can cancel each other out
 adverbs_det2 = ['']
 adverbs_noun2 = ['']
 
@@ -147,7 +147,6 @@ axioms = general_axioms(fol_lexicon)
 def sentence_to_fol(sentence):
     # TODO: add numeric quantifiers?
 
-    #print(sentence)
 
     adv_det_subj = sentence[0]
     det_subj = sentence[1]
@@ -155,9 +154,10 @@ def sentence_to_fol(sentence):
     noun_subj = sentence[3]
     adv_verb = sentence[4]
     verb = sentence[5]
-    det_obj = sentence[6]
-    adv_obj = sentence[7]
-    noun_obj = sentence[8]
+    adv_det_obj = sentence[6]
+    det_obj = sentence[7]
+    adv_obj = sentence[8]
+    noun_obj = sentence[9]
 
     if adv_subj == 'not':
         subj = 'not ' + noun_subj
@@ -183,6 +183,10 @@ def sentence_to_fol(sentence):
     if adv_verb == 'not':
             parse += 'not '
 
+    # so negation of second quantifier receives the same interpretation as negation of verb => check this
+    if adv_det_obj == 'not':
+        parse += 'not'
+
     if det_obj == 'some':
         parse += 'exists y. (' + obj + '(y) and ' + verb + '(x,y)))'
 
@@ -196,10 +200,14 @@ def interpret(sentence, axioms):
 
     left_fol = sentence_to_fol(leaves(sentence, 0))
     right_fol = sentence_to_fol(leaves(sentence, 1))
+    # print(left_fol)
+    # print(right_fol)
 
     left = read_expr(left_fol)
     not_left = read_expr('not ' + left_fol)
     right = read_expr(right_fol)
+    # print(left)
+    # print(right)
 
     contradiction = read_expr('not (' + left_fol + ' and ' + right_fol + ')')
 
@@ -345,9 +353,10 @@ def sentence_to_parse(sentence):
     noun_subj = sentence[3]
     adv_verb = sentence[4]
     verb = sentence[5]
-    det_obj = sentence[6]
-    adv_obj = sentence[7]
-    noun_obj = sentence[8]
+    adv_det_obj = sentence[6]
+    det_obj = sentence[7]
+    adv_obj = sentence[8]
+    noun_obj = sentence[9]
 
     parse = ' ( ( '
 
@@ -368,7 +377,10 @@ def sentence_to_parse(sentence):
     else:
         parse += verb + ' '
 
-    parse += '( ' + det_obj + ' '
+    if adv_det_obj == 'not':
+        parse += '( ( not  '+ det_obj + ' ) '
+    else:
+        parse += '( ' + det_obj + ' '
 
     if adv_obj == 'not':
         parse += '( ' + noun_obj + ' ) '

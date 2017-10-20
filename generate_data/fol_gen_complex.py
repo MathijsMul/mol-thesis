@@ -46,7 +46,7 @@ fol_lexicon = fol_lex.get_lexicon(nouns, verbs, noun_matrix, verb_matrix)
 # learned representation is similar for negated quantifiers/nouns/verbs
 adverbs_det1 = adverbs
 adverbs_noun1 = ['']
-adverbs_verb = ['']
+adverbs_verb = adverbs
 adverbs_det2 = ['']
 adverbs_noun2 = ['']
 

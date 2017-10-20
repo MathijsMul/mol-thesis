@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 
-def scrape_log(log_file):
+def scrape_log_old(log_file):
     """
     scrapes log file to retrieve only accuracy scores
 
@@ -39,6 +39,28 @@ def scrape_log(log_file):
 
     return(acc_scores)
 
+
+def scrape_log(log_file):
+    """
+    scrapes log file to retrieve only accuracy scores
+
+    :param log_file: log file containing development of accuracy score over epochs
+    :return: list of accuracy scores
+    """
+
+    # list of accuracy scores for each epoch
+    acc_scores = []
+
+    with open(log_file, 'r') as f:
+        final_line = None
+        for idx, line in enumerate(f):
+            if idx >= 25:
+                acc = float(line.split()[1])
+                acc_scores.append(acc)
+
+    return(acc_scores)
+
+
 #s = scrape_log('logs/trnn/fol_animals_1111.txt')
 
 def get_acc_dict(nl_animals, fol_animals, fol_people):
@@ -48,7 +70,7 @@ def get_acc_dict(nl_animals, fol_animals, fol_people):
     d['FOL people'] = scrape_log(fol_people)
     return(d)
 
-def plot_single_acc(scores, net):
+def plot_single_acc(scores, net, name_plot):
     os.environ['PATH'] = '/Library/TeX/texbin'
 
     x = np.arange(0, len(scores))
@@ -69,10 +91,38 @@ def plot_single_acc(scores, net):
     # Make room for the ridiculously large title.
     plt.subplots_adjust(top=0.9)
 
-    #plt.savefig('tex_demo')
-    plt.show()
+    plt.savefig(name_plot)
+    #plt.show()
 
-#plot_single_acc(s, 'tRNN')
+def plot_two(acc1, acc2, name_plot):
+    os.environ['PATH'] = '/Library/TeX/texbin'
+
+    x = np.arange(0, len(acc1))
+    y1 = np.asarray(acc1)
+    y2 = np.asarray(acc2)
+
+    plt.rc('text', usetex=True)
+    plt.rc('font', family='serif')
+    plt.plot(x, y1, label="tRNN")
+    plt.plot(x, y2, label="tRNTN")
+
+    plt.xlabel(r'\textbf{epoch}')
+    plt.ylabel(r'\textit{accuracy}',fontsize=16)
+
+    plt.title(r"Accuracy development binary data")
+
+    # Make room for the ridiculously large title.
+    plt.subplots_adjust(top=0.9)
+
+    plt.legend()
+    plt.savefig('acc_dev_' + name_plot)
+
+    #plt.close()
+
+acc1 = scrape_log('binary_trnn1.txt')
+acc2 = scrape_log('binary_trntn1.txt')
+plot_two(acc1, acc2, 'binary_data1')
+
 
 def plot_dict_acc(acc_dict, net):
     os.environ['PATH'] = '/Library/TeX/texbin'
@@ -101,8 +151,8 @@ def plot_dict_acc(acc_dict, net):
     #plt.show()
     plt.close()
 
-d_trnn = get_acc_dict('logs/trnn/nl_animals_1111.txt', 'logs/trnn/fol_animals_1111.txt', 'logs/trnn/fol_people_1111.txt')
-plot_dict_acc(d_trnn, 'tRNN')
-
-d_trntn = get_acc_dict('logs/trntn/nl_animals_1012.txt', 'logs/trntn/fol_animals_1012.txt', 'logs/trntn/fol_people_1012.txt')
-plot_dict_acc(d_trntn, 'tRNTN')
+# d_trnn = get_acc_dict('logs/trnn/nl_animals_1111.txt', 'logs/trnn/fol_animals_1111.txt', 'logs/trnn/fol_people_1111.txt')
+# plot_dict_acc(d_trnn, 'tRNN')
+#
+# d_trntn = get_acc_dict('logs/trntn/nl_animals_1012.txt', 'logs/trntn/fol_animals_1012.txt', 'logs/trntn/fol_people_1012.txt')
+# plot_dict_acc(d_trntn, 'tRNTN')

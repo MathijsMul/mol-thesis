@@ -11,8 +11,12 @@ from test import compute_accuracy
 import numpy as np
 import random
 import sys
+import logging
 
 ##################################################################
+
+logging.getLogger()
+logging.basicConfig(format='%(message)s', level=logging.INFO)
 
 # GLOBAL SETTINGS
 
@@ -43,9 +47,9 @@ import sys
 
 # train_data_file = './data/minitrain.txt'
 # test_data_file = train_data_file
-
-train_data_file = './data/binary/split/binary1_train.txt'
-test_data_file = './data/binary/split/binary1_test.txt'
+#
+# train_data_file = './data/binary/split/binary1_train.txt'
+# test_data_file = './data/binary/split/binary1_test.txt'
 
 # uncomment for execution from command line:
 if __name__ == '__main__':
@@ -55,9 +59,9 @@ if __name__ == '__main__':
 
 #tensors = False # tensors on or off (False -> tRNN, True -> tRNTN)
 
-word_dim = 25 # dimensionality of word embeddings
-cpr_dim = 75 # output dimensionality of comparison layer
-num_epochs = 50 # number of epochs
+word_dim = 5 # dimensionality of word embeddings
+cpr_dim = 5 # output dimensionality of comparison layer
+num_epochs = 5 # number of epochs
 batch_size = 32 # Bowman takes 32
 shuffle_samples = True
 test_all_epochs = True # intermediate accuracy computation after each epoch
@@ -134,6 +138,8 @@ print(str(0), '\t', str(acc_before_training))
 #print('Start training')
 
 for epoch in range(num_epochs):  # loop over the dataset multiple times
+    logging.info("Training epoch %i" % (epoch + 1))
+
     #print('EPOCH ', str(epoch + 1))
     running_loss = 0.0
 

@@ -26,7 +26,7 @@ read_expr = Expression.fromstring
 INDY_DOWNSAMPLE_RATIO = 0.05
 MATLAB_OUTPUT = True
 PROVER_ON = True # set to False in case we just want to list sentence combinations without running the theorem prover
-FILENAME_STEM = "binary_neg_det1_verb_"
+FILENAME_STEM = "binary_neg_noun1"
 
 SAMPLE_DATA = False
 if SAMPLE_DATA:

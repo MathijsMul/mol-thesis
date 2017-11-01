@@ -3,6 +3,9 @@
 # - decomposed negated quantifiers
 # - binary predicates
 
+import logging
+import datetime
+
 import fol_lexicon as fol_lex
 
 from itertools import product
@@ -15,16 +18,10 @@ from nltk.inference import Prover9
 from nltk.inference import Mace
 from nltk.sem import Expression
 
+logging.getLogger()
+logging.basicConfig(format='%(message)s', level=logging.INFO)
+
 read_expr = Expression.fromstring
-
-# Currently Prover9, first used TableauProver, but that one could not handle any sentences with quantifiers
-# three or lt_three. Prover9 still gives problems with these, though.
-# timeout set to 1 second, because for higher running times no solution is found anyway => switch to Mace4 model builder
-# in such cases
-prover = Prover9(timeout=1)
-
-# model builder Mace, checks for satisfying models with max domain size 10. actually this could still be decreased.
-mace = Mace(end_size=10)
 
 INDY_DOWNSAMPLE_RATIO = 0.05
 MATLAB_OUTPUT = True
@@ -37,6 +34,15 @@ if SAMPLE_DATA:
 else:
     sample_probability = 1.00
 
+# Currently Prover9, first used TableauProver, but that one could not handle any sentences with quantifiers
+# three or lt_three. Prover9 still gives problems with these, though.
+# timeout set to 1 second, because for higher running times no solution is found anyway => switch to Mace4 model builder
+# in such cases
+prover = Prover9(timeout=1)
+
+# model builder Mace, checks for satisfying models with max domain size 10. actually this could still be decreased.
+mace = Mace(end_size=10)
+
 TAXONOMY = "people_binary_decompquant"
 dets, adverbs, nouns, verbs, noun_matrix, verb_matrix = fol_lex.get_taxonomy(TAXONOMY)
 fol_lexicon = fol_lex.get_lexicon(nouns, verbs, noun_matrix, verb_matrix)
@@ -44,9 +50,9 @@ fol_lexicon = fol_lex.get_lexicon(nouns, verbs, noun_matrix, verb_matrix)
 # do not include negation at all possible locations, because otherwise the number of sentences explodes
 # preferably, negation is allowed at one point in the sentence. this can be varied to study whether the
 # learned representation is similar for negated quantifiers/nouns/verbs
-adverbs_det1 = adverbs
-adverbs_noun1 = ['']
-adverbs_verb = adverbs # seems to have same function as adverbs_det2, so they can cancel each other out
+adverbs_det1 = ['']
+adverbs_noun1 = adverbs
+adverbs_verb = [''] # seems to have same function as adverbs_det2, so they can cancel each other out
 adverbs_det2 = ['']
 adverbs_noun2 = ['']
 
@@ -218,7 +224,6 @@ def interpret(sentence, axioms):
 
     try:
         backward_entailment = prover.prove(left, axioms + [right])
-        #print(backward_entailment)
     except:
         backward_entailment = not mace.build_model(left, axioms + [right])
 
@@ -396,6 +401,8 @@ def matlab_string(d):
 
 if __name__ == '__main__':
 
+    logging.info("Start time: %s" % datetime.datetime.now())
+
     if MATLAB_OUTPUT:
 
         bulk_file = open(FILENAME_STEM + 'bulk.txt', 'w')
@@ -439,8 +446,8 @@ if __name__ == '__main__':
         # training_file.close()
         # test_file.close()
 
-        print('total # pairs:')
-        print(counter)
+        # print('total # pairs:')
+        # print(counter)
         bulk_file.close()
 
     else:
@@ -457,3 +464,5 @@ if __name__ == '__main__':
 
             # if counter == 3:
             #     break
+
+    logging.info("End time: %s" % datetime.datetime.now())

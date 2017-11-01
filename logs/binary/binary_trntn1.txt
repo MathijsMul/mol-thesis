@@ -8,8 +8,8 @@ Loading data from  ./data/binary/split/binary1_test.txt
 
 MODEL SETTINGS
 Tensors on/off:         True
-Train data:             ./data/binary/split/binary1_train.txt
-Test data:              ./data/binary/split/binary1_test.txt
+Train data:             ./data/binary/negate_det1/split/binary1_train.txt
+Test data:              ./data/binary/negate_det1/split/binary1_test.txt
 Num. epochs:            50
 Word dim.:              25
 Cpr. dim.:              75

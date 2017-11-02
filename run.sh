@@ -15,9 +15,10 @@
 #test_data_file = './data/binary/split/binary1_test.txt'
 
 echo TRNN, BINARY DATA
-python3 main.py './data/binary/split/binary1_train.txt' './data/binary/split/binary1_test.txt' False > binary_trnn1.txt
+python3 main.py './data/binary/negate_noun1/split/binary1_neg_noun1train.txt' './data/binary/negate_noun1/split/binary1_neg_noun1test.txt' False > binary_neg_noun1_trnn.txt
+
 
 echo TRNTN, BINARY DATA
-python3 main.py './data/binary/split/binary1_train.txt' './data/binary/split/binary1_test.txt' True > binary_trntn1.txt
+python3 main.py './data/binary/negate_noun1/split/binary1_neg_noun1train.txt' './data/binary/negate_noun1/split/binary1_neg_noun1test.txt' True > binary_neg_noun1_trntn.txt
 
 

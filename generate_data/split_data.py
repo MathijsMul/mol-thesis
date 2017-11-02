@@ -8,9 +8,9 @@ import re
 from fol_gen_complex import all_sentences
 
 INDY_DOWNSAMPLE_RATIO = 0.025
-FILENAME_STEM = 'binary1_'
+FILENAME_STEM = 'binary1_neg_noun1'
 
-bulk_file = '/Users/Mathijs/Documents/School/MoL/thesis/thesis_code/data/binary/binary_all.txt'
+bulk_file = '/Users/Mathijs/Documents/School/MoL/thesis/thesis_code/data/binary/negate_noun1/bulk/binary_neg_noun1bulk.txt'
 
 training_file = open(FILENAME_STEM + "train.txt", 'w')
 test_file = open(FILENAME_STEM + "test.txt", 'w')

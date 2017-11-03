@@ -51,8 +51,8 @@ fol_lexicon = fol_lex.get_lexicon(nouns, verbs, noun_matrix, verb_matrix)
 # preferably, negation is allowed at one point in the sentence. this can be varied to study whether the
 # learned representation is similar for negated quantifiers/nouns/verbs
 adverbs_det1 = ['']
-adverbs_noun1 = adverbs
-adverbs_verb = [''] # seems to have same function as adverbs_det2, so they can cancel each other out
+adverbs_noun1 = ['']
+adverbs_verb = adverbs # seems to have same function as adverbs_det2, so they can cancel each other out
 adverbs_det2 = ['']
 adverbs_noun2 = ['']
 

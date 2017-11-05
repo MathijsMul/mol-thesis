@@ -12,11 +12,13 @@ import numpy as np
 import random
 import sys
 import logging
+import datetime
 
 ##################################################################
 
 logging.getLogger()
 logging.basicConfig(format='%(message)s', level=logging.INFO)
+logging.info("Start time: %s" % datetime.datetime.now())
 
 # GLOBAL SETTINGS
 
@@ -201,5 +203,7 @@ for epoch in range(num_epochs):  # loop over the dataset multiple times
 
 final_acc = compute_accuracy(test_data, rels, net, print_outputs=False)
 print(str(epoch + 1), '\t', str(final_acc))
+
+logging.info("End time: %s" % datetime.datetime.now())
 
 #print('\n')

@@ -415,10 +415,4 @@ def sentence_to_fol(sentence):
 # s = sentence_to_fol(['not', 'all', 'not', 'warthogs', 'not', 'eat', 'some', 'not', 'mammals'])
 # print(read_expr(s))
 
-from nltk.inference import Prover9 as p
-from nltk.sem import Expression
-read_expr = Expression.fromstring
-
-s = 'all x. all y. (P (x, y) -> Q (x, y))'
-t = read_expr(s)
-p.prove(s, [t])
+#print('\n')

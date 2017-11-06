@@ -94,7 +94,7 @@ def plot_single_acc(scores, net, name_plot):
     plt.savefig(name_plot)
     #plt.show()
 
-def plot_two(acc1, acc2, name_plot):
+def plot_two(acc1, acc2, name_plot, name_file):
     os.environ['PATH'] = '/Library/TeX/texbin'
 
     x = np.arange(0, len(acc1))
@@ -109,20 +109,29 @@ def plot_two(acc1, acc2, name_plot):
     plt.xlabel(r'\textbf{epoch}')
     plt.ylabel(r'\textit{accuracy}',fontsize=16)
 
-    plt.title(r"Accuracy development binary data")
+    #plt.title(r"Accuracy development binary data")
+    plt.title(name_plot)
 
     # Make room for the ridiculously large title.
     plt.subplots_adjust(top=0.9)
 
     plt.legend()
-    plt.savefig('acc_dev_' + name_plot)
+    plt.savefig('acc_dev_' + name_file)
 
-    #plt.close()
+    plt.close()
 
-acc1 = scrape_log('binary_trnn1.txt')
-acc2 = scrape_log('binary_trntn1.txt')
-plot_two(acc1, acc2, 'binary_data1')
+acc1 = scrape_log('./logs/binary/binary_neg_det1_trnn.txt')
+acc2 = scrape_log('./logs/binary/binary_neg_det1_trntn.txt')
+plot_two(acc1, acc2, 'Binary predicates, first quantifier negated', 'binary_neg_det1')
 
+
+acc1 = scrape_log('./logs/binary/binary_neg_noun1_trnn.txt')
+acc2 = scrape_log('./logs/binary/binary_neg_noun1_trntn.txt')
+plot_two(acc1, acc2, 'Binary predicates, noun negated', 'binary_neg_noun')
+
+acc1 = scrape_log('./logs/binary/binary_neg_verb_trnn.txt')
+acc2 = scrape_log('./logs/binary/binary_neg_verb_trntn.txt')
+plot_two(acc1, acc2, 'Binary predicates, verb negated', 'binary_neg_verb')
 
 def plot_dict_acc(acc_dict, net):
     os.environ['PATH'] = '/Library/TeX/texbin'

@@ -24,13 +24,14 @@ logging.basicConfig(format='%(message)s', level=logging.INFO)
 read_expr = Expression.fromstring
 
 INDY_DOWNSAMPLE_RATIO = 0.05
-MATLAB_OUTPUT = True
+MATLAB_OUTPUT = False
 PROVER_ON = True # set to False in case we just want to list sentence combinations without running the theorem prover
-FILENAME_STEM = "binary_neg_noun1"
+FILENAME_STEM = "binary_all_sampleratio0.005"
 
-SAMPLE_DATA = False
+SAMPLE_DATA = True
 if SAMPLE_DATA:
-    sample_probability = 0.0001
+    #sample_probability = 0.01
+    sample_probability = 0.005 # take this one for final data
 else:
     sample_probability = 1.00
 
@@ -50,11 +51,11 @@ fol_lexicon = fol_lex.get_lexicon(nouns, verbs, noun_matrix, verb_matrix)
 # do not include negation at all possible locations, because otherwise the number of sentences explodes
 # preferably, negation is allowed at one point in the sentence. this can be varied to study whether the
 # learned representation is similar for negated quantifiers/nouns/verbs
-adverbs_det1 = ['']
-adverbs_noun1 = ['']
+adverbs_det1 = adverbs
+adverbs_noun1 = adverbs
 adverbs_verb = adverbs # seems to have same function as adverbs_det2, so they can cancel each other out
 adverbs_det2 = ['']
-adverbs_noun2 = ['']
+adverbs_noun2 = adverbs
 
 def leaves(s, dim):
     """For visualizing an aligned tree s. dim=0 for premise; dim=1 for hypothesis."""
@@ -153,7 +154,6 @@ axioms = general_axioms(fol_lexicon)
 def sentence_to_fol(sentence):
     # TODO: add numeric quantifiers?
 
-
     adv_det_subj = sentence[0]
     det_subj = sentence[1]
     adv_subj = sentence[2]
@@ -186,8 +186,28 @@ def sentence_to_fol(sentence):
     elif det_subj == 'all':
         parse += 'all x. ( ' + subj + '(x) ->'
 
-    if adv_verb == 'not':
+    elif det_subj == 'two':
+        parse += 'exists x. exists y. ( ' + subj + '(x) and ' + subj + '(y) and x != y and '
+
+        if adv_verb == 'not':
             parse += 'not '
+
+        # so negation of second quantifier receives the same interpretation as negation of verb => check this
+        if adv_det_obj == 'not':
+            parse += 'not'
+
+        if det_obj == 'some':
+            parse += 'exists v. (' + obj + '(v) and ' + verb + '(x,v) ' + verb + '(y,v)))'
+
+        elif det_obj == 'all':
+            parse += 'all v. (' + obj + '(v) -> ' + verb + '(x,v) ' + verb + '(y,v)))'
+
+        elif det_obj == 'two':
+            parse += 'exists v. exists w. (' + obj + '(v) and ' + obj + '(w) and v != w and ' + verb + '(x,v) and ' + verb + '(y,v) and ' + verb + '(x,w) and ' + verb + '(y,w)))'
+        return(parse)
+
+    if adv_verb == 'not':
+        parse += 'not '
 
     # so negation of second quantifier receives the same interpretation as negation of verb => check this
     if adv_det_obj == 'not':
@@ -198,7 +218,10 @@ def sentence_to_fol(sentence):
 
     elif det_obj == 'all':
         parse += 'all y. (' + obj + '(y) -> ' + verb + '(x,y)))'
-    #print(parse)
+
+    elif det_obj == 'two':
+        parse += 'exists y. exists z. (' + obj + '(y) and ' + obj + '(z) and y != z and ' + verb + '(x,y) and ' + verb + '(x,z)))'
+
     return(parse)
 
 def interpret(sentence, axioms):
@@ -206,8 +229,8 @@ def interpret(sentence, axioms):
 
     left_fol = sentence_to_fol(leaves(sentence, 0))
     right_fol = sentence_to_fol(leaves(sentence, 1))
-    # print(left_fol)
-    # print(right_fol)
+    print(left_fol)
+    print(right_fol)
 
     left = read_expr(left_fol)
     not_left = read_expr('not ' + left_fol)
@@ -394,7 +417,6 @@ def sentence_to_parse(sentence):
     parse += ') ) ) '
 
     return parse
-
 
 def matlab_string(d):
     return str(d['relation']) + '\t' + str(sentence_to_parse(d['premise'])) + '\t' + str(sentence_to_parse(d['hypothesis']))

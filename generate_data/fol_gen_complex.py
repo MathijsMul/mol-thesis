@@ -197,10 +197,10 @@ def sentence_to_fol(sentence):
             parse += 'not'
 
         if det_obj == 'some':
-            parse += 'exists v. (' + obj + '(v) and ' + verb + '(x,v) ' + verb + '(y,v)))'
+            parse += 'exists v. (' + obj + '(v) and ' + verb + '(x,v) and ' + verb + '(y,v)))'
 
         elif det_obj == 'all':
-            parse += 'all v. (' + obj + '(v) -> ' + verb + '(x,v) ' + verb + '(y,v)))'
+            parse += 'all v. (' + obj + '(v) -> ' + verb + '(x,v) and ' + verb + '(y,v)))'
 
         elif det_obj == 'two':
             parse += 'exists v. exists w. (' + obj + '(v) and ' + obj + '(w) and v != w and ' + verb + '(x,v) and ' + verb + '(y,v) and ' + verb + '(x,w) and ' + verb + '(y,w)))'

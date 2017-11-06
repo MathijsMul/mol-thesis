@@ -39,7 +39,8 @@ class tRNTN(nn.Module):
         self.word_dict = {}
         for word in vocab:
             # create one-hot encodings for words in vocabulary
-	        self.word_dict[word] = Variable(torch.eye(self.voc_size)[:,vocab.index(word)], requires_grad=True)
+            # self.word_dict[word] = Variable(torch.eye(self.voc_size)[:,vocab.index(word)], requires_grad=True)
+            self.word_dict[word] = Variable(torch.LongTensor([vocab.index(word)])) #.view(-1)
 
         # activation functions
         self.relu = nn.LeakyReLU() # cpr layer, negative slope is 0.01, which is standard
@@ -109,9 +110,10 @@ class tRNTN(nn.Module):
 
 
     def compose(self, tree):
-        if tree.label() == '.': # leaf nodes
-            word_onehot = self.word_dict[tree[0]]
-            return self.voc(word_onehot) # get word embedding
+        if tree.label() == '.': # leaf nodes: get word embedding
+            embedded = self.voc(self.word_dict[tree[0]]).view(-1)
+            return(embedded)
+
         else:
             cps_l = self.compose(tree[0])
             cps_r = self.compose(tree[1])

@@ -19,8 +19,10 @@ class tRNN(nn.Module):
         self.num_rels = len(rels) # number of relations (labels)
         self.voc_size = len(vocab)
 
+        #TODO: turn this into Embedding
         # vocabulary matrix
-        self.voc = nn.Linear(self.voc_size, self.word_dim, bias=False) # without bias!
+        #self.voc = nn.Linear(self.voc_size, self.word_dim, bias=False) # without bias!
+        self.voc = nn.Embedding(self.voc_size, self.word_dim)
 
         # composition matrix
         self.cps = nn.Linear(2 * self.word_dim, self.word_dim)
@@ -34,7 +36,8 @@ class tRNN(nn.Module):
         self.word_dict = {}
         for word in vocab:
             # create one-hot encodings for words in vocabulary
-            self.word_dict[word] = Variable(torch.eye(self.voc_size)[:,vocab.index(word)], requires_grad=True)
+            # self.word_dict[word] = Variable(torch.eye(self.voc_size)[:,vocab.index(word)], requires_grad=True)
+            self.word_dict[word] = Variable(torch.LongTensor([vocab.index(word)])) #.view(-1)
 
         # activation functions
         self.relu = nn.LeakyReLU() # cpr layer, negative slope is 0.01, which is standard
@@ -98,10 +101,13 @@ class tRNN(nn.Module):
         return(outputs) # size: batch_size x num_classes
 
     def compose(self, tree):
-        if tree.label() == '.': # leaf nodes
-            word_onehot = self.word_dict[tree[0]]
-            emb = self.voc(word_onehot)
-            return emb # get word embedding
+        if tree.label() == '.': # leaf nodes: get word embedding
+            # word_onehot = self.word_dict[tree[0]]
+            # emb = self.voc(word_onehot)
+
+            embedded = self.voc(self.word_dict[tree[0]]).view(-1)
+            return(embedded)
+
         else:
             concat = torch.cat((self.compose(tree[0]), self.compose(tree[1])))
             cps = self.cps(concat)

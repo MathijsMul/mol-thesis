@@ -58,6 +58,9 @@ if __name__ == '__main__':
     train_data_file = sys.argv[1]
     test_data_file = sys.argv[2]
     tensors = sys.argv[3]
+    # make sure `tensors' is recognized as boolean
+    if tensors == 'False':
+        tensors = False
 
 #tensors = False # tensors on or off (False -> tRNN, True -> tRNTN)
 
@@ -195,15 +198,19 @@ for epoch in range(num_epochs):  # loop over the dataset multiple times
     if save_params:
         params[epoch + 1] = list(net.parameters())
 
-#print('Finished Training \n')
-
 ##################################################################
 
-# (FINAL) TESTING
+# SAVING AND FINAL TESTING
 
-final_acc = compute_accuracy(test_data, rels, net, print_outputs=False)
+# save model
+model_name = net.__class__.__name__ + train_data_file.split('/')[-1].split('.')[0] + '.pt'
+torch.save(net.state_dict(), 'models/' + model_name)
+
+# to load model:
+# net = tRNN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,bound_layers=bound_layers, bound_embeddings=bound_embeddings)
+# net.load_state_dict(torch.load('models/tRNNminitrain.txt.pt'))
+
+final_acc = compute_accuracy(test_data, rels, net, print_outputs=False, confusion_matrix=True)
 print(str(epoch + 1), '\t', str(final_acc))
 
 logging.info("End time: %s" % datetime.datetime.now())
-
-#print('\n')

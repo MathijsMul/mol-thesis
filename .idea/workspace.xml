@@ -41,16 +41,14 @@
       <file leaf-file-name="fol_gen_complex.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/generate_data/fol_gen_complex.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7" vertical-offset="0" max-vertical-offset="3465">
-              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.43333334" vertical-offset="1935" max-vertical-offset="5430">
+              <caret line="234" column="30" selection-start-line="234" selection-start-column="30" selection-end-line="234" selection-end-column="30" />
               <folding>
                 <element signature="e#2140#2366#0" expanded="false" />
-                <element signature="e#2401#5474#0" expanded="false" />
                 <element signature="e#5549#7683#0" expanded="false" />
-                <element signature="e#7722#9110#0" expanded="false" />
-                <element signature="e#9233#10412#0" expanded="false" />
-                <element signature="e#10439#10793#0" expanded="false" />
-                <element signature="e#13630#13943#0" expanded="false" />
+                <element signature="e#9237#10416#0" expanded="false" />
+                <element signature="e#10443#10797#0" expanded="false" />
+                <element signature="e#13634#13947#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -899,16 +897,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/generate_data/fol_gen_complex.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7" vertical-offset="0" max-vertical-offset="3465">
-          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.43333334" vertical-offset="1935" max-vertical-offset="5430">
+          <caret line="234" column="30" selection-start-line="234" selection-start-column="30" selection-end-line="234" selection-end-column="30" />
           <folding>
             <element signature="e#2140#2366#0" expanded="false" />
-            <element signature="e#2401#5474#0" expanded="false" />
             <element signature="e#5549#7683#0" expanded="false" />
-            <element signature="e#7722#9110#0" expanded="false" />
-            <element signature="e#9233#10412#0" expanded="false" />
-            <element signature="e#10439#10793#0" expanded="false" />
-            <element signature="e#13630#13943#0" expanded="false" />
+            <element signature="e#9237#10416#0" expanded="false" />
+            <element signature="e#10443#10797#0" expanded="false" />
+            <element signature="e#13634#13947#0" expanded="false" />
           </folding>
         </state>
       </provider>

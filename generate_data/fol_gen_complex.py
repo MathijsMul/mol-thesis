@@ -229,8 +229,8 @@ def interpret(sentence, axioms):
 
     left_fol = sentence_to_fol(leaves(sentence, 0))
     right_fol = sentence_to_fol(leaves(sentence, 1))
-    print(left_fol)
-    print(right_fol)
+    # print(left_fol)
+    # print(right_fol)
 
     left = read_expr(left_fol)
     not_left = read_expr('not ' + left_fol)

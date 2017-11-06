@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b72f4c1e-b8c1-4f94-9a46-30994c92b225" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/binary_neg_verb_trnn.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/binary_neg_verb_trntn.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/acc_dev_binary_data1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/acc_dev_tRNN.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/acc_dev_tRNTN.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/fol_gen_complex.py" afterPath="$PROJECT_DIR$/generate_data/fol_gen_complex.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/fol_lexicon.py" afterPath="$PROJECT_DIR$/generate_data/fol_lexicon.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/visualize.py" afterPath="$PROJECT_DIR$/visualize.py" />
     </list>
     <ignored path="thesis_code.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,8 +41,8 @@
       <file leaf-file-name="fol_gen_complex.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/generate_data/fol_gen_complex.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.56666666" vertical-offset="0" max-vertical-offset="2820">
-              <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.43333334" vertical-offset="1665" max-vertical-offset="2805">
+              <caret line="432" column="49" selection-start-line="432" selection-start-column="49" selection-end-line="432" selection-end-column="49" />
               <folding>
                 <element signature="e#2141#2367#0" expanded="false" />
                 <element signature="e#2402#5475#0" expanded="false" />
@@ -908,8 +901,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/generate_data/fol_gen_complex.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56666666" vertical-offset="0" max-vertical-offset="2820">
-          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.43333334" vertical-offset="1665" max-vertical-offset="2805">
+          <caret line="432" column="49" selection-start-line="432" selection-start-column="49" selection-end-line="432" selection-end-column="49" />
           <folding>
             <element signature="e#2141#2367#0" expanded="false" />
             <element signature="e#2402#5475#0" expanded="false" />

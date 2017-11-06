@@ -423,20 +423,18 @@ def matlab_string(d):
 
 if __name__ == '__main__':
 
-    logging.info("Start time: %s" % datetime.datetime.now())
+    start = datetime.datetime.now()
+    logging.info("Start time: %s" % start)
 
     if MATLAB_OUTPUT:
 
         bulk_file = open(FILENAME_STEM + 'bulk.txt', 'w')
 
         for counter, d in enumerate(all_pairs()):
-            #print(d)
-            #print(counter)
             if counter % 100 == 0:
                 print('Analyzing pair %d' % counter)
-            #print(matlab_string(d))
             bulk_file.write(matlab_string(d) + '\n')
-        #
+
         # training_file = open(FILENAME_STEM + "train.txt", 'w')
         # test_file = open(FILENAME_STEM + "test.txt", 'w')
         #
@@ -487,4 +485,5 @@ if __name__ == '__main__':
             # if counter == 3:
             #     break
 
+    logging.info("Start time: %s" % start)
     logging.info("End time: %s" % datetime.datetime.now())

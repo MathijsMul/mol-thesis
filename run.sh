@@ -25,14 +25,14 @@
 
 # redo trnns, because they were all done by trntn
 
-echo TRNN, BINARY DATA, NEG DET1
-python3 main.py './data/binary/negate_det1/split/binary1_neg_det1_train.txt' './data/binary/negate_det1/split/binary1_neg_det1_test.txt' False > binary_neg_det1_trnn.txt
+#echo TRNN, BINARY DATA, NEG DET1
+python3 main.py './data/binary/negate_det1/split/binary1_neg_det1_train.txt' './data/binary/negate_det1/split/binary1_neg_det1_test.txt' False > binary_neg_det1_trnn.txt &
 
-echo TRNN, BINARY DATA, NEG NOUN1
-python3 main.py './data/binary/negate_noun1/split/binary1_neg_noun1train.txt' './data/binary/negate_noun1/split/binary1_neg_noun1test.txt' False > binary_neg_noun1_trnn.txt
+#echo TRNN, BINARY DATA, NEG NOUN1
+python3 main.py './data/binary/negate_noun1/split/binary1_neg_noun1train.txt' './data/binary/negate_noun1/split/binary1_neg_noun1test.txt' False > binary_neg_noun1_trnn.txt &
 
-echo TRNN, BINARY DATA, NEG VERB
-python3 main.py './data/binary/negate_verb/split/binary1_neg_verbtrain.txt' './data/binary/negate_verb/split/binary1_neg_verbtest.txt' False > binary_neg_verb_trnn.txt
+#echo TRNN, BINARY DATA, NEG VERB
+python3 main.py './data/binary/negate_verb/split/binary1_neg_verbtrain.txt' './data/binary/negate_verb/split/binary1_neg_verbtest.txt' False > binary_neg_verb_trnn.txt &
 
 
 

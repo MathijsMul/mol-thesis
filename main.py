@@ -31,7 +31,7 @@ if __name__ == '__main__':
 
 word_dim = 25 # dimensionality of word embeddings
 cpr_dim = 75 # output dimensionality of comparison layer
-num_epochs = 5 # number of epochs
+num_epochs = 50 # number of epochs
 batch_size = 32 # Bowman takes 32
 shuffle_samples = True
 test_all_epochs = True # intermediate accuracy computation after each epoch

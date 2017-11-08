@@ -2,6 +2,7 @@ import torch
 from trnn import tRNN
 import datamanager as dat
 from test import compute_accuracy
+#from visualize import confusion_matrix
 
 vocab = ['Europeans', 'Germans', 'Italians', 'Romans', 'all', 'children', 'fear', 'hate', 'like', 'love', 'not', 'some']
 rels = ['#', '<', '=', '>', '^', 'v', '|']

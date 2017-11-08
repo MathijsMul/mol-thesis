@@ -6,6 +6,7 @@ import torch.optim as optim
 import datamanager as dat
 from trnn import tRNN
 from trntn import tRNTN
+from sumnn import sumNN
 #import progressbar as pb
 from test import compute_accuracy
 import numpy as np
@@ -57,10 +58,14 @@ logging.info("Start time: %s" % datetime.datetime.now())
 if __name__ == '__main__':
     train_data_file = sys.argv[1]
     test_data_file = sys.argv[2]
-    tensors = sys.argv[3]
-    # make sure `tensors' is recognized as boolean
-    if tensors == 'False':
-        tensors = False
+    model = sys.argv[3]
+    # # make sure `tensors' is recognized as boolean
+    # if tensors == 'False':
+    #     tensors = False
+
+    #if model == 'tRNN':
+
+
 
 #tensors = False # tensors on or off (False -> tRNN, True -> tRNTN)
 
@@ -93,11 +98,14 @@ test_data.load_data()
 batches = dat.BatchData(train_data, batch_size, shuffle_samples)
 batches.create_batches()
 
-if tensors:
+if model == 'tRNN':
     net = tRNTN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,
                 bound_layers=bound_layers, bound_embeddings=bound_embeddings)
-else:
+elif model == 'tRNTN':
     net = tRNN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,
+               bound_layers=bound_layers, bound_embeddings=bound_embeddings)
+elif model == 'sumNN':
+    net = sumNN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,
                bound_layers=bound_layers, bound_embeddings=bound_embeddings)
 
 if save_params:
@@ -115,7 +123,7 @@ optimizer = optim.Adadelta(net.parameters(), weight_decay = l2_penalty)
 
 print("\n")
 print("MODEL SETTINGS")
-print("Tensors on/off:        ", tensors)
+print("Model:                 ", model)
 print("Train data:            ", train_data_file)
 print("Test data:             ", test_data_file)
 print("Num. epochs:           ", num_epochs)

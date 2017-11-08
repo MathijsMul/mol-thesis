@@ -26,9 +26,9 @@ read_expr = Expression.fromstring
 INDY_DOWNSAMPLE_RATIO = 0.05
 MATLAB_OUTPUT = True
 PROVER_ON = True # set to False in case we just want to list sentence combinations without running the theorem prover
-FILENAME_STEM = "binary_all_sampleratio0.005"
+FILENAME_STEM = "binary_neg_noun2"
 
-SAMPLE_DATA = True
+SAMPLE_DATA = False
 if SAMPLE_DATA:
     #sample_probability = 0.01
     sample_probability = 0.005 # take this one for final data
@@ -51,9 +51,9 @@ fol_lexicon = fol_lex.get_lexicon(nouns, verbs, noun_matrix, verb_matrix)
 # do not include negation at all possible locations, because otherwise the number of sentences explodes
 # preferably, negation is allowed at one point in the sentence. this can be varied to study whether the
 # learned representation is similar for negated quantifiers/nouns/verbs
-adverbs_det1 = adverbs
-adverbs_noun1 = adverbs
-adverbs_verb = adverbs # seems to have same function as adverbs_det2, so they can cancel each other out
+adverbs_det1 = ['']
+adverbs_noun1 = ['']
+adverbs_verb = [''] # seems to have same function as adverbs_det2, so they can cancel each other out
 adverbs_det2 = ['']
 adverbs_noun2 = adverbs
 

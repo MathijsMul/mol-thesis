@@ -21,57 +21,17 @@ logging.getLogger()
 logging.basicConfig(format='%(message)s', level=logging.INFO)
 logging.info("Start time: %s" % datetime.datetime.now())
 
-# GLOBAL SETTINGS
-
-# NL ANIMALS
-# train_data_file = 'data/final/nl/nl_data1_animals_train.txt'
-# test_data_file = 'data/final/nl/nl_data1_animals_test.txt'
-
-# from command line:
-# python3 main.py 'data/final/nl/nl_data1_animals_train.txt' 'data/final/nl/nl_data1_animals_test.txt' > nl_animals_date.txt
-
-# FOL ANIMALS (translated from NL data)
-# train_data_file = './data/final/fol/fol_animals_train_translated_from_nl.txt'
-# test_data_file = './data/final/fol/fol_animals_test_translated_from_nl.txt'
-
-# from command line:
-# python3 main.py 'data/final/fol/fol_animals_train_translated_from_nl.txt' 'data/final/fol/fol_animals_test_translated_from_nl.txt' > fol_animals_date.txt
-
-# FOL ANIMALS (new, do not use for now)
-# train_data_file = './data/final/fol/fol_data1_animals_train.txt'
-# test_data_file = './data/final/fol/fol_data1_animals_test.txt'
-
-# FOL PEOPLE
-# train_data_file = './data/final/fol/fol_data1_peopletrain.txt'
-# test_data_file = './data/final/fol/fol_data1_peopletest.txt'
-
-# from command line:
-# python3 main.py 'data/final/fol/fol_data1_peopletrain.txt' 'data/final/fol/fol_data1_peopletest.txt' > fol_people_date.txt
-
-# train_data_file = './data/minitrain.txt'
-# test_data_file = train_data_file
-#
-# train_data_file = './data/binary/split/binary1_train.txt'
-# test_data_file = './data/binary/split/binary1_test.txt'
-
-# uncomment for execution from command line:
+# command line execution
 if __name__ == '__main__':
     train_data_file = sys.argv[1]
     test_data_file = sys.argv[2]
     model = sys.argv[3]
-    # # make sure `tensors' is recognized as boolean
-    # if tensors == 'False':
-    #     tensors = False
 
-    #if model == 'tRNN':
-
-
-
-#tensors = False # tensors on or off (False -> tRNN, True -> tRNTN)
+# GLOBAL SETTINGS
 
 word_dim = 25 # dimensionality of word embeddings
 cpr_dim = 75 # output dimensionality of comparison layer
-num_epochs = 50 # number of epochs
+num_epochs = 5 # number of epochs
 batch_size = 32 # Bowman takes 32
 shuffle_samples = True
 test_all_epochs = True # intermediate accuracy computation after each epoch
@@ -99,10 +59,10 @@ batches = dat.BatchData(train_data, batch_size, shuffle_samples)
 batches.create_batches()
 
 if model == 'tRNN':
-    net = tRNTN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,
+    net = tRNN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,
                 bound_layers=bound_layers, bound_embeddings=bound_embeddings)
 elif model == 'tRNTN':
-    net = tRNN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,
+    net = tRNTN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,
                bound_layers=bound_layers, bound_embeddings=bound_embeddings)
 elif model == 'sumNN':
     net = sumNN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,
@@ -140,7 +100,7 @@ print("\n")
 
 ##################################################################
 
-acc_before_training = compute_accuracy(test_data, rels, net, print_outputs=False)
+acc_before_training = compute_accuracy(test_data, rels, net, print_outputs=False, confusion_matrix=False)
 print("EPOCH", "\t", "ACCURACY")
 print(str(0), '\t', str(acc_before_training))
 
@@ -214,11 +174,7 @@ for epoch in range(num_epochs):  # loop over the dataset multiple times
 model_name = net.__class__.__name__ + train_data_file.split('/')[-1].split('.')[0] + '.pt'
 torch.save(net.state_dict(), 'models/' + model_name)
 
-# to load model:
-# net = tRNN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,bound_layers=bound_layers, bound_embeddings=bound_embeddings)
-# net.load_state_dict(torch.load('models/tRNNminitrain.txt.pt'))
-
-final_acc = compute_accuracy(test_data, rels, net, print_outputs=False, confusion_matrix=True)
+final_acc = compute_accuracy(test_data, rels, net, print_outputs=False, confusion_matrix=False)
 print(str(epoch + 1), '\t', str(final_acc))
 
 logging.info("End time: %s" % datetime.datetime.now())

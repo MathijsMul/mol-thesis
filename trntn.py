@@ -19,7 +19,8 @@ class tRNTN(nn.Module):
         self.voc_size = len(vocab)
 
         # vocabulary matrix
-        self.voc = nn.Linear(self.voc_size, self.word_dim)
+        #self.voc = nn.Linear(self.voc_size, self.word_dim)
+        self.voc = nn.Embedding(self.voc_size, self.word_dim)
 
         # composition matrix
         self.cps = nn.Linear(2 * self.word_dim, self.word_dim)
@@ -79,7 +80,6 @@ class tRNTN(nn.Module):
             init.uniform(self.cps.weight, -1*self.bound_layers, self.bound_layers)
             init.uniform(self.cpr.weight, -1*self.bound_layers, self.bound_layers)
             init.uniform(self.sm.weight, -1*self.bound_layers, self.bound_layers)
-
 
     def forward(self, inputs):
         """

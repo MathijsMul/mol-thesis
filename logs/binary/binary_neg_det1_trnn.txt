@@ -1,15 +1,15 @@
-Loading data from  ./data/binary/split/binary1_train.txt
+Loading data from  ./data/binary/negate_det1/split/binary1_neg_det1_train.txt
 Vocabulary: 
  ['Europeans', 'Germans', 'Italians', 'Romans', 'all', 'children', 'fear', 'hate', 'like', 'love', 'not', 'some']
 Relations:  
  ['#', '<', '=', '>', '^', 'v', '|']
-Loading data from  ./data/binary/split/binary1_test.txt
+Loading data from  ./data/binary/negate_det1/split/binary1_neg_det1_test.txt
 
 
 MODEL SETTINGS
 Tensors on/off:         False
-Train data:             ./data/binary/negate_det1/split/binary1_train.txt
-Test data:              ./data/binary/negate_det1/split/binary1_test.txt
+Train data:             ./data/binary/negate_det1/split/binary1_neg_det1_train.txt
+Test data:              ./data/binary/negate_det1/split/binary1_neg_det1_test.txt
 Num. epochs:            50
 Word dim.:              25
 Cpr. dim.:              75
@@ -23,54 +23,54 @@ Num. test instances:    6173
 
 
 EPOCH 	 ACCURACY
-0 	 6.01
-1 	 90.54
-2 	 93.50
-3 	 93.78
-4 	 95.76
-5 	 95.42
-6 	 95.16
-7 	 95.51
-8 	 96.37
-9 	 96.21
-10 	 95.69
-11 	 96.70
-12 	 96.26
-13 	 96.10
-14 	 96.89
-15 	 96.57
-16 	 96.91
-17 	 96.19
-18 	 96.39
-19 	 97.21
-20 	 96.95
-21 	 97.42
-22 	 96.37
-23 	 97.00
-24 	 97.07
-25 	 97.26
-26 	 96.45
-27 	 96.58
-28 	 97.15
-29 	 96.92
-30 	 97.44
-31 	 97.33
-32 	 96.99
-33 	 96.91
-34 	 96.76
-35 	 96.52
-36 	 97.52
-37 	 97.20
-38 	 97.26
-39 	 97.38
-40 	 96.26
-41 	 97.47
-42 	 97.51
-43 	 97.04
-44 	 97.18
-45 	 97.12
-46 	 97.04
-47 	 96.27
-48 	 97.41
-49 	 97.70
-50 	 97.13
+0 	 15.66
+1 	 75.26
+2 	 82.93
+3 	 86.31
+4 	 85.60
+5 	 86.25
+6 	 88.55
+7 	 87.38
+8 	 88.29
+9 	 87.69
+10 	 89.26
+11 	 90.13
+12 	 90.54
+13 	 93.07
+14 	 93.57
+15 	 94.33
+16 	 94.95
+17 	 95.30
+18 	 95.43
+19 	 95.93
+20 	 96.05
+21 	 96.26
+22 	 96.21
+23 	 96.10
+24 	 96.27
+25 	 96.40
+26 	 96.26
+27 	 96.65
+28 	 96.32
+29 	 96.14
+30 	 96.27
+31 	 96.27
+32 	 96.73
+33 	 97.07
+34 	 96.66
+35 	 96.92
+36 	 96.94
+37 	 96.79
+38 	 96.60
+39 	 97.08
+40 	 97.13
+41 	 96.84
+42 	 97.12
+43 	 96.92
+44 	 97.07
+45 	 96.53
+46 	 96.70
+47 	 97.18
+48 	 96.84
+49 	 96.95
+50 	 96.89

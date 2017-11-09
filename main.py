@@ -26,12 +26,18 @@ if __name__ == '__main__':
     train_data_file = sys.argv[1]
     test_data_file = sys.argv[2]
     model = sys.argv[3]
+    num_epochs = sys.argv[4]
 
 # GLOBAL SETTINGS
 
+# train_data_file = './data/binary/neg_det1_noun1_verb_noun2/binary2_4negs_train.txt'
+# test_data_file = './data/binary/neg_det1_noun1_verb_noun2/binary2_4negs_test.txt'
+# model = 'tRNN'
+# num_epochs = 1
+
+num_epochs = int(num_epochs) # number of epochs
 word_dim = 25 # dimensionality of word embeddings
 cpr_dim = 75 # output dimensionality of comparison layer
-num_epochs = 50 # number of epochs
 batch_size = 32 # Bowman takes 32
 shuffle_samples = True
 test_all_epochs = True # intermediate accuracy computation after each epoch

@@ -1,0 +1,76 @@
+Loading data from  ./data/binary/negate_verb/split/binary1_neg_verbtrain.txt
+Vocabulary: 
+ ['Europeans', 'Germans', 'Italians', 'Romans', 'all', 'children', 'fear', 'hate', 'like', 'love', 'not', 'some']
+Relations:  
+ ['#', '<', '=', '>', '^', 'v', '|']
+Loading data from  ./data/binary/negate_verb/split/binary1_neg_verbtest.txt
+
+
+MODEL SETTINGS
+Model:                  tRNTN
+Train data:             ./data/binary/negate_verb/split/binary1_neg_verbtrain.txt
+Test data:              ./data/binary/negate_verb/split/binary1_neg_verbtest.txt
+Num. epochs:            50
+Word dim.:              25
+Cpr. dim.:              75
+Batch size:             32
+Shuffle samples:        True
+Weight initialization:  xavier_uniform
+Optimizer:              Adadelta
+L2 penalty:             0.001
+Num. train instances:   24337
+Num. test instances:    6249
+
+
+EPOCH 	 ACCURACY
+0 	 19.40
+1 	 90.05
+2 	 90.30
+3 	 94.66
+4 	 93.84
+5 	 94.96
+6 	 94.74
+7 	 95.28
+8 	 95.20
+9 	 95.98
+10 	 95.09
+11 	 95.26
+12 	 96.21
+13 	 95.74
+14 	 96.08
+15 	 96.64
+16 	 95.84
+17 	 96.51
+18 	 96.67
+19 	 96.86
+20 	 96.54
+21 	 96.54
+22 	 96.75
+23 	 96.43
+24 	 97.12
+25 	 96.77
+26 	 97.18
+27 	 97.30
+28 	 96.50
+29 	 96.96
+30 	 96.77
+31 	 97.55
+32 	 97.14
+33 	 97.17
+34 	 97.66
+35 	 97.12
+36 	 97.31
+37 	 96.94
+38 	 97.33
+39 	 96.53
+40 	 97.66
+41 	 97.33
+42 	 97.74
+43 	 97.89
+44 	 97.50
+45 	 97.68
+46 	 97.63
+47 	 97.84
+48 	 97.84
+49 	 97.78
+50 	 97.87

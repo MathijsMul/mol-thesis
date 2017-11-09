@@ -51,9 +51,9 @@ fol_lexicon = fol_lex.get_lexicon(nouns, verbs, noun_matrix, verb_matrix)
 # do not include negation at all possible locations, because otherwise the number of sentences explodes
 # preferably, negation is allowed at one point in the sentence. this can be varied to study whether the
 # learned representation is similar for negated quantifiers/nouns/verbs
-adverbs_det1 = ['']
-adverbs_noun1 = ['']
-adverbs_verb = [''] # seems to have same function as adverbs_det2, so they can cancel each other out
+adverbs_det1 = adverbs
+adverbs_noun1 = adverbs
+adverbs_verb = adverbs # seems to have same function as adverbs_det2, so they can cancel each other out
 adverbs_det2 = ['']
 adverbs_noun2 = adverbs
 
@@ -406,12 +406,12 @@ def sentence_to_parse(sentence):
         parse += verb + ' '
 
     if adv_det_obj == 'not':
-        parse += '( ( not  '+ det_obj + ' ) '
+        parse += '( ( not '+ det_obj + ' ) '
     else:
         parse += '( ' + det_obj + ' '
 
     if adv_obj == 'not':
-        parse += '( ' + noun_obj + ' ) '
+        parse += '( not ' + noun_obj + ' ) '
     else:
         parse += noun_obj + ' '
     parse += ') ) ) '

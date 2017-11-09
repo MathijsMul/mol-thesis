@@ -24,5 +24,10 @@ def analyze_file(data_file):
 
     return(freq_dict, rel_freq_dict)
 
-print(analyze_file('/Users/Mathijs/Documents/School/MoL/thesis/thesis_code/data/binary/negate_det1/split/binary1_neg_det1_train.txt'))
-print(analyze_file('/Users/Mathijs/Documents/School/MoL/thesis/thesis_code/data/binary/negate_verb/split/binary1_neg_verbtrain.txt'))
+# print(analyze_file('/Users/Mathijs/Documents/School/MoL/thesis/thesis_code/data/binary/negate_det1/split/binary1_neg_det1_train.txt'))
+# print(analyze_file('/Users/Mathijs/Documents/School/MoL/thesis/thesis_code/data/binary/negate_verb/split/binary1_neg_verbtrain.txt'))
+
+#f = '/Users/Mathijs/Documents/School/MoL/thesis/thesis_code/generate_data/binary1_4negstrain.txt'
+#f = '/Users/Mathijs/Documents/School/MoL/thesis/thesis_code/data/binary/negate_noun1/split/binary1_neg_noun1_test.txt'
+f = '/Users/Mathijs/Documents/School/MoL/thesis/thesis_code/data/binary/neg_det1_noun1_verb_noun2/binary2_4negs_train.txt'
+print(analyze_file(f))

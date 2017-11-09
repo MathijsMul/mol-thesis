@@ -1,4 +1,4 @@
-lines_per_file = 300000
+lines_per_file = 600000
 smallfile = None
 with open('binary_all_sampleratio0.005bulk.txt') as bigfile:
     for lineno, line in enumerate(bigfile):

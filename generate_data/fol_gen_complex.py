@@ -13,6 +13,7 @@ from operator import itemgetter
 from collections import defaultdict
 from collections import Counter
 import random
+import sys
 
 from nltk.inference import Prover9
 from nltk.inference import Mace
@@ -26,12 +27,12 @@ read_expr = Expression.fromstring
 INDY_DOWNSAMPLE_RATIO = 0.05
 MATLAB_OUTPUT = True
 PROVER_ON = True # set to False in case we just want to list sentence combinations without running the theorem prover
-FILENAME_STEM = "binary_neg_noun2"
+#FILENAME_STEM = "binary_neg_noun2"
 
-SAMPLE_DATA = False
+SAMPLE_DATA = True
 if SAMPLE_DATA:
     #sample_probability = 0.01
-    sample_probability = 0.005 # take this one for final data
+    sample_probability = 0.003 # take this one for final data
 else:
     sample_probability = 1.00
 
@@ -42,7 +43,7 @@ else:
 prover = Prover9(timeout=1)
 
 # model builder Mace, checks for satisfying models with max domain size 10. actually this could still be decreased.
-mace = Mace(end_size=10)
+mace = Mace(end_size=4)
 
 TAXONOMY = "people_binary_decompquant"
 dets, adverbs, nouns, verbs, noun_matrix, verb_matrix = fol_lex.get_taxonomy(TAXONOMY)
@@ -422,6 +423,8 @@ def matlab_string(d):
     return str(d['relation']) + '\t' + str(sentence_to_parse(d['premise'])) + '\t' + str(sentence_to_parse(d['hypothesis']))
 
 if __name__ == '__main__':
+    FILENAME_STEM = sys.argv[1]
+
 
     start = datetime.datetime.now()
     logging.info("Start time: %s" % start)
@@ -433,6 +436,8 @@ if __name__ == '__main__':
         for counter, d in enumerate(all_pairs()):
             if counter % 100 == 0:
                 print('Analyzing pair %d' % counter)
+            if counter == 10:
+                break
             bulk_file.write(matlab_string(d) + '\n')
 
         # training_file = open(FILENAME_STEM + "train.txt", 'w')

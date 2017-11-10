@@ -436,8 +436,6 @@ if __name__ == '__main__':
         for counter, d in enumerate(all_pairs()):
             if counter % 100 == 0:
                 print('Analyzing pair %d' % counter)
-            if counter == 10:
-                break
             bulk_file.write(matlab_string(d) + '\n')
 
         # training_file = open(FILENAME_STEM + "train.txt", 'w')

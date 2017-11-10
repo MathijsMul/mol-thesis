@@ -65,7 +65,9 @@ def compute_accuracy(test_data, rels, net, print_outputs, confusion_matrix=False
         # sphinx_gallery_thumbnail_number = 2
         # plt.show()
 
-        plt.savefig('confusion_')
+        plot_name = 'conf_' + net.__class__.__name__
+
+        plt.savefig(plot_name)
 
         plt.close()
 

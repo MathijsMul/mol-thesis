@@ -21,6 +21,10 @@ class sumNN(nn.Module):
 
         self.voc = nn.Embedding(self.voc_size, self.word_dim)
 
+        # a summing NN baseline which is largely identical to the TreeRNN, except that instead of
+        # using a learned composition function, it simply sums the term vectors in each expression to compose
+        # them before passing them to the comparison layer
+        
         # composition matrix
         # self.cps = nn.Linear(2 * self.word_dim, self.word_dim)
 

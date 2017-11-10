@@ -3,42 +3,42 @@
   <component name="ChangeListManager">
     <list default="true" id="b72f4c1e-b8c1-4f94-9a46-30994c92b225" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generate_data/fix_negations.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/binary_neg_det1_trntn.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/binary_neg_noun1_trntn.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/confusion_matrices/confusion_traindet1_testnoun1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/confusion_matrices/confusion_trainverb_testnoun1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/tRNNbinary1_neg_verbtrain.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/confusion_matrices/confusion_trainverb_testdet1.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/binary_neg_verb_trntn.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/binary/negate_noun1/split/binary1_neg_noun1test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/binary/negate_noun1/split/binary1_neg_noun1train.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/binary/negate_verb/split/binary1_neg_verbtest.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/data/binary/negate_verb/split/binary1_neg_verbtrain.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/binary/binary_neg_det1_trntn.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/binary/binary_neg_verb_trntn.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/confusion_matrices/confusion_trnn_neg_noun1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/confusion_matrices/confusion_trnn_neg_det1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/binary/negate_verb/split/binary1_neg_verbtest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/tRNNbinary1_neg_noun1train.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/binary_neg_noun1_trntn.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A.tar.gz" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/logs/binary/binary_neg_det1_trnn.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/binary/binary_neg_det1_trntn.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/tRNTNbinary1_neg_noun1train.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/binary/binary_neg_verb_trnn.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/tRNTNminitrain.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/binary/negate_noun1/split/binary1_neg_noun1test.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/tRNNminitrain.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/binary/negate_noun1/split/binary1_neg_noun1train.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/logs/binary/binary_neg_noun1_trnn.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/logs/binary/binary_neg_noun1_trntn.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/binary/binary_neg_verb_trnn.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/binary/binary_neg_verb_trntn.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/models/tRNNbinary1_neg_det1_train.pt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/models/tRNNbinary1_neg_noun1train.pt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/models/tRNNbinary1_neg_verbtrain.pt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/models/tRNNminitrain.pt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/models/tRNTNbinary1_neg_noun1train.pt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/models/tRNTNminitrain.pt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/confusion_matrices/confusion_traindet1_testnoun1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/confusion_matrices/confusion_traindet1_testverb.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/confusion_matrices/confusion_trainverb_testdet1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/confusion_matrices/confusion_trainverb_testnoun1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/confusion_matrices/confusion_trnn_neg_det1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/confusion_matrices/confusion_trnn_neg_noun1.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/plots/confusion_matrices/confusion_trnn_neg_verb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/tRNNbinary1_neg_det1_train.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/confusion_matrices/confusion_traindet1_testverb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/binary_neg_det1_trntn.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/analyze_data.py" afterPath="$PROJECT_DIR$/analyze_data.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graveyard.py" afterPath="$PROJECT_DIR$/graveyard.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/chunk_file.py" afterPath="$PROJECT_DIR$/generate_data/chunk_file.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/fol_gen_complex.py" afterPath="$PROJECT_DIR$/generate_data/fol_gen_complex.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graveyard.py" afterPath="$PROJECT_DIR$/graveyard.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/load_model.py" afterPath="$PROJECT_DIR$/load_model.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run.sh" afterPath="$PROJECT_DIR$/run.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/split_data.py" afterPath="$PROJECT_DIR$/generate_data/split_data.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/load_model.py" afterPath="$PROJECT_DIR$/load_model.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run.sh" afterPath="$PROJECT_DIR$/run.sh" />
     </list>
     <ignored path="thesis_code.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -87,7 +87,7 @@
       <file leaf-file-name="split_data.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/generate_data/split_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1305">
+            <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="1305">
               <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
               <folding />
             </state>
@@ -117,7 +117,7 @@
       <file leaf-file-name="run.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.16997167" vertical-offset="0" max-vertical-offset="353">
+            <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="165">
               <caret line="4" column="155" selection-start-line="4" selection-start-column="155" selection-end-line="4" selection-end-column="155" />
               <folding />
             </state>
@@ -197,9 +197,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="41" />
-    <option name="width" value="1257" />
-    <option name="height" value="708" />
+    <option name="x" value="128" />
+    <option name="y" value="106" />
+    <option name="width" value="1117" />
+    <option name="height" value="722" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -522,28 +523,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="41" width="1257" height="708" extended-state="0" />
+    <frame x="128" y="106" width="1117" height="722" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21320605" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286385" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36463225" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286385" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36463225" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -562,9 +563,9 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21320605" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45387995" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45387995" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -590,6 +591,46 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/generate_data/split_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="1305">
+          <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1229" max-vertical-offset="1740">
+          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generate_data/fix_negations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="387" max-vertical-offset="870">
+          <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="209" max-vertical-offset="1155">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="2790">
@@ -604,9 +645,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1335">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#172#185#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -846,9 +885,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.75396824" vertical-offset="0" max-vertical-offset="480">
           <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -856,7 +892,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2149" max-vertical-offset="24135">
           <caret line="154" column="0" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -880,7 +915,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3179" max-vertical-offset="7980">
           <caret line="223" column="0" selection-start-line="223" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -920,7 +954,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/run.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16997167" vertical-offset="0" max-vertical-offset="353">
+        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="165">
           <caret line="4" column="155" selection-start-line="4" selection-start-column="155" selection-end-line="4" selection-end-column="155" />
           <folding />
         </state>

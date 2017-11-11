@@ -9,7 +9,8 @@ EQ = "="
 INDY = "#"
 
 dets = ['all', 'not_all', 'some', 'no', 'two', 'lt_two', 'three', 'lt_three']
-decomp_dets = ['all', 'some', 'two']
+#decomp_dets = ['all', 'some', 'two']
+decomp_dets = ['all', 'some']
 
 
 nl_dets = ['all', 'not_all', 'some', 'no', 'most',

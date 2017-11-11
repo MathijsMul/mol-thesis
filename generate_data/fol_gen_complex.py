@@ -32,7 +32,7 @@ PROVER_ON = True # set to False in case we just want to list sentence combinatio
 SAMPLE_DATA = True
 if SAMPLE_DATA:
     #sample_probability = 0.01
-    sample_probability = 0.003 # take this one for final data
+    sample_probability = 0.05 # take this one for final data
 else:
     sample_probability = 1.00
 
@@ -237,7 +237,9 @@ def interpret(sentence, axioms):
     not_left = read_expr('not ' + left_fol)
     right = read_expr(right_fol)
     # print(left)
+    # print(not_left)
     # print(right)
+
 
     contradiction = read_expr('not (' + left_fol + ' and ' + right_fol + ')')
 
@@ -265,6 +267,7 @@ def interpret(sentence, axioms):
 
     try:
         exhaustion = prover.prove(right, axioms + [not_left])
+
     except:
         exhaustion = not mace.build_model(right, axioms + [not_left])
 
@@ -424,7 +427,6 @@ def matlab_string(d):
 
 if __name__ == '__main__':
     FILENAME_STEM = sys.argv[1]
-
 
     start = datetime.datetime.now()
     logging.info("Start time: %s" % start)

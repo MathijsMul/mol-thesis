@@ -177,9 +177,9 @@ def interpret(sentence, axioms):
     #TODO: check seven entailment relations
 
     left_fol = sentence_to_fol(leaves(sentence, 0))
-    #print(left_fol)
+    print(left_fol)
     right_fol = sentence_to_fol(leaves(sentence, 1))
-    #print(right_fol)
+    print(right_fol)
 
     left = read_expr(left_fol)
     not_left = read_expr('not ' + left_fol)

@@ -7,10 +7,10 @@ import random
 import re
 from fol_gen_complex import all_sentences
 
-INDY_DOWNSAMPLE_RATIO = 0.025 # first 0.025
+INDY_DOWNSAMPLE_RATIO = 0.01 # first 0.025
 FILENAME_STEM = 'binary2_4negs'
 
-bulk_file = 'bulk_binary_4negs.txt'
+bulk_file = 'bulk_4negs_combined.txt'
 
 training_file = open(FILENAME_STEM + "_train.txt", 'w')
 test_file = open(FILENAME_STEM + "_test.txt", 'w')

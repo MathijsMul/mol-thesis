@@ -32,7 +32,7 @@ PROVER_ON = True # set to False in case we just want to list sentence combinatio
 SAMPLE_DATA = True
 if SAMPLE_DATA:
     #sample_probability = 0.01
-    sample_probability = 0.05 # take this one for final data
+    sample_probability = 0.025 # take this one for final data
 else:
     sample_probability = 1.00
 

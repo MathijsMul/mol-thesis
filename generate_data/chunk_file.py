@@ -1,11 +1,12 @@
 lines_per_file = 600000
 smallfile = None
-with open('binary_all_sampleratio0.005bulk.txt') as bigfile:
+f = 'bulk2dets4negs_1bulk.txt'
+with open(f) as bigfile:
     for lineno, line in enumerate(bigfile):
         if lineno % lines_per_file == 0:
             if smallfile:
                 smallfile.close()
-            small_filename = 'small_file_{}.txt'.format(lineno + lines_per_file)
+            small_filename = 'chunked_{}_{}.txt'.format(f, lineno + lines_per_file)
             smallfile = open(small_filename, "w")
         smallfile.write(line)
     if smallfile:

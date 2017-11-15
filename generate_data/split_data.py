@@ -8,7 +8,7 @@ import re
 from fol_gen_complex import all_sentences
 
 INDY_DOWNSAMPLE_RATIO = 0.008 # first 0.025
-DOWNSAMPLE_RATIO = 0.25
+DOWNSAMPLE_RATIO = 0.35
 FILENAME_STEM = 'binary_2dets_4negs'
 
 bulk_file = 'bulk_2dets_4negs_combined.txt'
@@ -25,7 +25,7 @@ sentence_list = list(sentences)
 random.shuffle(sentence_list)
 
 #TODO: for new data, ratio between train/test file is off due to high nr of different sentences
-test_examples = sentence_list[1:int(.2 * len(sentence_list))] # originally: 0.33
+test_examples = sentence_list[1:int(.33 * len(sentence_list))] # originally: 0.33
 
 def parse_line(line):
     """

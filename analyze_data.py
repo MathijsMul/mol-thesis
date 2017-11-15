@@ -32,3 +32,5 @@ print(analyze_file('/Users/Mathijs/Documents/School/MoL/thesis/thesis_code/data/
 #f = '/Users/Mathijs/Documents/School/MoL/thesis/thesis_code/data/binary/neg_det1_noun1_verb_noun2/binary2_4negs_train.txt'
 f = '/Users/Mathijs/Documents/School/MoL/thesis/thesis_code/generate_data/binary_2dets_4negs_train.txt'
 print(analyze_file(f))
+t = '/Users/Mathijs/Documents/School/MoL/thesis/thesis_code/generate_data/binary_2dets_4negs_test.txt'
+print(analyze_file(t))

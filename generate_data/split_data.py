@@ -7,10 +7,11 @@ import random
 import re
 from fol_gen_complex import all_sentences
 
-INDY_DOWNSAMPLE_RATIO = 0.01 # first 0.025
-FILENAME_STEM = 'binary2_4negs'
+INDY_DOWNSAMPLE_RATIO = 0.008 # first 0.025
+DOWNSAMPLE_RATIO = 0.25
+FILENAME_STEM = 'binary_2dets_4negs'
 
-bulk_file = 'bulk_4negs_combined.txt'
+bulk_file = 'bulk_2dets_4negs_combined.txt'
 
 training_file = open(FILENAME_STEM + "_train.txt", 'w')
 test_file = open(FILENAME_STEM + "_test.txt", 'w')
@@ -66,17 +67,19 @@ with open(bulk_file, 'r') as bulk:
 
         [rel, premise, hypothesis] = parse_line(line)
 
-        if (rel != '#'):
-            if premise in test_examples and hypothesis in test_examples:
-                test_file.write(line)
-            elif not (premise in test_examples or hypothesis in test_examples):
-                training_file.write(line)
+        if random.random() < DOWNSAMPLE_RATIO:
 
-        elif random.random() < INDY_DOWNSAMPLE_RATIO:
-            if premise in test_examples and hypothesis in test_examples:
-                test_file.write(line)
-            elif not (premise in test_examples or hypothesis in test_examples):
-                training_file.write(line)
+            if (rel != '#'):
+                if premise in test_examples and hypothesis in test_examples:
+                    test_file.write(line)
+                elif not (premise in test_examples or hypothesis in test_examples):
+                    training_file.write(line)
+
+            elif random.random() < INDY_DOWNSAMPLE_RATIO:
+                if premise in test_examples and hypothesis in test_examples:
+                    test_file.write(line)
+                elif not (premise in test_examples or hypothesis in test_examples):
+                    training_file.write(line)
 
     training_file.close()
     test_file.close()

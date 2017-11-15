@@ -37,10 +37,5 @@ filtered_axioms = filter_axioms(axioms, det_subj1, det_subj2, na_subj1, na_subj2
 s = 'v	( ( two ( not Romans ) ) ( ( not hate ) ( all ( not Germans ) ) ) )	( ( ( not some ) Germans ) ( like ( all ( not Romans ) ) ) )'
 print(s.split())
 
-#
-# with open('bulk2dets4negs_6bulk.txt', 'r') as f:
-#     for idx, l in enumerate(f):
-#         continue
-#     print(idx)
 
 

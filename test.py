@@ -1,8 +1,8 @@
 import torch
 
 # uncomment to generate confusion matrix in one go:
-# import matplotlib.pyplot as plt
-# import matplotlib.ticker as ticker
+import matplotlib.pyplot as plt
+import matplotlib.ticker as ticker
 
 def compute_accuracy(test_data, rels, net, print_outputs, confusion_matrix=False):
     n_rels = len(rels)

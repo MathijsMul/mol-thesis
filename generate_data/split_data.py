@@ -8,8 +8,9 @@ import re
 from fol_gen_complex import all_sentences
 
 INDY_DOWNSAMPLE_RATIO = 0.008 # first 0.025
-DOWNSAMPLE_RATIO = 0.35
-FILENAME_STEM = 'binary_2dets_4negs'
+DOWNSAMPLE_RATIO = 1 # first 0.35
+TRAIN_LENGTHS = [5, 7, 8] # min length is 5, max is 9.
+FILENAME_STEM = 'binary_2dets_4negs_2457'
 
 bulk_file = 'bulk_2dets_4negs_combined.txt'
 
@@ -39,6 +40,8 @@ def parse_line(line):
         split.remove('')
 
     relation = split[0]
+    length1 = split[1].count('(') + 1
+    length2 = split[2].count('(') + 1
 
     def parse_sentence(sentence):
         s = re.sub("\(", "", sentence)
@@ -60,12 +63,12 @@ def parse_line(line):
 
     premise, hypothesis = parse_sentence(split[1]), parse_sentence(split[2])
 
-    return([relation, premise, hypothesis])
+    return([relation, premise, hypothesis, length1, length2])
 
 with open(bulk_file, 'r') as bulk:
     for idx, line in enumerate(bulk):
 
-        [rel, premise, hypothesis] = parse_line(line)
+        [rel, premise, hypothesis, length1, length2] = parse_line(line)
 
         if random.random() < DOWNSAMPLE_RATIO:
 
@@ -73,15 +76,18 @@ with open(bulk_file, 'r') as bulk:
                 if premise in test_examples and hypothesis in test_examples:
                     test_file.write(line)
                 elif not (premise in test_examples or hypothesis in test_examples):
-                    training_file.write(line)
+                    if ((length1 in TRAIN_LENGTHS) and (length2 in TRAIN_LENGTHS)):
+                        training_file.write(line)
 
             elif random.random() < INDY_DOWNSAMPLE_RATIO:
                 if premise in test_examples and hypothesis in test_examples:
                     test_file.write(line)
                 elif not (premise in test_examples or hypothesis in test_examples):
-                    training_file.write(line)
+                    if ((length1 in TRAIN_LENGTHS) and (length2 in TRAIN_LENGTHS)):
+                        training_file.write(line)
 
     training_file.close()
     test_file.close()
 
-#bulk_file.close()
+
+#print(parse_line('>	 ( ( ( not all ) ( not Europeans )  ) ( ( not hate ) ( all children ) ) ) 	 ( ( ( not some ) ( not Germans )  ) ( ( not hate ) ( all children ) ) ) '))

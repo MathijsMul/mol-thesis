@@ -29,17 +29,28 @@ bound_embeddings = None
 # trntn_verb.load_state_dict(torch.load('models/trntn/tRNTNbinary1_neg_verb_train.pt'))
 #
 
-sumnn_det1 = sumNN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,bound_layers=bound_layers, bound_embeddings=bound_embeddings)
-sumnn_det1.load_state_dict(torch.load('models/sumnn/sumNNbinary1_neg_verb_train.pt'))
+# sumnn_det1 = sumNN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,bound_layers=bound_layers, bound_embeddings=bound_embeddings)
+# sumnn_det1.load_state_dict(torch.load('models/sumnn/sumNNbinary1_neg_verb_train.pt'))
 
 # sumnn_verb = sumNN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,bound_layers=bound_layers, bound_embeddings=bound_embeddings)
 # sumnn_verb.load_state_dict(torch.load('models/sumnn/sumNNbinary1_neg_verb_train.pt'))
 
-test_data_file = 'data/binary/negate_det1/split/binary1_neg_det1_test.txt'
+sumnn = sumNN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,bound_layers=bound_layers, bound_embeddings=bound_embeddings)
+sumnn.load_state_dict(torch.load('models/sumnn/sumNNbinary_2dets_4negs_train.pt'))
+
+
+trnn = tRNN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,bound_layers=bound_layers, bound_embeddings=bound_embeddings)
+trnn.load_state_dict(torch.load('models/trnn/tRNNbinary_2dets_4negs_train.pt'))
+
+
+trntn = tRNTN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,bound_layers=bound_layers, bound_embeddings=bound_embeddings)
+trntn.load_state_dict(torch.load('models/trntn/tRNTNbinary_2dets_4negs_train.pt'))
+
+test_data_file = '/Users/Mathijs/Documents/School/MoL/thesis/thesis_code/data/binary/2dets_4negs/binary_2dets_4negs_test.txt'
 test_data = dat.SentencePairsDataset(test_data_file)
 test_data.load_data()
 
-#for net in [sumnn_det1, sumnn_verb]:
-final_acc = compute_accuracy(test_data, rels, sumnn_det1, print_outputs=False, confusion_matrix=False)
-print(final_acc)
+for net in [sumnn,trnn,trntn]:
+    final_acc = compute_accuracy(test_data, rels, net, print_outputs=False, confusion_matrix=True)
+    print(final_acc)
 

@@ -3,7 +3,7 @@ from trnn import tRNN
 from trntn import tRNTN
 from sumnn import sumNN
 import datamanager as dat
-from test import compute_accuracy
+from test import compute_accuracy, comp_acc_per_length
 #from visualize import confusion_matrix
 
 vocab = ['Europeans', 'Germans', 'Italians', 'Romans', 'all', 'children', 'fear', 'hate', 'like', 'love', 'not', 'some']
@@ -16,41 +16,27 @@ bound_layers = None
 bound_embeddings = None
 
 # to load model:
-# trnn_det1 = tRNN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,bound_layers=bound_layers, bound_embeddings=bound_embeddings)
-# trnn_det1.load_state_dict(torch.load('models/trnn/tRNNbinary1_neg_det1_train.pt'))
-#
-# trnn_verb = tRNN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,bound_layers=bound_layers, bound_embeddings=bound_embeddings)
-# trnn_verb.load_state_dict(torch.load('models/trnn/tRNNbinary1_neg_verbtrain.pt'))
-#
-# trntn_det1 = tRNTN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,bound_layers=bound_layers, bound_embeddings=bound_embeddings)
-# trntn_det1.load_state_dict(torch.load('models/trntn/tRNTNbinary1_neg_det1_train.pt'))
-#
-# trntn_verb = tRNTN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,bound_layers=bound_layers, bound_embeddings=bound_embeddings)
-# trntn_verb.load_state_dict(torch.load('models/trntn/tRNTNbinary1_neg_verb_train.pt'))
-#
+# sumnn_path = 'models/sumnn/sumNNbinary_2dets_4negs_578_train.pt'
+# sumnn = sumNN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,bound_layers=bound_layers, bound_embeddings=bound_embeddings)
+# sumnn.load_state_dict(torch.load(sumnn_path))
 
-# sumnn_det1 = sumNN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,bound_layers=bound_layers, bound_embeddings=bound_embeddings)
-# sumnn_det1.load_state_dict(torch.load('models/sumnn/sumNNbinary1_neg_verb_train.pt'))
-
-# sumnn_verb = sumNN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,bound_layers=bound_layers, bound_embeddings=bound_embeddings)
-# sumnn_verb.load_state_dict(torch.load('models/sumnn/sumNNbinary1_neg_verb_train.pt'))
-
-sumnn = sumNN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,bound_layers=bound_layers, bound_embeddings=bound_embeddings)
-sumnn.load_state_dict(torch.load('models/sumnn/sumNNbinary_2dets_4negs_train.pt'))
-
-
+trnn_path = 'models/trnn/tRNNbinary_2dets_4negs_578_train.pt'
 trnn = tRNN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,bound_layers=bound_layers, bound_embeddings=bound_embeddings)
-trnn.load_state_dict(torch.load('models/trnn/tRNNbinary_2dets_4negs_train.pt'))
+trnn.load_state_dict(torch.load(trnn_path))
 
-
+trntn_path = 'models/trntn/tRNTNbinary_2dets_4negs_578_train.pt'
 trntn = tRNTN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,bound_layers=bound_layers, bound_embeddings=bound_embeddings)
-trntn.load_state_dict(torch.load('models/trntn/tRNTNbinary_2dets_4negs_train.pt'))
+trntn.load_state_dict(torch.load(trntn_path))
 
-test_data_file = '/Users/Mathijs/Documents/School/MoL/thesis/thesis_code/data/binary/2dets_4negs/binary_2dets_4negs_test.txt'
+#test_data_file = '/Users/Mathijs/Documents/School/MoL/thesis/thesis_code/data/binary/2dets_4negs/binary_2dets_4negs_test.txt'
+test_data_file = '/Users/Mathijs/Documents/School/MoL/thesis/thesis_code/data/binary/2dets_4negs/578/binary_2dets_4negs_56789_test.txt'
 test_data = dat.SentencePairsDataset(test_data_file)
 test_data.load_data()
 
-for net in [sumnn,trnn,trntn]:
-    final_acc = compute_accuracy(test_data, rels, net, print_outputs=False, confusion_matrix=True)
-    print(final_acc)
+final_acc = comp_acc_per_length(test_data, rels, trnn, 5, 9, threed_plot=True)
+print(final_acc)
+
+# for net in [sumnn,trnn,trntn]:
+#     final_acc = compute_accuracy(test_data, rels, net, print_outputs=False, confusion_matrix=True)
+#     print(final_acc)
 

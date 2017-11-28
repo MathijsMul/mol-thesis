@@ -1,8 +1,10 @@
 import torch
+import numpy as np
 
 # uncomment to generate confusion matrix in one go:
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
+from collections import Counter, defaultdict
 
 def compute_accuracy(test_data, rels, net, print_outputs, confusion_matrix=False):
     n_rels = len(rels)
@@ -156,3 +158,76 @@ def comp_acc_per_length(test_data, rels, net, min_length, max_length, threed_plo
         plt.close()
 
     return(acc)
+
+def comp_error_matrix(test_data, rels, net):
+    n_rels = len(rels)
+
+    errors = defaultdict(Counter)
+
+    # if confusion_matrix:
+    #     confusion = torch.zeros(n_rels, n_rels)
+
+    correct = 0.0
+    total = 0
+
+    for i, data in enumerate(test_data.tree_data, 0):
+        input, label = [[data[1], data[2]]], [rels.index(data[0])]
+        label = torch.LongTensor(label)
+        outputs = net(input)
+        _, predicted = torch.max(outputs.data, 1)
+
+        # if confusion_matrix:
+        #     confusion[int(label[0])][int(predicted[0])] += 1
+
+        if predicted.numpy() != label.numpy():
+            errors[label.numpy][predicted.numpy] += 1
+
+        correct += (predicted == label).sum()
+        total += 1  # because test batch size is always 1
+
+    acc = 100 * correct / total
+    acc = "%.2f" % round(acc, 2)
+    print(errors)
+
+    # for i in range(n_rels):
+    #
+    #     # people = ('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H')
+    #     # segments = 4
+    #
+    #     # generate some multi-dimensional data & arbitrary labels
+    #     # data = 3 + 10 * np.random.rand(segments, len(people))
+    #     # percentages = (np.random.randint(5, 20, (len(people), segments)))
+    #     y_pos = np.arange(n_rels)
+    #
+    #     fig = plt.figure(figsize=(10, 8))
+    #     ax = fig.add_subplot(111)
+    #
+    #     colors = 'rgbwmc'
+    #     patch_handles = []
+    #     left = np.zeros(n_rels)  # left alignment of data starts at zero
+    #     for i, d in enumerate(data):
+    #         patch_handles.append(ax.barh(y_pos, d,
+    #                                      color=colors[i % len(colors)], align='center',
+    #                                      left=left))
+    #         # accumulate the left-hand offsets
+    #         left += d
+    #
+    #     # go through all of the bar segments and annotate
+    #     for j in range(len(patch_handles)):
+    #         for i, patch in enumerate(patch_handles[j].get_children()):
+    #             bl = patch.get_xy()
+    #             x = 0.5 * patch.get_width() + bl[0]
+    #             y = 0.5 * patch.get_height() + bl[1]
+    #             ax.text(x, y, "%d%%" % (percentages[i, j]), ha='center')
+    #
+    #     ax.set_yticks(y_pos)
+    #     ax.set_yticklabels(people)
+    #     ax.set_xlabel('Distance')
+    #
+    #     plot_name = 'conf_' + net.__class__.__name__
+    #
+    #     plt.savefig(plot_name)
+    #
+    #     plt.close()
+    #
+    # return (acc)

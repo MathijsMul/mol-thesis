@@ -50,8 +50,8 @@ trntn_path2 = 'models/trntn/tRNTNbinary1_neg_verb_train.pt'
 trntn2 = tRNTN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,bound_layers=bound_layers, bound_embeddings=bound_embeddings)
 trntn2.load_state_dict(torch.load(trntn_path2))
 
-test_data_file = 'data/binary/2dets_4negs/binary_2dets_4negs_test.txt'
-#test_data_file = '/Users/Mathijs/Documents/School/MoL/thesis/thesis_code/data/binary/2dets_4negs/578/binary_2dets_4negs_56789_test.txt'
+#test_data_file = 'data/binary/2dets_4negs/binary_2dets_4negs_test.txt'
+test_data_file = '/Users/Mathijs/Documents/School/MoL/thesis/thesis_code/data/binary/2dets_4negs/578/binary_2dets_4negs_56789_test.txt'
 test_data = dat.SentencePairsDataset(test_data_file)
 test_data.load_data()
 

@@ -7,6 +7,7 @@ import datamanager as dat
 from trnn import tRNN
 from trntn import tRNTN
 from sumnn import sumNN
+from srn import SRN
 #import progressbar as pb
 from test import compute_accuracy
 import numpy as np
@@ -47,19 +48,21 @@ bound_embeddings = 0.01  # bound for uniform initialization of embeddings
 l2_penalty = 1e-3 #customary: 2e-3 # weight_decay, l2 regularization term
 save_params = False # store params at each epoch
 show_progressbar = False
-show_loss = False # show loss every 200 batches
+show_loss = True # show loss every 200 batches
+sequential_loading = True
+n_hidden = 128
 
 ##################################################################
 
 # PREPARING DATA, NETWORK, LOSS FUNCTION AND OPTIMIZER
 
 train_data = dat.SentencePairsDataset(train_data_file)
-train_data.load_data(print_result=True)
+train_data.load_data(sequential=sequential_loading, print_result=True)
 vocab = train_data.word_list
 rels = train_data.relation_list
 
 test_data = dat.SentencePairsDataset(test_data_file)
-test_data.load_data()
+test_data.load_data(sequential=sequential_loading)
 
 batches = dat.BatchData(train_data, batch_size, shuffle_samples)
 batches.create_batches()
@@ -73,6 +76,9 @@ elif model == 'tRNTN':
 elif model == 'sumNN':
     net = sumNN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,
                bound_layers=bound_layers, bound_embeddings=bound_embeddings)
+
+elif model == 'SRN':
+    net = SRN(vocab, rels, word_dim, n_hidden, cpr_dim)
 
 if save_params:
     params = {} # dictionary for storing params if desired
@@ -102,6 +108,8 @@ print("Optimizer:             ", optimizer.__class__.__name__)
 print("L2 penalty:            ", l2_penalty)
 print("Num. train instances:  ", len(train_data.tree_data))
 print("Num. test instances:   ", len(test_data.tree_data))
+if model == 'sumNN':
+    print("Num. hidden units:   ", n_hidden)
 print("\n")
 
 ##################################################################
@@ -154,9 +162,9 @@ for epoch in range(num_epochs):  # loop over the dataset multiple times
         # print loss statistics
         if show_loss:
             running_loss += loss.data[0]
-            if i % 100 == 1:    # print every 100 mini-batches
+            if (i + 2) % 100 == 1:    # print every 100 mini-batches
                 print('[%d, %5d] loss: %.3f' %
-                      (epoch + 1, i + 100, running_loss / 100))
+                      (epoch + 1, i, running_loss / 100))
                 running_loss = 0.0
 
         #bar.update(i + 1)

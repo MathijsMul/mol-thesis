@@ -36,7 +36,7 @@ class SentencePairsDataset(Dataset):
     #
     #     return sample
 
-    def load_data(self, print_result=False):
+    def load_data(self, sequential, print_result=False):
         """
         Read data from file and convert to required tree format, to be stored in self.tree_data.
 
@@ -44,41 +44,95 @@ class SentencePairsDataset(Dataset):
 
         print('Loading data from ', self.data_file)
 
-        with open(self.data_file, 'r') as f:
-            trees = []
-            relset = set()
-            wordset = set()
-            for line in f:
-                relation, s1, s2  = line.split(self.separator_char)
-                relation = relation.strip() # remove initial/ending whitespace
-                relset = relset.union({relation})
+        if sequential:
+            # sequential data loading
+            with open(self.data_file, 'r') as f:
+                sentences = []
+                relset = set()
+                wordset = set()
+                for line in f:
+                    relation, s1, s2 = line.split(self.separator_char)
+                    relation = relation.strip()  # remove initial/ending whitespace
+                    relset = relset.union({relation})
 
-                # Step 1: '.' before words i.e. leaf nodes
-                s1 = re.sub(r"([^()\s]+)", r"(. \1)", s1)
-                s2 = re.sub(r"([^()\s]+)", r"(. \1)", s2)
-                # Step 2: Label 'cps' after brackets not followed by '.', then: nltk tree
-                t1 = nltk.tree.Tree.fromstring(re.sub(r"\( ", r"(cps ", s1))
-                t2 = nltk.tree.Tree.fromstring(re.sub(r"\( ", r"(cps ", s2))
+                    t1 = s1.split()
+                    t2 = s2.split()
 
-                trees += [t1, t2]
-                self.tree_data += [(relation, t1, t2)]
+                    sentences += [t1, t2]
+                    self.tree_data += [(relation, t1, t2)]
 
-                wordset = wordset.union(set(t1.leaves()))
-                wordset = wordset.union(set(t2.leaves()))
+                    wordset = wordset.union(set(t1))
+                    wordset = wordset.union(set(t2))
 
-            self.relation_list = sorted(relset)
-            self.word_list = sorted(wordset)
-            # self.word_list = wordlist
-            # word_dict = {i:j for j,i in enumerate(wordlist)}
-            #
-            # print("Total pairs:", len(self.tree_data))
-            #
-            # print("Dictionary: ", len(word_dict))
-            # print("Relations:  ", len(relation_list))
+                self.relation_list = sorted(relset)
+                self.word_list = sorted(wordset)
+
+        else:
+            # recursive data loading (preserving tree structures)
+            with open(self.data_file, 'r') as f:
+                trees = []
+                relset = set()
+                wordset = set()
+                for line in f:
+                    relation, s1, s2  = line.split(self.separator_char)
+                    relation = relation.strip() # remove initial/ending whitespace
+                    relset = relset.union({relation})
+
+                    # Step 1: '.' before words i.e. leaf nodes
+                    s1 = re.sub(r"([^()\s]+)", r"(. \1)", s1)
+                    s2 = re.sub(r"([^()\s]+)", r"(. \1)", s2)
+                    # Step 2: Label 'cps' after brackets not followed by '.', then: nltk tree
+                    t1 = nltk.tree.Tree.fromstring(re.sub(r"\( ", r"(cps ", s1))
+                    t2 = nltk.tree.Tree.fromstring(re.sub(r"\( ", r"(cps ", s2))
+
+                    trees += [t1, t2]
+                    self.tree_data += [(relation, t1, t2)]
+
+                    wordset = wordset.union(set(t1.leaves()))
+                    wordset = wordset.union(set(t2.leaves()))
+
+                self.relation_list = sorted(relset)
+                self.word_list = sorted(wordset)
+                # self.word_list = wordlist
+                # word_dict = {i:j for j,i in enumerate(wordlist)}
+                #
+                # print("Total pairs:", len(self.tree_data))
+                #
+                # print("Dictionary: ", len(word_dict))
+                # print("Relations:  ", len(relation_list))
 
         if print_result:
             print("Vocabulary: \n", self.word_list)
             print("Relations:  \n", self.relation_list)
+
+    # def load_data_sequential(self, print_result=False):
+    #     print('Loading data from ', self.data_file)
+    #
+    #     with open(self.data_file, 'r') as f:
+    #         sentences = []
+    #         relset = set()
+    #         wordset = set()
+    #         for line in f:
+    #             relation, s1, s2 = line.split(self.separator_char)
+    #             relation = relation.strip()  # remove initial/ending whitespace
+    #             relset = relset.union({relation})
+    #
+    #             t1 = s1.split()
+    #             t2 = s2.split()
+    #
+    #             sentences += [t1, t2]
+    #             self.tree_data += [(relation, t1, t2)]
+    #
+    #             wordset = wordset.union(set(t1))
+    #             wordset = wordset.union(set(t2))
+    #
+    #         self.relation_list = sorted(relset)
+    #         self.word_list = sorted(wordset)
+    #
+    #     if print_result:
+    #         print("Vocabulary: \n", self.word_list)
+    #         print("Relations:  \n", self.relation_list)
+
 
 # The below class is necessary because the built-in pytorch DataLoader class doesn't work for the tree-shaped data
 class BatchData():

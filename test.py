@@ -1,9 +1,10 @@
 import torch
 import numpy as np
+import os
 
 # uncomment to generate confusion matrix in one go:
-import matplotlib.pyplot as plt
-import matplotlib.ticker as ticker
+# import matplotlib.pyplot as plt
+# import matplotlib.ticker as ticker
 from collections import Counter, defaultdict
 
 def compute_accuracy(test_data, rels, net, print_outputs, confusion_matrix=False):
@@ -159,75 +160,82 @@ def comp_acc_per_length(test_data, rels, net, min_length, max_length, threed_plo
 
     return(acc)
 
-def comp_error_matrix(test_data, rels, net):
+def comp_error_matrix(test_data, rels, net, show_totals):
+    #os.environ['PATH'] = '/Library/TeX/texbin'
+
+    totals = Counter()
+
     n_rels = len(rels)
-
-    errors = defaultdict(Counter)
-
-    # if confusion_matrix:
-    #     confusion = torch.zeros(n_rels, n_rels)
+    errors = {key : Counter() for key in rels}
 
     correct = 0.0
     total = 0
 
     for i, data in enumerate(test_data.tree_data, 0):
+        # if i == 200:
+        #    break
+
         input, label = [[data[1], data[2]]], [rels.index(data[0])]
+
         label = torch.LongTensor(label)
         outputs = net(input)
         _, predicted = torch.max(outputs.data, 1)
 
-        # if confusion_matrix:
-        #     confusion[int(label[0])][int(predicted[0])] += 1
+        label_symbol = rels[label.numpy()[0]]
+        predicted_symbol = rels[predicted.numpy()[0]]
 
         if predicted.numpy() != label.numpy():
-            errors[label.numpy][predicted.numpy] += 1
 
+            errors[label_symbol][predicted_symbol] += 1
+
+        totals[label_symbol] += 1
         correct += (predicted == label).sum()
-        total += 1  # because test batch size is always 1
+        total += 1
 
     acc = 100 * correct / total
     acc = "%.2f" % round(acc, 2)
-    print(errors)
 
-    # for i in range(n_rels):
-    #
-    #     # people = ('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H')
-    #     # segments = 4
-    #
-    #     # generate some multi-dimensional data & arbitrary labels
-    #     # data = 3 + 10 * np.random.rand(segments, len(people))
-    #     # percentages = (np.random.randint(5, 20, (len(people), segments)))
-    #     y_pos = np.arange(n_rels)
-    #
-    #     fig = plt.figure(figsize=(10, 8))
-    #     ax = fig.add_subplot(111)
-    #
-    #     colors = 'rgbwmc'
-    #     patch_handles = []
-    #     left = np.zeros(n_rels)  # left alignment of data starts at zero
-    #     for i, d in enumerate(data):
-    #         patch_handles.append(ax.barh(y_pos, d,
-    #                                      color=colors[i % len(colors)], align='center',
-    #                                      left=left))
-    #         # accumulate the left-hand offsets
-    #         left += d
-    #
-    #     # go through all of the bar segments and annotate
-    #     for j in range(len(patch_handles)):
-    #         for i, patch in enumerate(patch_handles[j].get_children()):
-    #             bl = patch.get_xy()
-    #             x = 0.5 * patch.get_width() + bl[0]
-    #             y = 0.5 * patch.get_height() + bl[1]
-    #             ax.text(x, y, "%d%%" % (percentages[i, j]), ha='center')
-    #
-    #     ax.set_yticks(y_pos)
-    #     ax.set_yticklabels(people)
-    #     ax.set_xlabel('Distance')
-    #
-    #     plot_name = 'conf_' + net.__class__.__name__
-    #
-    #     plt.savefig(plot_name)
-    #
-    #     plt.close()
-    #
-    # return (acc)
+    # rels_to_tex = {'#': '\#', '<':'<', '=':'=', '>':'>', '^':'wedge', 'v':'lor', '|':'mid'}
+    # print(errors)
+    # print(errors.values())
+
+    series = {}
+    for rel in rels:
+        #series[rels_to_tex[rel]] = [(0 if rel not in item else item[rel]) for item in errors.values()]
+        series[rel] = [(0 if rel not in item else item[rel]) for item in errors.values()]
+
+    #print(series)
+
+    fig, ax = plt.subplots()
+    # plt.rc('text', usetex=True)
+    # plt.rc('font', family='serif')
+
+    ax.set_xticks(range(n_rels))
+    #ax.set_xticklabels([rels_to_tex[rel] for rel in rels])
+    ax.set_xticklabels(rels)
+
+    bottom, x = np.zeros(n_rels), range(n_rels)
+
+    if show_totals:
+        cum_counts = [totals[rel] for rel in rels]
+        ax.bar(x, cum_counts, width = 0.05, color='black')
+
+    for key in series:
+        # print(key)
+        # print(series[key])
+        # print(bottom)
+        ax.bar(x, series[key], label=key, bottom=bottom)
+        bottom += np.array(series[key])
+    plt.legend()
+
+    # for rel in rels:
+    #     ax.bar(x, totals[rel], width=0.2)
+
+    plt.title(net.__class__.__name__)
+    #plt.show()
+    plot_name = 'errorprofile_' + net.__class__.__name__
+
+    if show_totals:
+        plot_name += '_withtotals'
+
+    plt.savefig(plot_name)

@@ -84,7 +84,7 @@ if save_params:
     params = {} # dictionary for storing params if desired
     params[0] = list(net.parameters())
 
-# initialize parameters
+# initialize parameters according to preferred mode, if provided
 net.initialize(mode=init_mode)
 criterion = nn.NLLLoss()
 
@@ -108,7 +108,7 @@ print("Optimizer:             ", optimizer.__class__.__name__)
 print("L2 penalty:            ", l2_penalty)
 print("Num. train instances:  ", len(train_data.tree_data))
 print("Num. test instances:   ", len(test_data.tree_data))
-if model == 'sumNN':
+if model == 'SRN':
     print("Num. hidden units:   ", n_hidden)
 print("\n")
 

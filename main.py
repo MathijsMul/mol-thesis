@@ -28,6 +28,7 @@ if __name__ == '__main__':
     test_data_file = sys.argv[2]
     model = sys.argv[3]
     num_epochs = sys.argv[4]
+    model_nr = sys.argv[5]
 
 # GLOBAL SETTINGS
 
@@ -48,7 +49,7 @@ bound_embeddings = 0.01  # bound for uniform initialization of embeddings
 l2_penalty = 1e-3 #customary: 2e-3 # weight_decay, l2 regularization term
 save_params = False # store params at each epoch
 show_progressbar = False
-show_loss = True # show loss every 200 batches
+show_loss = False # show loss every 100 batches
 sequential_loading = True
 n_hidden = 128
 
@@ -185,7 +186,7 @@ for epoch in range(num_epochs):  # loop over the dataset multiple times
 # SAVING AND FINAL TESTING
 
 # save model
-model_name = net.__class__.__name__ + train_data_file.split('/')[-1].split('.')[0] + '.pt'
+model_name = net.__class__.__name__ + train_data_file.split('/')[-1].split('.')[0] + str(model_nr) + '.pt'
 torch.save(net.state_dict(), 'models/' + model_name)
 
 final_acc = compute_accuracy(test_data, rels, net, print_outputs=False, confusion_matrix=False)

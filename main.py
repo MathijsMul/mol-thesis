@@ -8,6 +8,7 @@ from trnn import tRNN
 from trntn import tRNTN
 from sumnn import sumNN
 from srn import SRN
+from gru import GRU
 #import progressbar as pb
 from test import compute_accuracy
 import numpy as np
@@ -28,7 +29,7 @@ if __name__ == '__main__':
     test_data_file = sys.argv[2]
     model = sys.argv[3]
     num_epochs = sys.argv[4]
-    model_nr = sys.argv[5]
+    #model_nr = sys.argv[5]
 
 # GLOBAL SETTINGS
 
@@ -43,7 +44,8 @@ cpr_dim = 75 # output dimensionality of comparison layer
 batch_size = 32 # Bowman takes 32
 shuffle_samples = True
 test_all_epochs = True # intermediate accuracy computation after each epoch
-init_mode = 'xavier_uniform' # initialization of parameter weights
+#init_mode = 'xavier_uniform' # initialization of parameter weights
+init_mode = None
 bound_layers = 0.05 # bound for uniform initialization of layer parameters
 bound_embeddings = 0.01  # bound for uniform initialization of embeddings
 l2_penalty = 1e-3 #customary: 2e-3 # weight_decay, l2 regularization term
@@ -80,13 +82,16 @@ elif model == 'sumNN':
 
 elif model == 'SRN':
     net = SRN(vocab, rels, word_dim, n_hidden, cpr_dim)
+elif model == 'GRU':
+    net = GRU(vocab, rels, word_dim, n_hidden, cpr_dim)
 
 if save_params:
     params = {} # dictionary for storing params if desired
     params[0] = list(net.parameters())
 
-# initialize parameters according to preferred mode, if provided
-net.initialize(mode=init_mode)
+if init_mode:
+    # initialize parameters according to preferred mode, if provided
+    net.initialize(mode=init_mode)
 criterion = nn.NLLLoss()
 
 optimizer = optim.Adadelta(net.parameters(), weight_decay = l2_penalty)
@@ -109,7 +114,7 @@ print("Optimizer:             ", optimizer.__class__.__name__)
 print("L2 penalty:            ", l2_penalty)
 print("Num. train instances:  ", len(train_data.tree_data))
 print("Num. test instances:   ", len(test_data.tree_data))
-if model == 'SRN':
+if model in ['SRN', 'GRU']:
     print("Num. hidden units:   ", n_hidden)
 print("\n")
 
@@ -186,7 +191,8 @@ for epoch in range(num_epochs):  # loop over the dataset multiple times
 # SAVING AND FINAL TESTING
 
 # save model
-model_name = net.__class__.__name__ + train_data_file.split('/')[-1].split('.')[0] + str(model_nr) + '.pt'
+#model_name = net.__class__.__name__ + train_data_file.split('/')[-1].split('.')[0] + str(model_nr) + '.pt'
+model_name = net.__class__.__name__ + train_data_file.split('/')[-1].split('.')[0] + '.pt'
 torch.save(net.state_dict(), 'models/' + model_name)
 
 final_acc = compute_accuracy(test_data, rels, net, print_outputs=False, confusion_matrix=False)

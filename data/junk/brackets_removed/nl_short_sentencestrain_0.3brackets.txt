@@ -1,0 +1,2772 @@
+=	all warthogs walk	( all warthogs walk )
+<	all warthogs walk	all warthogs move
+#	( all warthogs ) walk )	all warthogs growl )
+>	all warthogs move	all warthogs walk
+=	all warthogs ) move )	all warthogs move
+#	( all warthogs ) move )	all warthogs growl
+#	all warthogs growl )	all warthogs walk
+#	( all warthogs growl	( all warthogs ) move )
+=	all warthogs growl	( all warthogs growl )
+#	( all warthogs walk	all turtles ) walk
+#	( all warthogs ) move	( all turtles ) move )
+>	( all warthogs walk	all mammals walk )
+>	( all warthogs move )	( ( all mammals walk
+>	( ( all warthogs move )	all mammals move
+>	all warthogs growl	all mammals growl
+#	all warthogs walk	all reptiles ) walk
+#	( all warthogs growl	all reptiles ) growl
+#	( all warthogs walk	( ( all pets ) walk
+#	all warthogs growl	all pets ) growl
+#	( all turtles walk	all warthogs walk )
+#	all turtles move	( all warthogs move )
+=	all turtles ) walk )	all turtles walk
+<	( all turtles walk	all turtles ) move
+|	all turtles walk	( all turtles ) swim
+>	all turtles ) move	( all turtles ) walk )
+=	all turtles ) move	( all turtles move
+>	all turtles move	( all turtles swim
+|	all turtles swim	all turtles ) walk
+<	( all turtles ) swim	all turtles move )
+=	all turtles ) swim	all turtles swim
+#	( all turtles walk )	( all mammals walk
+#	( all turtles ) move	all mammals move )
+>	( all turtles walk )	all reptiles walk )
+>	( all turtles ) move )	all reptiles walk
+>	all turtles move	all reptiles swim
+>	( all turtles ) swim	all reptiles swim
+#	all turtles ) walk	all pets ) walk
+#	all turtles swim )	( all pets ) swim
+<	all mammals walk	all warthogs walk )
+<	all mammals walk	all warthogs move
+<	( all mammals move )	all warthogs ) move
+<	( ( all mammals growl )	( all warthogs growl
+#	( all mammals walk )	( all turtles walk
+#	all mammals ) move	all turtles move
+=	all mammals ) walk	all mammals walk
+<	( ( all mammals walk	all mammals ) move
+#	( all mammals walk )	all mammals ) growl
+>	( all mammals move	( all mammals walk
+=	all mammals move	( all mammals move )
+#	( all mammals move )	all mammals growl )
+#	( all mammals ) growl	all mammals walk
+#	all mammals growl	( all mammals ) move
+=	all mammals ) growl )	all mammals growl )
+#	( all mammals ) walk )	( ( all reptiles walk
+#	all mammals ) growl	( all reptiles growl )
+#	all mammals ) walk )	all pets walk )
+#	( all mammals ) growl )	all pets ) growl
+#	( all reptiles walk	all warthogs walk
+#	all reptiles growl )	all warthogs growl
+<	all reptiles ) walk )	all turtles ) walk
+<	all reptiles walk	all turtles move )
+|	( all reptiles ) walk	( all turtles ) swim )
+|	all reptiles ) swim	all turtles ) walk
+<	all reptiles swim	all turtles ) move
+<	( all reptiles swim	( all turtles swim )
+|	all reptiles growl	( all turtles swim
+#	all reptiles walk )	( all mammals walk
+#	all reptiles ) growl	all mammals growl
+=	all reptiles ) walk	all reptiles ) walk
+|	( all reptiles ) walk )	all reptiles swim
+#	all reptiles walk	all reptiles ) growl
+|	( all reptiles swim	all reptiles ) walk )
+=	all reptiles ) swim )	all reptiles ) swim )
+|	all reptiles swim	( all reptiles growl
+#	( all reptiles growl	( ( all reptiles ) walk
+|	( all reptiles growl	( all reptiles swim
+=	( all reptiles growl	all reptiles growl
+#	all reptiles walk )	( all pets walk
+#	( ( all reptiles swim	( all pets swim
+#	( all reptiles growl )	all pets ) growl
+#	all pets walk	all warthogs ) walk )
+#	( all pets growl )	all warthogs growl
+#	( all pets walk )	( all turtles walk
+#	( all pets swim )	( all turtles ) swim
+#	all pets walk	all mammals walk )
+#	all pets growl	all mammals growl )
+#	all pets walk	( all reptiles ) walk
+#	( all pets swim	( all reptiles swim
+#	( all pets growl	all reptiles ) growl
+=	all pets ) walk	( all pets walk )
+|	all pets walk	( all pets swim
+#	all pets walk )	all pets ) growl )
+|	( all pets ) swim	( all pets walk
+=	( all pets swim	( all pets ) swim )
+|	all pets swim	all pets ) growl
+#	all pets ) growl	( all pets ) walk )
+|	( all pets growl	( all pets swim )
+=	( ( all pets growl	( all pets growl )
+v	( all warthogs walk	not_all warthogs move )
+^	all warthogs ) move )	( not_all warthogs move
+#	( all warthogs growl	not_all warthogs ) move
+#	all warthogs move	( ( not_all turtles move
+#	all warthogs ) growl	not_all turtles growl
+|	all warthogs walk )	( not_all mammals walk
+|	( all warthogs move	( not_all mammals walk )
+|	all warthogs growl )	not_all mammals growl
+#	all warthogs walk )	( not_all reptiles walk )
+#	( all warthogs move	( not_all pets move
+#	all warthogs growl	not_all pets growl )
+#	all turtles move	( ( not_all warthogs move
+v	all turtles walk	( ( not_all turtles move
+>	( all turtles ) walk	not_all turtles swim )
+#	( all turtles ) walk	( not_all turtles growl
+^	( all turtles move	( not_all turtles move )
+|	all turtles ) move )	( not_all turtles swim
+#	( ( all turtles move	( not_all turtles growl
+v	( all turtles swim )	( not_all turtles move
+^	( all turtles swim	not_all turtles swim
+>	all turtles swim	( not_all turtles ) growl
+#	all turtles walk )	( not_all mammals walk )
+|	( all turtles ) walk	( not_all reptiles walk
+|	all turtles move )	not_all reptiles walk
+|	all turtles ) move	not_all reptiles swim
+|	all turtles ) swim	not_all reptiles swim
+#	( ( all turtles move	( not_all pets move
+#	( all turtles swim )	( not_all pets swim )
+v	( all mammals ) walk	( not_all warthogs move
+v	( ( all mammals move	not_all warthogs move
+#	( all mammals move	( not_all turtles move
+#	( ( all mammals ) growl	( not_all turtles ) growl )
+^	all mammals walk	( not_all mammals walk
+#	all mammals walk	( ( not_all mammals ) growl )
+|	( all mammals move )	( not_all mammals walk
+#	all mammals ) move	not_all mammals growl
+#	( all mammals growl	not_all mammals ) walk
+^	( all mammals growl )	not_all mammals ) growl
+#	all mammals ) walk	( not_all reptiles walk )
+#	( all mammals move )	( ( not_all pets move
+#	all mammals growl	not_all pets growl
+v	all reptiles ) walk	not_all turtles move
+>	all reptiles walk	not_all turtles swim
+v	( all reptiles ) swim	not_all turtles ) move
+v	all reptiles ) swim	( not_all turtles ) swim
+>	( all reptiles swim	( not_all turtles growl
+>	( all reptiles ) growl	( not_all turtles swim
+v	all reptiles ) growl	not_all turtles growl )
+#	all reptiles walk	not_all mammals walk )
+#	( all reptiles growl	( not_all mammals growl
+^	( all reptiles ) walk	not_all reptiles ) walk
+>	all reptiles ) walk	( not_all reptiles ) swim
+>	( all reptiles swim )	not_all reptiles walk
+^	all reptiles ) swim	( not_all reptiles swim
+#	( ( all reptiles growl	not_all reptiles ) walk )
+>	all reptiles growl	( not_all reptiles swim
+#	( all reptiles swim	( not_all pets ) swim
+#	( all reptiles growl	( ( not_all pets ) growl
+#	all pets swim	not_all turtles swim )
+#	all pets growl	( not_all turtles growl )
+#	( all pets walk	not_all mammals walk )
+#	( all pets growl )	not_all mammals growl
+#	( all pets walk )	not_all reptiles walk )
+#	all pets swim	( ( not_all reptiles swim
+v	all pets walk )	not_all pets ) move
+>	( all pets walk	( not_all pets swim
+#	all pets walk	( not_all pets growl )
+v	( all pets swim	not_all pets ) move
+^	all pets swim	( not_all pets swim
+>	all pets swim	( not_all pets ) growl
+#	all pets growl )	( not_all pets ) move
+>	( all pets growl )	not_all pets swim
+^	( all pets growl	not_all pets ) growl
+<	all turtles walk	some turtles walk
+<	all turtles walk	some turtles move
+|	( all turtles walk )	( some turtles ) swim )
+<	( all turtles move	some turtles ) move
+|	all turtles swim )	some turtles ) walk
+<	all turtles swim )	( some turtles ) move
+<	( all turtles swim )	( some turtles swim )
+|	( all turtles swim )	some turtles growl )
+<	all mammals walk	( some mammals move
+|	all mammals walk	some mammals swim
+<	( all mammals ) move	( some mammals move )
+|	( all mammals growl	some mammals swim
+<	( all reptiles ) walk	some turtles walk
+<	( all reptiles walk	( ( some turtles move )
+|	( all reptiles walk	some turtles swim )
+|	all reptiles ) swim	some turtles walk
+<	( all reptiles swim )	( some turtles move
+<	all reptiles swim	( ( some turtles swim )
+|	( all reptiles swim	( some turtles ) growl
+|	( all reptiles ) growl	some turtles ) swim
+<	( ( all reptiles growl	( some turtles ) growl )
+<	all reptiles walk	some reptiles walk
+<	( all reptiles ) walk	( some reptiles ) move
+|	( all reptiles walk	some reptiles swim
+|	all reptiles ) swim	some reptiles walk
+<	all reptiles swim )	( ( some reptiles move )
+<	( all reptiles swim	some reptiles ) swim )
+|	all reptiles swim )	some reptiles growl
+|	( all reptiles ) growl	( some reptiles ) swim )
+<	all reptiles growl	( ( some reptiles ) growl
+<	( all pets walk )	( some pets move
+|	all pets ) walk	some pets ) swim )
+<	all pets ) swim	( ( some pets move )
+<	( all pets ) swim	( some pets swim )
+|	all pets swim	( some pets ) growl
+|	( all pets growl	some pets ) swim
+<	( all pets growl )	( some pets growl
+|	( all warthogs walk	no warthogs ) walk
+|	( all warthogs move	( no warthogs walk
+|	all warthogs ) growl )	no warthogs growl
+|	( all warthogs move	( no mammals ) move
+|	( all warthogs growl )	( no mammals growl
+|	( all turtles walk )	( no turtles walk
+|	( all turtles move	no turtles walk
+|	all turtles ) move )	no reptiles swim
+|	all turtles swim	no reptiles swim )
+|	all mammals ) move	( no mammals move
+|	( all mammals growl )	no mammals growl
+|	all reptiles swim	no reptiles swim
+|	( all pets walk )	( no pets walk
+|	( all pets swim	no pets ) swim
+|	( all pets growl	no pets growl )
+<	( all warthogs walk )	most warthogs walk
+|	all warthogs ) walk )	( most warthogs ) swim )
+|	all warthogs growl	( most warthogs swim
+<	all warthogs growl	( most warthogs ) growl )
+|	all turtles walk )	( most turtles ) swim
+<	all turtles ) swim	( most turtles ) swim )
+|	all turtles ) swim )	most turtles growl
+<	all mammals ) walk	( most warthogs walk
+|	( all mammals walk	( most warthogs swim
+|	all mammals growl )	most warthogs swim
+<	( all mammals growl )	( most warthogs growl
+<	all mammals walk	most mammals walk
+<	all mammals ) walk	most mammals move
+|	( all mammals walk	( most mammals swim
+<	( all mammals move	( most mammals move
+|	all mammals growl	( most mammals swim
+<	all mammals ) growl )	( most mammals growl
+|	( all reptiles ) walk )	( ( most turtles swim
+<	( all reptiles swim	most turtles ) swim )
+|	all reptiles swim )	( most turtles growl )
+|	all reptiles growl	most turtles swim
+<	( all reptiles growl	( most turtles growl )
+<	all reptiles ) walk )	( most reptiles move
+|	( all reptiles walk	most reptiles swim
+<	( ( all reptiles ) swim )	most reptiles move
+<	all reptiles swim	most reptiles swim
+|	( all reptiles swim	( ( most reptiles ) growl
+|	all reptiles growl )	( ( most reptiles swim )
+<	( all reptiles ) growl	most reptiles growl )
+<	( all pets ) walk )	most pets walk
+|	( all pets walk )	most pets swim )
+|	all pets swim	most pets walk )
+<	( all pets swim	most pets swim
+|	( all pets swim	most pets growl
+|	all pets growl	most pets swim
+<	all pets ) growl )	( most pets growl )
+|	( ( all warthogs move )	( ( not_most warthogs move )
+|	( all warthogs growl )	not_most warthogs growl
+|	all warthogs walk )	( not_most mammals walk
+|	all warthogs move	not_most mammals walk
+|	all warthogs move	( ( not_most mammals move
+|	( all warthogs ) move	( not_most mammals ) swim )
+|	all warthogs ) growl )	( not_most mammals growl
+|	( all turtles ) walk	not_most turtles walk )
+|	( all turtles move	not_most turtles walk
+|	( all turtles move	( not_most turtles ) move )
+|	all turtles ) move	not_most turtles ) swim
+|	all turtles swim	not_most turtles ) swim )
+|	( all turtles walk )	not_most reptiles ) walk )
+|	( all turtles move	( not_most reptiles walk
+|	all turtles move	not_most reptiles move
+|	all turtles ) move	not_most reptiles swim )
+|	( all turtles ) swim )	not_most reptiles ) swim
+|	( ( all mammals ) walk	not_most mammals walk
+|	all mammals ) move	( not_most mammals walk
+|	( all mammals move )	( not_most mammals ) move
+|	( all mammals move	not_most mammals ) swim )
+|	all mammals growl )	not_most mammals growl
+|	( ( all reptiles walk	( not_most reptiles walk
+|	( ( all reptiles ) swim )	not_most reptiles swim )
+|	all pets walk	( not_most pets walk
+|	( all pets ) swim	( not_most pets ) swim
+#	( all warthogs walk )	two warthogs walk
+#	( all warthogs growl )	( ( two warthogs growl
+#	all turtles ) walk	two turtles walk
+#	( all turtles move	( two turtles move )
+#	( all turtles swim	two turtles ) swim
+#	all mammals walk )	( two mammals walk
+#	( all mammals ) move )	two mammals ) move )
+#	all mammals ) growl	( two mammals ) growl )
+#	all reptiles growl	two reptiles growl )
+#	( all pets walk )	two pets walk
+#	all pets ) swim	two pets swim
+#	all pets ) growl	( ( two pets growl
+#	all warthogs ) walk	lt_two warthogs ) walk )
+#	( all turtles move	lt_two turtles ) move )
+#	( all turtles swim	lt_two turtles swim )
+#	( all mammals ) walk	lt_two mammals walk
+#	all mammals ) move	lt_two mammals move )
+#	all mammals growl	( lt_two mammals ) growl
+#	all reptiles walk )	( lt_two reptiles walk
+#	( all reptiles ) swim )	lt_two reptiles swim
+#	( all reptiles ) growl	lt_two reptiles growl
+#	all pets ) walk	lt_two pets ) walk
+#	all pets swim )	lt_two pets swim
+#	( all pets growl	( lt_two pets ) growl
+#	( all warthogs ) walk	three warthogs walk )
+#	( all warthogs move	( three warthogs move
+#	( all warthogs growl )	three warthogs growl )
+#	( all turtles walk )	three turtles walk )
+#	( all turtles move	three turtles move
+#	( all turtles swim	( three turtles swim
+#	( all mammals walk	three mammals walk
+#	( all reptiles swim	( ( three reptiles ) swim )
+#	( all pets growl )	( three pets growl
+#	all warthogs ) walk	lt_three warthogs ) walk
+#	( all warthogs ) growl )	( lt_three warthogs growl )
+#	( all turtles swim	lt_three turtles swim )
+#	all mammals walk	lt_three mammals ) walk
+#	all reptiles ) walk )	( ( lt_three reptiles walk
+#	all pets walk	( lt_three pets ) walk
+#	( ( all pets swim	lt_three pets ) swim
+#	all pets growl	lt_three pets growl
+v	not_all warthogs ) move	all warthogs walk )
+^	( not_all warthogs move )	( all warthogs move
+#	not_all warthogs move )	( all warthogs ) growl
+#	not_all warthogs move )	all turtles move
+v	( not_all warthogs ) move	all mammals ) walk )
+v	( ( not_all warthogs ) move	( all mammals move
+#	( not_all turtles ) move )	( all warthogs move
+#	( not_all turtles ) growl )	all warthogs growl )
+v	not_all turtles move	all turtles ) walk )
+^	not_all turtles ) move	all turtles move
+v	not_all turtles move	all turtles swim )
+<	not_all turtles swim	( all turtles walk
+|	not_all turtles swim	all turtles move
+^	( not_all turtles ) swim	all turtles swim
+#	not_all turtles growl	( all turtles walk
+#	( not_all turtles ) growl	( all turtles move )
+<	( not_all turtles growl	( ( all turtles ) swim )
+#	( not_all turtles move )	( ( all mammals ) move
+#	( not_all turtles ) growl	all mammals growl
+v	( ( not_all turtles move	all reptiles walk
+v	( not_all turtles move	( ( all reptiles swim )
+v	( not_all turtles ) swim	all reptiles swim )
+v	not_all turtles growl	( ( all reptiles ) growl
+#	not_all turtles swim	( all pets swim )
+#	not_all turtles growl	( all pets growl
+|	( not_all mammals walk	all warthogs walk )
+|	( ( not_all mammals walk	all warthogs ) move
+|	not_all mammals growl )	( ( all warthogs growl
+#	( not_all mammals walk	( all turtles walk )
+^	( not_all mammals ) walk )	all mammals walk
+|	not_all mammals ) walk	( all mammals ) move )
+#	( ( not_all mammals ) walk	( ( all mammals ) growl
+#	not_all mammals growl )	all mammals walk
+#	( not_all mammals growl )	( all mammals move )
+^	not_all mammals ) growl	all mammals growl
+#	( not_all mammals walk	all reptiles walk
+#	( not_all mammals ) growl )	( all reptiles growl
+#	( not_all mammals ) walk	( all pets ) walk
+#	( not_all mammals growl )	( all pets growl
+#	( not_all reptiles walk	( all warthogs walk
+|	( not_all reptiles walk )	all turtles walk
+|	not_all reptiles walk )	all turtles ) move
+<	not_all reptiles walk )	( all turtles swim
+<	not_all reptiles ) swim	( all turtles walk )
+|	( not_all reptiles swim	all turtles move
+|	( not_all reptiles swim	( all turtles swim
+#	( not_all reptiles walk	all mammals ) walk )
+^	( ( not_all reptiles walk	all reptiles walk
+<	not_all reptiles walk	( ( all reptiles swim
+#	( ( not_all reptiles walk )	all reptiles growl
+<	( ( not_all reptiles ) swim	( all reptiles walk
+^	not_all reptiles swim	( ( all reptiles ) swim
+<	not_all reptiles swim	all reptiles growl
+#	not_all reptiles walk	( all pets walk
+#	( not_all reptiles swim )	all pets swim
+#	( ( not_all pets ) move	( all warthogs move
+#	( not_all pets ) growl	( ( all warthogs growl
+#	not_all pets ) move	all turtles move
+#	not_all pets ) swim	( all turtles swim )
+#	not_all pets move	( all mammals move
+#	( ( not_all pets growl	all mammals ) growl
+#	not_all pets swim )	( all reptiles swim
+#	not_all pets growl )	all reptiles growl )
+v	( not_all pets move	all pets walk
+v	( not_all pets move )	( ( all pets swim
+#	not_all pets move )	( all pets growl
+<	not_all pets swim	( all pets ) walk
+^	not_all pets swim )	all pets swim
+<	( not_all pets swim )	( ( all pets growl
+#	( ( not_all pets ) growl	all pets walk )
+<	( ( not_all pets ) growl	all pets swim )
+^	not_all pets growl	( all pets growl
+=	not_all warthogs move	not_all warthogs move
+#	not_all warthogs move )	( not_all turtles move
+<	( not_all warthogs move )	not_all mammals walk )
+#	( not_all warthogs move	not_all pets move
+#	not_all turtles move	not_all warthogs move )
+=	not_all turtles move	not_all turtles move )
+<	( not_all turtles move	( not_all turtles swim )
+#	not_all turtles ) move )	not_all turtles ) growl
+>	not_all turtles swim )	not_all turtles ) move
+=	( not_all turtles swim	( not_all turtles ) swim )
+v	( not_all turtles swim	not_all turtles growl
+#	( not_all turtles growl	( not_all turtles move )
+v	not_all turtles growl	not_all turtles swim )
+=	not_all turtles growl	not_all turtles ) growl
+#	( not_all turtles ) growl	not_all mammals growl
+<	not_all turtles move	( not_all reptiles ) walk
+<	not_all turtles ) move	not_all reptiles swim
+<	not_all turtles swim	( ( not_all reptiles swim
+#	not_all turtles move	( not_all pets move
+#	not_all turtles swim	not_all pets swim
+#	( not_all turtles ) growl )	not_all pets growl
+>	( not_all mammals walk	not_all warthogs move )
+#	not_all mammals ) growl )	not_all turtles growl
+=	not_all mammals ) walk	not_all mammals ) walk
+#	( not_all mammals walk	not_all mammals growl )
+#	( not_all mammals growl )	not_all mammals walk
+=	not_all mammals growl )	not_all mammals growl
+#	( ( not_all mammals walk	( not_all reptiles ) walk )
+#	not_all mammals growl	( not_all pets ) growl
+>	( not_all reptiles walk	not_all turtles ) move )
+v	not_all reptiles ) walk )	not_all turtles swim
+>	( not_all reptiles swim )	( not_all turtles move
+>	not_all reptiles ) swim )	not_all turtles ) swim
+v	( not_all reptiles swim )	( not_all turtles growl
+#	not_all reptiles walk )	not_all mammals ) walk
+=	( not_all reptiles walk	not_all reptiles walk
+v	( ( not_all reptiles walk	not_all reptiles swim
+v	( not_all reptiles swim	not_all reptiles walk )
+=	( not_all reptiles swim )	( ( not_all reptiles swim
+#	( not_all reptiles ) swim	( not_all pets swim
+#	not_all pets move )	( not_all warthogs move )
+#	not_all pets move )	( not_all turtles move )
+#	not_all pets ) swim	( not_all turtles swim
+#	not_all pets ) growl )	not_all turtles growl
+#	not_all pets growl	( not_all mammals growl )
+#	( ( not_all pets ) swim	( not_all reptiles ) swim
+=	not_all pets move	( not_all pets move )
+<	( not_all pets ) move	( not_all pets swim
+#	not_all pets ) move )	( not_all pets growl )
+>	not_all pets swim )	( not_all pets ) move
+=	( ( not_all pets swim )	( not_all pets swim
+v	not_all pets ) swim	not_all pets growl )
+#	not_all pets growl )	not_all pets ) move )
+v	not_all pets ) growl	not_all pets swim )
+=	( not_all pets ) growl	not_all pets ) growl
+v	not_all warthogs ) move )	( some mammals ) move
+v	( not_all warthogs move )	( some mammals ) swim
+v	( not_all turtles ) move	some turtles ) walk
+v	not_all turtles move	( some turtles ) move
+v	not_all turtles move )	some turtles swim )
+v	( ( not_all turtles swim )	some turtles ) swim
+v	not_all turtles growl	some turtles growl )
+v	( ( not_all turtles move	some reptiles walk )
+v	not_all turtles move	( some reptiles move
+v	( not_all turtles move	( some reptiles ) swim
+v	not_all turtles swim	( some reptiles swim
+v	( not_all turtles growl	some reptiles growl
+v	not_all reptiles ) walk	some reptiles walk )
+v	( not_all reptiles ) swim	some reptiles swim )
+v	not_all pets move )	( some pets move
+v	( not_all pets move	some pets swim
+v	( not_all pets ) swim	some pets swim
+v	not_all pets growl	some pets ) growl )
+v	not_all turtles ) swim	no turtles walk )
+v	( ( not_all turtles swim	no turtles growl )
+>	not_all turtles growl )	( no turtles growl )
+>	not_all mammals walk	( no warthogs ) walk )
+>	( not_all mammals ) growl	no warthogs growl
+>	not_all mammals walk	( no mammals move
+>	not_all mammals growl	( ( no mammals growl
+>	( not_all reptiles walk	no turtles walk
+v	( not_all reptiles swim )	( no turtles walk
+v	not_all reptiles ) swim	no turtles ) growl
+v	not_all reptiles walk	( no reptiles swim )
+>	( not_all reptiles ) swim	( no reptiles swim
+>	not_all pets move	( no pets move
+v	( not_all pets swim	no pets ) walk
+>	not_all pets swim )	no pets move
+>	not_all pets swim	no pets swim )
+v	not_all pets swim )	no pets growl )
+v	not_all pets growl )	( no pets ) swim
+>	not_all pets growl	( ( no pets ) growl
+v	not_all warthogs move	most warthogs walk
+v	( not_all warthogs ) move	most warthogs ) swim )
+v	not_all warthogs move	( most mammals walk
+v	( not_all warthogs move	( most mammals move )
+v	( not_all warthogs move	most mammals swim
+v	not_all turtles move	( most turtles swim
+v	not_all turtles swim	( most turtles ) swim
+v	( ( not_all turtles growl )	( most turtles growl
+v	( not_all turtles move )	most reptiles ) move
+v	not_all turtles ) move	( ( most reptiles ) swim )
+v	not_all turtles ) swim	most reptiles swim
+v	( not_all turtles growl	( most reptiles growl
+v	( not_all mammals walk	most mammals ) walk
+v	not_all mammals growl	most mammals growl )
+v	( not_all reptiles ) swim	( most reptiles swim
+v	( not_all pets move	( most pets ) walk
+v	not_all pets move	( ( most pets swim )
+v	not_all pets swim	( most pets ) swim
+v	not_all pets growl )	most pets growl
+>	not_all warthogs move	not_most warthogs ) move )
+>	( not_all turtles move	( not_most turtles ) move
+v	not_all turtles swim )	not_most turtles ) walk
+>	not_all turtles ) swim	( not_most turtles move )
+>	( not_all turtles swim	not_most turtles swim )
+v	( not_all turtles swim	( not_most turtles growl )
+v	not_all turtles growl	( not_most turtles swim )
+>	not_all turtles growl )	( not_most turtles growl
+>	not_all mammals walk	not_most warthogs ) move
+>	( not_all mammals growl	( not_most warthogs growl
+>	not_all mammals walk )	not_most mammals ) walk )
+>	not_all mammals ) walk	( not_most mammals move
+v	( not_all mammals ) walk )	not_most mammals swim )
+v	( not_all mammals ) growl	( ( not_most mammals swim
+>	not_all mammals growl )	not_most mammals growl )
+>	not_all reptiles walk )	not_most turtles walk
+>	not_all reptiles walk	( not_most turtles move )
+v	( not_all reptiles walk )	not_most turtles ) swim
+v	not_all reptiles swim	not_most turtles walk
+>	not_all reptiles swim	not_most turtles move
+>	( not_all reptiles ) swim	( not_most turtles swim
+v	( not_all reptiles swim	not_most turtles growl
+>	( not_all reptiles ) walk	( ( not_most reptiles ) walk
+>	not_all reptiles walk	not_most reptiles move )
+v	( not_all reptiles walk	not_most reptiles swim
+v	( not_all reptiles swim	not_most reptiles walk )
+>	( not_all reptiles swim	( not_most reptiles move
+>	not_all reptiles swim	( not_most reptiles swim )
+>	( not_all pets ) move	( ( not_most pets move
+v	not_all pets swim )	( not_most pets ) walk
+>	( ( not_all pets ) swim	not_most pets move
+>	not_all pets ) swim )	not_most pets swim
+v	not_all pets growl )	not_most pets swim )
+#	( not_all turtles ) move )	two turtles move
+#	( not_all turtles ) swim )	two turtles ) swim
+#	not_all turtles growl	two turtles growl )
+#	( not_all mammals ) walk	( two mammals walk )
+#	( not_all mammals growl	two mammals growl )
+#	not_all pets move	two pets move
+#	not_all pets ) swim	( two pets swim )
+#	not_all pets growl )	( two pets growl
+#	( not_all turtles move	( lt_two turtles move
+#	( not_all turtles swim	( lt_two turtles ) swim )
+#	not_all turtles growl	( lt_two turtles growl )
+#	not_all mammals ) walk )	( lt_two mammals walk
+#	not_all mammals growl	lt_two mammals growl
+#	not_all reptiles walk	lt_two reptiles walk
+#	( not_all reptiles ) swim	lt_two reptiles swim
+#	not_all pets ) move )	( lt_two pets ) move
+#	( ( not_all pets swim	lt_two pets swim
+#	not_all pets growl	( ( lt_two pets growl )
+#	( not_all warthogs move	three warthogs move )
+#	not_all turtles ) move	( three turtles move
+#	( not_all turtles swim )	( three turtles swim
+#	( not_all mammals walk	three mammals ) walk
+#	not_all reptiles swim	( three reptiles swim
+#	not_all pets ) move	( three pets move
+#	not_all pets growl )	( three pets growl
+#	( not_all turtles swim	( lt_three turtles ) swim
+#	( not_all turtles growl	( lt_three turtles ) growl
+#	not_all mammals ) walk	( ( lt_three mammals ) walk )
+#	not_all reptiles walk	( lt_three reptiles walk )
+#	not_all pets ) move	lt_three pets move
+#	( not_all pets swim	lt_three pets swim )
+#	( not_all pets ) growl	( lt_three pets growl
+>	some turtles walk	( all turtles walk
+>	some turtles move )	all turtles walk )
+>	some turtles move )	( all turtles move )
+>	some turtles move	all turtles swim )
+>	( some turtles swim )	all turtles swim )
+>	some mammals move )	all warthogs walk
+>	( some mammals move	all warthogs move )
+>	( some mammals move	( all mammals walk
+>	some mammals move	( all mammals move
+>	( ( some reptiles ) walk	all turtles walk )
+>	some reptiles move	all turtles walk )
+>	some reptiles ) move )	all turtles move
+>	( some reptiles move )	all turtles swim
+>	some reptiles swim	( all turtles swim
+>	( some reptiles ) walk	all reptiles walk
+>	some reptiles move	( all reptiles walk
+>	( some reptiles move	( all reptiles swim
+>	some reptiles ) swim )	( all reptiles ) swim )
+>	some reptiles growl )	all reptiles growl
+>	some pets move	all pets ) walk
+>	( some pets move	( all pets swim
+>	some pets ) swim	all pets ) swim )
+>	some pets growl	all pets growl
+v	( some turtles walk	not_all turtles move
+v	some turtles ) move	not_all turtles move
+v	( some turtles ) swim )	not_all turtles ) move
+v	( some turtles swim	not_all turtles ) swim
+v	( some turtles ) growl	( not_all turtles ) growl
+v	some turtles walk	( ( not_all reptiles walk
+v	some turtles swim	( not_all reptiles swim
+v	some reptiles ) walk	not_all reptiles walk )
+v	( some reptiles swim	( not_all reptiles ) swim )
+v	( ( some pets move	( not_all pets move
+v	some pets ) swim	( not_all pets ) move
+v	( some pets swim )	not_all pets ) swim
+v	( some pets ) growl	( not_all pets growl
+=	( some turtles ) walk	( some turtles ) walk )
+<	( some turtles walk )	( some turtles move
+#	some turtles walk	( some turtles swim )
+#	some turtles walk	some turtles ) growl )
+>	( ( some turtles move )	some turtles ) walk
+=	( some turtles move	( some turtles move
+>	some turtles move	( some turtles ) swim )
+#	some turtles move	( some turtles ) growl )
+#	( some turtles swim	( some turtles ) walk )
+<	some turtles swim	( some turtles move
+=	some turtles ) swim	some turtles ) swim )
+#	some turtles ) swim )	some turtles growl )
+#	( some turtles growl )	( some turtles ) walk
+#	( some turtles growl	some turtles move
+#	( some turtles ) growl )	some turtles swim
+=	( ( some turtles growl	( some turtles growl
+#	( some turtles move	some mammals ) move )
+#	some turtles swim )	( some mammals swim
+<	some turtles walk	some reptiles walk
+<	some turtles walk	some reptiles move
+<	some turtles move )	some reptiles move
+<	some turtles swim )	( some reptiles ) move )
+<	( some turtles swim )	( some reptiles ) swim )
+<	( some turtles ) growl	some reptiles growl
+#	( ( some turtles move	some pets move
+#	( some turtles swim	( some pets swim )
+#	some turtles growl	some pets ) growl
+#	( some mammals move	( some turtles ) move )
+#	( some mammals swim	( some turtles swim )
+=	( some mammals move	( some mammals move
+>	some mammals ) move	some mammals swim
+<	some mammals swim )	( some mammals move )
+=	some mammals swim	some mammals swim )
+#	some mammals move )	some reptiles move
+#	( some mammals swim	( some reptiles ) swim
+#	( some mammals move	( some pets move
+#	some mammals swim	some pets ) swim
+>	some reptiles ) walk	( some turtles walk )
+>	( some reptiles move	( some turtles walk )
+>	( ( some reptiles ) move	some turtles ) move
+>	( ( some reptiles move )	some turtles swim )
+>	some reptiles ) swim )	( some turtles swim
+>	some reptiles growl )	some turtles growl
+#	some reptiles ) move )	some mammals ) move )
+#	( some reptiles swim	( some mammals swim
+=	( some reptiles ) walk	( ( some reptiles walk
+<	( some reptiles walk	( some reptiles move
+#	( some reptiles ) walk	( some reptiles swim )
+#	some reptiles walk	some reptiles growl
+>	some reptiles move )	some reptiles walk
+=	some reptiles move )	some reptiles move )
+>	( some reptiles move	( some reptiles swim )
+#	some reptiles ) move	( ( some reptiles growl
+#	some reptiles swim	some reptiles walk
+<	some reptiles ) swim )	( some reptiles move
+=	( some reptiles ) swim )	( some reptiles ) swim
+#	some reptiles swim	( some reptiles growl
+#	some reptiles growl	( some reptiles walk )
+#	( some reptiles growl	( some reptiles move )
+#	some reptiles ) growl	some reptiles swim
+=	( some reptiles ) growl )	some reptiles growl
+#	( some reptiles move	( some pets move
+#	some reptiles swim	some pets swim )
+#	( some reptiles growl )	( some pets growl
+#	( some pets move )	( some turtles ) move
+#	( some pets swim	some turtles swim
+#	some pets growl )	( some turtles ) growl
+#	some pets move	some mammals move )
+#	( some pets swim	some mammals ) swim
+#	( some pets move	( ( some reptiles ) move
+#	( ( some pets swim )	some reptiles swim
+#	( some pets growl	( some reptiles growl
+=	( some pets move	( some pets move
+>	( some pets ) move	( ( some pets swim )
+#	some pets move	some pets ) growl
+<	( some pets swim )	some pets ) move
+=	( some pets swim	( some pets swim
+#	( ( some pets swim	some pets ) growl
+#	( some pets ) growl	some pets ) move
+#	some pets growl	( some pets swim
+=	( some pets ) growl )	some pets growl
+#	some turtles walk )	no warthogs walk
+#	some turtles growl	( no warthogs growl
+^	( ( some turtles walk	( no turtles walk )
+#	( some turtles ) walk	( no turtles growl
+|	( some turtles ) move	( no turtles walk )
+#	some turtles move )	no turtles ) growl
+#	( ( some turtles swim	( no turtles walk
+#	( ( some turtles swim )	( no turtles growl
+#	( some turtles growl	( no turtles walk
+^	( some turtles ) growl	no turtles growl )
+#	some turtles move	no mammals move )
+#	( some turtles growl	( no mammals growl
+v	some turtles swim	no reptiles swim
+#	some turtles walk	( no pets ) walk
+#	some turtles ) move	no pets ) move
+#	( some turtles swim	no pets swim
+#	some turtles growl	( no pets growl )
+|	some mammals move	( ( no warthogs walk
+^	( some mammals move	( no mammals ) move )
+#	( some mammals move )	no mammals growl
+v	some mammals swim	( no mammals move )
+#	( ( some mammals ) swim	( no mammals growl )
+#	( some mammals ) swim )	no reptiles ) swim
+#	some mammals move )	( no pets ) move )
+#	some mammals swim )	( no pets swim )
+#	( ( some reptiles walk	no warthogs walk
+#	( some reptiles growl	no warthogs ) growl
+|	( some reptiles walk )	( no turtles ) walk
+|	some reptiles move	no turtles walk
+|	( some reptiles ) growl	( no turtles growl
+#	( some reptiles move	no mammals move
+#	some reptiles growl	no mammals growl )
+#	some reptiles walk )	( no reptiles swim )
+|	some reptiles ) move	( no reptiles ) swim
+^	some reptiles swim	no reptiles swim )
+#	some reptiles growl	no reptiles swim
+#	( some reptiles walk	( ( no pets ) walk
+#	( some reptiles move	no pets move
+#	some reptiles swim	no pets ) swim
+#	( some reptiles growl )	( no pets ) growl )
+#	( some pets growl	no warthogs growl
+#	( some pets ) growl )	no turtles growl
+#	( some pets ) move	no mammals ) move
+#	( some pets growl	( no mammals ) growl )
+#	some pets ) swim	no reptiles swim
+|	( some pets move )	no pets ) walk
+^	some pets ) move )	no pets ) move )
+|	some pets move )	no pets ) swim
+#	some pets move	( no pets growl
+#	some pets swim	no pets walk
+v	( some pets swim	no pets move )
+^	some pets swim	( ( no pets swim
+#	some pets swim	( no pets ) growl
+#	( some pets ) growl	( no pets walk
+#	some pets growl	no pets move )
+#	some pets ) growl	( no pets swim
+^	( some pets ) growl	( ( no pets ) growl
+>	some turtles move	most turtles swim
+>	some turtles ) swim	( ( most turtles swim
+>	some turtles growl	( ( most turtles ) growl
+>	( some mammals move )	( most warthogs walk )
+>	some mammals move	( most warthogs swim
+>	some mammals swim )	most warthogs swim
+>	some mammals move	( ( most mammals walk
+>	( some mammals move	( most mammals move
+>	( ( some mammals move	most mammals ) swim )
+>	( some mammals swim	most mammals swim )
+>	some reptiles move )	most turtles swim
+>	( some reptiles swim )	most turtles swim
+>	some reptiles growl	most turtles ) growl
+>	( some reptiles move )	( most reptiles move
+>	some reptiles ) move	( ( most reptiles swim
+>	some reptiles swim )	( most reptiles swim )
+>	some reptiles growl )	( most reptiles growl )
+>	( some pets move )	( most pets walk )
+>	( some pets move )	most pets swim
+>	( some pets ) swim )	most pets swim
+>	( some pets ) growl	( most pets ) growl )
+v	some turtles walk	not_most turtles ) walk )
+v	( some turtles walk	not_most turtles move
+v	some turtles ) move	( ( not_most turtles move
+v	( some turtles swim	not_most turtles move
+v	some turtles swim	not_most turtles swim
+v	( some turtles growl	( not_most turtles ) growl
+v	( some turtles walk	not_most reptiles walk
+v	some turtles ) walk	( not_most reptiles ) move
+v	( some turtles ) move )	( not_most reptiles move )
+v	some turtles swim	( not_most reptiles move )
+v	( some turtles ) swim	not_most reptiles swim )
+v	( some mammals move	not_most mammals move
+v	( some mammals swim	( ( not_most mammals ) move
+v	some mammals ) swim	( not_most mammals ) swim
+v	some reptiles walk	( ( not_most reptiles walk
+v	( ( some reptiles walk	not_most reptiles move
+v	some reptiles ) move )	( not_most reptiles move
+v	some reptiles swim	( not_most reptiles move )
+v	some reptiles swim	( not_most reptiles ) swim )
+v	( some pets ) move	( not_most pets move )
+v	( ( some pets swim )	( not_most pets move )
+v	( some pets swim )	( not_most pets swim )
+>	some turtles walk	two turtles ) walk
+>	some turtles ) move	two turtles walk
+>	( some turtles ) move	( ( two turtles move
+>	( some turtles ) move )	( two turtles ) swim )
+>	some turtles swim	( two turtles swim )
+>	some turtles ) growl	two turtles ) growl
+>	some mammals ) move	two warthogs ) walk
+>	( ( some mammals move	( ( two warthogs swim
+>	some mammals ) swim	( two warthogs swim )
+>	( some mammals ) move	two mammals ) walk
+>	( some mammals ) move )	two mammals move
+>	( ( some reptiles walk	( two turtles ) walk
+>	some reptiles move )	two turtles walk )
+>	some reptiles ) move	( two turtles ) move
+>	( some reptiles ) move )	( two turtles swim
+>	( some reptiles ) swim	two turtles swim
+>	( ( some reptiles growl	two turtles growl
+>	( some reptiles growl	two reptiles ) growl
+>	( some pets move )	( two pets walk
+>	( some pets move )	two pets ) move
+>	some pets move	two pets swim
+>	( some pets swim )	( ( two pets ) swim
+>	some pets ) growl	( two pets growl
+v	( ( some turtles walk	( lt_two turtles move )
+v	( some turtles ) move	lt_two turtles ) move
+v	( some turtles swim	lt_two turtles ) move
+v	some turtles swim )	( lt_two turtles swim
+v	some turtles growl	lt_two turtles ) growl )
+v	some turtles ) walk	lt_two reptiles walk )
+v	( some turtles ) walk	lt_two reptiles move )
+v	some turtles ) move	lt_two reptiles ) move
+v	( some turtles swim	( lt_two reptiles move
+v	some turtles swim	lt_two reptiles ) swim
+v	some turtles growl	( ( lt_two reptiles growl
+v	( some mammals move	lt_two mammals ) move
+v	( some mammals swim	lt_two mammals ) move
+v	some reptiles walk	lt_two reptiles ) walk )
+v	some reptiles walk	lt_two reptiles ) move )
+v	( some reptiles move	( lt_two reptiles move )
+v	( some reptiles ) swim	lt_two reptiles ) move
+v	( some reptiles swim	lt_two reptiles ) swim )
+v	( some reptiles ) growl )	( lt_two reptiles growl )
+v	some pets ) move	lt_two pets ) move
+v	some pets ) swim	lt_two pets ) move
+v	( some pets swim	( lt_two pets swim )
+v	some pets growl	lt_two pets ) growl )
+>	some turtles walk )	( three turtles ) walk
+>	some turtles ) move	( ( three turtles walk
+>	( some turtles move	three turtles move
+>	( some turtles move	( three turtles swim )
+>	some turtles swim	three turtles ) swim
+>	some mammals move )	( three warthogs walk
+>	some mammals move	three warthogs move
+>	some mammals ) move	three warthogs swim
+>	some mammals swim	three warthogs ) swim
+>	some mammals move	( three mammals walk
+>	( ( some mammals move	three mammals ) swim )
+>	some mammals swim	( three mammals ) swim
+>	some reptiles walk	three turtles walk
+>	some reptiles ) move )	( three turtles ) walk
+>	( some reptiles move	three turtles move
+>	( some reptiles move	( three turtles swim
+>	( some reptiles ) swim	( three turtles ) swim
+>	some reptiles ) move	three reptiles move
+>	some reptiles move	( ( three reptiles swim
+>	( some reptiles swim	( three reptiles swim
+>	some pets ) move	three pets ) move
+>	( some pets growl	( three pets growl )
+v	( some turtles ) swim	( lt_three turtles ) swim )
+v	some turtles growl )	( lt_three turtles ) growl )
+v	some turtles walk	lt_three reptiles ) walk
+v	some reptiles ) walk	( lt_three reptiles walk
+v	( some pets move	( lt_three pets move )
+v	some pets swim )	( lt_three pets ) move
+v	some pets swim )	lt_three pets ) swim
+v	some pets ) growl	lt_three pets growl
+|	no warthogs walk	( all warthogs ) walk
+|	( no warthogs ) walk )	all warthogs move
+|	( ( no warthogs ) growl	( ( all warthogs growl )
+|	no warthogs walk	all mammals walk
+|	( no warthogs ) walk	( all mammals move )
+|	( no warthogs growl	all mammals growl
+|	( no turtles walk )	all turtles walk )
+|	no turtles walk	( all turtles move
+|	( no turtles walk	all reptiles walk
+|	no turtles growl )	all reptiles growl
+|	no mammals move	( ( all mammals move
+|	( no mammals growl	all mammals growl
+|	( no reptiles swim	all reptiles swim
+|	( no pets walk	( all pets ) walk
+|	no pets ) swim	( ( all pets swim )
+|	( no pets ) growl	( all pets ) growl
+<	( no turtles growl )	( ( not_all turtles ) growl
+<	no mammals move	( not_all warthogs move )
+<	( no mammals move	not_all mammals ) walk
+<	( no mammals growl )	( ( not_all mammals growl )
+<	( no reptiles swim )	not_all turtles swim
+<	no reptiles swim )	not_all reptiles swim )
+<	no pets move	( not_all pets ) move
+<	( no pets move	( not_all pets ) swim
+<	( no pets ) swim )	( not_all pets swim
+<	no pets growl	( ( not_all pets ) growl
+#	no warthogs walk	( some turtles ) walk )
+#	( no warthogs growl	some turtles growl
+|	( no warthogs walk	( some mammals move
+#	( no warthogs ) walk	( some reptiles ) walk
+#	( no warthogs growl	( some reptiles ) growl
+#	( no warthogs ) growl )	some pets growl
+^	( no turtles walk	some turtles ) walk
+|	no turtles walk	( some turtles move
+#	no turtles ) walk	some turtles ) swim
+#	no turtles walk	some turtles ) growl )
+#	no turtles growl	( some turtles ) walk )
+#	no turtles ) growl	some turtles move
+#	no turtles growl	( some turtles ) swim
+^	( ( no turtles growl )	( some turtles ) growl )
+|	no turtles walk )	some reptiles walk )
+|	( ( no turtles walk )	( some reptiles move
+|	( no turtles growl )	some reptiles ) growl
+#	( ( no turtles ) growl	( some pets ) growl
+#	( no mammals ) move )	some turtles move
+#	no mammals growl	some turtles growl )
+^	( ( no mammals ) move )	some mammals move
+v	( no mammals move	( some mammals swim
+#	( ( no mammals growl	some mammals move
+#	no mammals growl	some mammals swim )
+#	no mammals move	some reptiles move
+#	no mammals growl	( some reptiles growl
+#	no mammals move )	some pets ) move )
+#	( no mammals ) growl	( ( some pets growl
+v	( no reptiles swim	some turtles ) swim
+#	no reptiles ) swim	( some mammals ) swim
+#	( ( no reptiles swim	( some reptiles walk )
+|	( ( no reptiles swim	some reptiles move
+^	( no reptiles swim	some reptiles ) swim
+#	( no reptiles swim	( some reptiles growl )
+#	( no reptiles swim	some pets swim
+#	( no pets ) walk	( some turtles walk
+#	( no pets ) move	( some turtles move )
+#	( ( no pets swim )	( some turtles ) swim
+#	( no pets growl )	( some turtles growl )
+#	( no pets ) move )	some mammals move
+#	( ( no pets ) swim	some mammals swim )
+#	( no pets walk )	( some reptiles walk )
+#	no pets move )	( some reptiles ) move
+#	no pets swim	( some reptiles swim
+#	( ( no pets ) growl )	some reptiles growl
+|	no pets walk	some pets move
+#	( ( no pets ) walk	( some pets swim )
+#	no pets walk	( ( some pets ) growl
+^	no pets ) move	( ( some pets move
+v	( no pets move	some pets ) swim
+#	no pets ) move )	( some pets growl
+|	no pets swim	some pets move
+^	( no pets swim )	some pets ) swim
+#	( no pets ) swim )	( ( some pets growl
+#	no pets growl	( ( some pets move
+#	no pets growl )	( some pets swim )
+^	no pets ) growl	some pets growl
+=	no warthogs walk	( no warthogs ) walk )
+#	no warthogs ) walk )	no warthogs growl )
+#	no warthogs growl )	no warthogs walk
+=	no warthogs growl )	( no warthogs ) growl )
+#	( no warthogs walk	no turtles walk )
+#	no warthogs ) growl	no turtles growl
+>	( no warthogs walk	no mammals move
+>	no warthogs growl	( no mammals growl
+#	( no warthogs walk	( no pets walk )
+#	no warthogs growl )	no pets ) growl
+#	no turtles walk	no warthogs walk
+#	( no turtles growl	( no warthogs ) growl
+=	no turtles walk )	( ( no turtles walk )
+#	( ( no turtles ) walk	no turtles growl
+#	( no turtles growl	( no turtles walk
+=	no turtles growl )	( no turtles growl
+#	no turtles ) growl	no mammals growl )
+#	no turtles walk )	( no pets ) walk
+#	no turtles ) growl	( no pets ) growl
+<	no mammals move )	no warthogs ) walk
+<	( ( no mammals growl	no warthogs growl
+#	( no mammals growl	( no turtles ) growl
+=	( no mammals move	( no mammals move )
+#	( ( no mammals move	( no mammals ) growl )
+#	( no mammals growl	( no mammals move
+=	( no mammals growl	no mammals growl )
+#	no mammals move )	( no pets move
+#	( no mammals growl	no pets growl )
+=	( no reptiles swim	( no reptiles swim )
+#	( no reptiles ) swim	( no pets swim
+#	no pets ) walk	( ( no warthogs ) walk
+#	( no pets ) growl )	( no warthogs growl
+#	( no pets walk	no turtles walk
+#	no pets growl	no turtles growl
+#	( no pets move )	( no mammals move
+#	( no pets ) growl	no mammals ) growl )
+#	( ( no pets swim	( no reptiles swim )
+=	( no pets walk )	( no pets ) walk
+>	( no pets walk )	( no pets move
+#	no pets walk	( ( no pets ) swim )
+#	( ( no pets walk	( no pets growl
+<	( no pets move	( no pets walk
+=	( no pets move	( ( no pets move
+<	no pets move	( ( no pets ) swim )
+#	no pets move )	( no pets ) growl
+#	no pets swim )	no pets ) walk )
+>	no pets swim	no pets move )
+=	no pets ) swim )	( no pets ) swim )
+#	no pets swim	no pets growl
+#	no pets growl	no pets ) walk
+#	( no pets ) growl	( ( no pets move
+#	no pets growl	no pets swim
+=	( no pets growl	no pets growl )
+|	no warthogs ) walk	most warthogs walk
+|	no warthogs growl )	most warthogs growl
+|	( no warthogs ) walk	( most mammals walk
+|	( no warthogs ) walk	most mammals move )
+|	( no warthogs growl	most mammals ) growl
+|	no turtles growl	( most turtles growl
+|	( no turtles walk )	most reptiles move
+|	no turtles growl )	( most reptiles growl
+|	no mammals move	most mammals ) move
+|	( no mammals growl	( most mammals growl
+|	no reptiles ) swim	( most reptiles move
+|	( no reptiles swim )	most reptiles swim )
+|	no pets walk	most pets walk
+|	no pets ) swim	( most pets swim
+|	no pets growl	( most pets growl )
+<	( no warthogs growl )	( not_most warthogs growl )
+<	( no turtles walk	not_most turtles walk )
+<	no turtles growl	not_most turtles growl
+<	( no mammals move	not_most warthogs ) move )
+<	( no mammals growl	( not_most warthogs growl )
+<	no mammals ) move )	( not_most mammals walk
+<	no mammals ) move	( not_most mammals move
+<	( no mammals move	( not_most mammals ) swim
+<	( no mammals growl	( not_most mammals ) growl
+<	( ( no reptiles swim	not_most turtles ) swim
+<	( no reptiles ) swim	not_most reptiles swim
+<	no pets ) walk	( not_most pets ) walk )
+<	( no pets ) move	not_most pets walk
+<	no pets move )	not_most pets ) move
+<	no pets ) move	not_most pets swim )
+<	no pets swim	( not_most pets ) swim )
+|	no warthogs walk	two warthogs walk
+|	( ( no warthogs growl )	two warthogs growl
+|	no warthogs ) walk	( two mammals walk
+|	no warthogs ) walk	( two mammals move
+|	( no warthogs ) growl	( two mammals growl
+|	( no turtles walk	( two turtles walk
+|	( no turtles ) walk	( two turtles ) move
+|	no turtles growl	( two turtles growl
+|	( no turtles growl )	two reptiles growl
+|	( no mammals move	two mammals move
+|	( no mammals ) growl )	( ( two mammals growl
+|	( ( no pets walk	two pets ) walk
+|	( ( no pets ) walk	two pets ) move )
+|	( ( no pets move	( two pets move )
+|	no pets swim )	two pets move )
+|	( no pets ) swim )	( two pets swim )
+|	( ( no pets growl )	( two pets ) growl
+<	( no warthogs walk )	lt_two warthogs walk
+<	no turtles growl	lt_two turtles growl
+<	( no mammals move )	lt_two warthogs walk
+<	no mammals move )	( lt_two mammals walk
+<	( no mammals move	lt_two mammals move
+<	no mammals growl	( lt_two mammals growl
+<	( no reptiles swim	( lt_two turtles swim
+<	( no reptiles swim )	( lt_two reptiles swim
+<	no pets walk )	lt_two pets walk )
+<	( no pets ) move )	( lt_two pets ) walk
+<	( ( no pets move	( lt_two pets move
+<	( no pets ) move	lt_two pets swim
+<	no pets ) swim	( lt_two pets ) swim
+<	no pets growl )	lt_two pets ) growl )
+|	no warthogs walk	three warthogs walk
+|	no warthogs ) walk )	three warthogs ) move
+|	( no warthogs growl )	three warthogs growl
+|	( no warthogs walk )	three mammals walk
+|	( no turtles walk	( three turtles walk
+|	( no turtles walk	( three turtles ) move )
+|	( no turtles walk	three reptiles ) move
+|	( no reptiles swim	three reptiles ) move
+|	( ( no reptiles ) swim	three reptiles swim
+|	no pets walk	( three pets move
+|	( no pets move	( three pets move
+|	no pets swim )	( three pets move
+|	no pets ) growl	( three pets growl )
+<	( no warthogs walk	lt_three warthogs ) walk
+<	( no warthogs ) growl	lt_three warthogs ) growl
+<	no turtles growl	lt_three turtles ) growl )
+<	no mammals move	lt_three warthogs walk
+<	no mammals move )	lt_three warthogs swim )
+<	( no mammals growl	( lt_three warthogs growl )
+<	( no mammals move )	lt_three mammals ) walk
+<	( no reptiles swim	( lt_three turtles swim
+<	( ( no pets walk )	lt_three pets walk
+<	no pets move	( lt_three pets walk )
+<	( no pets move	( lt_three pets ) move
+<	( ( no pets move	lt_three pets ) swim
+<	no pets swim	( lt_three pets swim
+<	no pets growl	lt_three pets ) growl
+>	( most warthogs walk	( all warthogs ) walk )
+>	( most warthogs ) growl	all warthogs ) growl
+>	( ( most turtles swim	( all turtles swim
+>	most mammals walk )	all mammals walk
+>	most mammals ) move )	( all mammals walk
+>	( most mammals move )	( ( all mammals move )
+>	most mammals growl	all mammals growl
+>	most reptiles ) move	( all reptiles walk )
+>	most reptiles move	( all reptiles swim
+>	( most reptiles ) swim	( ( all reptiles swim
+>	most reptiles ) growl	all reptiles growl
+>	most pets walk	( all pets walk
+>	most pets swim )	( ( all pets ) swim )
+>	( ( most pets growl )	all pets ) growl )
+v	( most warthogs walk	( ( not_all warthogs ) move )
+v	( most warthogs ) swim	not_all warthogs move
+v	most turtles swim )	( not_all turtles ) move
+v	most turtles swim	not_all turtles swim )
+>	( ( most turtles ) swim	not_all turtles growl
+>	( most turtles ) growl	not_all turtles swim )
+v	( most turtles growl	not_all turtles growl
+v	most mammals walk )	not_all mammals walk )
+>	( most mammals swim )	not_all mammals walk
+>	( most mammals swim )	not_all mammals ) growl
+v	( most mammals growl )	not_all mammals growl
+>	( most reptiles swim	not_all reptiles ) walk )
+v	( most reptiles ) swim	not_all reptiles swim
+>	most reptiles growl	( not_all reptiles ) swim
+v	most pets ) walk )	( not_all pets move
+>	most pets ) walk	not_all pets swim
+v	most pets swim	not_all pets ) move )
+v	most pets ) swim )	not_all pets ) swim
+>	most pets swim	not_all pets growl
+>	most pets growl	( not_all pets swim
+v	most pets growl	not_all pets ) growl
+|	( most turtles swim	( some turtles walk )
+<	( most turtles swim	some turtles move
+<	most turtles swim	( some turtles swim )
+|	( most turtles swim	( some turtles growl
+|	( most turtles ) growl	( some turtles ) swim
+<	( ( most turtles ) growl	( some turtles ) growl )
+<	most mammals walk )	( ( some mammals move
+|	( most mammals walk )	( some mammals swim )
+<	( most mammals move )	( some mammals ) move )
+<	most mammals swim	( some mammals move
+<	( most mammals ) swim )	( some mammals ) swim )
+|	most mammals growl )	some mammals swim
+<	( most reptiles move	some reptiles move
+|	( most reptiles swim )	some reptiles ) walk
+<	most reptiles swim	( some reptiles move
+<	( ( most reptiles ) swim )	( some reptiles ) swim
+|	most reptiles ) swim	( some reptiles growl
+|	most reptiles growl	some reptiles ) swim )
+<	most reptiles growl )	some reptiles growl )
+<	most pets ) walk	( some pets move
+|	( most pets ) walk )	( some pets swim
+<	( most pets swim )	some pets move
+<	most pets swim	some pets swim
+|	most pets swim )	( some pets growl
+|	( ( most pets growl	( some pets swim )
+<	most pets growl	some pets ) growl )
+|	( ( most warthogs walk	no warthogs walk )
+|	most warthogs ) growl	( no warthogs growl
+|	( most turtles ) growl	no turtles growl
+|	most mammals move	no mammals move
+|	( most mammals growl )	no mammals growl
+|	( most reptiles move	( no reptiles swim
+|	most reptiles swim )	no reptiles swim )
+|	( most pets walk	no pets walk
+|	( most pets swim	no pets swim )
+|	most pets growl	no pets growl )
+=	most warthogs walk	( most warthogs ) walk
+|	most warthogs walk	most warthogs swim
+#	most warthogs walk	( ( most warthogs ) growl
+|	( most warthogs swim )	( most warthogs walk
+=	most warthogs swim	( most warthogs swim )
+|	most warthogs swim )	most warthogs growl
+#	( most warthogs growl	most warthogs walk )
+|	( most warthogs ) growl	( most warthogs swim
+=	( most warthogs growl	most warthogs ) growl
+#	( most warthogs ) swim	most turtles swim )
+#	most warthogs growl	most turtles growl
+#	most warthogs ) walk	( ( most mammals walk
+#	( most warthogs swim	most mammals ) swim
+#	most warthogs growl	most mammals ) growl
+#	( ( most warthogs swim	most reptiles swim
+#	most warthogs growl	most reptiles growl
+#	most warthogs ) walk	most pets ) walk
+#	most warthogs swim )	most pets ) swim
+#	most warthogs growl	most pets growl
+#	( ( most turtles swim	( most warthogs ) swim )
+#	most turtles growl )	most warthogs growl
+=	( most turtles swim	( most turtles swim
+|	( most turtles swim )	( most turtles growl )
+|	( most turtles growl	most turtles ) swim
+=	( most turtles growl	( most turtles ) growl )
+#	most turtles swim )	( most mammals swim )
+#	( most turtles growl	( most mammals ) growl
+#	most turtles ) swim	( ( most reptiles ) swim
+#	( most turtles ) growl	most reptiles ) growl
+#	( most turtles ) swim )	( most pets swim
+#	most turtles ) growl	( most pets growl )
+#	( most mammals ) walk	most warthogs walk )
+#	most mammals swim )	most warthogs swim
+#	( most mammals ) growl )	( most warthogs growl
+#	( most mammals swim	most turtles ) swim
+#	most mammals growl	( most turtles ) growl )
+=	most mammals walk	most mammals ) walk
+<	most mammals walk	most mammals move
+|	( most mammals walk	( most mammals ) swim
+#	( most mammals ) walk )	( most mammals growl )
+>	( ( most mammals move	( most mammals ) walk )
+=	( ( most mammals move	most mammals ) move
+>	( most mammals ) move	most mammals swim
+#	( most mammals move	( most mammals growl
+|	most mammals swim	( most mammals walk
+<	( most mammals ) swim	( most mammals ) move
+=	( most mammals ) swim	( ( most mammals swim )
+|	( most mammals ) swim	most mammals growl
+#	( most mammals ) growl	most mammals walk
+#	most mammals growl )	( ( most mammals ) move
+|	( most mammals ) growl	( most mammals swim
+=	( ( most mammals growl	( most mammals growl )
+#	most mammals move )	( most reptiles ) move
+#	( most mammals swim	most reptiles ) swim
+#	most mammals growl	most reptiles growl
+#	most mammals walk	most pets walk
+#	most mammals swim )	most pets swim )
+#	most mammals growl	most pets growl
+#	most reptiles swim	( most warthogs swim
+#	( most reptiles growl	most warthogs growl )
+#	( most reptiles ) swim	most turtles swim
+#	most reptiles ) growl	( most turtles growl
+#	most reptiles move	( most mammals move
+#	most reptiles swim )	most mammals swim )
+#	( ( most reptiles growl	( most mammals ) growl
+=	( most reptiles move )	( most reptiles move
+>	most reptiles move	( ( most reptiles swim )
+#	( most reptiles ) move	most reptiles growl
+<	most reptiles ) swim	most reptiles move
+=	( most reptiles swim )	most reptiles ) swim
+|	most reptiles swim )	most reptiles ) growl
+#	( most reptiles growl )	most reptiles move
+|	( most reptiles growl	most reptiles ) swim
+=	( most reptiles growl )	most reptiles growl
+#	most reptiles ) swim	( ( most pets swim
+#	most reptiles ) growl	( most pets growl
+#	most pets walk	( most warthogs walk
+#	most pets swim	most warthogs swim )
+#	most pets growl )	( most warthogs growl
+#	most pets swim	most turtles ) swim
+#	( most pets ) growl )	( most turtles ) growl
+#	most pets walk	( most mammals walk
+#	( most pets swim	most mammals ) swim
+#	most pets growl )	( most mammals ) growl )
+#	most pets ) swim )	( ( most reptiles ) swim
+#	( most pets growl )	most reptiles growl
+=	most pets walk	most pets walk
+|	( ( most pets ) walk	( most pets swim )
+#	( most pets walk )	most pets growl
+|	( most pets swim	( most pets walk )
+=	most pets swim	most pets swim
+|	( most pets swim )	( most pets growl )
+#	most pets growl	most pets walk
+|	( most pets growl	most pets swim )
+=	( most pets ) growl	most pets growl
+v	( most warthogs walk	not_most warthogs move
+#	( most warthogs ) walk	( not_most warthogs ) growl
+v	( most warthogs swim	not_most warthogs move
+>	( most warthogs ) swim	( not_most warthogs growl )
+#	( most warthogs growl	not_most warthogs ) move )
+^	( most warthogs ) growl	( ( not_most warthogs growl
+#	( ( most warthogs walk	not_most turtles walk
+#	( most warthogs swim	not_most turtles swim )
+#	( most warthogs growl	( not_most turtles growl )
+#	( most warthogs walk	not_most mammals walk
+#	( most warthogs swim )	( not_most mammals swim
+#	most warthogs growl	( ( not_most mammals growl )
+#	( most warthogs walk	not_most reptiles ) walk
+#	most warthogs swim )	not_most reptiles swim )
+#	most warthogs walk	not_most pets ) walk
+#	( most warthogs ) swim )	not_most pets ) swim
+#	( most turtles growl )	( ( not_most warthogs growl )
+>	( most turtles ) swim )	( not_most turtles walk
+v	( most turtles ) swim	not_most turtles move
+^	most turtles ) swim	not_most turtles ) swim
+>	most turtles swim	not_most turtles growl
+#	most turtles ) growl	( not_most turtles walk )
+#	most turtles growl )	( not_most turtles move
+>	most turtles growl )	( ( not_most turtles swim
+^	most turtles growl )	( ( not_most turtles growl
+#	( most turtles ) swim )	not_most mammals ) swim )
+#	most turtles ) growl	( not_most mammals growl )
+#	most turtles ) swim	( not_most reptiles swim )
+#	( most turtles swim	not_most pets swim
+#	( ( most mammals move	not_most warthogs ) move
+#	( ( most mammals ) growl )	( ( not_most warthogs ) growl
+#	( most mammals walk	not_most turtles walk
+#	most mammals move	( not_most turtles move
+#	( most mammals swim	not_most turtles ) swim
+#	most mammals ) growl	not_most turtles ) growl )
+^	( most mammals ) walk	not_most mammals ) walk )
+v	most mammals walk	( not_most mammals ) move )
+>	most mammals ) walk	not_most mammals ) swim )
+#	( ( most mammals ) walk	( not_most mammals growl )
+|	( most mammals move )	( not_most mammals ) walk
+^	most mammals move )	( not_most mammals move )
+|	most mammals move	not_most mammals ) swim
+#	( most mammals ) move	( not_most mammals growl
+>	most mammals swim	( ( not_most mammals ) walk
+v	most mammals swim	( not_most mammals move )
+^	most mammals swim	not_most mammals swim
+>	( ( most mammals swim	( ( not_most mammals growl
+#	( most mammals ) growl	( not_most mammals ) walk
+#	most mammals growl )	not_most mammals ) move
+>	( most mammals growl	not_most mammals ) swim )
+^	( ( most mammals growl	( not_most mammals growl
+#	most mammals walk )	( not_most reptiles walk
+#	most mammals move )	not_most reptiles move
+#	( most mammals swim )	( not_most reptiles swim
+#	( ( most mammals walk	( not_most pets ) walk
+#	most mammals move	not_most pets ) move )
+#	most mammals ) swim	( ( not_most pets ) swim )
+#	most reptiles ) move )	not_most warthogs ) move
+#	most reptiles growl	not_most warthogs growl
+#	( most reptiles move	not_most turtles move
+#	most reptiles swim	not_most turtles ) swim )
+#	most reptiles growl	not_most turtles growl
+#	( most reptiles move	not_most mammals move
+#	( most reptiles ) swim )	not_most mammals swim
+#	most reptiles growl	( not_most mammals ) growl )
+|	( most reptiles move )	( not_most reptiles walk
+^	most reptiles move	not_most reptiles move
+|	most reptiles move )	( not_most reptiles ) swim )
+>	most reptiles ) swim )	not_most reptiles walk
+v	most reptiles swim	not_most reptiles ) move )
+^	( most reptiles swim	not_most reptiles swim
+#	most reptiles growl )	( not_most reptiles ) walk )
+#	most reptiles growl	( ( not_most reptiles move
+>	most reptiles growl	( not_most reptiles swim
+#	( most reptiles move )	( not_most pets move
+#	( most reptiles swim )	( not_most pets swim
+#	most pets ) growl	not_most warthogs growl )
+#	most pets walk	( ( not_most turtles ) walk
+#	most pets swim	( not_most turtles ) swim
+#	( most pets growl	( not_most turtles ) growl )
+#	( most pets ) walk	( not_most mammals walk )
+#	most pets swim	( ( not_most mammals swim
+#	( most pets growl	not_most mammals growl
+#	( most pets ) walk	not_most reptiles walk
+#	most pets swim )	( not_most reptiles swim
+^	most pets ) walk	( not_most pets walk )
+v	most pets walk	( not_most pets ) move )
+>	most pets ) walk	( not_most pets swim
+>	most pets swim	not_most pets walk
+v	most pets swim )	( ( not_most pets move )
+^	most pets ) swim	not_most pets ) swim
+#	( ( most pets growl )	( not_most pets walk
+#	most pets growl )	( ( not_most pets move
+>	( most pets ) growl	not_most pets swim )
+#	most warthogs walk )	two warthogs walk
+#	( most warthogs swim	( two warthogs swim
+#	( most warthogs ) growl	two warthogs growl
+#	( most turtles swim	( two turtles ) swim
+#	( ( most turtles ) growl	two turtles growl
+#	( ( most mammals walk )	two mammals walk
+#	( most mammals move	two mammals move )
+#	most mammals growl	( two mammals growl
+#	most reptiles ) growl	two reptiles growl
+#	( most pets ) walk	two pets ) walk
+#	most pets swim	( two pets swim )
+#	( most pets growl	( two pets growl
+#	most warthogs walk	( lt_two warthogs walk
+#	( ( most turtles ) swim	lt_two turtles swim
+#	( ( most turtles growl	lt_two turtles growl )
+#	most mammals walk )	lt_two mammals walk
+#	most mammals move	( ( lt_two mammals move )
+#	( most mammals growl	( lt_two mammals growl
+#	( most reptiles move )	lt_two reptiles move
+#	most reptiles swim	lt_two reptiles swim
+#	most reptiles ) growl )	( ( lt_two reptiles growl
+#	most pets walk )	lt_two pets walk )
+#	most pets ) swim	( lt_two pets swim
+#	most pets growl )	lt_two pets ) growl
+#	( most warthogs walk	( ( three warthogs walk
+#	( ( most warthogs swim	( three warthogs swim
+#	( ( most warthogs growl	( three warthogs growl
+#	most turtles swim )	( three turtles swim
+#	most mammals ) walk	( three mammals walk
+#	most mammals swim	( three mammals swim
+#	most reptiles ) move	( three reptiles move )
+#	( most reptiles swim	( three reptiles swim
+#	( most pets ) growl	three pets ) growl
+#	most warthogs walk )	lt_three warthogs ) walk
+#	( most warthogs ) swim	lt_three warthogs swim
+#	most warthogs growl	( lt_three warthogs growl )
+#	most turtles swim	( ( lt_three turtles swim
+#	most turtles ) growl	lt_three turtles growl
+#	most mammals walk	( lt_three mammals ) walk
+#	most pets ) walk )	( lt_three pets ) walk )
+#	( most pets ) swim	lt_three pets swim
+#	most pets growl	lt_three pets growl )
+|	not_most warthogs move	( all warthogs ) move
+|	( not_most warthogs growl	all warthogs ) growl
+|	( not_most turtles walk )	( all turtles walk
+|	not_most turtles walk	all turtles move
+<	not_most turtles walk	all turtles swim
+|	not_most turtles move	all turtles move
+<	( not_most turtles swim	all turtles walk
+|	not_most turtles ) swim )	all turtles ) move
+|	( not_most turtles swim	( all turtles swim
+<	( not_most turtles ) growl	( all turtles swim
+|	not_most mammals walk	( all mammals ) walk )
+|	( not_most mammals ) walk )	( all mammals move
+|	not_most mammals move )	all mammals ) move
+<	not_most mammals ) swim	( all mammals ) walk
+|	( not_most mammals ) swim )	all mammals move
+<	not_most mammals ) swim )	( ( all mammals ) growl )
+|	not_most mammals ) growl	all mammals growl
+|	( not_most reptiles ) walk	all reptiles ) walk
+<	not_most reptiles walk	all reptiles swim
+<	( not_most reptiles ) swim	all reptiles walk
+|	not_most reptiles swim	all reptiles swim
+<	( not_most reptiles ) swim )	all reptiles ) growl
+|	not_most pets ) walk	( ( all pets walk )
+<	( not_most pets walk	( all pets swim
+<	( not_most pets ) swim	( all pets ) walk
+|	not_most pets ) swim	( all pets swim
+<	not_most pets swim	( all pets growl )
+<	( not_most warthogs move )	not_all warthogs move )
+<	not_most turtles ) move )	not_all turtles move
+<	( not_most turtles ) move	( not_all turtles swim )
+<	not_most turtles ) swim	not_all turtles ) swim
+<	not_most turtles growl	( not_all turtles growl )
+<	not_most mammals ) walk	not_all mammals walk )
+<	( not_most mammals move	( ( not_all mammals walk )
+<	( ( not_most mammals growl	( ( not_all mammals ) growl
+<	( ( not_most reptiles walk )	not_all reptiles ) walk
+<	( not_most reptiles ) move )	not_all reptiles walk
+<	( ( not_most reptiles ) move )	not_all reptiles swim
+<	not_most reptiles swim	( not_all reptiles ) swim
+<	not_most pets move	( not_all pets ) move
+<	( not_most pets ) move	not_all pets swim
+<	not_most pets swim	( not_all pets ) swim )
+v	( ( not_most turtles walk )	( some turtles walk
+v	( not_most turtles move	( some turtles walk )
+v	( not_most turtles move	( some turtles ) move )
+v	( ( not_most turtles move	some turtles ) swim
+v	( ( not_most turtles swim	( some turtles swim )
+v	not_most turtles growl	some turtles growl
+v	( not_most mammals ) move	some mammals move
+v	( not_most mammals ) move )	some mammals swim
+v	( not_most mammals ) swim	some mammals swim )
+v	( not_most reptiles ) walk	( some reptiles ) walk )
+v	( ( not_most reptiles ) move	( some reptiles walk )
+v	not_most reptiles move	( ( some reptiles move
+v	not_most reptiles ) move )	( ( some reptiles ) swim )
+v	not_most reptiles swim	( some reptiles swim
+v	not_most pets move )	some pets move
+v	not_most pets move	some pets swim
+v	not_most pets ) swim )	( some pets ) swim
+>	not_most warthogs growl )	( ( no warthogs growl
+>	( ( not_most turtles walk	( no turtles walk )
+v	( not_most turtles swim )	no turtles walk
+v	not_most turtles swim	( no turtles ) growl
+>	not_most turtles growl )	no turtles ) growl
+>	( not_most mammals walk	( no mammals ) move )
+>	( not_most mammals move )	( no mammals move
+>	not_most mammals ) swim	no mammals ) move
+v	not_most mammals swim	no mammals growl
+>	( ( not_most mammals growl	no mammals growl
+v	( not_most reptiles ) walk	no reptiles swim
+>	( not_most reptiles swim )	no reptiles swim
+>	( not_most pets walk	( no pets walk
+>	( ( not_most pets walk	( no pets move
+v	( ( not_most pets ) walk	no pets swim
+>	not_most pets move )	( no pets move
+v	( ( not_most pets swim	( no pets ) walk
+>	( ( not_most pets swim	( no pets move
+>	not_most pets swim	( ( no pets swim
+v	not_most pets swim	no pets growl
+v	( not_most warthogs move )	most warthogs ) walk )
+v	not_most warthogs move	( most warthogs swim
+#	( ( not_most warthogs move	most warthogs growl
+#	not_most warthogs growl	most warthogs walk
+<	( ( not_most warthogs ) growl )	( most warthogs swim
+^	not_most warthogs growl	( most warthogs growl
+#	( ( not_most warthogs ) growl )	( ( most turtles growl )
+#	( ( not_most warthogs ) move	most mammals ) move
+#	( not_most warthogs growl	( most mammals growl
+#	not_most warthogs move	( most reptiles move
+#	not_most warthogs ) growl	( most reptiles growl
+#	( not_most warthogs growl	( most pets growl
+#	not_most turtles walk	( most warthogs walk
+#	not_most turtles swim	( most warthogs ) swim
+#	not_most turtles growl )	( most warthogs growl
+<	( not_most turtles ) walk	( most turtles ) swim
+#	not_most turtles ) walk )	most turtles growl
+v	not_most turtles move )	most turtles swim
+#	( not_most turtles move )	most turtles growl
+^	( not_most turtles ) swim	most turtles ) swim )
+<	( not_most turtles ) swim	( most turtles ) growl
+<	not_most turtles growl	most turtles swim
+^	( not_most turtles growl	most turtles ) growl
+#	( not_most turtles walk )	most mammals walk )
+#	not_most turtles move	most mammals ) move
+#	( not_most turtles ) swim	( ( most mammals swim
+#	( not_most turtles ) growl )	( most mammals growl
+#	( not_most turtles move )	( ( most reptiles move
+#	not_most turtles swim	most reptiles swim
+#	( not_most turtles growl	most reptiles ) growl )
+#	( not_most turtles walk	( ( most pets walk
+#	( not_most turtles swim )	( ( most pets swim
+#	not_most turtles growl	most pets growl )
+#	( not_most mammals ) walk	most warthogs ) walk )
+#	( not_most mammals swim )	( most warthogs swim
+#	( not_most mammals ) growl	( most warthogs ) growl
+#	( not_most mammals swim	most turtles swim
+#	not_most mammals ) growl	most turtles growl
+^	( not_most mammals walk	( most mammals walk
+|	not_most mammals walk )	most mammals move
+<	( not_most mammals walk	most mammals swim )
+#	not_most mammals walk )	most mammals growl )
+v	( not_most mammals move )	( most mammals walk
+^	not_most mammals move )	( most mammals move )
+v	( not_most mammals move	most mammals swim
+#	( not_most mammals move	most mammals growl
+<	( not_most mammals swim	most mammals ) walk
+|	( not_most mammals ) swim	( most mammals move )
+^	not_most mammals ) swim	most mammals swim
+<	( not_most mammals ) swim	( most mammals growl )
+#	not_most mammals growl )	( ( most mammals walk
+#	not_most mammals growl	( most mammals ) move
+<	not_most mammals ) growl	most mammals ) swim
+^	not_most mammals growl	( most mammals growl
+#	not_most mammals move )	( most reptiles ) move )
+#	( not_most mammals ) swim	( most reptiles ) swim
+#	not_most mammals growl	most reptiles growl )
+#	not_most mammals ) walk	( most pets walk
+#	( not_most mammals swim )	( most pets swim
+#	not_most mammals ) growl	most pets ) growl
+#	not_most reptiles walk	most warthogs ) walk
+#	( not_most reptiles swim	( most warthogs swim
+#	not_most reptiles swim	( most turtles swim
+#	( ( not_most reptiles walk	most mammals walk
+#	not_most reptiles ) move )	most mammals move )
+#	( not_most reptiles swim )	( most mammals ) swim
+|	not_most reptiles walk )	( most reptiles ) move )
+<	( not_most reptiles walk	most reptiles swim
+#	not_most reptiles walk )	( ( most reptiles ) growl
+^	( not_most reptiles move	( most reptiles ) move
+v	( not_most reptiles move	( most reptiles swim
+#	( not_most reptiles ) move )	most reptiles ) growl
+|	( not_most reptiles swim	most reptiles move )
+^	( not_most reptiles swim	most reptiles ) swim )
+<	not_most reptiles ) swim	most reptiles ) growl
+#	( not_most reptiles ) walk	( most pets walk
+#	not_most reptiles ) swim )	most pets swim )
+#	not_most pets walk	( most warthogs walk )
+#	not_most pets ) swim	most warthogs swim
+#	( not_most pets swim	most turtles swim
+#	( ( not_most pets ) walk )	( most mammals walk
+#	( not_most pets move	( most mammals move
+#	not_most pets ) swim	( ( most mammals swim
+#	( not_most pets move	most reptiles move
+#	( not_most pets swim	most reptiles swim
+^	( not_most pets walk )	most pets walk )
+<	( not_most pets ) walk )	most pets swim
+#	( not_most pets ) walk	most pets growl
+v	( not_most pets move	( most pets walk
+v	( not_most pets ) move	( most pets swim
+#	( not_most pets move	most pets growl
+<	not_most pets ) swim )	( most pets walk
+^	not_most pets swim	most pets ) swim
+<	not_most pets swim	( most pets growl
+=	( not_most warthogs move )	( not_most warthogs move
+#	( not_most warthogs move	not_most warthogs growl
+#	not_most warthogs growl	( ( not_most warthogs move
+=	not_most warthogs ) growl	( not_most warthogs growl )
+#	not_most warthogs ) move	( not_most turtles move
+#	not_most warthogs growl	( not_most turtles ) growl
+#	not_most warthogs move	not_most mammals move
+#	( not_most warthogs growl	( not_most mammals growl
+#	( ( not_most warthogs move	( not_most reptiles move
+#	( ( not_most warthogs move	not_most pets move
+#	not_most turtles move	not_most warthogs move
+#	( not_most turtles growl	( not_most warthogs growl )
+=	( not_most turtles walk )	not_most turtles ) walk
+>	( not_most turtles walk )	not_most turtles ) move
+v	( not_most turtles walk	( not_most turtles ) swim
+#	( not_most turtles walk	( not_most turtles growl
+<	( not_most turtles move	not_most turtles ) walk
+=	not_most turtles move	( not_most turtles move
+<	not_most turtles ) move	( not_most turtles ) swim
+#	( ( not_most turtles move	not_most turtles growl )
+v	( not_most turtles swim )	not_most turtles walk
+>	( not_most turtles swim	not_most turtles move
+=	not_most turtles swim	( not_most turtles swim )
+v	( not_most turtles swim	( not_most turtles growl
+#	not_most turtles ) growl	not_most turtles walk
+#	not_most turtles growl )	( not_most turtles move
+v	( ( not_most turtles ) growl )	( ( not_most turtles swim
+=	( not_most turtles ) growl )	( not_most turtles ) growl )
+#	not_most turtles walk	( not_most mammals walk )
+#	not_most turtles move	( not_most mammals move
+#	( not_most turtles swim )	not_most mammals swim
+#	not_most turtles growl	( not_most mammals growl
+#	( not_most turtles walk )	( not_most reptiles walk
+#	not_most turtles move	not_most reptiles ) move )
+#	not_most turtles ) swim	( not_most reptiles swim
+#	( not_most turtles ) walk	not_most pets ) walk
+#	not_most turtles move	not_most pets move )
+#	( not_most turtles swim	not_most pets swim
+#	not_most mammals move	not_most warthogs move
+#	( not_most mammals growl	not_most warthogs growl )
+#	not_most mammals ) walk	not_most turtles ) walk )
+#	( not_most mammals move	( not_most turtles move
+#	not_most mammals swim	( not_most turtles ) swim
+#	( not_most mammals growl	( not_most turtles growl
+=	not_most mammals ) walk	( not_most mammals walk )
+>	( ( not_most mammals ) walk )	not_most mammals ) move
+v	not_most mammals walk	( not_most mammals ) swim
+#	( not_most mammals walk )	not_most mammals growl )
+<	( not_most mammals move )	( not_most mammals walk
+=	( ( not_most mammals move	not_most mammals move
+<	not_most mammals ) move	not_most mammals ) swim
+#	( not_most mammals move	( not_most mammals ) growl
+v	not_most mammals swim	( not_most mammals walk
+>	( not_most mammals ) swim	not_most mammals ) move
+=	not_most mammals swim )	( not_most mammals ) swim )
+v	not_most mammals swim	( ( not_most mammals ) growl
+#	not_most mammals growl	( not_most mammals walk )
+#	not_most mammals growl	( not_most mammals move
+v	( not_most mammals ) growl	( ( not_most mammals swim )
+=	( not_most mammals growl	( ( not_most mammals ) growl )
+#	not_most mammals walk	( not_most reptiles ) walk
+#	not_most mammals move )	not_most reptiles move )
+#	not_most mammals swim	not_most reptiles swim
+#	( ( not_most mammals ) walk )	not_most pets walk )
+#	not_most mammals move	not_most pets ) move )
+#	not_most mammals swim	not_most pets swim
+#	( not_most reptiles move )	( not_most warthogs move
+#	not_most reptiles ) walk	( not_most turtles walk
+#	not_most reptiles ) move	( not_most turtles ) move )
+#	not_most reptiles swim	( not_most turtles swim
+#	not_most reptiles walk	not_most mammals walk )
+#	( not_most reptiles move	not_most mammals move
+#	( not_most reptiles swim )	not_most mammals swim
+=	( not_most reptiles walk )	not_most reptiles walk )
+>	( not_most reptiles walk	not_most reptiles move
+v	( not_most reptiles walk )	( ( not_most reptiles swim
+<	not_most reptiles move )	( ( not_most reptiles walk
+=	( ( not_most reptiles ) move	not_most reptiles move
+<	not_most reptiles move	not_most reptiles swim
+v	( ( not_most reptiles ) swim )	not_most reptiles walk )
+>	not_most reptiles swim	not_most reptiles ) move
+=	not_most reptiles swim	( not_most reptiles ) swim
+#	( not_most reptiles walk	( not_most pets ) walk
+#	not_most reptiles move	not_most pets ) move
+#	not_most reptiles swim	not_most pets ) swim
+#	( not_most pets ) move )	not_most warthogs move
+#	( ( not_most pets walk )	( not_most turtles walk )
+#	( ( not_most pets ) move	( not_most turtles move
+#	( ( not_most pets swim )	( not_most turtles swim
+#	not_most pets walk )	not_most mammals walk )
+#	not_most pets ) move	( not_most mammals move
+#	not_most pets swim	not_most mammals swim
+#	( not_most pets walk	not_most reptiles walk )
+#	not_most pets move )	not_most reptiles move )
+#	not_most pets swim )	not_most reptiles ) swim
+=	( not_most pets walk	( ( not_most pets walk
+>	not_most pets ) walk	( not_most pets ) move
+v	not_most pets walk	not_most pets swim
+<	( not_most pets move )	( ( not_most pets walk )
+=	( not_most pets ) move )	( not_most pets move
+<	not_most pets ) move )	not_most pets ) swim
+v	( not_most pets swim	( not_most pets ) walk )
+>	( not_most pets swim	not_most pets ) move )
+=	( ( not_most pets swim )	not_most pets ) swim
+#	not_most warthogs growl )	( ( two warthogs growl
+#	( not_most turtles walk )	( ( two turtles walk )
+#	( not_most turtles move	( two turtles move )
+#	not_most turtles swim	( two turtles swim
+#	not_most turtles ) growl )	( two turtles growl )
+#	( not_most mammals ) walk	( two mammals ) walk )
+#	not_most mammals move )	two mammals move
+#	not_most mammals ) growl )	( two mammals ) growl
+#	( not_most pets ) walk	( two pets walk )
+#	( ( not_most pets move	two pets move
+#	( not_most pets swim )	two pets swim
+#	not_most turtles move	( lt_two turtles move
+#	not_most turtles swim )	( lt_two turtles ) swim
+#	not_most turtles growl )	lt_two turtles growl
+#	( not_most mammals walk	( lt_two mammals walk )
+#	not_most mammals move	lt_two mammals move
+#	not_most mammals growl	lt_two mammals growl
+#	( not_most reptiles ) walk	( ( lt_two reptiles walk
+#	( not_most reptiles move	( ( lt_two reptiles ) move
+#	( not_most reptiles swim	lt_two reptiles ) swim
+#	not_most pets walk	lt_two pets walk )
+#	not_most pets move	lt_two pets move )
+#	not_most pets swim )	( lt_two pets swim
+#	( ( not_most warthogs move	( three warthogs move
+#	( not_most warthogs ) growl	( three warthogs ) growl )
+#	( not_most turtles ) walk )	three turtles ) walk )
+#	not_most turtles ) move )	( three turtles move
+#	( not_most turtles ) swim	( three turtles ) swim )
+#	( not_most mammals ) walk	three mammals ) walk )
+#	not_most mammals ) swim	( three mammals swim
+#	( not_most reptiles move )	three reptiles move )
+#	( not_most reptiles ) swim )	( three reptiles ) swim
+#	( not_most pets ) move )	three pets move
+#	not_most warthogs growl	( lt_three warthogs growl
+#	not_most turtles ) swim )	( lt_three turtles swim )
+#	( ( not_most turtles ) growl )	lt_three turtles growl
+#	not_most mammals walk )	lt_three mammals ) walk
+#	( ( not_most reptiles walk	( lt_three reptiles walk )
+#	( not_most pets walk	( lt_three pets walk )
+#	not_most pets ) move )	lt_three pets ) move
+#	( not_most pets ) swim	lt_three pets swim
+#	two warthogs walk )	( all warthogs walk
+#	two warthogs growl	( ( all warthogs growl
+#	( two turtles walk	( all turtles walk
+#	two turtles move	all turtles ) move
+#	two turtles swim )	( all turtles swim
+#	two mammals walk	all mammals walk )
+#	( two mammals move )	( all mammals move
+#	two mammals growl	( all mammals growl
+#	( two reptiles growl )	all reptiles growl )
+#	two pets walk	all pets walk
+#	two pets swim	( ( all pets swim
+#	two pets ) growl )	( ( all pets growl
+#	two turtles ) move	( ( not_all turtles move )
+#	( two turtles swim	( ( not_all turtles swim
+#	( ( two turtles growl	( not_all turtles growl )
+#	two mammals walk	( not_all mammals ) walk )
+#	( ( two mammals ) growl	( not_all mammals growl
+#	( two pets move	( not_all pets ) move
+#	( two pets swim	( ( not_all pets ) swim
+#	( two pets growl	( not_all pets ) growl
+<	two warthogs walk	( some mammals move
+<	two warthogs swim	( some mammals move )
+<	( two warthogs swim )	( some mammals swim
+<	two turtles walk	( some turtles walk
+<	two turtles walk	some turtles move
+<	two turtles ) move )	some turtles ) move
+<	( ( two turtles ) swim	some turtles move
+<	( two turtles swim	some turtles swim )
+<	( two turtles ) growl	some turtles growl
+<	( two turtles walk	( some reptiles walk
+<	two turtles walk )	some reptiles move
+<	two turtles move	( some reptiles move
+<	two turtles ) swim )	( some reptiles move )
+<	( two turtles swim	( some reptiles swim
+<	two turtles growl	( some reptiles growl )
+<	( ( two mammals walk	( some mammals ) move
+<	two mammals ) move )	some mammals move
+<	two reptiles growl )	( some reptiles growl
+<	( two pets walk )	some pets ) move )
+<	two pets move	( some pets move
+<	( two pets swim )	( some pets move
+<	two pets swim	( some pets swim
+<	two pets growl	( some pets growl )
+|	( ( two warthogs ) walk	( no warthogs walk
+|	two warthogs growl	( no warthogs growl )
+|	two turtles walk	no turtles walk )
+|	( two turtles move	no turtles walk
+|	two turtles growl	no turtles growl
+|	( two mammals ) walk )	no warthogs walk
+|	two mammals move	no warthogs walk
+|	( two mammals growl	( no warthogs ) growl
+|	( two mammals move	( no mammals move )
+|	two mammals growl )	no mammals growl
+|	( ( two reptiles growl	no turtles growl
+|	( ( two pets walk	no pets walk
+|	( two pets ) move )	no pets walk
+|	two pets move	( no pets move
+|	two pets ) move	no pets swim
+|	two pets swim	no pets ) swim
+|	two pets growl	( ( no pets growl )
+#	two warthogs ) walk	( most warthogs walk
+#	( two warthogs ) swim )	( most warthogs swim )
+#	two warthogs ) growl	( most warthogs growl )
+#	( ( two turtles swim )	most turtles ) swim
+#	two turtles growl	most turtles growl )
+#	two mammals ) walk )	most mammals walk )
+#	( two mammals move	( most mammals move
+#	( two mammals growl	most mammals growl
+#	( two reptiles ) growl	( ( most reptiles ) growl
+#	( ( two pets walk )	( most pets walk
+#	two pets ) swim	( most pets swim
+#	two pets growl )	( most pets growl )
+#	two warthogs growl )	( not_most warthogs ) growl
+#	two turtles ) walk )	not_most turtles ) walk )
+#	( two turtles move	not_most turtles move )
+#	two turtles swim	( ( not_most turtles swim
+#	two turtles ) growl	not_most turtles growl
+#	( ( two mammals walk	not_most mammals walk
+#	( ( two mammals move )	( not_most mammals move
+#	( two mammals growl )	not_most mammals growl
+#	two pets ) walk	( ( not_most pets ) walk
+#	( ( two pets move	not_most pets move )
+#	two pets ) swim	not_most pets swim
+=	two warthogs walk	( two warthogs ) walk
+#	two warthogs walk )	two warthogs swim )
+#	two warthogs walk	( two warthogs growl )
+#	two warthogs swim	two warthogs walk )
+=	( two warthogs ) swim	two warthogs swim )
+#	two warthogs swim	( two warthogs growl
+#	( ( two warthogs growl )	( two warthogs walk
+#	two warthogs growl )	two warthogs swim
+=	( two warthogs growl )	( two warthogs growl
+#	two warthogs ) walk )	two turtles walk )
+#	( two warthogs swim	( two turtles swim
+#	( two warthogs growl )	( two turtles growl
+<	two warthogs ) walk	( two mammals ) walk )
+<	two warthogs walk	two mammals move
+<	( two warthogs swim	( two mammals move
+<	( ( two warthogs ) growl )	( two mammals growl )
+#	two warthogs ) growl	two reptiles growl
+#	( ( two warthogs walk	two pets walk )
+#	( two warthogs swim )	( two pets swim )
+#	two warthogs growl	( ( two pets ) growl )
+#	( two turtles walk	( two warthogs ) walk )
+#	two turtles ) swim	two warthogs swim
+#	two turtles growl	two warthogs growl
+=	two turtles walk )	two turtles walk
+<	( two turtles walk	( two turtles move )
+#	( two turtles walk	( two turtles swim
+#	( two turtles ) walk	two turtles growl )
+>	two turtles move )	two turtles ) walk
+=	two turtles move )	( two turtles move
+>	( two turtles move )	two turtles swim
+#	two turtles move	two turtles ) growl )
+#	( two turtles swim )	( two turtles walk
+<	two turtles ) swim	two turtles ) move
+=	( two turtles ) swim	( two turtles swim
+#	( two turtles ) swim	( two turtles ) growl
+#	( two turtles growl	two turtles walk
+#	( two turtles growl	( two turtles ) move
+#	( two turtles growl )	( two turtles swim
+=	( two turtles growl	two turtles ) growl
+#	( two turtles walk	two mammals walk
+#	( two turtles move	two mammals move
+#	( two turtles growl )	( two mammals growl
+<	two turtles growl	( two reptiles growl
+#	two turtles walk )	two pets walk
+#	( two turtles move	( two pets ) move )
+#	( two turtles swim	( two pets swim
+#	two turtles ) growl	two pets ) growl )
+>	two mammals walk	two warthogs walk )
+>	( two mammals ) move	( two warthogs walk
+>	two mammals move )	( two warthogs ) swim
+>	two mammals growl	( two warthogs ) growl )
+#	two mammals ) walk	( ( two turtles ) walk
+#	( two mammals move )	two turtles ) move )
+#	( two mammals growl	( two turtles growl )
+=	two mammals walk	two mammals ) walk )
+<	( two mammals walk	two mammals move )
+#	( two mammals walk )	( two mammals growl
+>	( two mammals move )	two mammals ) walk
+=	two mammals move )	two mammals move )
+#	( two mammals move	two mammals growl
+#	two mammals growl	( ( two mammals walk
+#	two mammals growl	two mammals move )
+=	( two mammals growl	two mammals growl
+#	( two mammals growl	( two reptiles growl
+#	two mammals walk	( two pets walk
+#	two mammals ) move	two pets move
+#	two mammals growl )	( two pets ) growl )
+#	two reptiles growl )	( two warthogs growl
+>	two reptiles growl )	( ( two turtles growl
+#	two reptiles ) growl	two mammals growl )
+=	( two reptiles ) growl	( two reptiles growl )
+#	( two reptiles growl )	two pets growl
+#	( two pets ) walk )	two warthogs walk
+#	two pets swim )	( two warthogs ) swim )
+#	( ( two pets growl	( two warthogs ) growl
+#	( ( two pets walk	two turtles walk
+#	( two pets move	( two turtles move
+#	two pets swim	two turtles swim )
+#	( ( two pets growl	two turtles growl )
+#	two pets walk )	( two mammals walk
+#	( two pets move	( ( two mammals move
+#	two pets growl	two mammals growl )
+#	( ( two pets growl	( two reptiles growl
+=	two pets walk )	two pets walk
+<	two pets walk	( two pets move
+#	( two pets walk	two pets swim
+#	( two pets walk	two pets growl
+>	two pets move	( two pets ) walk )
+=	two pets ) move )	( ( two pets move
+>	( two pets move	two pets swim
+#	( two pets ) move )	two pets growl
+#	two pets ) swim	two pets ) walk )
+<	two pets swim	( ( two pets move )
+=	( two pets ) swim )	two pets swim
+#	( two pets swim )	( ( two pets growl
+#	two pets ) growl	two pets ) walk )
+#	( two pets growl	( two pets move )
+#	( two pets growl	two pets ) swim
+=	( two pets growl	( ( two pets ) growl
+^	( two warthogs ) walk	( lt_two warthogs walk
+#	two warthogs swim	lt_two warthogs ) walk )
+#	( ( two warthogs growl )	( lt_two warthogs ) walk
+#	( two warthogs swim	( lt_two turtles ) swim )
+#	two warthogs growl	lt_two turtles ) growl
+v	( two warthogs ) walk	( lt_two mammals ) walk )
+v	( two warthogs walk	lt_two mammals ) move
+v	( ( two warthogs swim )	lt_two mammals move )
+v	( two warthogs growl	( lt_two mammals ) growl
+#	two warthogs walk	lt_two reptiles walk
+#	( two warthogs swim )	lt_two reptiles swim )
+#	two warthogs growl	lt_two reptiles growl
+#	( two warthogs walk	( ( lt_two pets ) walk
+#	( ( two warthogs ) swim	lt_two pets ) swim )
+#	( two warthogs ) growl	lt_two pets growl
+#	two turtles walk	( lt_two warthogs ) walk
+v	( two turtles ) walk	lt_two turtles move
+#	( two turtles walk	( ( lt_two turtles swim
+#	( ( two turtles ) walk	( lt_two turtles ) growl
+^	two turtles move	( lt_two turtles move )
+|	( ( two turtles move	( lt_two turtles swim
+#	two turtles ) move	( lt_two turtles ) growl
+v	( two turtles swim	( ( lt_two turtles move
+^	( two turtles ) swim	( lt_two turtles swim
+#	two turtles swim )	( ( lt_two turtles ) growl
+#	( two turtles growl	lt_two turtles move
+#	( ( two turtles growl	lt_two turtles swim
+^	two turtles growl	( lt_two turtles growl
+#	( two turtles walk	( lt_two mammals walk )
+#	( two turtles ) move	lt_two mammals ) move
+#	two turtles ) growl	lt_two mammals growl
+v	two turtles walk )	( lt_two reptiles walk
+v	( two turtles walk )	( lt_two reptiles move
+v	( two turtles move	lt_two reptiles move
+v	( ( two turtles ) swim	( lt_two reptiles move )
+v	two turtles swim	lt_two reptiles swim
+v	( two turtles ) growl	lt_two reptiles growl
+#	two turtles walk	( lt_two pets walk )
+#	two turtles move	( lt_two pets ) move
+#	two turtles swim	( lt_two pets swim
+#	two turtles growl )	( lt_two pets growl )
+|	( ( two mammals walk	( lt_two warthogs ) walk
+|	two mammals move	( lt_two warthogs walk
+#	two mammals ) move	( lt_two turtles ) move
+#	( ( two mammals growl )	( lt_two turtles growl
+^	( two mammals ) walk	lt_two mammals walk
+v	( two mammals ) walk	lt_two mammals ) move
+#	( two mammals walk )	lt_two mammals ) growl
+|	( two mammals move	( lt_two mammals walk )
+^	two mammals move )	( ( lt_two mammals ) move
+#	( two mammals move	lt_two mammals growl
+#	two mammals growl	( ( lt_two mammals walk
+#	( two mammals ) growl	( lt_two mammals move
+^	two mammals growl	lt_two mammals ) growl
+#	( two mammals ) walk	lt_two reptiles ) walk
+#	( two mammals ) move	lt_two reptiles move )
+#	two mammals growl	( lt_two reptiles ) growl
+#	two mammals walk	( ( lt_two pets ) walk )
+#	( two mammals move	lt_two pets ) move
+#	two mammals growl	lt_two pets growl )
+|	( two reptiles ) growl	lt_two turtles growl
+#	two reptiles ) growl	( lt_two mammals ) growl
+#	two reptiles ) growl	lt_two reptiles walk
+#	two reptiles growl )	( ( lt_two reptiles move
+#	( two reptiles growl )	( lt_two reptiles ) swim
+^	( two reptiles growl )	lt_two reptiles growl
+#	two reptiles growl	( lt_two pets growl
+#	( two pets ) walk	( lt_two warthogs walk )
+#	( two pets ) move	lt_two turtles move
+#	two pets swim	lt_two turtles ) swim
+#	( two pets ) growl	( ( lt_two turtles ) growl
+#	( two pets walk )	lt_two mammals walk )
+#	( two pets move	( ( lt_two mammals move
+#	( two pets growl	( lt_two mammals growl
+#	two pets walk	lt_two reptiles walk
+#	( two pets move )	( lt_two reptiles ) move )
+#	two pets swim	( lt_two reptiles swim
+#	( two pets growl )	lt_two reptiles ) growl )
+^	( two pets walk )	lt_two pets walk
+v	( two pets walk )	( lt_two pets ) move
+#	( two pets walk	( lt_two pets swim
+#	( two pets walk	( lt_two pets ) growl
+|	( two pets move )	( lt_two pets walk
+^	( two pets ) move )	( lt_two pets move
+|	two pets ) move )	( ( lt_two pets ) swim
+#	two pets move )	( lt_two pets growl )
+#	( two pets swim )	( ( lt_two pets ) walk )
+v	( two pets ) swim	( lt_two pets move
+^	two pets swim	( lt_two pets swim
+#	two pets ) swim	lt_two pets growl )
+#	two pets growl )	lt_two pets ) walk )
+#	( two pets growl	lt_two pets move
+#	two pets growl )	( lt_two pets swim
+^	two pets growl	lt_two pets ) growl )
+>	two warthogs walk	( three warthogs walk
+>	two warthogs swim )	three warthogs swim
+>	two warthogs growl	( three warthogs growl
+>	( two turtles walk	( ( three turtles walk
+>	( two turtles move	three turtles walk )
+>	( ( two turtles move	( three turtles move )
+>	two turtles move	( three turtles swim
+>	two turtles ) swim	( three turtles ) swim )
+>	( two mammals walk )	( three warthogs walk
+>	two mammals move	three warthogs walk )
+>	two mammals move )	three warthogs ) move )
+>	( two mammals move	three warthogs swim
+>	two mammals growl	three warthogs growl )
+>	( two mammals ) walk	( three mammals walk )
+>	two mammals move	three mammals walk )
+>	( two mammals move	( three mammals swim )
+>	( two pets move	three pets move
+>	two pets growl	( ( three pets ) growl )
+v	two warthogs walk	lt_three warthogs walk )
+v	( two warthogs ) swim	lt_three warthogs swim )
+v	two warthogs ) growl )	( lt_three warthogs ) growl )
+v	( ( two warthogs walk	lt_three mammals walk
+v	two turtles swim	( lt_three turtles swim )
+v	two turtles ) growl	( ( lt_three turtles growl
+v	( two turtles ) walk	lt_three reptiles walk
+v	( two mammals walk )	lt_three mammals walk
+v	( two pets walk	lt_three pets walk
+v	( two pets walk )	lt_three pets move
+v	two pets move	lt_three pets move
+v	( ( two pets ) swim	( lt_three pets move
+v	two pets swim	( lt_three pets swim
+v	two pets growl	( lt_three pets ) growl )
+#	lt_two warthogs walk )	( all warthogs walk )
+#	lt_two turtles move	( all turtles move )
+#	( ( lt_two turtles swim )	( ( all turtles swim
+#	( lt_two mammals walk	all mammals walk
+#	lt_two mammals move )	all mammals ) move
+#	( ( lt_two mammals growl	( all mammals growl
+#	( lt_two reptiles walk )	all reptiles walk
+#	lt_two reptiles swim	all reptiles ) swim
+#	lt_two reptiles growl	all reptiles growl
+#	lt_two pets walk	all pets walk )
+#	lt_two pets ) swim )	all pets ) swim )
+#	( ( lt_two pets growl	all pets ) growl
+#	( lt_two turtles move	( ( not_all turtles move
+#	lt_two turtles swim )	( not_all turtles swim
+#	lt_two turtles ) growl	not_all turtles growl
+#	( lt_two mammals ) walk	not_all mammals ) walk )
+#	( lt_two mammals ) growl	not_all mammals growl
+#	( lt_two reptiles walk )	not_all reptiles walk
+#	( lt_two reptiles ) swim	( not_all reptiles swim
+#	lt_two pets move )	not_all pets move
+#	lt_two pets swim	( ( not_all pets swim )
+#	lt_two pets growl	( ( not_all pets growl )
+v	( lt_two turtles move	some turtles walk
+v	( lt_two turtles ) move	( some turtles move )
+v	lt_two turtles ) move	( some turtles swim
+v	( lt_two turtles swim	some turtles ) swim
+v	lt_two turtles growl )	( some turtles growl )
+v	lt_two mammals move	some mammals move
+v	( ( lt_two mammals ) move )	some mammals swim
+v	( ( lt_two reptiles walk	some turtles walk
+v	lt_two reptiles move )	( some turtles walk )
+v	lt_two reptiles move	( some turtles move
+v	( ( lt_two reptiles move )	( some turtles ) swim
+v	( lt_two reptiles swim	some turtles swim )
+v	lt_two reptiles ) growl	( some turtles ) growl
+v	lt_two reptiles walk	( some reptiles walk
+v	( lt_two reptiles move	( some reptiles walk )
+v	lt_two reptiles move	( some reptiles ) move
+v	lt_two reptiles move	( some reptiles swim )
+v	lt_two reptiles ) swim	some reptiles ) swim )
+v	( lt_two reptiles growl	( some reptiles growl )
+v	lt_two pets ) move	some pets ) move
+v	( lt_two pets move )	( ( some pets swim
+v	( lt_two pets swim	( some pets swim
+v	lt_two pets growl	( ( some pets ) growl
+>	( ( lt_two warthogs walk	no warthogs walk )
+>	lt_two warthogs ) walk	( no mammals move )
+>	( lt_two turtles ) growl	( ( no turtles growl
+>	( ( lt_two turtles swim	no reptiles ) swim
+>	( lt_two mammals walk )	no mammals move
+>	( lt_two mammals move	( no mammals move
+>	lt_two mammals ) growl	no mammals ) growl )
+>	lt_two reptiles swim )	no reptiles ) swim
+>	( lt_two pets ) walk	( no pets ) walk
+>	( lt_two pets walk	( no pets move )
+>	( lt_two pets move	( no pets ) move
+>	lt_two pets swim )	( no pets move
+>	( lt_two pets swim	no pets ) swim )
+>	( ( lt_two pets ) growl	( no pets growl
+#	( lt_two warthogs walk )	( most warthogs walk )
+#	( lt_two turtles swim )	most turtles swim
+#	lt_two turtles growl	( most turtles growl )
+#	lt_two mammals walk )	most mammals walk
+#	( lt_two mammals ) move	most mammals move )
+#	( lt_two mammals ) growl )	most mammals ) growl
+#	( lt_two reptiles move	most reptiles ) move
+#	lt_two reptiles swim	( most reptiles swim
+#	( lt_two reptiles growl	most reptiles growl
+#	lt_two pets ) walk	( most pets walk
+#	lt_two pets swim	( most pets swim
+#	lt_two pets growl	most pets growl
+#	( lt_two turtles move	( not_most turtles move )
+#	( lt_two turtles swim	not_most turtles swim )
+#	lt_two turtles ) growl	( not_most turtles growl
+#	lt_two mammals walk )	( ( not_most mammals ) walk
+#	( lt_two mammals move	not_most mammals move
+#	( lt_two mammals growl )	not_most mammals growl
+#	lt_two reptiles walk	not_most reptiles walk
+#	lt_two reptiles move	not_most reptiles move
+#	lt_two reptiles swim	not_most reptiles swim )
+#	( lt_two pets walk	not_most pets walk
+#	lt_two pets ) move	( not_most pets move )
+#	lt_two pets swim	not_most pets swim
+^	( lt_two warthogs walk )	( two warthogs walk
+#	lt_two warthogs ) walk )	two warthogs ) swim
+#	lt_two warthogs walk	( two warthogs growl )
+#	( lt_two warthogs ) walk )	two turtles walk )
+|	lt_two warthogs walk )	two mammals walk )
+|	( lt_two warthogs walk	two mammals move
+#	( lt_two warthogs walk	( two pets walk
+#	lt_two turtles ) swim	( two warthogs swim )
+#	lt_two turtles growl	two warthogs growl
+v	( lt_two turtles move	( two turtles ) walk )
+^	lt_two turtles move	two turtles ) move )
+v	lt_two turtles move )	( two turtles swim
+#	( lt_two turtles move	( two turtles growl )
+#	( lt_two turtles ) swim )	( two turtles ) walk )
+|	( lt_two turtles swim	( two turtles ) move
+^	( lt_two turtles ) swim	( two turtles swim
+#	lt_two turtles swim	two turtles growl
+#	lt_two turtles ) growl	( two turtles walk )
+#	lt_two turtles ) growl	two turtles ) move
+#	( lt_two turtles growl	( ( two turtles swim
+^	lt_two turtles ) growl	( two turtles growl
+#	lt_two turtles move )	two mammals ) move )
+#	lt_two turtles ) growl	( two mammals ) growl
+|	( lt_two turtles growl	two reptiles growl
+#	( lt_two turtles ) move	two pets move
+#	( lt_two turtles swim	( two pets ) swim
+#	( lt_two turtles growl )	two pets growl )
+v	( ( lt_two mammals ) walk )	( two warthogs walk )
+v	( lt_two mammals move	( two warthogs walk
+v	lt_two mammals move )	( two warthogs swim
+v	lt_two mammals growl	two warthogs ) growl
+#	lt_two mammals ) walk )	( two turtles ) walk )
+#	lt_two mammals ) move	( two turtles move )
+#	lt_two mammals growl )	( two turtles growl
+^	( lt_two mammals walk	two mammals walk
+|	lt_two mammals walk )	two mammals move
+#	( lt_two mammals ) walk )	( two mammals ) growl )
+v	( lt_two mammals move	two mammals walk
+^	lt_two mammals move	two mammals move
+#	( lt_two mammals move	( ( two mammals growl
+#	( lt_two mammals growl )	two mammals walk
+#	lt_two mammals growl )	two mammals ) move )
+^	lt_two mammals ) growl )	two mammals ) growl
+#	lt_two mammals growl	two reptiles ) growl )
+#	( lt_two mammals ) walk )	( two pets walk
+#	( ( lt_two mammals move	( ( two pets move )
+#	( lt_two mammals growl	two pets ) growl
+#	lt_two reptiles ) walk	( two warthogs walk )
+#	( lt_two reptiles swim )	( two warthogs ) swim
+#	lt_two reptiles ) growl	( ( two warthogs growl
+v	lt_two reptiles walk	( two turtles walk
+v	lt_two reptiles ) move	two turtles ) walk )
+v	lt_two reptiles move	two turtles ) move
+v	lt_two reptiles move )	two turtles swim )
+v	lt_two reptiles swim )	two turtles ) swim
+v	( ( lt_two reptiles growl )	two turtles growl
+#	lt_two reptiles ) walk	( two mammals ) walk )
+#	( lt_two reptiles move	two mammals move )
+#	lt_two reptiles growl )	( two mammals growl
+#	lt_two reptiles ) walk	two reptiles growl
+#	lt_two reptiles ) move )	( two reptiles growl
+#	lt_two reptiles ) swim	two reptiles ) growl )
+^	( ( lt_two reptiles growl	( ( two reptiles growl
+#	lt_two reptiles walk	two pets walk
+#	( lt_two reptiles move	two pets ) move
+#	( ( lt_two reptiles swim	( two pets ) swim
+#	( lt_two reptiles growl	( two pets growl
+#	lt_two pets walk )	( two warthogs ) walk )
+#	lt_two pets swim )	two warthogs swim
+#	lt_two pets growl	two warthogs growl
+#	( lt_two pets walk	( two turtles walk )
+#	( lt_two pets move	two turtles move )
+#	( lt_two pets swim )	two turtles swim
+#	lt_two pets growl	two turtles growl )
+#	( lt_two pets walk )	( two mammals ) walk
+#	lt_two pets move )	( two mammals move
+#	( lt_two pets growl )	( two mammals ) growl )
+#	lt_two pets growl	two reptiles growl
+^	( ( lt_two pets walk	two pets walk )
+|	( lt_two pets ) walk )	two pets ) move
+#	lt_two pets walk	( two pets swim )
+#	( lt_two pets walk	( two pets growl
+v	( lt_two pets move	( two pets walk
+^	lt_two pets move	two pets move
+v	( ( lt_two pets move	two pets swim
+#	( lt_two pets move	( two pets growl
+#	( lt_two pets ) swim )	two pets ) walk
+|	lt_two pets swim	( two pets move
+^	lt_two pets ) swim	( two pets ) swim
+#	lt_two pets swim	( two pets growl
+#	( lt_two pets ) growl	( two pets walk )
+#	lt_two pets growl	( ( two pets move
+#	lt_two pets growl )	( two pets swim
+^	( ( lt_two pets ) growl	two pets ) growl
+=	( lt_two warthogs ) walk	( lt_two warthogs walk )
+>	lt_two warthogs walk	( lt_two mammals walk )
+>	lt_two warthogs walk )	lt_two mammals ) move
+#	( lt_two warthogs ) walk	lt_two reptiles walk )
+#	( lt_two warthogs ) walk	lt_two pets ) walk )
+=	( lt_two turtles ) move	( lt_two turtles move )
+<	lt_two turtles move	lt_two turtles swim
+#	( lt_two turtles move )	lt_two turtles ) growl
+>	( lt_two turtles ) swim	( lt_two turtles ) move )
+=	lt_two turtles ) swim	lt_two turtles swim
+#	lt_two turtles swim )	lt_two turtles ) growl )
+#	lt_two turtles ) growl	( lt_two turtles ) move
+#	lt_two turtles growl )	( lt_two turtles swim
+=	lt_two turtles growl	( lt_two turtles growl
+#	( lt_two turtles ) move )	( lt_two mammals move
+#	( ( lt_two turtles growl	( lt_two mammals ) growl
+>	( lt_two turtles move	( ( lt_two reptiles move )
+>	( lt_two turtles swim	( lt_two reptiles move
+>	( ( lt_two turtles swim )	lt_two reptiles ) swim
+>	( lt_two turtles growl	lt_two reptiles ) growl
+#	( lt_two turtles move	( lt_two pets ) move
+#	lt_two turtles ) swim	lt_two pets swim
+#	( lt_two turtles ) growl	( lt_two pets ) growl
+<	( lt_two mammals ) walk )	lt_two warthogs walk
+<	lt_two mammals ) move	lt_two warthogs walk )
+#	( lt_two mammals move	lt_two turtles move
+#	lt_two mammals growl	( lt_two turtles growl
+=	( lt_two mammals walk	lt_two mammals walk )
+>	( lt_two mammals ) walk	( lt_two mammals move )
+#	( lt_two mammals walk	( lt_two mammals ) growl )
+<	( lt_two mammals move )	( ( lt_two mammals walk
+=	lt_two mammals ) move )	lt_two mammals move )
+#	( lt_two mammals move )	lt_two mammals growl
+#	( lt_two mammals ) growl	( lt_two mammals ) walk
+#	lt_two mammals growl	( lt_two mammals ) move
+=	( lt_two mammals ) growl	lt_two mammals growl
+#	lt_two mammals ) walk	( lt_two reptiles walk
+#	( lt_two mammals move	( lt_two reptiles move
+#	lt_two mammals growl	lt_two reptiles growl
+#	( lt_two mammals ) walk	( ( lt_two pets ) walk
+#	lt_two mammals ) move )	lt_two pets move
+#	lt_two mammals growl	lt_two pets growl
+#	( lt_two reptiles walk	( lt_two warthogs walk )
+<	( ( lt_two reptiles move	( lt_two turtles ) move )
+<	( lt_two reptiles move	( lt_two turtles swim )
+<	lt_two reptiles swim	( lt_two turtles swim
+<	( lt_two reptiles ) growl	lt_two turtles growl
+#	( lt_two reptiles walk	( lt_two mammals walk
+#	( lt_two reptiles move )	lt_two mammals move
+#	lt_two reptiles growl )	( lt_two mammals growl
+=	( lt_two reptiles walk	( lt_two reptiles ) walk
+>	( ( lt_two reptiles walk )	( ( lt_two reptiles move
+#	( lt_two reptiles walk	( ( lt_two reptiles ) swim
+#	( lt_two reptiles ) walk )	( lt_two reptiles ) growl
+<	( lt_two reptiles ) move	lt_two reptiles walk
+=	lt_two reptiles move	( lt_two reptiles move
+<	( lt_two reptiles move	( ( lt_two reptiles swim )
+#	lt_two reptiles move	lt_two reptiles growl
+#	lt_two reptiles swim	( ( lt_two reptiles ) walk
+>	lt_two reptiles ) swim	lt_two reptiles move )
+=	lt_two reptiles swim )	( lt_two reptiles swim )
+#	lt_two reptiles swim	lt_two reptiles growl
+#	lt_two reptiles ) growl )	lt_two reptiles walk
+#	( lt_two reptiles growl	lt_two reptiles ) move
+#	lt_two reptiles ) growl )	lt_two reptiles ) swim
+=	( lt_two reptiles ) growl	lt_two reptiles growl )
+#	lt_two reptiles walk	lt_two pets walk
+#	( lt_two reptiles move	( lt_two pets move )
+#	( lt_two reptiles ) swim	( lt_two pets swim
+#	lt_two reptiles growl	lt_two pets growl
+#	( lt_two pets ) walk	lt_two warthogs walk
+#	lt_two pets ) move	lt_two turtles move
+#	lt_two pets ) swim )	( lt_two turtles swim
+#	lt_two pets growl )	lt_two turtles growl
+#	lt_two pets ) walk	lt_two mammals walk )
+#	lt_two pets move )	lt_two mammals move )
+#	( lt_two pets growl )	( lt_two mammals growl )
+#	lt_two pets ) walk )	( lt_two reptiles walk
+#	lt_two pets move )	lt_two reptiles ) move
+#	( lt_two pets swim	( lt_two reptiles swim )
+#	lt_two pets growl	( lt_two reptiles growl
+=	lt_two pets walk	( ( lt_two pets walk
+>	lt_two pets walk	lt_two pets move
+#	( lt_two pets ) walk	( lt_two pets ) swim
+#	( lt_two pets ) walk )	( ( lt_two pets growl
+<	lt_two pets ) move )	lt_two pets ) walk
+=	( lt_two pets ) move	( ( lt_two pets move
+<	lt_two pets move )	lt_two pets swim
+#	( lt_two pets move )	lt_two pets ) growl
+#	( lt_two pets ) swim )	lt_two pets walk )
+>	lt_two pets swim	lt_two pets move
+=	( lt_two pets ) swim	( lt_two pets ) swim
+#	( ( lt_two pets swim	( lt_two pets ) growl
+#	lt_two pets growl	( lt_two pets walk
+#	( lt_two pets growl	lt_two pets move
+#	( lt_two pets ) growl	lt_two pets swim
+=	lt_two pets growl	( lt_two pets growl )
+|	( lt_two warthogs walk	( three warthogs ) walk
+|	( lt_two warthogs walk	( three warthogs move
+|	( ( lt_two warthogs walk	three mammals ) walk )
+|	( lt_two turtles move	( three turtles ) move
+|	lt_two turtles swim )	( ( three turtles move
+|	( lt_two turtles swim	three turtles ) swim )
+|	lt_two turtles move )	three reptiles move
+|	lt_two turtles ) swim	( three reptiles move )
+|	lt_two turtles swim	three reptiles swim
+|	lt_two mammals ) walk	three mammals ) walk )
+|	lt_two reptiles walk )	( three reptiles move
+|	( lt_two reptiles move	three reptiles ) move
+|	( ( lt_two reptiles ) swim	three reptiles ) move
+|	lt_two reptiles ) swim	( three reptiles ) swim
+|	( lt_two pets walk )	three pets ) move )
+|	( ( lt_two pets move	( three pets move
+|	lt_two pets swim )	three pets ) move
+|	lt_two pets growl	three pets growl
+<	lt_two warthogs walk	( lt_three warthogs walk
+<	( lt_two turtles move	( lt_three turtles swim
+<	lt_two turtles ) swim )	lt_three turtles swim )
+<	( lt_two turtles growl	( lt_three turtles ) growl )
+<	lt_two mammals walk	( lt_three warthogs walk
+<	lt_two mammals move	( ( lt_three warthogs walk
+<	lt_two mammals ) move	lt_three warthogs swim )
+<	( lt_two mammals growl	lt_three warthogs ) growl )
+<	( lt_two mammals ) walk	lt_three mammals walk )
+<	lt_two mammals move	( lt_three mammals ) walk
+<	( ( lt_two reptiles move )	lt_three turtles ) swim
+<	lt_two reptiles swim )	lt_three turtles swim
+<	( lt_two reptiles ) growl	( ( lt_three turtles ) growl
+<	( lt_two reptiles ) walk	( lt_three reptiles walk )
+<	lt_two reptiles move	lt_three reptiles walk
+<	( lt_two pets ) walk )	lt_three pets ) walk )
+<	lt_two pets move	( lt_three pets walk
+<	( lt_two pets move	( lt_three pets move
+<	lt_two pets move	lt_three pets ) swim )
+<	( lt_two pets swim	( lt_three pets swim
+<	lt_two pets growl )	lt_three pets ) growl
+#	( three warthogs walk	all warthogs walk )
+#	three warthogs move )	( all warthogs move
+#	( three warthogs ) growl	all warthogs growl
+#	( three turtles walk )	( all turtles ) walk )
+#	( three turtles move	all turtles move )
+#	( three turtles swim	( all turtles swim
+#	( ( three mammals walk	all mammals ) walk
+#	( three reptiles swim )	all reptiles swim
+#	three pets growl	( ( all pets growl
+#	( three warthogs move	( not_all warthogs move )
+#	( three turtles move	( not_all turtles ) move )
+#	( three turtles swim )	( not_all turtles swim )
+#	three mammals walk	( not_all mammals ) walk
+#	( three reptiles ) swim	( ( not_all reptiles swim
+#	three pets move )	not_all pets move
+#	( three pets growl	not_all pets ) growl
+<	three warthogs ) walk	some mammals ) move
+<	three warthogs move	some mammals move
+<	( three warthogs swim	some mammals move
+<	( three warthogs swim	some mammals ) swim )
+<	three turtles walk	some turtles walk
+<	( three turtles walk )	( ( some turtles ) move
+<	( three turtles move	( ( some turtles ) move
+<	( ( three turtles ) swim	( some turtles ) move
+<	three turtles swim )	some turtles ) swim
+<	( three turtles ) walk	some reptiles walk
+<	( three turtles ) walk )	( some reptiles move )
+<	( three turtles move )	( ( some reptiles move )
+<	three turtles swim	some reptiles move )
+<	three turtles swim	some reptiles ) swim
+<	( three mammals walk )	( some mammals move
+<	three mammals swim )	( some mammals move
+<	three mammals swim	( some mammals swim
+<	( ( three reptiles move	some reptiles move
+<	three reptiles swim )	some reptiles ) move )
+<	( three reptiles swim	( some reptiles swim
+<	three pets move	( some pets ) move
+<	( three pets growl	some pets ) growl
+|	( three warthogs ) walk	no warthogs ) walk )
+|	( three warthogs move )	( ( no warthogs ) walk
+|	( three warthogs growl	no warthogs growl )
+|	( ( three turtles walk )	( no turtles walk
+|	( three turtles move	no turtles walk
+|	( three mammals walk	( no warthogs ) walk
+|	three reptiles move	no turtles walk
+|	three reptiles move	( ( no reptiles swim
+|	( three reptiles swim	( no reptiles swim )
+|	three pets ) move	( no pets walk
+|	( three pets move	( no pets ) move
+|	( three pets ) move )	( no pets ) swim
+|	( three pets growl	no pets growl
+#	( three warthogs ) walk )	( ( most warthogs walk )
+#	three warthogs swim	most warthogs swim
+#	three warthogs growl )	most warthogs growl
+#	three turtles swim	most turtles swim
+#	three mammals walk	most mammals walk )
+#	three mammals swim )	( most mammals swim
+#	three reptiles ) move )	most reptiles move )
+#	three reptiles swim	( most reptiles ) swim )
+#	three pets growl	( most pets growl
+#	three warthogs move	( not_most warthogs ) move
+#	( three warthogs growl )	not_most warthogs growl )
+#	three turtles walk	( not_most turtles ) walk
+#	( three turtles move	not_most turtles move
+#	( three turtles swim )	not_most turtles swim
+#	( three mammals walk )	not_most mammals ) walk
+#	three mammals ) swim	not_most mammals ) swim )
+#	( three reptiles move )	( not_most reptiles move
+#	three reptiles swim )	( not_most reptiles swim )
+#	three pets move )	( not_most pets ) move
+<	three warthogs walk	two warthogs walk
+<	( three warthogs ) swim	two warthogs swim
+<	( three warthogs growl	( ( two warthogs growl
+<	( three warthogs ) walk )	two mammals ) walk
+<	three warthogs walk )	two mammals ) move )
+<	( three warthogs move	two mammals ) move
+<	three warthogs ) swim	( two mammals move )
+<	three warthogs growl	( two mammals growl
+<	three turtles ) walk	two turtles walk
+<	( three turtles walk	( two turtles move
+<	( three turtles ) move	two turtles ) move
+<	( three turtles swim	( two turtles move
+<	( three turtles swim	two turtles ) swim
+<	( three mammals ) walk	( two mammals walk
+<	( three mammals walk	( two mammals move )
+<	( three mammals swim	two mammals move
+<	( ( three pets move )	two pets ) move )
+<	three pets ) growl	( two pets growl
+|	three warthogs ) walk	( lt_two warthogs walk
+|	( three warthogs move	( lt_two warthogs walk )
+|	( three turtles ) move	lt_two turtles move )
+|	three turtles move	lt_two turtles swim
+|	( ( three turtles swim	( ( lt_two turtles swim
+|	three mammals walk	lt_two warthogs walk
+|	( three mammals walk	( ( lt_two mammals walk
+|	( three reptiles move )	lt_two turtles move
+|	( three reptiles ) move	lt_two turtles ) swim )
+|	( three reptiles swim	lt_two turtles swim )
+|	three reptiles move	( lt_two reptiles walk
+|	( three reptiles move )	lt_two reptiles move )
+|	( three reptiles move	( lt_two reptiles swim
+|	three reptiles ) swim )	( lt_two reptiles ) swim
+|	( three pets ) move	lt_two pets walk
+|	three pets ) move	( lt_two pets move
+|	( three pets move	( ( lt_two pets swim )
+|	three pets growl	lt_two pets growl
+=	( three warthogs ) walk )	three warthogs walk
+<	( three warthogs walk	three warthogs move
+#	( ( three warthogs walk )	( three warthogs swim
+#	( three warthogs ) walk	( three warthogs growl )
+>	three warthogs ) move	three warthogs walk
+=	( three warthogs ) move )	( three warthogs ) move
+>	three warthogs ) move )	( three warthogs swim
+#	three warthogs move	three warthogs ) growl
+#	( three warthogs swim	three warthogs ) walk
+<	( three warthogs swim	( three warthogs move
+=	three warthogs swim	three warthogs swim
+#	( ( three warthogs swim )	( three warthogs growl
+#	( three warthogs growl	three warthogs walk
+#	three warthogs growl	( three warthogs move
+#	( three warthogs growl	three warthogs swim
+=	( three warthogs growl	( three warthogs growl )
+#	three warthogs walk	( three turtles ) walk
+#	three warthogs move )	( three turtles move
+#	( three warthogs swim )	three turtles ) swim
+<	three warthogs ) walk )	( three mammals ) walk
+<	( three warthogs swim	three mammals swim
+#	( three warthogs move	( ( three reptiles move )
+#	three warthogs swim	( three reptiles ) swim )
+#	three warthogs move	three pets ) move
+#	( three warthogs ) growl	( three pets growl
+#	( three turtles walk	( three warthogs walk
+#	( three turtles move	three warthogs move
+#	three turtles swim )	three warthogs swim
+=	three turtles ) walk	three turtles walk
+<	( three turtles walk )	( three turtles move )
+#	three turtles walk )	( ( three turtles swim
+>	three turtles move	( three turtles walk
+=	three turtles move )	three turtles move
+>	( three turtles ) move	three turtles swim
+#	three turtles swim )	( three turtles walk )
+<	three turtles swim )	( three turtles move
+=	three turtles ) swim	three turtles swim
+#	three turtles walk )	three mammals walk
+#	( three turtles swim	three mammals ) swim
+<	three turtles walk	three reptiles move
+<	( three turtles move	( ( three reptiles move
+<	three turtles swim	three reptiles move
+<	( ( three turtles ) swim )	three reptiles swim
+#	( three turtles ) move	( three pets move
+>	( ( three mammals walk	three warthogs walk
+>	( three mammals swim )	( three warthogs swim
+#	( three mammals walk	( three turtles walk
+#	three mammals ) swim	three turtles swim
+=	( three mammals ) walk	( three mammals walk
+#	( three mammals ) walk	( three mammals swim
+#	three mammals ) swim	( three mammals walk
+=	three mammals swim )	three mammals swim
+#	( three mammals swim	three reptiles swim
+#	( three reptiles move	three warthogs move
+#	( three reptiles swim	( three warthogs swim
+>	three reptiles ) move	three turtles ) walk
+>	three reptiles move	( ( three turtles move
+>	( three reptiles ) move	three turtles swim
+>	( three reptiles ) swim	( three turtles swim )
+#	three reptiles ) swim	( three mammals swim
+=	( three reptiles ) move	( three reptiles move
+>	three reptiles move	three reptiles swim )
+<	three reptiles ) swim	( ( three reptiles move
+=	three reptiles swim )	( three reptiles swim
+#	three reptiles move	( three pets move )
+#	three pets move	( three warthogs move )
+#	( ( three pets growl	( ( three warthogs growl
+#	( three pets ) move	( ( three turtles move
+#	three pets move	three reptiles ) move )
+=	( three pets ) move )	( three pets move
+#	three pets ) move )	three pets ) growl
+#	three pets ) growl	( three pets move
+=	( three pets growl	three pets ) growl
+^	three warthogs walk	( lt_three warthogs walk )
+#	( three warthogs walk	( lt_three warthogs ) swim
+#	( three warthogs walk	( lt_three warthogs growl
+|	( three warthogs ) move	( lt_three warthogs walk )
+|	three warthogs ) move )	( lt_three warthogs ) swim )
+#	( three warthogs move	lt_three warthogs growl
+#	three warthogs swim	( lt_three warthogs walk
+^	three warthogs ) swim	lt_three warthogs swim )
+#	( three warthogs swim	( ( lt_three warthogs ) growl
+#	three warthogs ) growl	lt_three warthogs ) walk )
+#	three warthogs growl	lt_three warthogs swim
+^	three warthogs growl	( lt_three warthogs ) growl
+#	three warthogs swim	lt_three turtles swim )
+#	three warthogs ) growl )	lt_three turtles ) growl
+v	three warthogs walk	( lt_three mammals walk
+#	( three warthogs walk	( lt_three reptiles ) walk
+#	three warthogs walk	( lt_three pets ) walk
+#	( three warthogs move	lt_three pets ) move
+#	( three warthogs ) swim )	( lt_three pets swim
+#	three warthogs growl )	( lt_three pets growl
+#	three turtles walk	lt_three warthogs ) walk
+#	three turtles swim	( lt_three warthogs swim
+#	three turtles walk	( lt_three turtles ) swim
+#	( three turtles walk	lt_three turtles ) growl
+|	( ( three turtles move )	lt_three turtles ) swim )
+#	( three turtles ) move	lt_three turtles growl
+^	( three turtles ) swim )	( lt_three turtles swim )
+#	( three turtles swim	( ( lt_three turtles growl
+#	three turtles walk )	( lt_three mammals walk )
+v	three turtles walk	( lt_three reptiles ) walk
+#	three turtles ) walk	lt_three pets walk
+#	( three turtles ) move	( lt_three pets move
+#	three turtles ) swim )	lt_three pets ) swim )
+|	( three mammals walk )	( lt_three warthogs walk
+|	( three mammals ) swim	( ( lt_three warthogs swim
+#	( ( three mammals swim )	( lt_three turtles swim
+^	( ( three mammals walk )	lt_three mammals ) walk
+#	three mammals swim	( lt_three mammals walk )
+#	( three mammals walk )	lt_three reptiles ) walk
+#	three mammals walk	lt_three pets walk
+#	three mammals ) swim	( lt_three pets ) swim
+#	three reptiles swim	( lt_three warthogs swim )
+|	three reptiles move	( lt_three turtles ) swim
+|	three reptiles swim	lt_three turtles swim )
+|	( three reptiles move	( lt_three reptiles walk
+#	three reptiles ) swim	lt_three reptiles ) walk )
+#	three reptiles move	lt_three pets move )
+#	( ( three reptiles ) swim	lt_three pets swim
+#	three pets growl )	lt_three warthogs growl )
+#	three pets growl )	lt_three turtles ) growl
+|	three pets ) move	lt_three pets ) walk )
+^	three pets move	lt_three pets move
+|	( ( three pets move	lt_three pets ) swim
+#	three pets move	lt_three pets ) growl )
+#	( three pets growl	( lt_three pets ) walk
+#	( ( three pets growl	lt_three pets ) move
+#	three pets growl	lt_three pets swim
+^	three pets growl	lt_three pets growl )
+#	lt_three warthogs walk	all warthogs ) walk
+#	lt_three warthogs growl )	( all warthogs ) growl
+#	lt_three turtles swim )	( all turtles swim )
+#	lt_three mammals ) walk )	all mammals walk
+#	( lt_three reptiles walk )	all reptiles ) walk )
+#	( lt_three pets ) walk	( all pets walk
+#	lt_three pets swim	all pets swim
+#	( lt_three pets growl )	all pets ) growl
+#	lt_three turtles swim	( not_all turtles swim
+#	lt_three turtles growl	not_all turtles growl
+#	( lt_three mammals ) walk	( not_all mammals walk )
+#	lt_three reptiles ) walk )	( not_all reptiles walk )
+#	( lt_three pets ) move	( not_all pets move
+#	( lt_three pets ) swim	( not_all pets ) swim
+#	lt_three pets growl )	not_all pets ) growl
+v	( lt_three turtles swim	some turtles swim
+v	( lt_three turtles ) growl	( ( some turtles growl
+v	( ( lt_three reptiles walk	some turtles ) walk
+v	( lt_three reptiles walk	some reptiles walk
+v	( ( lt_three pets ) move )	some pets move
+v	lt_three pets move	( some pets swim
+v	( lt_three pets swim )	some pets swim
+v	lt_three pets ) growl )	( some pets growl
+>	lt_three warthogs walk	( no warthogs walk
+>	lt_three warthogs growl	no warthogs ) growl )
+>	( lt_three warthogs walk	no mammals move )
+>	lt_three warthogs swim	no mammals move
+>	( lt_three warthogs growl	no mammals growl
+>	lt_three turtles growl	( ( no turtles growl )
+>	lt_three turtles swim	( no reptiles swim )
+>	lt_three mammals ) walk )	( no mammals move )
+>	lt_three pets walk	( no pets ) walk )
+>	( lt_three pets walk	( no pets move
+>	( lt_three pets move )	( no pets move
+>	( lt_three pets swim	no pets ) move )
+>	( lt_three pets swim	( no pets swim
+>	( lt_three pets ) growl	no pets growl
+#	( lt_three warthogs walk	most warthogs ) walk )
+#	( lt_three warthogs ) swim	( most warthogs swim
+#	( lt_three warthogs growl )	( most warthogs growl
+#	lt_three turtles swim	( ( most turtles swim
+#	( lt_three turtles growl	most turtles growl
+#	lt_three mammals ) walk )	most mammals walk )
+#	lt_three pets walk	most pets walk
+#	( lt_three pets ) swim	most pets ) swim )
+#	lt_three pets ) growl	( most pets ) growl )
+#	( lt_three warthogs ) growl	not_most warthogs growl
+#	( lt_three turtles ) swim	( not_most turtles swim
+#	( lt_three turtles growl	( not_most turtles growl
+#	( lt_three mammals walk	( not_most mammals walk
+#	( lt_three reptiles ) walk	not_most reptiles ) walk
+#	( lt_three pets walk	not_most pets ) walk )
+#	( lt_three pets move )	( ( not_most pets ) move
+#	lt_three pets swim	( not_most pets ) swim
+v	lt_three warthogs walk )	( two warthogs ) walk )
+v	lt_three warthogs ) swim	two warthogs ) swim
+v	lt_three warthogs growl	two warthogs growl
+v	( lt_three turtles swim )	two turtles ) swim
+v	( lt_three turtles ) growl	( two turtles ) growl )
+v	( lt_three mammals walk	( ( two warthogs walk
+v	( ( lt_three mammals ) walk	two mammals walk
+v	( lt_three reptiles ) walk	two turtles walk )
+v	( lt_three pets ) walk	( two pets ) walk
+v	( lt_three pets ) move )	two pets walk
+v	( ( lt_three pets move	two pets move
+v	lt_three pets move )	( two pets swim )
+v	lt_three pets ) swim	two pets swim
+v	( lt_three pets growl	two pets ) growl
+>	lt_three warthogs walk	lt_two warthogs walk
+>	( lt_three warthogs ) walk	( ( lt_two mammals walk )
+>	lt_three warthogs walk	lt_two mammals move
+>	lt_three warthogs ) swim	( lt_two mammals ) move
+>	lt_three warthogs ) growl	lt_two mammals growl
+>	lt_three turtles swim	( lt_two turtles ) move
+>	( lt_three turtles swim )	( lt_two turtles ) swim
+>	( ( lt_three turtles ) growl )	( ( lt_two turtles growl
+>	lt_three turtles swim	lt_two reptiles ) move
+>	( ( lt_three turtles swim	( lt_two reptiles swim )
+>	lt_three turtles growl )	( ( lt_two reptiles growl
+>	( lt_three mammals walk	lt_two mammals ) walk )
+>	( lt_three mammals walk	lt_two mammals move )
+>	lt_three reptiles walk	lt_two reptiles walk )
+>	( ( lt_three reptiles walk	lt_two reptiles move )
+>	lt_three pets walk	( lt_two pets walk
+>	( lt_three pets walk	( lt_two pets move
+>	( lt_three pets ) move	lt_two pets ) move
+>	lt_three pets swim )	lt_two pets move )
+>	lt_three pets swim	( lt_two pets swim )
+>	( lt_three pets growl )	lt_two pets growl
+^	( lt_three warthogs ) walk )	( three warthogs walk
+|	( lt_three warthogs walk	three warthogs ) move
+#	lt_three warthogs walk )	three warthogs swim
+#	lt_three warthogs walk	( three warthogs growl
+#	( lt_three warthogs swim	( three warthogs ) walk )
+|	lt_three warthogs ) swim )	( three warthogs ) move
+^	( lt_three warthogs swim	( three warthogs swim
+#	( lt_three warthogs swim	three warthogs growl )
+#	lt_three warthogs growl )	three warthogs ) walk
+#	lt_three warthogs growl	( three warthogs move
+#	( ( lt_three warthogs growl )	three warthogs ) swim )
+^	lt_three warthogs growl )	( three warthogs growl )
+#	lt_three warthogs walk )	three turtles walk
+#	( lt_three warthogs swim )	three turtles ) swim
+|	lt_three warthogs walk )	three mammals ) walk )
+|	( ( lt_three warthogs swim	( ( three mammals swim
+#	lt_three warthogs swim )	( ( three reptiles ) swim )
+#	( lt_three warthogs growl	three pets growl
+#	lt_three turtles swim	( ( three warthogs swim
+#	( lt_three turtles growl )	three warthogs growl
+#	( ( lt_three turtles ) swim	( ( three turtles walk
+|	( lt_three turtles swim	three turtles move
+^	( ( lt_three turtles swim	three turtles swim )
+#	( lt_three turtles growl	( three turtles walk
+#	lt_three turtles growl	( three turtles move )
+#	lt_three turtles growl	( three turtles swim
+#	( lt_three turtles ) swim	( three mammals swim )
+|	( lt_three turtles swim	( ( three reptiles move
+|	( ( lt_three turtles swim	three reptiles swim )
+#	( lt_three turtles ) growl	three pets growl
+v	lt_three mammals walk	( three warthogs ) walk )
+#	lt_three mammals walk	three turtles walk
+^	( lt_three mammals walk	( three mammals ) walk
+#	lt_three mammals walk	three mammals swim
+#	lt_three reptiles walk	three warthogs ) walk
+v	( ( lt_three reptiles walk	( ( three turtles walk
+#	lt_three reptiles walk	( three mammals walk
+|	lt_three reptiles ) walk )	three reptiles ) move
+#	lt_three reptiles walk	( three reptiles ) swim )
+#	( lt_three pets ) walk )	( three warthogs ) walk
+#	lt_three pets ) move	three warthogs ) move
+#	( lt_three pets ) swim	( three warthogs ) swim )
+#	( ( lt_three pets growl )	three warthogs ) growl )
+#	lt_three pets walk )	three turtles ) walk
+#	lt_three pets move )	( three turtles ) move
+#	( lt_three pets swim	three turtles swim )
+#	lt_three pets ) walk	( three mammals walk
+#	( ( lt_three pets ) swim	three mammals ) swim
+#	( lt_three pets move	three reptiles move
+#	lt_three pets swim	three reptiles swim )
+|	( lt_three pets walk	( three pets move
+#	( lt_three pets walk )	three pets growl )
+^	lt_three pets move )	three pets ) move
+#	( lt_three pets move	( three pets growl
+|	lt_three pets swim	( three pets move
+#	lt_three pets swim	( three pets ) growl )
+#	lt_three pets ) growl	three pets move )
+^	lt_three pets ) growl	three pets growl
+=	lt_three warthogs walk	( ( lt_three warthogs walk
+#	lt_three warthogs walk	lt_three warthogs swim )
+#	lt_three warthogs ) walk	lt_three warthogs growl )
+#	lt_three warthogs swim	lt_three warthogs ) walk )
+=	( lt_three warthogs swim	lt_three warthogs swim )
+#	lt_three warthogs swim )	lt_three warthogs growl )
+#	( lt_three warthogs ) growl	( lt_three warthogs ) walk )
+#	( lt_three warthogs growl	( ( lt_three warthogs swim
+=	lt_three warthogs growl	( lt_three warthogs ) growl )
+#	( lt_three warthogs swim )	( lt_three turtles swim
+#	lt_three warthogs growl	lt_three turtles growl
+>	( ( lt_three warthogs walk	( lt_three mammals walk
+#	lt_three warthogs walk )	( lt_three reptiles walk
+#	( lt_three warthogs ) walk	lt_three pets walk
+#	( lt_three warthogs swim )	( lt_three pets swim
+#	( ( lt_three warthogs growl )	( lt_three pets ) growl
+#	lt_three turtles swim	( lt_three warthogs swim
+#	lt_three turtles ) growl	lt_three warthogs growl
+=	lt_three turtles swim )	( lt_three turtles swim
+#	( lt_three turtles swim	( lt_three turtles ) growl
+#	( ( lt_three turtles ) growl )	( ( lt_three turtles ) swim
+=	lt_three turtles ) growl	( lt_three turtles growl
+#	lt_three turtles swim	lt_three pets ) swim
+#	( lt_three turtles growl	lt_three pets growl
+<	( lt_three mammals ) walk	( ( lt_three warthogs walk )
+=	( lt_three mammals walk	( lt_three mammals ) walk
+#	( ( lt_three mammals walk	( lt_three reptiles ) walk
+#	lt_three mammals walk	lt_three pets ) walk
+#	lt_three reptiles ) walk	( lt_three warthogs ) walk )
+#	lt_three reptiles ) walk	lt_three mammals walk
+=	lt_three reptiles ) walk	lt_three reptiles walk
+#	( lt_three reptiles walk	lt_three pets walk )
+#	( lt_three pets walk	( lt_three warthogs ) walk
+#	( lt_three pets swim	lt_three warthogs swim
+#	( ( lt_three pets ) growl	lt_three warthogs growl
+#	( lt_three pets swim )	( lt_three turtles swim
+#	( lt_three pets growl	lt_three turtles ) growl
+#	lt_three pets walk )	lt_three mammals walk
+#	( ( lt_three pets walk	( lt_three reptiles walk
+=	( lt_three pets ) walk )	( lt_three pets walk
+>	lt_three pets walk )	lt_three pets ) move )
+#	lt_three pets walk	( lt_three pets swim
+#	( lt_three pets walk	( ( lt_three pets ) growl )
+<	( ( lt_three pets move	( lt_three pets walk
+=	( ( lt_three pets ) move )	lt_three pets ) move )
+<	lt_three pets move	( ( lt_three pets swim )
+#	lt_three pets move )	( lt_three pets growl
+#	lt_three pets swim	lt_three pets walk
+>	( lt_three pets swim	( lt_three pets ) move )
+=	lt_three pets ) swim	lt_three pets swim
+#	( ( lt_three pets swim )	lt_three pets ) growl )
+#	( lt_three pets growl )	lt_three pets walk
+#	lt_three pets growl	( ( lt_three pets move
+#	( lt_three pets growl	( ( lt_three pets swim
+=	( lt_three pets growl	lt_three pets ) growl

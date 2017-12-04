@@ -2,7 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b72f4c1e-b8c1-4f94-9a46-30994c92b225" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generate_data/remove_brackets.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gru.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/binary_2dets_4negs_srn1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/binary_2dets_4negs_srn2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/binary_2dets_4negs_srn3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/binary_2dets_4negs_srn4_75.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/binary_2dets_4negs_srn5_100.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/unary/fol/fol_animals_test_translated_from_nl.txt_downsampled_0.01" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/unary/fol/fol_animals_train_translated_from_nl.txt_downsampled_0.01" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/SRNbinary_2dets_4negs_train1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/SRNbinary_2dets_4negs_train2.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/SRNbinary_2dets_4negs_train3.pt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run.sh" afterPath="$PROJECT_DIR$/run.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/srn.py" afterPath="$PROJECT_DIR$/srn.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/visualize.py" afterPath="$PROJECT_DIR$/visualize.py" />
     </list>
     <ignored path="thesis_code.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -21,13 +37,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.py">
+      <file leaf-file-name="srn.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/srn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="188" column="98" lean-forward="false" selection-start-line="188" selection-start-column="98" selection-end-line="188" selection-end-column="98" />
+            <state relative-caret-position="249">
+              <caret line="55" column="12" lean-forward="false" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
               <folding>
-                <element signature="e#0#37#0" expanded="true" />
+                <element signature="e#0#12#0" expanded="true" />
+                <element signature="e#3113#3266#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -36,35 +53,72 @@
       <file leaf-file-name="run.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="174" lean-forward="false" selection-start-line="16" selection-start-column="174" selection-end-line="16" selection-end-column="174" />
+            <state relative-caret-position="180">
+              <caret line="12" column="255" lean-forward="false" selection-start-line="12" selection-start-column="255" selection-end-line="12" selection-end-column="255" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="srn.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/srn.py">
+      <file leaf-file-name="gru.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gru.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="97" column="12" lean-forward="false" selection-start-line="97" selection-start-column="12" selection-end-line="97" selection-end-column="12" />
+            <state relative-caret-position="292">
+              <caret line="53" column="12" lean-forward="false" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
-                <element signature="e#1590#3118#0" expanded="false" />
-                <element signature="e#3174#3327#0" expanded="false" />
+                <element signature="e#3112#3265#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.py">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+            <state relative-caret-position="453">
+              <caret line="108" column="41" lean-forward="true" selection-start-line="108" selection-start-column="41" selection-end-line="108" selection-end-column="41" />
               <folding>
-                <element signature="e#0#12#0" expanded="true" />
-                <element signature="e#2334#4874#0" expanded="false" />
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="visualize.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/visualize.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="328">
+              <caret line="221" column="0" lean-forward="false" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
+              <folding>
+                <element signature="e#144#1259#0" expanded="false" />
+                <element signature="e#1291#1778#0" expanded="false" />
+                <element signature="e#1890#2047#0" expanded="false" />
+                <element signature="e#2098#2699#0" expanded="false" />
+                <element signature="e#4005#4769#0" expanded="false" />
+                <element signature="e#5151#6598#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="remove_brackets.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generate_data/remove_brackets.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="71" column="25" lean-forward="false" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="datamanager.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/datamanager.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1196">
+              <caret line="150" column="0" lean-forward="false" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#47#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,7 +154,10 @@
       <find>rnn</find>
       <find>shuffle</find>
       <find>srn</find>
+      <find>simple_rnn</find>
+      <find>gru</find>
       <find>save</find>
+      <find>model_nr</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -109,9 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/data/onesentence.txt" />
-        <option value="$PROJECT_DIR$/data/nl_most.txt" />
-        <option value="$PROJECT_DIR$/generate_data/nl_gen.py" />
         <option value="$PROJECT_DIR$/logs/trnn/fol_animals_1111.txt" />
         <option value="$PROJECT_DIR$/junk/scrap.py" />
         <option value="$PROJECT_DIR$/scrap.py" />
@@ -129,7 +183,6 @@
         <option value="$PROJECT_DIR$/logs/binary/binary_neg_verb_trnn.txt" />
         <option value="$PROJECT_DIR$/trnn.py" />
         <option value="$PROJECT_DIR$/trntn.py" />
-        <option value="$PROJECT_DIR$/visualize.py" />
         <option value="$PROJECT_DIR$/generate_data/fix_negations.py" />
         <option value="$PROJECT_DIR$/sumnn.py" />
         <option value="$PROJECT_DIR$/generate_data/binary2_4negs_train.txt" />
@@ -155,10 +208,14 @@
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/graveyard.py" />
         <option value="$PROJECT_DIR$/generate_data/make_mini_data.py" />
-        <option value="$PROJECT_DIR$/srn.py" />
         <option value="$PROJECT_DIR$/references.txt" />
         <option value="$PROJECT_DIR$/order_references.py" />
+        <option value="$PROJECT_DIR$/visualize.py" />
+        <option value="$PROJECT_DIR$/data/junk/onesentence_0.5bracket_pairs.txt" />
+        <option value="$PROJECT_DIR$/generate_data/remove_brackets.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/srn.py" />
+        <option value="$PROJECT_DIR$/gru.py" />
         <option value="$PROJECT_DIR$/run.sh" />
       </list>
     </option>
@@ -201,43 +258,7 @@
               <item name="thesis_code" type="b2602c69:ProjectViewProjectNode" />
               <item name="mol_thesis" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="unary" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="thesis_code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mol_thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="unary" type="462c0819:PsiDirectoryNode" />
-              <item name="fol" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="thesis_code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mol_thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="generate_data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="thesis_code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mol_thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="generate_data" type="462c0819:PsiDirectoryNode" />
-              <item name="analyze" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="thesis_code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mol_thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="thesis_code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mol_thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
-              <item name="binary" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="thesis_code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mol_thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
-              <item name="binary" type="462c0819:PsiDirectoryNode" />
-              <item name="2dets_4negs" type="462c0819:PsiDirectoryNode" />
+              <item name="junk" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -281,7 +302,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.order_references">
+  <component name="RunManager" selected="Python.remove_brackets">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -404,24 +425,7 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration name="analyze_errors" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/generate_data/analyze" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="thesis_code" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generate_data/analyze/analyze_errors.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="graveyard" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="gru" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -433,26 +437,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="thesis_code" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/graveyard.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-    </configuration>
-    <configuration name="make_mini_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/generate_data" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="thesis_code" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generate_data/make_mini_data.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gru.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -474,6 +459,23 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="remove_brackets" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/generate_data" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="thesis_code" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generate_data/remove_brackets.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="srn" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -491,20 +493,37 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="visualize" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="thesis_code" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/visualize.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.graveyard" />
-      <item index="1" class="java.lang.String" itemvalue="Python.analyze_errors" />
-      <item index="2" class="java.lang.String" itemvalue="Python.srn" />
-      <item index="3" class="java.lang.String" itemvalue="Python.make_mini_data" />
-      <item index="4" class="java.lang.String" itemvalue="Python.order_references" />
+      <item index="0" class="java.lang.String" itemvalue="Python.srn" />
+      <item index="1" class="java.lang.String" itemvalue="Python.order_references" />
+      <item index="2" class="java.lang.String" itemvalue="Python.remove_brackets" />
+      <item index="3" class="java.lang.String" itemvalue="Python.visualize" />
+      <item index="4" class="java.lang.String" itemvalue="Python.gru" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.order_references" />
-        <item index="1" class="java.lang.String" itemvalue="Python.srn" />
-        <item index="2" class="java.lang.String" itemvalue="Python.make_mini_data" />
-        <item index="3" class="java.lang.String" itemvalue="Python.graveyard" />
-        <item index="4" class="java.lang.String" itemvalue="Python.analyze_errors" />
+        <item index="0" class="java.lang.String" itemvalue="Python.remove_brackets" />
+        <item index="1" class="java.lang.String" itemvalue="Python.visualize" />
+        <item index="2" class="java.lang.String" itemvalue="Python.srn" />
+        <item index="3" class="java.lang.String" itemvalue="Python.gru" />
+        <item index="4" class="java.lang.String" itemvalue="Python.order_references" />
       </list>
     </recent_temporary>
   </component>
@@ -531,9 +550,10 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22013889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32802126" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46347943" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40770254" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -546,7 +566,6 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -566,95 +585,11 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="18" />
+      <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/delete.py" />
-    <entry file="file://$PROJECT_DIR$/load_model.py" />
-    <entry file="file://$PROJECT_DIR$/generate_data/binary_2dets_4negs_train567_test89_test.txt" />
-    <entry file="file://$PROJECT_DIR$/generate_data/binary_2dets_4negs_train567_test89_train.txt" />
-    <entry file="file://$PROJECT_DIR$/generate_data/split_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="29" column="39" lean-forward="false" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generate_data/restrict_length.py" />
-    <entry file="file://$PROJECT_DIR$/data/binary/2dets_4negs/train567_test89/binary_2dets_4negs_train567_test89_train.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-417691">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/binary/2dets_4negs/train567_test89/binary_2dets_4negs_train567_test89_test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-77497">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/compare_datafiles.py" />
-    <entry file="file://$PROJECT_DIR$/generate_data/analyze/compare_nl_fol.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generate_data/analyze/sample_compare_datafiles.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="55" column="41" lean-forward="false" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/junk/minitest_bin.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" column="37" lean-forward="false" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generate_data/analyze/load_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#12#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generate_data/analyze/errorprofile_sumNN.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generate_data/analyze/errorprofile_tRNN.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generate_data/analyze/errorprofile_tRNTN.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/visualize.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="76" column="0" lean-forward="false" selection-start-line="75" selection-start-column="4" selection-end-line="76" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/generate_data/analyze/analyze_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="337">
@@ -688,14 +623,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/binary/2dets_4negs/binary_2dets_4negs_test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/binary/2dets_4negs/binary_2dets_4negs_train.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -715,14 +642,6 @@
     <entry file="file://$PROJECT_DIR$/data/junk/binary_exp.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-94179">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/junk/minitrain.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-651">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -812,16 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/datamanager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="149" column="47" lean-forward="true" selection-start-line="149" selection-start-column="47" selection-end-line="149" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/binary/2dets_4negs/binary_2dets_4negs_train.txt_downsampled_0.001">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -862,26 +771,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/unary/fol/fol_animals_train_translated_from_nl.txt_downsampled_0.01">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/srn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="97" column="12" lean-forward="false" selection-start-line="97" selection-start-column="12" selection-end-line="97" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-            <element signature="e#1590#3118#0" expanded="false" />
-            <element signature="e#3174#3327#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/references.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1185">
@@ -906,16 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="188" column="98" lean-forward="false" selection-start-line="188" selection-start-column="98" selection-end-line="188" selection-end-column="98" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
@@ -927,10 +806,211 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/junk/nl_short_sentencestest.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10322">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/junk/onesentence_0.5brackets.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="43" lean-forward="true" selection-start-line="0" selection-start-column="43" selection-end-line="0" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/junk/nl_short_sentencestrain_0.5brackets.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14284">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/junk/nl_short_sentencestrain_0brackets.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-516">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/binary_2dets_4negs_srn7_50.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/torch/functional.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/unary/fol/fol_animals_train_translated_from_nl.txt_downsampled_0.01">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2710">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/junk/nl_short_sentencestrain.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="58" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generate_data/analyze/load_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/binary/2dets_4negs/binary_2dets_4negs_test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datamanager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1196">
+          <caret line="150" column="0" lean-forward="false" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/junk/minitrain.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/junk/auxtrain.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3742">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/junk/minitest.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/junk/nl_most.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-317">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/junk/onesentence.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/binary/2dets_4negs/binary_2dets_4negs_train_0bracket_pairs.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-123782">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/junk/onesentence_0.5bracket_pairs.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="28" lean-forward="false" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generate_data/remove_brackets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="71" column="25" lean-forward="false" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/visualize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="221" column="0" lean-forward="false" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
+          <folding>
+            <element signature="e#144#1259#0" expanded="false" />
+            <element signature="e#1291#1778#0" expanded="false" />
+            <element signature="e#1890#2047#0" expanded="false" />
+            <element signature="e#2098#2699#0" expanded="false" />
+            <element signature="e#4005#4769#0" expanded="false" />
+            <element signature="e#5151#6598#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/srn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="55" column="12" lean-forward="false" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#3113#3266#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gru.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="53" column="12" lean-forward="false" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#3112#3265#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="108" column="41" lean-forward="true" selection-start-line="108" selection-start-column="41" selection-end-line="108" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/run.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="174" lean-forward="false" selection-start-line="16" selection-start-column="174" selection-end-line="16" selection-end-column="174" />
+        <state relative-caret-position="180">
+          <caret line="12" column="255" lean-forward="false" selection-start-line="12" selection-start-column="255" selection-end-line="12" selection-end-column="255" />
           <folding />
         </state>
       </provider>

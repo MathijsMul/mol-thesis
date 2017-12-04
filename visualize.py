@@ -41,7 +41,6 @@ def scrape_log_old(log_file):
 
     return(acc_scores)
 
-
 def scrape_log(log_file):
     """
     scrapes log file to retrieve only accuracy scores
@@ -61,7 +60,6 @@ def scrape_log(log_file):
                 acc_scores.append(acc)
 
     return(acc_scores)
-
 
 #s = scrape_log('logs/trnn/fol_animals_1111.txt')
 
@@ -122,18 +120,18 @@ def plot_two(acc1, acc2, name_plot, name_file):
 
     plt.close()
 
-acc1 = scrape_log('./logs/binary/binary_neg_det1_trnn.txt')
-acc2 = scrape_log('./logs/binary/binary_neg_det1_trntn.txt')
-plot_two(acc1, acc2, 'Binary predicates, first quantifier negated', 'binary_neg_det1')
-
-
-acc1 = scrape_log('./logs/binary/binary_neg_noun1_trnn.txt')
-acc2 = scrape_log('./logs/binary/binary_neg_noun1_trntn.txt')
-plot_two(acc1, acc2, 'Binary predicates, noun negated', 'binary_neg_noun')
-
-acc1 = scrape_log('./logs/binary/binary_neg_verb_trnn.txt')
-acc2 = scrape_log('./logs/binary/binary_neg_verb_trntn.txt')
-plot_two(acc1, acc2, 'Binary predicates, verb negated', 'binary_neg_verb')
+# acc1 = scrape_log('./logs/binary/binary_neg_det1_trnn.txt')
+# acc2 = scrape_log('./logs/binary/binary_neg_det1_trntn.txt')
+# plot_two(acc1, acc2, 'Binary predicates, first quantifier negated', 'binary_neg_det1')
+#
+#
+# acc1 = scrape_log('./logs/binary/binary_neg_noun1_trnn.txt')
+# acc2 = scrape_log('./logs/binary/binary_neg_noun1_trntn.txt')
+# plot_two(acc1, acc2, 'Binary predicates, noun negated', 'binary_neg_noun')
+#
+# acc1 = scrape_log('./logs/binary/binary_neg_verb_trnn.txt')
+# acc2 = scrape_log('./logs/binary/binary_neg_verb_trntn.txt')
+# plot_two(acc1, acc2, 'Binary predicates, verb negated', 'binary_neg_verb')
 
 def plot_dict_acc(acc_dict, net):
     os.environ['PATH'] = '/Library/TeX/texbin'
@@ -221,3 +219,23 @@ def confusion_matrix(test_data, rels, net, plot_name):
     plt.close()
 
     #return(acc)
+
+def scatterplot_from_dict(data_dict):
+    #for data_dict in d.values():
+    x = data_dict.keys()
+    y = [float(item) for item in data_dict.values()]
+
+    plt.scatter(x, y)
+    plt.xlabel('Percentage of brackets')
+    plt.ylabel('Accuracy')
+    plt.title('Test results with partial bracketing')
+
+    #plt.legend(d.keys())
+    plt.show()
+
+#d = {0.0: '27.92', 0.1: '29.00', 0.2: '29.80', 0.3: '31.20', 0.4: '34.27', 0.5: '36.72', 0.6: '41.05', 0.7: '48.59', 0.8: '60.43', 0.9: '77.60', 1.0: '99.53'}
+
+# for srn, trained on 2dets_4negs_train, tested on test version with increasing bracket ratios
+#d = {0.0: '24.16', 0.1: '23.77', 0.2: '23.67', 0.3: '23.12', 0.4: '22.92', 0.5: '23.12', 0.6: '23.68', 0.7: '23.77', 0.8: '26.08', 0.9: '34.36', 1.0: '84.92'}
+
+#scatterplot_from_dict(d)

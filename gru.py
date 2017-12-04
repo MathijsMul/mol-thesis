@@ -6,14 +6,12 @@ import torch.optim as optim
 import torch.nn.init as init
 import math
 
-#TODO: optimize this, faster data loading/more lookups or sth
-
-class SRN(nn.Module):
+class GRU(nn.Module):
     # Simple Recurrent Network
 
     def __init__(self, vocab, rels, word_dim, hidden_size, cpr_dim):
     #def __init__(self, input_size, hidden_size, output_size):
-        super(SRN, self).__init__()
+        super(GRU, self).__init__()
 
         self.word_dim = word_dim  # dimensionality of word embeddings
         self.cpr_dim = cpr_dim  # output dimensionality of comparison layer
@@ -26,8 +24,8 @@ class SRN(nn.Module):
         self.hidden_size = hidden_size
 
         # Simple Recurrent Network is RNN with single hidden layer
-        self.simple_rnn = nn.RNN(self.word_dim, self.hidden_size, 1)
-
+        #self.simple_rnn = nn.RNN(self.word_dim, self.hidden_size, 1)
+        self.gru = nn.GRU(self.word_dim, self.hidden_size, 1)
         # Dropout layer
         self.dropout = nn.Dropout(0.1)
 
@@ -117,7 +115,7 @@ class SRN(nn.Module):
 
         hidden = self.initHidden()
 
-        output, hn = self.simple_rnn(input_vector, hidden) # output dim:  (seq_len, batch, hidden_size * num_directions)
+        output, hn = self.gru(input_vector, hidden) # output dim: (seq_len, batch, hidden_size * num_directions)
         output = output[seq_len-1,::].view(1, self.hidden_size) # output dim: (1, hidden_size)
 
         output = self.dropout(output)
@@ -126,53 +124,23 @@ class SRN(nn.Module):
     def initHidden(self):
         return Variable(torch.zeros(1, 1, self.hidden_size))
 
-        # maakt dit uit?
-        #return Variable(torch.zeros(1, self.hidden_size))
-
-
 if False:
     import datamanager as dat
     from test import compute_accuracy
 
-    #train_data_file = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/junk/nl_short_sentencestrain.txt'
-    train_data_file = 'data/binary/2dets_4negs/binary_2dets_4negs_train.txt'
-    train_data = dat.SentencePairsDataset(train_data_file)
-    train_data.load_data(sequential=True, print_result=True)
-    vocab = train_data.word_list
-    rels = train_data.relation_list
-    word_dim = 25
-    n_hidden = 128
-    cpr_dim = 75
-
-    rnn = SRN(vocab, rels, word_dim, n_hidden, cpr_dim)
-    rnn.load_state_dict(torch.load('models/srn/SRNbinary_2dets_4negs_train1.pt'))
-
-    scores = {}
-
-    for ratio in [i / 10.0 for i in range(11)]:
-        test_file = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/partial_bracketing/binary_2dets_4negs_test_' + str(ratio) + 'brackets.txt'
-        test_data = dat.SentencePairsDataset(test_file)
-        test_data.load_data(sequential=True, print_result=False)
-        acc = compute_accuracy(test_data, rels, rnn, print_outputs=False)
-        scores[ratio] = acc
-
-    print(scores)
-
-if False:
-    import datamanager as dat
-    from test import compute_accuracy
-
-    #train_data_file = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/junk/nl_short_sentencestrain.txt'
+    #train_data_file = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/unary/fol/fol_animals_train_translated_from_nl.txt_downsampled_0.01'
+    train_data_file = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/junk/nl_short_sentencestrain.txt'
     train_data = dat.SentencePairsDataset(train_data_file)
     train_data.load_data(sequential=True, print_result=True)
     vocab = train_data.word_list
     rels = train_data.relation_list
 
     #test_file = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/junk/nl_short_sentencestest.txt'
-    test_data = dat.SentencePairsDataset(test_file)
-    test_data.load_data(sequential=True, print_result=False)
-
-    #test_data = train_data
+    #test_file = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/unary/fol/fol_animals_test_translated_from_nl.txt_downsampled_0.01'
+    #test_file = train_data_file
+    #test_data = dat.SentencePairsDataset(test_file)
+    #test_data.load_data(sequential=True, print_result=False)
+    test_data = train_data
 
     batch_size = 32
     shuffle_samples = True
@@ -184,18 +152,11 @@ if False:
     n_hidden = 128
     cpr_dim = 75
 
-    #init_mode = 'xavier_uniform'
-    rnn = SRN(vocab, rels, word_dim, n_hidden, cpr_dim)
-    #
-    # print(list(rnn.parameters()))
-    #rnn.initialize(mode=init_mode)
-
-    #
-    #learning_rate = 0.005 # If you set this too high, it might explode. If too low, it might not learn
+    gru = GRU(vocab, rels, word_dim, n_hidden, cpr_dim)
     criterion = nn.NLLLoss()
 
     l2_penalty = 1e-3
-    optimizer = optim.Adadelta(rnn.parameters(), weight_decay = l2_penalty)
+    optimizer = optim.Adadelta(gru.parameters(), weight_decay = l2_penalty)
 
     num_epochs = 50
     for epoch in range(num_epochs):
@@ -216,7 +177,7 @@ if False:
             optimizer.zero_grad()
 
             # forward + backward + optimize
-            outputs = rnn(inputs)
+            outputs = gru(inputs)
 
             loss = criterion(outputs, targets)
             loss.backward()
@@ -230,7 +191,7 @@ if False:
             #           (epoch + 1, i + 100, running_loss / 100))
             #     running_loss = 0.0
 
-        acc = compute_accuracy(test_data, rels, rnn, print_outputs=False)
+        acc = compute_accuracy(test_data, rels, gru, print_outputs=False)
         print(str(epoch + 1), '\t', str(acc))
 
-    torch.save(rnn.state_dict(), 'models/srn_exp.pt')
+    torch.save(gru.state_dict(), 'models/gru_exp.pt')

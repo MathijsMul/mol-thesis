@@ -4,6 +4,9 @@ import matplotlib.ticker as ticker
 import os
 import torch
 
+
+#TODO: use seaborn instead of matplotlib
+
 def scrape_log_old(log_file):
     """
     scrapes log file to retrieve only accuracy scores

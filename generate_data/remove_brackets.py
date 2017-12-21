@@ -69,4 +69,4 @@ def remove_bracket_pairs(file, ratio):
 
 #remove_bracket_pairs('/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/binary_2dets_4negs_train.txt', 0.5)
 f = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/binary_2dets_4negs_test.txt'
-remove_bracket_pairs(f, 0)
+remove_bracket_pairs(f, 0.5)

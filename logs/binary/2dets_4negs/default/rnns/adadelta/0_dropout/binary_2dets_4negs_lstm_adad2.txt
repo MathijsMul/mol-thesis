@@ -1,0 +1,79 @@
+Loading data from  ./data/binary/2dets_4negs/binary_2dets_4negs_train.txt
+Vocabulary: 
+ ['(', ')', 'Europeans', 'Germans', 'Italians', 'Romans', 'all', 'children', 'fear', 'hate', 'like', 'love', 'not', 'some']
+Relations:  
+ ['#', '<', '=', '>', '^', 'v', '|']
+Loading data from  ./data/binary/2dets_4negs/binary_2dets_4negs_test.txt
+
+
+MODEL SETTINGS
+Model:                  LSTM
+Train data:             ./data/binary/2dets_4negs/binary_2dets_4negs_train.txt
+Test data:              ./data/binary/2dets_4negs/binary_2dets_4negs_test.txt
+Num. epochs:            50
+Word dim.:              25
+Cpr. dim.:              75
+Batch size:             32
+Shuffle samples:        True
+Weight initialization:  None
+Optimizer:              Adadelta
+L2 penalty:             0
+Num. train instances:   29900
+Num. test instances:    7500
+Num. hidden units:      128
+
+
+EPOCH 	 ACCURACY
+0 	 0.91
+1 	 30.68
+2 	 33.96
+3 	 34.51
+4 	 35.09
+5 	 35.48
+6 	 34.79
+7 	 47.20
+8 	 64.29
+9 	 77.79
+10 	 82.80
+11 	 85.67
+12 	 87.49
+13 	 88.71
+14 	 89.36
+15 	 89.20
+16 	 90.05
+17 	 90.28
+18 	 90.31
+19 	 90.59
+20 	 90.75
+21 	 91.05
+22 	 91.65
+23 	 88.60
+24 	 90.48
+25 	 90.68
+26 	 91.28
+27 	 90.91
+28 	 91.49
+29 	 91.36
+30 	 90.81
+31 	 91.12
+32 	 90.32
+33 	 91.35
+34 	 91.12
+35 	 90.52
+36 	 91.40
+37 	 91.31
+38 	 90.97
+39 	 90.72
+40 	 90.97
+41 	 90.96
+42 	 91.25
+43 	 90.23
+44 	 90.93
+45 	 90.75
+46 	 91.47
+47 	 91.32
+48 	 91.24
+49 	 91.41
+50 	 91.28
+
+Total running time:  777m 7s

@@ -1,0 +1,82 @@
+Loading data from  data/binary/2dets_4negs/binary_2dets_4negs_train.txt
+Vocabulary: 
+ ['(', ')', 'Europeans', 'Germans', 'Italians', 'Romans', 'all', 'children', 'fear', 'hate', 'like', 'love', 'not', 'some']
+Relations:  
+ ['#', '<', '=', '>', '^', 'v', '|']
+Loading data from  data/binary/2dets_4negs/binary_2dets_4negs_test.txt
+
+
+MODEL SETTINGS
+Model:                  GRU
+Train data:             data/binary/2dets_4negs/binary_2dets_4negs_train.txt
+Test data:              data/binary/2dets_4negs/binary_2dets_4negs_test.txt
+Num. epochs:            50
+Word dim.:              25
+Cpr. dim.:              75
+Batch size:             32
+Shuffle samples:        True
+Weight initialization:  None
+Optimizer:              Adadelta
+L2 penalty:             0
+Num. train instances:   29900
+Num. test instances:    7500
+Num. hidden units:      128
+Num. hidden layers:     2
+Dropout probability:    0
+Model name:             GRUbinary_2dets_4negs_train2layers.pt
+
+
+EPOCH 	 ACCURACY
+0 	 0.91
+1 	 34.19
+2 	 34.69
+3 	 35.21
+4 	 56.12
+5 	 74.87
+6 	 83.53
+7 	 86.11
+8 	 87.37
+9 	 88.24
+10 	 88.21
+11 	 89.37
+12 	 90.16
+13 	 90.87
+14 	 90.79
+15 	 91.68
+16 	 91.93
+17 	 92.25
+18 	 92.79
+19 	 93.01
+20 	 93.40
+21 	 93.67
+22 	 93.07
+23 	 94.08
+24 	 94.33
+25 	 94.69
+26 	 94.80
+27 	 94.85
+28 	 94.52
+29 	 95.00
+30 	 95.28
+31 	 95.31
+32 	 95.41
+33 	 95.44
+34 	 95.45
+35 	 95.40
+36 	 95.39
+37 	 95.35
+38 	 95.44
+39 	 95.40
+40 	 95.43
+41 	 95.43
+42 	 95.37
+43 	 95.39
+44 	 95.39
+45 	 95.43
+46 	 95.40
+47 	 95.37
+48 	 95.37
+49 	 95.43
+50 	 95.43
+
+Total running time:  161m 56s

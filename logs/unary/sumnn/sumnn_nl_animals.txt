@@ -1,0 +1,78 @@
+Loading data from  ./data/unary/nl/nl_data1_animals_train.txt
+Vocabulary: 
+ ['(', ')', 'all', 'growl', 'lt_three', 'lt_two', 'mammals', 'most', 'move', 'no', 'not', 'not_all', 'not_most', 'pets', 'reptiles', 'some', 'swim', 'three', 'turtles', 'two', 'walk', 'warthogs']
+Relations:  
+ ['#', '<', '=', '>', '^', 'v', '|']
+Loading data from  ./data/unary/nl/nl_data1_animals_test.txt
+
+
+MODEL SETTINGS
+Model:                  sumNN
+Train data:             ./data/unary/nl/nl_data1_animals_train.txt
+Test data:              ./data/unary/nl/nl_data1_animals_test.txt
+Num. epochs:            50
+Word dim.:              25
+Cpr. dim.:              75
+Batch size:             32
+Shuffle samples:        True
+Weight initialization:  None
+Optimizer:              Adadelta
+L2 penalty:             0.0003
+Num. train instances:   27762
+Num. test instances:    6461
+
+
+EPOCH 	 ACCURACY
+0 	 11.34
+1 	 59.12
+2 	 70.50
+3 	 76.63
+4 	 78.49
+5 	 80.00
+6 	 82.74
+7 	 84.23
+8 	 85.39
+9 	 86.15
+10 	 87.40
+11 	 87.25
+12 	 88.89
+13 	 87.90
+14 	 89.85
+15 	 90.00
+16 	 89.80
+17 	 90.73
+18 	 90.98
+19 	 91.94
+20 	 92.34
+21 	 91.49
+22 	 92.04
+23 	 92.69
+24 	 92.83
+25 	 93.21
+26 	 92.59
+27 	 92.12
+28 	 93.00
+29 	 92.65
+30 	 92.76
+31 	 92.46
+32 	 92.66
+33 	 93.28
+34 	 92.73
+35 	 92.73
+36 	 93.28
+37 	 92.03
+38 	 93.67
+39 	 92.86
+40 	 93.25
+41 	 93.84
+42 	 92.79
+43 	 93.93
+44 	 93.48
+45 	 93.19
+46 	 94.09
+47 	 93.58
+48 	 93.53
+49 	 92.88
+50 	 92.82
+
+Total running time:  39m 40s

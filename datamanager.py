@@ -24,6 +24,9 @@ class SentencePairsDataset(Dataset):
     def __len__(self):
         return len(self.tree_data)
 
+    def __str__(self):
+        return(str(self.tree_data))
+
     # def __getitem__(self, idx):
     #     label = self.tree_data[idx][0]
     #

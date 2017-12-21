@@ -1,5 +1,7 @@
 import torch
 import numpy as np
+import datamanager as dat
+from torch.autograd import Variable
 import os
 
 # uncomment to generate confusion matrix in one go:
@@ -7,7 +9,10 @@ import os
 # import matplotlib.ticker as ticker
 from collections import Counter, defaultdict
 
-def compute_accuracy(test_data, rels, net, print_outputs, confusion_matrix=False):
+def compute_accuracy(test_data, rels, net, print_outputs=False, confusion_matrix=False, batch_size=1):
+    # deactivate dropout
+    net.eval()
+
     n_rels = len(rels)
 
     if confusion_matrix:
@@ -16,63 +21,89 @@ def compute_accuracy(test_data, rels, net, print_outputs, confusion_matrix=False
     correct = 0.0
     total = 0
 
-    for i, data in enumerate(test_data.tree_data, 0):
-        input, label = [[data[1], data[2]]], [rels.index(data[0])]
-        label = torch.LongTensor(label)
-        outputs = net(input)
-        _, predicted = torch.max(outputs.data, 1)
+    if batch_size == 1:
+        for i, data in enumerate(test_data.tree_data, 0):
+
+            input, label = [[data[1], data[2]]], [rels.index(data[0])]
+            label = torch.LongTensor(label)
+            outputs = net(input)
+            _, predicted = torch.max(outputs.data, 1)
+
+            if confusion_matrix:
+                confusion[int(label[0])][int(predicted[0])] += 1
+
+            if print_outputs:
+                print('Outputs:')
+                print(outputs)
+                print('Predicted label::')
+                print(predicted)
+                print('Real label:')
+                print(label)
+                if predicted.numpy() == label.numpy():
+                    print('CORRECT')
+                else:
+                    print('FALSE')
+
+            correct += (predicted == label).sum()
+            total += 1 # because test batch size is always 1
+
+        acc = 100 * correct / total
+        acc = "%.2f" % round(acc, 2)
 
         if confusion_matrix:
-            confusion[int(label[0])][int(predicted[0])] += 1
+            # create a confusion matrix, indicating for every actual relation (rows) which relation the network guesses (columns)
 
-        if print_outputs:
-            print('Outputs:')
-            print(outputs)
-            print('Predicted label::')
-            print(predicted)
-            print('Real label:')
-            print(label)
-            if predicted.numpy() == label.numpy():
-                print('CORRECT')
-            else:
-                print('FALSE')
+            # Normalize by dividing every row by its sum
+            for i in range(n_rels):
+                confusion[i] = confusion[i] / confusion[i].sum()
 
-        correct += (predicted == label).sum()
-        total += 1 # because test batch size is always 1
+            # Set up plot
+            fig = plt.figure()
+            ax = fig.add_subplot(111)
+            cax = ax.matshow(confusion.numpy(), cmap='hot')
+            fig.colorbar(cax)
 
-    acc = 100 * correct / total
-    acc = "%.2f" % round(acc, 2)
+            # Set up axes
+            #ax.set_xticklabels([''] + rels, rotation=90)
+            ax.set_xticklabels([''] + rels)
+            ax.set_yticklabels([''] + rels)
 
-    if confusion_matrix:
-        # create a confusion matrix, indicating for every actual relation (rows) which relation the network guesses (columns)
+            # Force label at every tick
+            ax.xaxis.set_major_locator(ticker.MultipleLocator(1))
+            ax.yaxis.set_major_locator(ticker.MultipleLocator(1))
 
-        # Normalize by dividing every row by its sum
-        for i in range(n_rels):
-            confusion[i] = confusion[i] / confusion[i].sum()
+            # sphinx_gallery_thumbnail_number = 2
+            # plt.show()
 
-        # Set up plot
-        fig = plt.figure()
-        ax = fig.add_subplot(111)
-        cax = ax.matshow(confusion.numpy(), cmap='hot')
-        fig.colorbar(cax)
+            plot_name = 'conf2_' + net.__class__.__name__
 
-        # Set up axes
-        #ax.set_xticklabels([''] + rels, rotation=90)
-        ax.set_xticklabels([''] + rels)
-        ax.set_yticklabels([''] + rels)
+            plt.savefig(plot_name)
 
-        # Force label at every tick
-        ax.xaxis.set_major_locator(ticker.MultipleLocator(1))
-        ax.yaxis.set_major_locator(ticker.MultipleLocator(1))
+            plt.close()
 
-        # sphinx_gallery_thumbnail_number = 2
-        # plt.show()
+    else:
+        shuffle_samples = False
+        batches = dat.BatchData(test_data, batch_size, shuffle_samples)
+        batches.create_batches()
 
-        plot_name = 'conf_' + net.__class__.__name__
+        total = 0
+        for batch_idx in range(batches.num_batches):
+            inputs = batches.batched_data[batch_idx]
+            labels = batches.batched_labels[batch_idx]
 
-        plt.savefig(plot_name)
+            # convert label symbols to tensors
+            labels = [rels.index(label) for label in labels]
 
-        plt.close()
+            targets = torch.LongTensor(labels)
+
+            outputs = net(inputs)
+            _, predicted = torch.max(outputs.data, 1)
+
+            correct += (predicted == targets).sum()
+            total += len(inputs)
+
+        acc = 100 * correct / total
+        acc = "%.2f" % round(acc, 2)
 
     return(acc)
 

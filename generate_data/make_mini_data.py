@@ -8,5 +8,5 @@ def sample_file(file_in, ratio):
                 if random.random() < ratio:
                     fout.write(line)
 
-sample_file('/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/unary/fol/fol_animals_test_translated_from_nl.txt', 0.01)
+sample_file('/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/diagnose/diagnostic_gru_2dets4negs_pos.txt', 0.4)
 

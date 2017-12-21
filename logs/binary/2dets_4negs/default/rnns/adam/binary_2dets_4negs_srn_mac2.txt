@@ -1,0 +1,79 @@
+Loading data from  ./data/binary/2dets_4negs/binary_2dets_4negs_train.txt
+Vocabulary: 
+ ['(', ')', 'Europeans', 'Germans', 'Italians', 'Romans', 'all', 'children', 'fear', 'hate', 'like', 'love', 'not', 'some']
+Relations:  
+ ['#', '<', '=', '>', '^', 'v', '|']
+Loading data from  ./data/binary/2dets_4negs/binary_2dets_4negs_test.txt
+
+
+MODEL SETTINGS
+Model:                  SRN
+Train data:             ./data/binary/2dets_4negs/binary_2dets_4negs_train.txt
+Test data:              ./data/binary/2dets_4negs/binary_2dets_4negs_test.txt
+Num. epochs:            50
+Word dim.:              25
+Cpr. dim.:              75
+Batch size:             32
+Shuffle samples:        True
+Weight initialization:  None
+Optimizer:              Adam
+L2 penalty:             0
+Num. train instances:   29900
+Num. test instances:    7500
+Num. hidden units:      128
+
+
+EPOCH 	 ACCURACY
+0 	 18.08
+1 	 31.36
+2 	 32.11
+3 	 59.23
+4 	 67.32
+5 	 69.89
+6 	 77.03
+7 	 78.75
+8 	 82.47
+9 	 81.76
+10 	 83.39
+11 	 83.93
+12 	 84.21
+13 	 84.89
+14 	 85.85
+15 	 86.40
+16 	 86.27
+17 	 86.79
+18 	 87.33
+19 	 88.03
+20 	 86.63
+21 	 87.16
+22 	 87.15
+23 	 87.52
+24 	 87.55
+25 	 87.37
+26 	 87.76
+27 	 87.40
+28 	 88.05
+29 	 88.48
+30 	 88.16
+31 	 87.67
+32 	 88.17
+33 	 87.91
+34 	 88.51
+35 	 87.56
+36 	 87.65
+37 	 87.96
+38 	 88.36
+39 	 88.21
+40 	 88.23
+41 	 88.11
+42 	 87.57
+43 	 88.24
+44 	 88.85
+45 	 87.65
+46 	 88.01
+47 	 88.81
+48 	 88.03
+49 	 88.43
+50 	 88.49
+
+Total running time:  236m 45s

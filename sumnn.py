@@ -9,7 +9,9 @@ import numpy as np
 
 class sumNN(nn.Module):
     """
-    tree-shaped recurrent neural network
+    a summing NN baseline which is largely identical to the TreeRNN, except that instead of
+    using a learned composition function, it simply sums the term vectors in each expression to compose
+    them before passing them to the comparison layer
     """
 
     def __init__(self, vocab, rels, word_dim, cpr_dim, bound_layers, bound_embeddings):
@@ -21,28 +23,18 @@ class sumNN(nn.Module):
 
         self.voc = nn.Embedding(self.voc_size, self.word_dim)
 
-        # a summing NN baseline which is largely identical to the TreeRNN, except that instead of
-        # using a learned composition function, it simply sums the term vectors in each expression to compose
-        # them before passing them to the comparison layer
-
-        # composition matrix
-        # self.cps = nn.Linear(2 * self.word_dim, self.word_dim)
-
         # comparison matrix
         self.cpr = nn.Linear(2 * self.word_dim, self.cpr_dim)
 
         # matrix to softmax layer
         self.sm = nn.Linear(self.cpr_dim, self.num_rels)
 
-        self.word_dict = {}
-        for word in vocab:
-            # create one-hot encodings for words in vocabulary
-            # self.word_dict[word] = Variable(torch.eye(self.voc_size)[:,vocab.index(word)], requires_grad=True)
-            self.word_dict[word] = Variable(torch.LongTensor([vocab.index(word)])) #.view(-1)
+        self.word_dict = {word: i for i, word in enumerate(vocab)}
 
         # activation functions
         self.relu = nn.LeakyReLU() # cpr layer, negative slope is 0.01, which is standard
-        self.tanh = nn.Tanh() # cps layers
+
+        self.log_softmax = nn.LogSoftmax()
 
         self.bound_layers = bound_layers
         self.bound_embeddings = bound_embeddings
@@ -74,40 +66,45 @@ class sumNN(nn.Module):
             init.uniform(self.cpr.weight, -1*self.bound_layers, self.bound_layers)
             init.uniform(self.sm.weight, -1*self.bound_layers, self.bound_layers)
 
+    def make_sentence_vector(self, sentence):
+        idxs = [self.word_dict[word] for word in sentence]
+        tensor = torch.LongTensor(idxs)
+        tensor_var = Variable(tensor)
+        embedding = self.voc(tensor_var)
+
+        # composition step is just vector addition
+        summed_embeddings = torch.sum(embedding, 0)
+        return(summed_embeddings)
+
+    def make_batch_matrix(self, batch, size_batch):
+
+        # make container
+        batch_out = Variable(torch.zeros((1, size_batch, self.word_dim)))
+
+        for i in range(size_batch):
+            sentence_vector = self.make_sentence_vector(batch[i])
+            batch_out[:,i] = sentence_vector
+        return(batch_out)
+
     def forward(self, inputs):
         """
 
         :param inputs: list of lists of form [left_tree, right_tree], to support minibatch of size > 1
         :return: outputs, tensor of dimensions batch_size x num_classes
         """
+        size_batch = len(inputs)
 
-        # handles batch with multiple inputs, inserted as list
-        outputs = Variable(torch.rand(len(inputs), self.num_rels))
+        left_inputs = [input[0] for input in inputs]
+        right_inputs = [input[1] for input in inputs]
+        left_sums = self.make_batch_matrix(left_inputs, size_batch)
+        right_sums = self.make_batch_matrix(right_inputs, size_batch)
 
-        for idx, input in enumerate(inputs):
-            left = input[0]
-            right = input[1]
-            left_cps = self.compose(left)
-            right_cps = self.compose(right)
+        concat = torch.cat((left_sums, right_sums), 2)  # dimensions 1 x batch_size x word_dim
+        apply_cpr = self.cpr(concat)
+        cpr_activated = self.relu(apply_cpr)
+        to_softmax = self.sm(cpr_activated)
+        to_softmax = to_softmax.view(size_batch, self.num_rels) # must be of size N x C
+        outputs = self.log_softmax(to_softmax) # take log for NLLLoss
 
-            # sum or concatenate sentence vectors?
-            apply_cpr = self.cpr(torch.cat((left_cps, right_cps)))
-            activated_cpr = self.relu(apply_cpr)
-            to_softmax = self.sm(activated_cpr).view(1, self.num_rels)
-            # NLL loss function requires log probabilities! so must use log_softmax here instead of softmax:
-            output = F.log_softmax(to_softmax)
-            outputs[idx,:] = output
         return(outputs) # size: batch_size x num_classes
 
-    def compose(self, tree):
-        if tree.label() == '.': # leaf nodes: get word embedding
-            embedded = self.voc(self.word_dict[tree[0]]).view(-1)
-            return(embedded)
-
-        else:
-            summed = self.compose(tree[0]) + self.compose(tree[1])
-            #cps = self.cps(concat)
-            #activated_cps = self.tanh(cps)
-            # nonlinearity?
-            summed = self.tanh(summed)
-            return summed

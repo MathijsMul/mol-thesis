@@ -5,7 +5,7 @@ import torch.nn.functional as F
 import torch.optim as optim
 import torch.nn.init as init
 import math
-from diagnostic_hypothesis import diagnostic_labels
+#from diagnostic_hypothesis import diagnostic_labels
 
 class RNN(nn.Module):
     # Simple Recurrent Network (Elman)
@@ -51,7 +51,7 @@ class RNN(nn.Module):
 
         self.log_softmax = nn.LogSoftmax()
 
-        self.diagnostic = True
+        self.diagnostic = False
 
         if self.diagnostic:
             diagnostic_file = 'delete.txt'
@@ -110,6 +110,8 @@ class RNN(nn.Module):
 
     def make_batch_matrix(self, batch, size_batch):
         seq_lengths = [len(sequence) for sequence in batch]  # list of integers holding information about the batch size at each sequence step
+        #print('seq_lengths')
+        #print(seq_lengths)
         max_length = seq_lengths[0]
 
         # make container
@@ -140,7 +142,7 @@ class RNN(nn.Module):
         left_inputs = [input[0] for input in inputs]
         right_inputs = [input[1] for input in inputs]
 
-        left_rnn = self.rnn_forward(left_inputs, size_batch)
+        left_rnn, _ = self.rnn_forward(left_inputs, size_batch)
 
         if self.rnn_type == 'GRU_connected':
             right_rnn, _ = self.rnn_forward(right_inputs, size_batch, left_rnn)

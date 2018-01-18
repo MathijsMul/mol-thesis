@@ -46,13 +46,13 @@ def analyze_file(data_file):
 #f = '/Users/Mathijs/Documents/School/MoL/thesis/thesis_code/data/binary/negate_noun1/split/binary1_neg_noun1_test.txt'
 #f = '/Users/Mathijs/Documents/School/MoL/thesis/thesis_code/data/binary/neg_det1_noun1_verb_noun2/binary2_4negs_train.txt'
 #f = '/Users/Mathijs/Documents/School/MoL/thesis/thesis_code/data/binary/2dets_4negs/binary_2dets_4negs_train.txt'
-f = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/unary/fol/fol_animals_train_translated_from_nl.txt'
-g = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/unary/nl/nl_data1_animals_train.txt'
-h = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/binary_2dets_4negs_train.txt'
-i = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/binary_2dets_4negs_test.txt'
-print(analyze_file(f))
-print(analyze_file(g))
-print(analyze_file(h))
-print(analyze_file(i))
+#f = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/unary/fol/fol_animals_train_translated_from_nl.txt'
+#g = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/unary/nl/nl_data1_animals_train.txt'
+# h = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/binary_2dets_4negs_train.txt'
+# i = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/binary_2dets_4negs_test.txt'
+#print(analyze_file(f))
+#print(analyze_file(g))
+# print(analyze_file(h))
+# print(analyze_file(i))
 # t = '/Users/Mathijs/Documents/School/MoL/thesis/thesis_code/generate_data/binary_2dets_4negs_test.txt'
 # print(analyze_file(t))

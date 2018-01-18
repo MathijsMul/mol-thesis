@@ -26,6 +26,7 @@ logging.info("Start time: %s" % datetime.datetime.now())
 
 #command line execution
 if __name__ == '__main__':
+#if False:
     train_data_file = sys.argv[1]
     test_data_file = sys.argv[2]
     model = sys.argv[3]
@@ -33,12 +34,12 @@ if __name__ == '__main__':
     model_nr = sys.argv[5]
 
 # GLOBAL SETTINGS
-
-# train_data_file = './data/binary/2dets_4negs/binary_2dets_4negs_train.txt_downsampled_0.01'
-# #test_data_file = './data/binary/neg_det1_noun1_verb_noun2/binary2_4negs_test.txt'
-# test_data_file = train_data_file
-# model = 'SRN'
-# num_epochs = 5
+if False:
+    train_data_file = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/train/binary_2dets_4negs_train_allall.txt'
+    test_data_file = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/test/binary_2dets_4negs_test_allall.txt'
+    model = 'GRU'
+    num_epochs = 5
+    model_nr = 1
 
 num_epochs = int(num_epochs) # number of epochs, Bowman: 72
 word_dim = 25 # dimensionality of word embeddings
@@ -60,7 +61,7 @@ rnns = ['SRN', 'GRU', 'LSTM', 'GRU_connected']
 sequential_loading = (model not in ['tRNN', 'tRNTN'])
 n_hidden = 128
 prob_dropout = 0
-num_recurrent_layers = 2
+num_recurrent_layers = 1
 start_time = time.time()
 
 def timeSince(since):
@@ -150,8 +151,11 @@ print("\n")
 # batch data
 batches = dat.BatchData(train_data, batch_size, shuffle_samples)
 batches.create_batches()
+#for b in batches.batched_data:
+#    print(len(b))
 
 acc_before_training = compute_accuracy(test_data, rels, net, print_outputs=False, confusion_matrix=False)
+
 print("EPOCH", "\t", "ACCURACY")
 print(str(0), '\t', str(acc_before_training))
 logging.info("Accuracy: %s" % str(acc_before_training))
@@ -215,7 +219,7 @@ for epoch in range(num_epochs):  # loop over the dataset multiple times
         #print('\n')
 
     if test_all_epochs and epoch < (num_epochs - 1):
-        acc = compute_accuracy(test_data, rels, net, print_outputs=False)
+        acc = compute_accuracy(test_data, rels, net, print_outputs=False,batch_size=32)
         print(str(epoch + 1), '\t', str(acc))
         logging.info("Accuracy: %s" % str(acc))
 
@@ -229,7 +233,7 @@ for epoch in range(num_epochs):  # loop over the dataset multiple times
 # save model
 torch.save(net.state_dict(), 'models/' + model_name)
 
-final_acc = compute_accuracy(test_data, rels, net, print_outputs=False, confusion_matrix=False)
+final_acc = compute_accuracy(test_data, rels, net, print_outputs=False, confusion_matrix=False,batch_size=32)
 print(str(epoch + 1), '\t', str(final_acc))
 
 logging.info('End time: %s' % datetime.datetime.now())

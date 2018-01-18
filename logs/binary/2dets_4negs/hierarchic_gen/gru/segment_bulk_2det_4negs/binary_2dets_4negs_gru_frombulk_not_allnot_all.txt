@@ -1,0 +1,82 @@
+Loading data from  /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/segment_bulk_2det_4negs/train/binary_2dets_4negs_bulk_not_allnot_all_train.txt
+Vocabulary: 
+ ['(', ')', 'Europeans', 'Germans', 'Italians', 'Romans', 'all', 'children', 'fear', 'hate', 'like', 'love', 'not', 'some']
+Relations:  
+ ['#', '<', '=', '>', 'v']
+Loading data from  /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/segment_bulk_2det_4negs/test/binary_2dets_4negs_bulk_not_allnot_all_test.txt
+
+
+MODEL SETTINGS
+Model:                  GRU
+Train data:             /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/segment_bulk_2det_4negs/train/binary_2dets_4negs_bulk_not_allnot_all_train.txt
+Test data:              /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/segment_bulk_2det_4negs/test/binary_2dets_4negs_bulk_not_allnot_all_test.txt
+Num. epochs:            50
+Word dim.:              25
+Cpr. dim.:              75
+Batch size:             32
+Shuffle samples:        True
+Weight initialization:  None
+Optimizer:              Adadelta
+L2 penalty:             0
+Num. train instances:   6103
+Num. test instances:    1561
+Num. hidden units:      128
+Num. hidden layers:     1
+Dropout probability:    0
+Model name:             GRUbinary_2dets_4negs_bulk_not_allnot_all_train1.pt
+
+
+EPOCH 	 ACCURACY
+0 	 20.95
+1 	 35.68
+2 	 35.68
+3 	 42.99
+4 	 55.22
+5 	 56.37
+6 	 61.31
+7 	 69.96
+8 	 78.73
+9 	 79.44
+10 	 84.63
+11 	 84.50
+12 	 85.78
+13 	 85.78
+14 	 85.52
+15 	 86.03
+16 	 87.44
+17 	 86.42
+18 	 88.79
+19 	 86.68
+20 	 85.78
+21 	 87.12
+22 	 87.76
+23 	 87.44
+24 	 88.40
+25 	 87.32
+26 	 87.19
+27 	 87.57
+28 	 87.00
+29 	 87.38
+30 	 86.74
+31 	 86.42
+32 	 85.84
+33 	 87.19
+34 	 86.42
+35 	 87.12
+36 	 87.32
+37 	 86.23
+38 	 87.00
+39 	 86.80
+40 	 86.48
+41 	 87.51
+42 	 86.80
+43 	 86.68
+44 	 87.12
+45 	 86.55
+46 	 87.51
+47 	 87.57
+48 	 87.51
+49 	 87.76
+50 	 87.64
+
+Total running time:  48m 5s

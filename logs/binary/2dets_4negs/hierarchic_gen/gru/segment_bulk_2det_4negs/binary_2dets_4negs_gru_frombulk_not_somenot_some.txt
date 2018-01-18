@@ -1,0 +1,82 @@
+Loading data from  /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/segment_bulk_2det_4negs/train/binary_2dets_4negs_bulk_not_somenot_some_train.txt
+Vocabulary: 
+ ['(', ')', 'Europeans', 'Germans', 'Italians', 'Romans', 'all', 'children', 'fear', 'hate', 'like', 'love', 'not', 'some']
+Relations:  
+ ['#', '<', '=', '>', '|']
+Loading data from  /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/segment_bulk_2det_4negs/test/binary_2dets_4negs_bulk_not_somenot_some_test.txt
+
+
+MODEL SETTINGS
+Model:                  GRU
+Train data:             /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/segment_bulk_2det_4negs/train/binary_2dets_4negs_bulk_not_somenot_some_train.txt
+Test data:              /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/segment_bulk_2det_4negs/test/binary_2dets_4negs_bulk_not_somenot_some_test.txt
+Num. epochs:            50
+Word dim.:              25
+Cpr. dim.:              75
+Batch size:             32
+Shuffle samples:        True
+Weight initialization:  None
+Optimizer:              Adadelta
+L2 penalty:             0
+Num. train instances:   4286
+Num. test instances:    981
+Num. hidden units:      128
+Num. hidden layers:     1
+Dropout probability:    0
+Model name:             GRUbinary_2dets_4negs_bulk_not_somenot_some_train1.pt
+
+
+EPOCH 	 ACCURACY
+0 	 32.31
+1 	 32.01
+2 	 40.98
+3 	 53.21
+4 	 62.59
+5 	 66.97
+6 	 68.20
+7 	 70.54
+8 	 75.03
+9 	 78.70
+10 	 79.10
+11 	 85.42
+12 	 84.91
+13 	 87.87
+14 	 87.77
+15 	 86.03
+16 	 89.81
+17 	 87.05
+18 	 89.81
+19 	 89.30
+20 	 89.60
+21 	 89.30
+22 	 90.42
+23 	 89.09
+24 	 87.97
+25 	 89.19
+26 	 90.42
+27 	 90.62
+28 	 90.11
+29 	 88.99
+30 	 90.32
+31 	 89.50
+32 	 90.21
+33 	 89.09
+34 	 90.62
+35 	 88.58
+36 	 90.32
+37 	 89.60
+38 	 89.81
+39 	 90.21
+40 	 90.32
+41 	 89.50
+42 	 90.21
+43 	 90.01
+44 	 89.91
+45 	 89.91
+46 	 90.01
+47 	 90.01
+48 	 90.01
+49 	 90.01
+50 	 90.01
+
+Total running time:  12m 37s

@@ -1,0 +1,82 @@
+Loading data from  /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/segment_bulk_2det_4negs/train/binary_2dets_4negs_bulk_allsome_train.txt
+Vocabulary: 
+ ['(', ')', 'Europeans', 'Germans', 'Italians', 'Romans', 'all', 'children', 'fear', 'hate', 'like', 'love', 'not', 'some']
+Relations:  
+ ['#', '<', '^', 'v', '|']
+Loading data from  /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/segment_bulk_2det_4negs/test/binary_2dets_4negs_bulk_allsome_test.txt
+
+
+MODEL SETTINGS
+Model:                  GRU
+Train data:             /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/segment_bulk_2det_4negs/train/binary_2dets_4negs_bulk_allsome_train.txt
+Test data:              /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/segment_bulk_2det_4negs/test/binary_2dets_4negs_bulk_allsome_test.txt
+Num. epochs:            50
+Word dim.:              25
+Cpr. dim.:              75
+Batch size:             32
+Shuffle samples:        True
+Weight initialization:  None
+Optimizer:              Adadelta
+L2 penalty:             0
+Num. train instances:   5452
+Num. test instances:    1378
+Num. hidden units:      128
+Num. hidden layers:     1
+Dropout probability:    0
+Model name:             GRUbinary_2dets_4negs_bulk_allsome_train1.pt
+
+
+EPOCH 	 ACCURACY
+0 	 32.66
+1 	 32.66
+2 	 31.64
+3 	 44.41
+4 	 44.78
+5 	 44.34
+6 	 60.38
+7 	 68.07
+8 	 68.36
+9 	 78.59
+10 	 82.29
+11 	 82.08
+12 	 83.31
+13 	 83.24
+14 	 83.60
+15 	 85.63
+16 	 82.00
+17 	 85.20
+18 	 85.05
+19 	 86.72
+20 	 86.50
+21 	 86.50
+22 	 86.28
+23 	 86.50
+24 	 84.91
+25 	 85.27
+26 	 87.08
+27 	 87.30
+28 	 87.81
+29 	 86.14
+30 	 85.34
+31 	 85.78
+32 	 87.08
+33 	 88.03
+34 	 87.66
+35 	 87.30
+36 	 86.65
+37 	 86.36
+38 	 86.07
+39 	 87.16
+40 	 87.23
+41 	 87.45
+42 	 87.30
+43 	 87.45
+44 	 88.24
+45 	 86.79
+46 	 87.23
+47 	 87.23
+48 	 87.66
+49 	 87.08
+50 	 87.88
+
+Total running time:  14m 38s

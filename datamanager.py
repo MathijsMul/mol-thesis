@@ -162,8 +162,8 @@ class BatchData():
         for start_idx in range(0, last_idx + 1, self.batch_size):
             if start_idx == last_idx:
                 # last, possibly incomplete batch
-                batch_data = [[sample[1], sample[2]] for sample in self.unbatched_data[start_idx : self.num_samples - 1]]
-                batch_labels = [sample[0] for sample in self.unbatched_data[start_idx : self.num_samples - 1]]
+                batch_data = [[sample[1], sample[2]] for sample in self.unbatched_data[start_idx : self.num_samples]]
+                batch_labels = [sample[0] for sample in self.unbatched_data[start_idx : self.num_samples]]
             else:
                 batch_data = [[sample[1], sample[2]] for sample in self.unbatched_data[start_idx : start_idx + self.batch_size]]
                 batch_labels = [sample[0] for sample in self.unbatched_data[start_idx : start_idx + self.batch_size]]

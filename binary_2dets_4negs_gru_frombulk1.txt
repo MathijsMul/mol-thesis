@@ -1,0 +1,82 @@
+Loading data from  /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/binary_2dets_4negs_train_downs0.2.txt
+Vocabulary: 
+ ['(', ')', 'Europeans', 'Germans', 'Italians', 'Romans', 'all', 'children', 'fear', 'hate', 'like', 'love', 'not', 'some']
+Relations:  
+ ['#', '<', '=', '>', '^', 'v', '|']
+Loading data from  /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/binary_2dets_4negs_test_downs0.2.txt
+
+
+MODEL SETTINGS
+Model:                  GRU
+Train data:             /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/binary_2dets_4negs_train_downs0.2.txt
+Test data:              /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/binary_2dets_4negs_test_downs0.2.txt
+Num. epochs:            50
+Word dim.:              25
+Cpr. dim.:              75
+Batch size:             32
+Shuffle samples:        True
+Weight initialization:  None
+Optimizer:              Adadelta
+L2 penalty:             0
+Num. train instances:   6202
+Num. test instances:    1506
+Num. hidden units:      128
+Num. hidden layers:     1
+Dropout probability:    0
+Model name:             GRUbinary_2dets_4negs_train_downs0frombulk1.pt
+
+
+EPOCH 	 ACCURACY
+0 	 17.99
+1 	 19.39
+2 	 20.52
+3 	 24.10
+4 	 32.40
+5 	 33.60
+6 	 34.00
+7 	 34.66
+8 	 33.73
+9 	 34.66
+10 	 36.06
+11 	 34.53
+12 	 34.46
+13 	 35.26
+14 	 34.33
+15 	 35.46
+16 	 35.46
+17 	 39.44
+18 	 52.32
+19 	 57.30
+20 	 59.89
+21 	 57.84
+22 	 64.81
+23 	 72.24
+24 	 75.23
+25 	 80.21
+26 	 80.74
+27 	 82.14
+28 	 80.94
+29 	 82.60
+30 	 80.81
+31 	 80.48
+32 	 82.54
+33 	 82.34
+34 	 82.54
+35 	 82.80
+36 	 83.07
+37 	 82.14
+38 	 82.87
+39 	 82.01
+40 	 83.27
+41 	 82.47
+42 	 82.40
+43 	 82.34
+44 	 82.01
+45 	 82.01
+46 	 82.47
+47 	 81.81
+48 	 81.81
+49 	 82.40
+50 	 82.07
+
+Total running time:  19m 5s

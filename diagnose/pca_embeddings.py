@@ -1,7 +1,6 @@
 
 import datamanager as dat
 from test import compute_accuracy
-from srn import SRN
 from trntn import tRNTN
 from trnn import tRNN
 import torch

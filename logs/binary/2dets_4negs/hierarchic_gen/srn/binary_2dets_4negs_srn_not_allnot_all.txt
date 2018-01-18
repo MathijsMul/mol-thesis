@@ -1,0 +1,82 @@
+Loading data from  /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/train/binary_2dets_4negs_train_not_allnot_all.txt
+Vocabulary: 
+ ['(', ')', 'Europeans', 'Germans', 'Italians', 'Romans', 'all', 'children', 'fear', 'hate', 'like', 'love', 'not', 'some']
+Relations:  
+ ['#', '<', '=', '>', 'v']
+Loading data from  /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/test/binary_2dets_4negs_test_not_allnot_all.txt
+
+
+MODEL SETTINGS
+Model:                  SRN
+Train data:             /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/train/binary_2dets_4negs_train_not_allnot_all.txt
+Test data:              /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/test/binary_2dets_4negs_test_not_allnot_all.txt
+Num. epochs:            50
+Word dim.:              25
+Cpr. dim.:              75
+Batch size:             32
+Shuffle samples:        True
+Weight initialization:  None
+Optimizer:              Adadelta
+L2 penalty:             0
+Num. train instances:   2092
+Num. test instances:    575
+Num. hidden units:      128
+Num. hidden layers:     1
+Dropout probability:    0
+Model name:             SRNbinary_2dets_4negs_train_not_allnot_all1.pt
+
+
+EPOCH 	 ACCURACY
+0 	 22.78
+1 	 32.52
+2 	 30.96
+3 	 34.61
+4 	 45.39
+5 	 47.65
+6 	 55.83
+7 	 58.61
+8 	 64.35
+9 	 65.57
+10 	 69.39
+11 	 72.00
+12 	 76.35
+13 	 71.13
+14 	 76.00
+15 	 72.17
+16 	 72.70
+17 	 78.43
+18 	 76.70
+19 	 76.70
+20 	 76.35
+21 	 72.52
+22 	 78.78
+23 	 78.78
+24 	 75.48
+25 	 79.30
+26 	 74.43
+27 	 76.70
+28 	 78.96
+29 	 76.35
+30 	 76.70
+31 	 78.43
+32 	 75.13
+33 	 76.00
+34 	 78.78
+35 	 77.04
+36 	 77.74
+37 	 74.26
+38 	 75.13
+39 	 75.48
+40 	 77.22
+41 	 77.57
+42 	 77.74
+43 	 77.39
+44 	 73.39
+45 	 74.78
+46 	 77.22
+47 	 73.39
+48 	 75.83
+49 	 77.57
+50 	 76.87
+
+Total running time:  3m 40s

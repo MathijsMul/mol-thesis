@@ -1,0 +1,82 @@
+Loading data from  /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/segment_bulk_2det_4negs/train/binary_2dets_4negs_bulk_not_somesome_train.txt
+Vocabulary: 
+ ['(', ')', 'Europeans', 'Germans', 'Italians', 'Romans', 'all', 'children', 'fear', 'hate', 'like', 'love', 'not', 'some']
+Relations:  
+ ['#', '<', '^', 'v', '|']
+Loading data from  /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/segment_bulk_2det_4negs/test/binary_2dets_4negs_bulk_not_somesome_test.txt
+
+
+MODEL SETTINGS
+Model:                  GRU
+Train data:             /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/segment_bulk_2det_4negs/train/binary_2dets_4negs_bulk_not_somesome_train.txt
+Test data:              /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/segment_bulk_2det_4negs/test/binary_2dets_4negs_bulk_not_somesome_test.txt
+Num. epochs:            50
+Word dim.:              25
+Cpr. dim.:              75
+Batch size:             32
+Shuffle samples:        True
+Weight initialization:  None
+Optimizer:              Adadelta
+L2 penalty:             0
+Num. train instances:   4105
+Num. test instances:    1053
+Num. hidden units:      128
+Num. hidden layers:     1
+Dropout probability:    0
+Model name:             GRUbinary_2dets_4negs_bulk_not_somesome_train1.pt
+
+
+EPOCH 	 ACCURACY
+0 	 8.55
+1 	 29.34
+2 	 48.81
+3 	 71.32
+4 	 63.91
+5 	 74.93
+6 	 74.64
+7 	 76.54
+8 	 77.68
+9 	 81.01
+10 	 84.71
+11 	 87.18
+12 	 87.56
+13 	 89.36
+14 	 86.42
+15 	 90.98
+16 	 89.36
+17 	 89.55
+18 	 91.07
+19 	 89.46
+20 	 90.50
+21 	 92.31
+22 	 91.55
+23 	 92.21
+24 	 91.26
+25 	 91.36
+26 	 92.21
+27 	 91.45
+28 	 91.45
+29 	 91.83
+30 	 92.40
+31 	 92.31
+32 	 91.93
+33 	 92.31
+34 	 91.83
+35 	 92.02
+36 	 92.69
+37 	 92.12
+38 	 92.12
+39 	 92.12
+40 	 92.31
+41 	 92.02
+42 	 92.02
+43 	 91.83
+44 	 92.12
+45 	 92.31
+46 	 92.12
+47 	 92.02
+48 	 92.12
+49 	 92.12
+50 	 92.02
+
+Total running time:  11m 44s

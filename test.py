@@ -9,7 +9,7 @@ import os
 # import matplotlib.ticker as ticker
 from collections import Counter, defaultdict
 
-def compute_accuracy(test_data, rels, net, print_outputs=False, confusion_matrix=False, batch_size=1):
+def compute_accuracy(test_data, rels, net, print_outputs=False, confusion_matrix=False, batch_size=32):
     # deactivate dropout
     net.eval()
 
@@ -21,7 +21,7 @@ def compute_accuracy(test_data, rels, net, print_outputs=False, confusion_matrix
     correct = 0.0
     total = 0
 
-    if batch_size == 1:
+    if batch_size == None:
         for i, data in enumerate(test_data.tree_data, 0):
 
             input, label = [[data[1], data[2]]], [rels.index(data[0])]
@@ -44,7 +44,12 @@ def compute_accuracy(test_data, rels, net, print_outputs=False, confusion_matrix
                 else:
                     print('FALSE')
 
-            correct += (predicted == label).sum()
+            #correct_count += (pred == y).double().sum().data[0]
+            #correct += (predicted == label).double().sum().data[0]
+            #correct += (predicted.numpy() == label.numpy())
+
+            if predicted.numpy() == label.numpy():
+                correct += 1
             total += 1 # because test batch size is always 1
 
         acc = 100 * correct / total
@@ -88,6 +93,8 @@ def compute_accuracy(test_data, rels, net, print_outputs=False, confusion_matrix
 
         total = 0
         for batch_idx in range(batches.num_batches):
+            # num_items = len(batches.batched_data[batch_idx])
+
             inputs = batches.batched_data[batch_idx]
             labels = batches.batched_labels[batch_idx]
 
@@ -99,7 +106,7 @@ def compute_accuracy(test_data, rels, net, print_outputs=False, confusion_matrix
             outputs = net(inputs)
             _, predicted = torch.max(outputs.data, 1)
 
-            correct += (predicted == targets).sum()
+            correct += (predicted == targets).double().sum()
             total += len(inputs)
 
         acc = 100 * correct / total

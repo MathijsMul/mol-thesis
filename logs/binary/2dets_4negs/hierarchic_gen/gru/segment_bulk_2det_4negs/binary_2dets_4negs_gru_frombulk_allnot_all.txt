@@ -1,0 +1,82 @@
+Loading data from  /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/segment_bulk_2det_4negs/train/binary_2dets_4negs_bulk_allnot_all_train.txt
+Vocabulary: 
+ ['(', ')', 'Europeans', 'Germans', 'Italians', 'Romans', 'all', 'children', 'fear', 'hate', 'like', 'love', 'not', 'some']
+Relations:  
+ ['#', '<', '^', 'v', '|']
+Loading data from  /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/segment_bulk_2det_4negs/test/binary_2dets_4negs_bulk_allnot_all_test.txt
+
+
+MODEL SETTINGS
+Model:                  GRU
+Train data:             /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/segment_bulk_2det_4negs/train/binary_2dets_4negs_bulk_allnot_all_train.txt
+Test data:              /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/segment_bulk_2det_4negs/test/binary_2dets_4negs_bulk_allnot_all_test.txt
+Num. epochs:            50
+Word dim.:              25
+Cpr. dim.:              75
+Batch size:             32
+Shuffle samples:        True
+Weight initialization:  None
+Optimizer:              Adadelta
+L2 penalty:             0
+Num. train instances:   6201
+Num. test instances:    1513
+Num. hidden units:      128
+Num. hidden layers:     1
+Dropout probability:    0
+Model name:             GRUbinary_2dets_4negs_bulk_allnot_all_train1.pt
+
+
+EPOCH 	 ACCURACY
+0 	 26.64
+1 	 36.09
+2 	 46.53
+3 	 44.48
+4 	 51.55
+5 	 59.42
+6 	 64.04
+7 	 61.60
+8 	 71.91
+9 	 80.63
+10 	 81.63
+11 	 81.82
+12 	 83.67
+13 	 84.60
+14 	 83.94
+15 	 85.39
+16 	 85.99
+17 	 85.33
+18 	 88.50
+19 	 93.32
+20 	 93.72
+21 	 92.66
+22 	 94.51
+23 	 93.39
+24 	 93.59
+25 	 94.25
+26 	 94.25
+27 	 93.79
+28 	 94.51
+29 	 94.45
+30 	 94.12
+31 	 94.58
+32 	 94.12
+33 	 94.05
+34 	 94.32
+35 	 94.05
+36 	 94.25
+37 	 94.05
+38 	 93.85
+39 	 94.05
+40 	 94.12
+41 	 94.05
+42 	 94.05
+43 	 94.32
+44 	 94.18
+45 	 94.12
+46 	 93.99
+47 	 94.12
+48 	 94.25
+49 	 94.05
+50 	 94.05
+
+Total running time:  17m 40s

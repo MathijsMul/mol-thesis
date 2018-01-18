@@ -1,21 +1,25 @@
 #!/bin/bash
 
-python3 main.py 'data/binary/2dets_4negs/partial_bracketing/train/binary_2dets_4negs_train_0.5bracket_pairs.txt' 'data/binary/2dets_4negs/partial_bracketing/test/binary_2dets_4negs_test_0bracket_pairs.txt' SRN 50 1nodrop > binary_2dets_4negs_0.5brack_nodrop_srn1.txt &
+#main_dir='/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/'
+main_dir='/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/segment_bulk_2det_4negs/'
 
-python3 main.py 'data/binary/2dets_4negs/partial_bracketing/train/binary_2dets_4negs_train_0.5bracket_pairs.txt' 'data/binary/2dets_4negs/partial_bracketing/test/binary_2dets_4negs_test_0bracket_pairs.txt' GRU 50 1nodrop > binary_2dets_4negs_0.5brack_nodrop_gru1.txt &
+det_subj_pairs='somesome someall somenot_some somenot_all allsome allall allnot_some allnot_all not_somesome not_someall not_somenot_some not_somenot_all not_allsome not_allall not_allnot_some not_allnot_all'
 
-python3 main.py 'data/binary/2dets_4negs/partial_bracketing/train/binary_2dets_4negs_train_0.5bracket_pairs.txt' 'data/binary/2dets_4negs/partial_bracketing/test/binary_2dets_4negs_test_0bracket_pairs.txt' LSTM 50 1nodrop > binary_2dets_4negs_0.5brack_nodrop_lstm1.txt &
+for det_subj_pair in $det_subj_pairs
+do
+  echo $det_subj_pair
 
+  #train_file=$main_dir'train/binary_2dets_4negs_train_'$det_subj_pair'.txt'
+  train_file=$main_dir'train/binary_2dets_4negs_bulk_'$det_subj_pair'_train.txt'
 
-python3 main.py 'data/binary/2dets_4negs/partial_bracketing/train/binary_2dets_4negs_train_0bracket_pairs.txt' 'data/binary/2dets_4negs/partial_bracketing/test/binary_2dets_4negs_test_0bracket_pairs.txt' SRN 50 1nodrop > binary_2dets_4negs_0brack_nodrop_srn1.txt &
+  #test_file=$main_dir'test/binary_2dets_4negs_test_'$det_subj_pair'.txt'
+  test_file=$main_dir'test/binary_2dets_4negs_bulk_'$det_subj_pair'_test.txt'
 
-python3 main.py 'data/binary/2dets_4negs/partial_bracketing/train/binary_2dets_4negs_train_0bracket_pairs.txt' 'data/binary/2dets_4negs/partial_bracketing/test/binary_2dets_4negs_test_0bracket_pairs.txt' GRU 50 1nodrop > binary_2dets_4negs_0brack_nodrop_gru1.txt &
+  log_file='binary_2dets_4negs_gru_frombulk_'$det_subj_pair'.txt'
+  echo $train_file
+  echo $test_file
+  echo $log_file
+  python3 main.py $train_file $test_file GRU 50 1 > $log_file
+done
 
-python3 main.py 'data/binary/2dets_4negs/partial_bracketing/train/binary_2dets_4negs_train_0bracket_pairs.txt' 'data/binary/2dets_4negs/partial_bracketing/test/binary_2dets_4negs_test_0bracket_pairs.txt' LSTM 50 1nodrop > binary_2dets_4negs_0brack_nodrop_lstm1.txt &
-
-
-python3 main.py 'data/unary/nl/nl_data1_animals_train.txt' 'data/unary/nl/nl_data1_animals_test.txt' GRU 50 1 > unary_nl_animals_gru1.txt
-
-python3 main.py 'data/binary/2dets_4negs/binary_2dets_4negs_train.txt' 'data/binary/2dets_4negs/binary_2dets_4negs_test.txt' GRU_connected 50 1 > binary_2dets_4negs_gru_conn1.txt
-
-python3 main.py 'data/binary/2dets_4negs/binary_2dets_4negs_train.txt' 'data/binary/2dets_4negs/binary_2dets_4negs_test.txt' GRU 50 2layers > binary_2dets_4negs_gru_2layers.txt
+python3 main.py '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/binary_2dets_4negs_train_downs0.2.txt' '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/binary_2dets_4negs_test_downs0.2.txt' GRU 50 frombulk1 > binary_2dets_4negs_gru_frombulk1.txt

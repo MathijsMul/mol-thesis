@@ -19,9 +19,6 @@ class tRNN(nn.Module):
         self.num_rels = len(rels) # number of relations (labels)
         self.voc_size = len(vocab)
 
-        #TODO: turn this into Embedding
-        # vocabulary matrix
-        #self.voc = nn.Linear(self.voc_size, self.word_dim, bias=False) # without bias!
         self.voc = nn.Embedding(self.voc_size, self.word_dim)
 
         # composition matrix

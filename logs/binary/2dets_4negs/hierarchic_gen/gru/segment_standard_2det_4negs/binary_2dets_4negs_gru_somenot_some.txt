@@ -1,0 +1,82 @@
+Loading data from  /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/train/binary_2dets_4negs_train_somenot_some.txt
+Vocabulary: 
+ ['(', ')', 'Europeans', 'Germans', 'Italians', 'Romans', 'all', 'children', 'fear', 'hate', 'like', 'love', 'not', 'some']
+Relations:  
+ ['#', '>', '^', 'v', '|']
+Loading data from  /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/test/binary_2dets_4negs_test_somenot_some.txt
+
+
+MODEL SETTINGS
+Model:                  GRU
+Train data:             /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/train/binary_2dets_4negs_train_somenot_some.txt
+Test data:              /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/test/binary_2dets_4negs_test_somenot_some.txt
+Num. epochs:            50
+Word dim.:              25
+Cpr. dim.:              75
+Batch size:             32
+Shuffle samples:        True
+Weight initialization:  None
+Optimizer:              Adadelta
+L2 penalty:             0
+Num. train instances:   1531
+Num. test instances:    334
+Num. hidden units:      128
+Num. hidden layers:     1
+Dropout probability:    0
+Model name:             GRUbinary_2dets_4negs_train_somenot_some1.pt
+
+
+EPOCH 	 ACCURACY
+0 	 1.50
+1 	 27.25
+2 	 35.33
+3 	 35.33
+4 	 35.33
+5 	 27.25
+6 	 36.53
+7 	 35.03
+8 	 35.03
+9 	 46.41
+10 	 45.81
+11 	 62.57
+12 	 66.77
+13 	 74.85
+14 	 73.35
+15 	 75.15
+16 	 76.65
+17 	 77.25
+18 	 76.35
+19 	 78.44
+20 	 77.84
+21 	 76.65
+22 	 77.84
+23 	 82.93
+24 	 80.54
+25 	 80.24
+26 	 79.34
+27 	 81.44
+28 	 83.23
+29 	 84.13
+30 	 83.83
+31 	 85.03
+32 	 84.13
+33 	 84.73
+34 	 86.23
+35 	 84.13
+36 	 85.63
+37 	 87.13
+38 	 84.43
+39 	 84.13
+40 	 83.53
+41 	 85.63
+42 	 87.43
+43 	 85.33
+44 	 85.33
+45 	 83.23
+46 	 85.33
+47 	 85.03
+48 	 83.83
+49 	 84.73
+50 	 85.33
+
+Total running time:  6m 57s

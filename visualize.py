@@ -4,7 +4,6 @@ import matplotlib.ticker as ticker
 import os
 import torch
 
-
 #TODO: use seaborn instead of matplotlib
 
 def scrape_log_old(log_file):
@@ -58,8 +57,9 @@ def scrape_log(log_file):
     with open(log_file, 'r') as f:
         final_line = None
         for idx, line in enumerate(f):
-            if idx >= 25:
+            if idx > 25 and idx < 77:
                 acc = float(line.split()[1])
+                print(acc)
                 acc_scores.append(acc)
 
     return(acc_scores)
@@ -123,9 +123,11 @@ def plot_two(acc1, acc2, name_plot, name_file):
 
     plt.close()
 
-# acc1 = scrape_log('./logs/binary/binary_neg_det1_trnn.txt')
-# acc2 = scrape_log('./logs/binary/binary_neg_det1_trntn.txt')
-# plot_two(acc1, acc2, 'Binary predicates, first quantifier negated', 'binary_neg_det1')
+log1 ='/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/logs/binary/2dets_4negs/default/rnns/adadelta/0_dropout/binary_2dets_4negs_gru_adad1.txt'
+#log2 = log1
+acc1 = scrape_log(log1)
+#acc2 = scrape_log('./logs/binary/binary_neg_det1_trntn.txt')
+plot_two(acc1, acc1, 'Binary predicates, first quantifier negated', 'binary_neg_det1')
 #
 #
 # acc1 = scrape_log('./logs/binary/binary_neg_noun1_trnn.txt')
@@ -242,3 +244,23 @@ def scatterplot_from_dict(data_dict):
 #d = {0.0: '24.16', 0.1: '23.77', 0.2: '23.67', 0.3: '23.12', 0.4: '22.92', 0.5: '23.12', 0.6: '23.68', 0.7: '23.77', 0.8: '26.08', 0.9: '34.36', 1.0: '84.92'}
 
 #scatterplot_from_dict(d)
+
+
+#input:
+# ( ( all warthogs ) walk )
+#output:
+# \Tree[.\text{( (all warthogs) walk )} [.\text{(all warthogs)} [ all warthogs ] ]  walk ]
+
+def sentence_to_latex_tree(sentence):
+    latex_tree = '\Tree['
+
+    def make_node_name(node_name):
+        out = '.\\' + 'text{' + node_name + '}'
+        return(out)
+
+    latex_tree += make_node_name(sentence)
+
+    latex_tree += ']'
+    return(latex_tree)
+
+#print(sentence_to_latex_tree('( ( all warthogs ) walk )'))

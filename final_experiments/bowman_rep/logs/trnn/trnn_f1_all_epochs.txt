@@ -1,0 +1,83 @@
+Loading data from  /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/unary/nl/bowman/f1_train.txt
+Vocabulary: 
+ ['all', 'growl', 'lt_three', 'lt_two', 'mammals', 'most', 'move', 'no', 'not', 'not_all', 'not_most', 'pets', 'reptiles', 'some', 'swim', 'three', 'turtles', 'two', 'walk', 'warthogs']
+Relations:  
+ ['#', '<', '=', '>', '^', 'v', '|']
+Loading data from  /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/unary/nl/bowman/f1_test.txt
+
+
+MODEL SETTINGS
+Model:                  tRNN
+Train data:             /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/unary/nl/bowman/f1_train.txt
+Test data:              /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/unary/nl/bowman/f1_test.txt
+Num. epochs:            50
+Word dim.:              25
+Cpr. dim.:              75
+Batch size:             32
+Shuffle samples:        True
+Weight initialization:  uniform
+Bound embeddings:       0.01
+Bound layers:           0.05
+Optimizer:              Adadelta
+L2 penalty:             0.001
+Num. train instances:   27762
+Num. test instances:    6461
+Model name:             tRNNf1_trainbowman_rep_all_epochs.pt
+
+
+EPOCH 	 TESTING ACCURACY
+0 	 19.35
+1 	 37.16
+2 	 41.48
+3 	 56.42
+4 	 59.79
+5 	 62.65
+6 	 65.27
+7 	 70.75
+8 	 70.22
+9 	 73.36
+10 	 73.21
+11 	 73.70
+12 	 75.45
+13 	 76.85
+14 	 76.72
+15 	 79.77
+16 	 78.94
+17 	 79.14
+18 	 81.58
+19 	 82.39
+20 	 85.50
+21 	 88.27
+22 	 88.89
+23 	 91.78
+24 	 93.69
+25 	 95.29
+26 	 94.89
+27 	 96.42
+28 	 95.90
+29 	 96.92
+30 	 96.56
+31 	 97.14
+32 	 96.55
+33 	 97.69
+34 	 97.55
+35 	 97.52
+36 	 97.45
+37 	 97.69
+38 	 98.58
+39 	 97.59
+40 	 97.83
+41 	 97.97
+42 	 97.72
+43 	 98.16
+44 	 97.90
+45 	 97.42
+46 	 98.55
+47 	 97.86
+48 	 98.53
+49 	 98.31
+50 	 98.19
+FINAL TRAINING ACCURACY
+50 	 98.93
+
+Total running time:  78m 33s

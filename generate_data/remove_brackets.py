@@ -68,5 +68,7 @@ def remove_bracket_pairs(file, ratio):
                 fout.write(new_line)
 
 #remove_bracket_pairs('/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/binary_2dets_4negs_train.txt', 0.5)
-f = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/binary_2dets_4negs_test.txt'
-remove_bracket_pairs(f, 0.5)
+#f = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/binary_2dets_4negs_test.txt'
+#f = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/binary_2dets_4negs_negations.txt'
+f = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/generate_data/binary_2dets_4negs_test_negations.txt'
+remove_bracket_pairs(f, 0)

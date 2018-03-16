@@ -1,0 +1,33 @@
+Loading data from  /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/unary/nl/bowman/f3_train.txt
+Vocabulary: 
+ ['(', ')', 'all', 'growl', 'lt_three', 'lt_two', 'mammals', 'most', 'move', 'no', 'not', 'not_all', 'not_most', 'pets', 'reptiles', 'some', 'swim', 'three', 'turtles', 'two', 'walk', 'warthogs']
+Relations:  
+ ['#', '<', '=', '>', '^', 'v', '|']
+Loading data from  /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/unary/nl/bowman/f3_test.txt
+
+
+MODEL SETTINGS
+Model:                  sumNN
+Train data:             /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/unary/nl/bowman/f3_train.txt
+Test data:              /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/unary/nl/bowman/f3_test.txt
+Num. epochs:            50
+Word dim.:              25
+Cpr. dim.:              75
+Batch size:             32
+Shuffle samples:        True
+Weight initialization:  uniform
+Bound embeddings:       0.01
+Bound layers:           0.05
+Optimizer:              Adadelta
+L2 penalty:             0.0003
+Num. train instances:   27045
+Num. test instances:    6731
+Model name:             sumNNf3_train3.pt
+
+
+EPOCH 	 TESTING ACCURACY
+50 	 91.75
+FINAL TRAINING ACCURACY
+50 	 94.20
+
+Total running time:  9m 29s

@@ -5,6 +5,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.nn.init as init
 import math
+from collections import defaultdict
 
 class tRNTN(nn.Module):
     """
@@ -81,6 +82,70 @@ class tRNTN(nn.Module):
             init.uniform(self.cpr.weight, -1*self.bound_layers, self.bound_layers)
             init.uniform(self.sm.weight, -1*self.bound_layers, self.bound_layers)
 
+    def get_sentence_vector(self, sentence_tree):
+        if sentence_tree.label() == '.': # leaf nodes: get word embedding
+            embedded = self.voc(self.word_dict[sentence_tree[0]]).view(-1)
+            return(embedded)
+
+        else:
+            cps_l = self.compose(sentence_tree[0])
+            cps_r = self.compose(sentence_tree[1])
+            cps = self.cps(torch.cat((cps_l, cps_r)))
+
+            # compute kronecker product for child nodes
+            kron = torch.ger(cps_l, cps_r).view(-1)
+            cps_t = self.cps_t(kron)
+
+            #TODO: activated or not?
+            activated_cps = self.tanh(cps + cps_t)
+            return activated_cps
+
+    def get_cps_vectors(self, sentence):
+        vector_to_idx = defaultdict(lambda: len(vector_to_idx))
+        idx_to_vector = dict()
+        connections = dict()
+        idx_to_word = dict()
+        word_to_idx = dict()
+        #idx_to_sentence[sentence_to_idx[left_sentence]] = left_sentence
+
+        def apply_cps(sentence_tree):
+            if sentence_tree.label() == '.': # leaf nodes: get word embedding
+                embedded = self.voc(self.word_dict[sentence_tree[0]]).view(-1).data
+                word = sentence_tree[0]
+
+                if not word in word_to_idx:
+                    idx_to_vector[vector_to_idx[embedded]] = embedded
+                    idx = vector_to_idx[embedded]
+                    idx_to_word[idx] = word
+                    word_to_idx[word] = idx
+                else:
+                    #idx = vector_to_idx[embedded]
+                    idx = word_to_idx[word]
+                return(embedded, idx)
+
+            else:
+                cps_l, idx_left_child = apply_cps(sentence_tree[0])
+                cps_r, idx_right_child = apply_cps(sentence_tree[1])
+
+                cps = self.cps(Variable(torch.cat((cps_l, cps_r))))
+
+                # compute kronecker product for child nodes
+                kron = torch.ger(cps_l, cps_r).view(-1)
+                cps_t = self.cps_t(Variable(kron))
+
+                activated_cps = self.tanh(cps + cps_t).data
+                idx_to_vector[vector_to_idx[activated_cps]] = activated_cps
+                idx = vector_to_idx[activated_cps]
+
+                connections[len(connections)] = [idx_left_child, idx]
+                connections[len(connections)] = [idx_right_child, idx]
+                idx_to_word[idx] = 'cps'
+                return(activated_cps, idx)
+
+        apply_cps(sentence)
+
+        return(vector_to_idx, idx_to_vector, connections, idx_to_word)
+
     def forward(self, inputs):
         """
 
@@ -101,7 +166,9 @@ class tRNTN(nn.Module):
             # compute kronecker product for child nodes, multiply this with cps tensor
             kron = torch.ger(left_cps,right_cps).view(-1)
             apply_cpr_t = self.cpr_t(kron)
-            activated_cpr = self.relu(apply_cpr + apply_cpr_t)
+            # TODO: was first:
+            #activated_cpr = self.relu(apply_cpr + apply_cpr_t)
+            activated_cpr = self.relu(apply_cpr) + self.relu(apply_cpr_t)
             to_softmax = self.sm(activated_cpr).view(1, self.num_rels)
             output = F.log_softmax(to_softmax)
             outputs[idx,:] = output
@@ -122,6 +189,9 @@ class tRNTN(nn.Module):
             # compute kronecker product for child nodes
             kron = torch.ger(cps_l, cps_r).view(-1)
             cps_t = self.cps_t(kron)
-            activated_cps = self.tanh(cps + cps_t)
+            # TODO: WARNING ! CHECK IF THIS HAS BIG IMPACT
+            # first:
+            #activated_cps = self.tanh(cps + cps_t)
+            activated_cps = self.tanh(cps) + self.tanh(cps_t)
             return activated_cps
 

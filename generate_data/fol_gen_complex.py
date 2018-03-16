@@ -25,7 +25,7 @@ logging.basicConfig(format='%(message)s', level=logging.INFO)
 read_expr = Expression.fromstring
 
 INDY_DOWNSAMPLE_RATIO = 0.05
-MATLAB_OUTPUT = True
+MATLAB_OUTPUT = False
 PROVER_ON = True # set to False in case we just want to list sentence combinations without running the theorem prover
 #FILENAME_STEM = "binary_neg_noun2"
 
@@ -41,9 +41,11 @@ else:
 # timeout set to 1 second, because for higher running times no solution is found anyway => switch to Mace4 model builder
 # in such cases
 prover = Prover9(timeout=1)
+#prover.config_prover9(r'/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/generate_data/LADR-2009-11A/bin')
 
 # model builder Mace, checks for satisfying models with max domain size 10. actually this could still be decreased.
 mace = Mace(end_size=4)
+#mace.config_prover9(r'/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/generate_data/LADR-2009-11A/bin')
 
 TAXONOMY = "people_binary_decompquant"
 dets, adverbs, nouns, verbs, noun_matrix, verb_matrix = fol_lex.get_taxonomy(TAXONOMY)

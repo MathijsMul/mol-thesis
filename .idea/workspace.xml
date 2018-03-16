@@ -2,27 +2,227 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b72f4c1e-b8c1-4f94-9a46-30994c92b225" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generate_data/hierarchic_gen_data.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hierarchic_generalization.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/binary/2dets_4negs/binary_2dets_4negs_test.txt_downsampled_0.01" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/binary/2dets_4negs/binary_2dets_4negs_train.txt_downsampled_0.01" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/diagnose/check_embeddings.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/diagnose/delete.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/models/GRU_connectedbinary_2dets_4negs_train1.pt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/models/GRUbinary_2dets_4negs_train2layers.pt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/models/GRUbinary_2dets_4negs_train2layers2.pt" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generate_data/analyze/average_scores_logs.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generate_data/downsample_ind.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generate_data/generate_only_negations.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/random_gru.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/binary_2dets_4negs_gru_frombulk1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comparison_results/avg_freq_conflicts_10samples_1000size.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comparison_results/avg_freq_conflicts_10samples_1000size_without?#.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/comparison_results/comparison_output.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/diagnose/data/length_small.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/diagnose/diagnostic_classifier.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/diagnose/pca_embeddings.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/generate_data/analyze/conf2_GRU.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/generate_data/analyze/conf_GRU.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/generate_data/fix_negations.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/generate_data/generate_arithmetic_data.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/GRUbinary_2dets_4negs_bulk_allall_train1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/GRUbinary_2dets_4negs_bulk_allnot_all_train1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/GRUbinary_2dets_4negs_bulk_allnot_some_train1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/GRUbinary_2dets_4negs_bulk_allsome_train1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/GRUbinary_2dets_4negs_bulk_not_allall_train1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/GRUbinary_2dets_4negs_bulk_not_allnot_all_train1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/GRUbinary_2dets_4negs_bulk_not_allnot_some_train1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/GRUbinary_2dets_4negs_bulk_not_allsome_train1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/GRUbinary_2dets_4negs_bulk_not_someall_train1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/GRUbinary_2dets_4negs_bulk_not_somenot_all_train1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/GRUbinary_2dets_4negs_bulk_not_somenot_some_train1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/GRUbinary_2dets_4negs_bulk_not_somesome_train1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/GRUbinary_2dets_4negs_bulk_someall_train1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/GRUbinary_2dets_4negs_bulk_somenot_all_train1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/GRUbinary_2dets_4negs_bulk_somenot_some_train1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/GRUbinary_2dets_4negs_bulk_somesome_train1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/GRUbinary_2dets_4negs_train_downs0frombulk1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/SRNbinary_2dets_4negs_train_allall1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/SRNbinary_2dets_4negs_train_allnot_all1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/SRNbinary_2dets_4negs_train_allnot_some1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/SRNbinary_2dets_4negs_train_allsome1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/SRNbinary_2dets_4negs_train_not_allall1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/SRNbinary_2dets_4negs_train_not_allnot_all1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/SRNbinary_2dets_4negs_train_not_allnot_some1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/SRNbinary_2dets_4negs_train_not_allsome1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/SRNbinary_2dets_4negs_train_not_someall1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/SRNbinary_2dets_4negs_train_not_somenot_all1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/SRNbinary_2dets_4negs_train_not_somenot_some1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/SRNbinary_2dets_4negs_train_not_somesome1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/SRNbinary_2dets_4negs_train_someall1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/SRNbinary_2dets_4negs_train_somenot_all1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/SRNbinary_2dets_4negs_train_somenot_some1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/SRNbinary_2dets_4negs_train_somesome1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/rnns/gru/hierarchic_generalization/GRUbinary_2dets_4negs_train_allall1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/rnns/gru/hierarchic_generalization/GRUbinary_2dets_4negs_train_allnot_all1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/rnns/gru/hierarchic_generalization/GRUbinary_2dets_4negs_train_allnot_some1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/rnns/gru/hierarchic_generalization/GRUbinary_2dets_4negs_train_allsome1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/rnns/gru/hierarchic_generalization/GRUbinary_2dets_4negs_train_not_allall1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/rnns/gru/hierarchic_generalization/GRUbinary_2dets_4negs_train_not_allnot_all1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/rnns/gru/hierarchic_generalization/GRUbinary_2dets_4negs_train_not_allnot_some1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/rnns/gru/hierarchic_generalization/GRUbinary_2dets_4negs_train_not_allsome1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/rnns/gru/hierarchic_generalization/GRUbinary_2dets_4negs_train_not_someall1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/rnns/gru/hierarchic_generalization/GRUbinary_2dets_4negs_train_not_somenot_all1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/rnns/gru/hierarchic_generalization/GRUbinary_2dets_4negs_train_not_somenot_some1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/rnns/gru/hierarchic_generalization/GRUbinary_2dets_4negs_train_not_somesome1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/rnns/gru/hierarchic_generalization/GRUbinary_2dets_4negs_train_someall1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/rnns/gru/hierarchic_generalization/GRUbinary_2dets_4negs_train_somenot_all1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/rnns/gru/hierarchic_generalization/GRUbinary_2dets_4negs_train_somenot_some1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/models/rnns/gru/hierarchic_generalization/GRUbinary_2dets_4negs_train_somesome1.pt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pytorch/.idea/scopes/scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pytorch/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/visualize.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/autosketches4" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/autosketches4" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/clausefilter" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/clausefilter" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/clausetester" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/clausetester" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/complex" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/complex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/directproof" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/directproof" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/dprofiles" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/dprofiles" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/fof-prover9" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/fof-prover9" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/gen_trc_defs" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/gen_trc_defs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/idfilter" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/idfilter" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/interpfilter" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/interpfilter" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/interpformat" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/interpformat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/isofilter" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/isofilter" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/isofilter0" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/isofilter0" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/isofilter2" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/isofilter2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/ladr_to_tptp" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/ladr_to_tptp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/latfilter" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/latfilter" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/mace4" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/mace4" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/miniscope" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/miniscope" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/mirror-flip" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/mirror-flip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/newauto" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/newauto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/newsax" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/newsax" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/olfilter" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/olfilter" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/perm3" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/perm3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/prooftrans" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/prooftrans" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/prover9" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/prover9" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/renamer" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/renamer" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/rewriter" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/rewriter" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/sigtest" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/sigtest" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/test_clause_eval" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/test_clause_eval" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/test_complex" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/test_complex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/tptp_to_ladr" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/tptp_to_ladr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/unfast" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/unfast" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/upper-covers" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/bin/upper-covers" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/ac_redun.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/ac_redun.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/accanon.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/accanon.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/attrib.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/attrib.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/avltree.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/avltree.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/backdemod.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/backdemod.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/banner.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/banner.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/basic.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/basic.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/btm.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/btm.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/btu.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/btu.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/clash.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/clash.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/clause_eval.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/clause_eval.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/clause_misc.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/clause_misc.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/clauseid.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/clauseid.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/clauses.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/clauses.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/clausify.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/clausify.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/clist.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/clist.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/clock.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/clock.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/cnf.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/cnf.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/complex.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/complex.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/compress.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/compress.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/definitions.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/definitions.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/demod.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/demod.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/di_tree.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/di_tree.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/dioph.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/dioph.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/discrim.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/discrim.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/discrimb.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/discrimb.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/discrimw.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/discrimw.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/dollar.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/dollar.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/fastparse.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/fastparse.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/fatal.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/fatal.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/features.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/features.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/flatdemod.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/flatdemod.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/flatterm.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/flatterm.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/formula.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/formula.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/fpa.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/fpa.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/fpalist.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/fpalist.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/glist.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/glist.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/hash.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/hash.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/hints.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/hints.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/ibuffer.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/ibuffer.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/int_code.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/int_code.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/interp.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/interp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/ioutil.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/ioutil.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/ivy.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/ivy.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/just.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/just.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/libladr.a" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/libladr.a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/lindex.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/lindex.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/listterm.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/listterm.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/literals.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/literals.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/maximal.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/maximal.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/memory.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/memory.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/mindex.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/mindex.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/multiset.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/multiset.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/nonport.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/nonport.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/options.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/options.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/order.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/order.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/paramod.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/paramod.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/parautil.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/parautil.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/parse.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/parse.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/pindex.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/pindex.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/random.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/random.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/resolve.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/resolve.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/std_options.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/std_options.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/strbuf.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/strbuf.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/string.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/string.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/subsume.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/subsume.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/symbols.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/symbols.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/term.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/term.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/termflag.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/termflag.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/termorder.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/termorder.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/tlist.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/tlist.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/top_input.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/top_input.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/topform.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/topform.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/tptp_trans.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/tptp_trans.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/unify.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/unify.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/weight.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/weight.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/weight2.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/weight2.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/xproofs.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/ladr/xproofs.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/mace4.src/arithmetic.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/mace4.src/arithmetic.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/mace4.src/commandline.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/mace4.src/commandline.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/mace4.src/estack.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/mace4.src/estack.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/mace4.src/ground.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/mace4.src/ground.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/mace4.src/libmace4.a" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/mace4.src/libmace4.a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/mace4.src/mace4.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/mace4.src/mace4.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/mace4.src/msearch.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/mace4.src/msearch.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/mace4.src/mstate.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/mace4.src/mstate.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/mace4.src/negprop.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/mace4.src/negprop.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/mace4.src/negpropindex.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/mace4.src/negpropindex.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/mace4.src/ordercells.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/mace4.src/ordercells.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/mace4.src/print.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/mace4.src/print.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/mace4.src/propagate.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/mace4.src/propagate.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/mace4.src/select.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/mace4.src/select.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/mace4.src/syms.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/mace4.src/syms.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/mace4.src/util.o" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/mace4.src/util.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/provers.src/autosketches4" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/provers.src/autosketches4" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/provers.src/fof-prover9" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/provers.src/fof-prover9" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/provers.src/ladr_to_tptp" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/provers.src/ladr_to_tptp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/provers.src/newauto" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/provers.src/newauto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/provers.src/newsax" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/provers.src/newsax" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/provers.src/prover9" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/provers.src/prover9" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/LADR-2009-11A/provers.src/tptp_to_ladr" afterPath="$PROJECT_DIR$/generate_data/LADR-2009-11A/provers.src/tptp_to_ladr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datamanager.py" afterPath="$PROJECT_DIR$/datamanager.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/diagnose/diagnostic_datamanager.py" afterPath="$PROJECT_DIR$/diagnose/diagnostic_datamanager.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/diagnose/diagnostic_hypothesis.py" afterPath="$PROJECT_DIR$/diagnose/diagnostic_hypothesis.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/diagnose/diagnostic_regression.py" afterPath="$PROJECT_DIR$/diagnose/diagnostic_regression.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/diagnose/diagnostic_visualization.py" afterPath="$PROJECT_DIR$/diagnose/diagnostic_visualization.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/diagnose/get_diagnostic_data.py" afterPath="$PROJECT_DIR$/diagnose/get_diagnostic_data.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/analyze/analyze_data.py" afterPath="$PROJECT_DIR$/generate_data/analyze/analyze_data.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/make_mini_data.py" afterPath="$PROJECT_DIR$/generate_data/make_mini_data.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/split_data.py" afterPath="$PROJECT_DIR$/generate_data/split_data.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/analyze/load_model.py" afterPath="$PROJECT_DIR$/generate_data/analyze/load_model.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/analyze/sample_compare_datafiles.py" afterPath="$PROJECT_DIR$/generate_data/analyze/sample_compare_datafiles.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/fol_gen.py" afterPath="$PROJECT_DIR$/generate_data/fol_gen.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/fol_gen_complex.py" afterPath="$PROJECT_DIR$/generate_data/fol_gen_complex.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/nl_to_fol.py" afterPath="$PROJECT_DIR$/generate_data/nl_to_fol.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate_data/remove_brackets.py" afterPath="$PROJECT_DIR$/generate_data/remove_brackets.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graveyard.py" afterPath="$PROJECT_DIR$/graveyard.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hierarchic_generalization.py" afterPath="$PROJECT_DIR$/hierarchic_generalization.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/binary/2dets_4negs/default/bin_2dets_4negs_trntn.txt" afterPath="$PROJECT_DIR$/logs/binary/2dets_4negs/default/bin_2dets_4negs_trntn.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rnn.py" afterPath="$PROJECT_DIR$/rnn.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run.sh" afterPath="$PROJECT_DIR$/run.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trnn.py" afterPath="$PROJECT_DIR$/trnn.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/visualize.py" afterPath="$PROJECT_DIR$/visualize.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trntn.py" afterPath="$PROJECT_DIR$/trntn.py" />
     </list>
     <ignored path="thesis_code.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,38 +241,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="hierarchic_gen_data.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/generate_data/hierarchic_gen_data.py">
+      <file leaf-file-name="rnn.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="99" column="33" lean-forward="false" selection-start-line="99" selection-start-column="33" selection-end-line="99" selection-end-column="33" />
+            <state relative-caret-position="194">
+              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding>
-                <element signature="e#1220#1482#0" expanded="false" />
-                <element signature="e#1520#1759#0" expanded="false" />
-                <element signature="e#1793#2806#0" expanded="false" />
+                <element signature="e#0#12#0" expanded="true" />
+                <element signature="e#2059#3627#0" expanded="false" />
+                <element signature="e#9706#12001#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run.sh" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/run.sh">
+      <file leaf-file-name="diagnostic_regression.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diagnose/diagnostic_regression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="24" column="306" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="306" />
-              <folding />
+            <state relative-caret-position="227">
+              <caret line="99" column="50" lean-forward="false" selection-start-line="99" selection-start-column="50" selection-end-line="99" selection-end-column="50" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hierarchic_generalization.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hierarchic_generalization.py">
+      <file leaf-file-name="diagnostic_visualization.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diagnose/diagnostic_visualization.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="41" column="40" lean-forward="false" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+            <state relative-caret-position="352">
+              <caret line="147" column="7" lean-forward="false" selection-start-line="147" selection-start-column="7" selection-end-line="147" selection-end-column="7" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#3682#3894#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="diagnostic_datamanager.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/diagnose/diagnostic_datamanager.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="37" column="16" lean-forward="false" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -88,36 +301,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>longtensor</find>
-      <find>float</find>
-      <find>test</find>
-      <find>annot</find>
-      <find>label</find>
-      <find>mse</find>
-      <find>regress</find>
+      <find>norma</find>
+      <find>plt</find>
+      <find>blues</find>
+      <find>pd</find>
+      <find>colors</find>
+      <find>not all</find>
+      <find>not all</find>
       <find>save</find>
-      <find>plot</find>
-      <find>delete</find>
-      <find>size</find>
-      <find>predicted</find>
-      <find>violin</find>
-      <find>layers</find>
-      <find>max_length</find>
-      <find>model_nr</find>
-      <find>compute_</find>
-      <find>sum</find>
-      <find>double</find>
-      <find>compute</find>
-      <find>create</find>
-      <find>data[0</find>
-      <find>make_batch</find>
-      <find>batch_size</find>
-      <find>tex</find>
-      <find>gru</find>
-      <find>srn</find>
-      <find>sns</find>
+      <find>annot</find>
+      <find>verbs</find>
+      <find>dets</find>
+      <find>det_to_vec</find>
+      <find>idx_to_proj</find>
+      <find>savefig</find>
+      <find>lw</find>
+      <find>points</find>
+      <find>count</find>
+      <find>prob_drop</find>
+      <find>init_mode</find>
+      <find>init_</find>
+      <find>confusion</find>
+      <find>sequential</find>
+      <find>annotate</find>
+      <find>fear/hate</find>
+      <find>of points</find>
+      <find>compute_acc</find>
+      <find>negat</find>
+      <find>monot</find>
       <find>print</find>
-      <find>max</find>
+      <find>conf</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -126,65 +339,65 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/generate_data/combine_data.py" />
-        <option value="$PROJECT_DIR$/analyze_data.py" />
-        <option value="$PROJECT_DIR$/generate_data/restrict_length.py" />
-        <option value="$PROJECT_DIR$/generate_data/sample_file.py" />
-        <option value="$PROJECT_DIR$/load_model.py" />
-        <option value="$PROJECT_DIR$/delete.py" />
-        <option value="$PROJECT_DIR$/data/junk/minitest_bin.txt" />
-        <option value="$PROJECT_DIR$/generate_data/analyze/analyze_errors.py" />
-        <option value="$PROJECT_DIR$/references.txt" />
-        <option value="$PROJECT_DIR$/order_references.py" />
-        <option value="$PROJECT_DIR$/data/junk/onesentence_0.5bracket_pairs.txt" />
-        <option value="$PROJECT_DIR$/diagnose/check_embeddings.py" />
-        <option value="$PROJECT_DIR$/generate_data/generate_arithmetic_data.py" />
-        <option value="$PROJECT_DIR$/srn_old.py" />
-        <option value="$PROJECT_DIR$/sumnn_old.py" />
-        <option value="$PROJECT_DIR$/hyperparam_tuning.py" />
-        <option value="$PROJECT_DIR$/gru.py" />
-        <option value="$PROJECT_DIR$/lstm.py" />
-        <option value="$PROJECT_DIR$/srn.py" />
-        <option value="$PROJECT_DIR$/sumnn.py" />
-        <option value="$PROJECT_DIR$/data/junk/mail" />
-        <option value="$PROJECT_DIR$/generate_data/remove_brackets.py" />
-        <option value="$PROJECT_DIR$/generate_data/analyze/load_model.py" />
-        <option value="$PROJECT_DIR$/diagnose/diagnostic_data.py" />
-        <option value="$PROJECT_DIR$/diagnose/small.txt" />
-        <option value="$PROJECT_DIR$/diagnose/diagn_datamanager.py" />
-        <option value="$PROJECT_DIR$/diagnose/diagnostic_classifier.py" />
-        <option value="$PROJECT_DIR$/diagnostic_hypothesis.py" />
-        <option value="$PROJECT_DIR$/diagnose/diag_len_test2.py" />
-        <option value="$PROJECT_DIR$/diagnose/diag_len_test2.txt" />
-        <option value="$PROJECT_DIR$/diagnose/diag_len_test.txt" />
-        <option value="$PROJECT_DIR$/diagnose/diag_length_first3s.txt" />
-        <option value="$PROJECT_DIR$/diagnose/data/length_small.txt" />
-        <option value="$PROJECT_DIR$/diagnose/diagnostic_datamanager.py" />
-        <option value="$PROJECT_DIR$/diagnose/diagnostic_regression.py" />
-        <option value="$PROJECT_DIR$/diagnose/diagnostic_visualization.py" />
-        <option value="$PROJECT_DIR$/trnn.py" />
-        <option value="$PROJECT_DIR$/generate_data/analyze/analyze_data.py" />
-        <option value="$PROJECT_DIR$/data/binary/2dets_4negs/hierarchic_gen/train/binary_2dets_4negs_train_allall.txt" />
-        <option value="$PROJECT_DIR$/rnn.py" />
-        <option value="$PROJECT_DIR$/datamanager.py" />
-        <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/diagnose/pca_embeddings.py" />
-        <option value="$PROJECT_DIR$/graveyard.py" />
+        <option value="$PROJECT_DIR$/trntn.py" />
+        <option value="$PROJECT_DIR$/bowman_rep_sumnn.sh" />
+        <option value="$PROJECT_DIR$/bowman_rep_trnn.sh" />
+        <option value="$PROJECT_DIR$/bowman_rep_trntn.sh" />
+        <option value="$PROJECT_DIR$/bowman_rep/runfiles/single_run.sh" />
         <option value="$PROJECT_DIR$/visualize.py" />
-        <option value="$PROJECT_DIR$/generate_data/split_data.py" />
-        <option value="$PROJECT_DIR$/generate_data/hierarchic_gen_data.py" />
-        <option value="$PROJECT_DIR$/hierarchic_generalization.py" />
-        <option value="$PROJECT_DIR$/generate_data/make_mini_data.py" />
-        <option value="$PROJECT_DIR$/run.sh" />
+        <option value="$PROJECT_DIR$/data/unary/nl/bowman/f1_train.txt" />
+        <option value="$PROJECT_DIR$/generate_data/nl_gen.py" />
+        <option value="$PROJECT_DIR$/generate_data/fol_gennew.py" />
+        <option value="$PROJECT_DIR$/generate_data/fol_gen_complex.py" />
+        <option value="$PROJECT_DIR$/generate_data/fol_gen.py" />
+        <option value="$PROJECT_DIR$/generate_data/nl_to_fol.py" />
+        <option value="$PROJECT_DIR$/generate_data/problem.txt" />
+        <option value="$PROJECT_DIR$/run_f1fol.sh" />
+        <option value="$PROJECT_DIR$/run_f1fol_trntn.sh" />
+        <option value="$PROJECT_DIR$/run_f1fol_trnn.sh" />
+        <option value="$PROJECT_DIR$/generate_data/analyze/sample_compare_datafiles.py" />
+        <option value="$PROJECT_DIR$/generate_data/downsample_ind.py" />
+        <option value="$PROJECT_DIR$/results/unary_balanced_fol/runfiles/run_f1fol_sumnn.sh" />
+        <option value="$PROJECT_DIR$/results/unary_balanced_fol/runfiles/run_f1fol_trnn.sh" />
+        <option value="$PROJECT_DIR$/results/unary_balanced_fol/runfiles/run_f1fol_trntn.sh" />
+        <option value="$PROJECT_DIR$/run_f1fol_sumnn.sh" />
+        <option value="$PROJECT_DIR$/run_sumnn_binaryfol.sh" />
+        <option value="$PROJECT_DIR$/run_trnn_binaryfol.sh" />
+        <option value="$PROJECT_DIR$/run_trntn_binaryfol.sh" />
+        <option value="$PROJECT_DIR$/logs/binary/2dets_4negs/default/bin_2dets_4negs_trntn.txt" />
+        <option value="$PROJECT_DIR$/generate_data/analyze/analyze_data.py" />
+        <option value="$PROJECT_DIR$/plot_cps_vectors.py" />
+        <option value="$PROJECT_DIR$/plot_sentence_relations.py" />
+        <option value="$PROJECT_DIR$/run_srn_binaryfol_0brackets.sh" />
+        <option value="$PROJECT_DIR$/run_gru_binaryfol_0brackets.sh" />
+        <option value="$PROJECT_DIR$/run_lstm_binaryfol_0brackets.sh" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/generate_data/analyze/average_scores_logs.py" />
+        <option value="$PROJECT_DIR$/generate_data/analyze/load_model.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/diagnose/pca_embeddings.py" />
+        <option value="$PROJECT_DIR$/plot_hidden_vectors.py" />
+        <option value="$PROJECT_DIR$/generate_data/generate_only_negations.py" />
+        <option value="$PROJECT_DIR$/generate_data/remove_brackets.py" />
+        <option value="$PROJECT_DIR$/plot_sentence_detsubj.py" />
+        <option value="$PROJECT_DIR$/plot_sentence_vectors.py" />
+        <option value="$PROJECT_DIR$/diagnose/diagnostic_hypothesis.py" />
+        <option value="$PROJECT_DIR$/graveyard.py" />
+        <option value="$PROJECT_DIR$/diagnose/diagnostic_datamanager.py" />
+        <option value="$PROJECT_DIR$/diagnose/get_diagnostic_data.py" />
+        <option value="$PROJECT_DIR$/diagnose/delete.py" />
+        <option value="$PROJECT_DIR$/diagnostic_hypothesis.py" />
+        <option value="$PROJECT_DIR$/diagnose/diagnostic_visualization.py" />
+        <option value="$PROJECT_DIR$/diagnose/diagnostic_regression.py" />
+        <option value="$PROJECT_DIR$/rnn.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="64" />
+    <option name="x" value="219" />
     <option name="y" value="23" />
-    <option name="width" value="1256" />
-    <option name="height" value="808" />
+    <option name="width" value="1108" />
+    <option name="height" value="819" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -201,6 +414,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -211,32 +426,18 @@
             <path>
               <item name="thesis_code" type="b2602c69:ProjectViewProjectNode" />
               <item name="mol_thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="diagnose" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="thesis_code" type="b2602c69:ProjectViewProjectNode" />
               <item name="mol_thesis" type="462c0819:PsiDirectoryNode" />
+              <item name="diagnose" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="binary" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="thesis_code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mol_thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="binary" type="462c0819:PsiDirectoryNode" />
-              <item name="2dets_4negs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="thesis_code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mol_thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="generate_data" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -257,6 +458,7 @@
       <recent name="$PROJECT_DIR$/data/final" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/data/junk" />
       <recent name="$PROJECT_DIR$/data/final/nl" />
       <recent name="$PROJECT_DIR$/generate_data" />
@@ -274,7 +476,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.make_mini_data">
+  <component name="RunManager" selected="Python.diagnostic_regression">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -397,24 +599,75 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration name="hierarchic_gen_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="delete" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/generate_data" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/diagnose" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="thesis_code" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generate_data/hierarchic_gen_data.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/diagnose/delete.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="hierarchic_generalization" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="diagnostic_regression" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/diagnose" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="thesis_code" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/diagnose/diagnostic_regression.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="diagnostic_visualization" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/diagnose" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="thesis_code" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/diagnose/diagnostic_visualization.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="get_diagnostic_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/diagnose" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="thesis_code" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/diagnose/get_diagnostic_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="graveyard" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -426,76 +679,25 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="thesis_code" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hierarchic_generalization.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="make_mini_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/generate_data" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="thesis_code" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generate_data/make_mini_data.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="split_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/generate_data" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="thesis_code" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generate_data/split_data.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="visualize" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="thesis_code" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/visualize.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/graveyard.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.hierarchic_generalization" />
-      <item index="1" class="java.lang.String" itemvalue="Python.visualize" />
-      <item index="2" class="java.lang.String" itemvalue="Python.hierarchic_gen_data" />
-      <item index="3" class="java.lang.String" itemvalue="Python.split_data" />
-      <item index="4" class="java.lang.String" itemvalue="Python.make_mini_data" />
+      <item index="0" class="java.lang.String" itemvalue="Python.graveyard" />
+      <item index="1" class="java.lang.String" itemvalue="Python.get_diagnostic_data" />
+      <item index="2" class="java.lang.String" itemvalue="Python.diagnostic_regression" />
+      <item index="3" class="java.lang.String" itemvalue="Python.diagnostic_visualization" />
+      <item index="4" class="java.lang.String" itemvalue="Python.delete" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.make_mini_data" />
-        <item index="1" class="java.lang.String" itemvalue="Python.hierarchic_generalization" />
-        <item index="2" class="java.lang.String" itemvalue="Python.hierarchic_gen_data" />
-        <item index="3" class="java.lang.String" itemvalue="Python.split_data" />
-        <item index="4" class="java.lang.String" itemvalue="Python.visualize" />
+        <item index="0" class="java.lang.String" itemvalue="Python.diagnostic_regression" />
+        <item index="1" class="java.lang.String" itemvalue="Python.diagnostic_visualization" />
+        <item index="2" class="java.lang.String" itemvalue="Python.get_diagnostic_data" />
+        <item index="3" class="java.lang.String" itemvalue="Python.delete" />
+        <item index="4" class="java.lang.String" itemvalue="Python.graveyard" />
       </list>
     </recent_temporary>
   </component>
@@ -516,19 +718,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="23" width="1256" height="808" extended-state="0" />
-    <editor active="true" />
+    <frame x="219" y="23" width="1108" height="819" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30175158" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22743683" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36074272" sideWeight="0.50277776" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30298913" sideWeight="0.3383758" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32705882" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2824632" sideWeight="0.6616242" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3763587" sideWeight="0.49722221" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4283802" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4293478" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -537,7 +739,6 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769832" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -579,108 +780,73 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="27" />
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="34" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/binary/2dets_4negs/binary_2dets_4negs_train_not_somenot_all.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/binary/2dets_4negs/binary_2dets_4negs_train_somenot_all.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27937">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/binary/2dets_4negs/binary_2dets_4negs_train_somenot_some.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/binary/2dets_4negs/binary_2dets_4negs_train_not_someall.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/binary/2dets_4negs/binary_2dets_4negs_train_allsome.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/binary/2dets_4negs/binary_2dets_4negs_train_not_allnot_all.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/binary/2dets_4negs/hierarchic_gen/binary_2dets_4negs_train_not_allsome.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/binary/2dets_4negs/hierarchic_gen/binary_2dets_4negs_train_allnot_some.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/binary/2dets_4negs/hierarchic_gen/binary_2dets_4negs_train_not_allnot_all.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generate_data/analyze/analyze_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="39" column="25" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/binary_2dets_4negs_gru_somesome.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/diagnose/diagnostic_hypothesis.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/visualize/plot_sentence_detsubj.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-346">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/visualize/plot_hidden_vectors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/final_experiments/binary_fol_rnn/nobrackets/logs/gru_binaryfol_0brackets_1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="36" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="4" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/binary/2dets_4negs/binary_2dets_4negs_train.txt">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/binary/2dets_4negs/hierarchic_gen/train/binary_2dets_4negs_train_somesome.txt">
+    <entry file="file://$PROJECT_DIR$/diagnose/gru-semantic-type.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="-372">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/gru-word-index.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="-6864">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/gru-monotonicity-direction.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -688,312 +854,262 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/binary_2dets_4negs_gru_allall.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1361">
+    <entry file="file://$PROJECT_DIR$/diagnose/gru-recursive-depth.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/binary/2dets_4negs/hierarchic_gen/train/binary_2dets_4negs_train_allall.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="2144" column="119" lean-forward="false" selection-start-line="2144" selection-start-column="119" selection-end-line="2144" selection-end-column="119" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datamanager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="156" column="0" lean-forward="false" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diagnose/pca_embeddings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-35">
-          <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-          <folding>
-            <element signature="e#1#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-948">
-          <caret line="23" column="25" lean-forward="false" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#12#0" expanded="false" />
-            <element signature="e#3695#6235#0" expanded="false" />
-            <element signature="e#6299#8403#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diagnose/plots/heatmaps/brackets/brackets_allEuropeansnotloveallnotItalians.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diagnose/plots/heatmaps/brackets/brackets_allnotGermanslovesomeEuropeans.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diagnose/plots/heatmaps/brackets/brackets_notallnotEuropeanslovesomeEuropeans.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-46">
-          <caret line="164" column="10" lean-forward="false" selection-start-line="164" selection-start-column="10" selection-end-line="164" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/graveyard.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="334" column="0" lean-forward="false" selection-start-line="334" selection-start-column="0" selection-end-line="335" selection-end-column="25" />
+        <state relative-caret-position="371">
+          <caret line="236" column="61" lean-forward="false" selection-start-line="236" selection-start-column="61" selection-end-line="236" selection-end-column="61" />
           <folding>
             <element signature="e#0#12#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/acc_dev_binary_neg_det1.png">
+    <entry file="file://$PROJECT_DIR$/diagnose/Testing results recursive-depthbox.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/visualize.py">
+    <entry file="file://$PROJECT_DIR$/diagnose/Training results recursive-depthbox.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/data/gru-word-index.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="-6777">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/Training results mon-dirbox.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/Testing results mon-dirbox.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/Confusion Training results word-idxbox.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="112" column="48" lean-forward="false" selection-start-line="106" selection-start-column="4" selection-end-line="112" selection-end-column="48" />
+        <state relative-caret-position="446">
+          <caret line="105" column="23" lean-forward="true" selection-start-line="101" selection-start-column="12" selection-end-line="105" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/Confusion Testing results word-idxbox.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/conf_Training results rec-depbox.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/Training results rec-depbox.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/Testing results rec-depbox.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/conf_Testing results rec-depbox.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/Testing results word-idxbox.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/Training results word-idxbox.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/length_allnotGermanslovesomeEuropeans.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/length_allEuropeansnotloveallnotItalians.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/length_someEuropeansnothateallEuropeans.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/length_notallRomanslovesomeRomans.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/length_notallnotEuropeanslovesomeEuropeans.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/delete.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/length_someItaliansnotlovesomeRomans.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/conf_Training results word-idxbox.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/conf_Testing results word-idxbox.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/final_experiments/diag_class/gru/word-idx/length_somenotItaliansnotlovesomeRomans.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/length_somenotItaliansnotlovesomeRomans.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/length_notsomeGermanshatesomeRomans.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/length_notallnotchildrenfearallEuropeans.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/length_allEuropeansnotlikeallnotItalians.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/diagnostic_datamanager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="37" column="16" lean-forward="false" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/conf_Testing results sem-typebox.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/conf_Training results sem-typebox.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/Testing results sem-typebox.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/Training results sem-typebox.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/data/gru-monotonicity-direction-binaryfol.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/get_diagnostic_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="30" column="58" lean-forward="false" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/conf_Testing results mon-dirbox.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/diagnostic_visualization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="147" column="7" lean-forward="false" selection-start-line="147" selection-start-column="7" selection-end-line="147" selection-end-column="7" />
           <folding>
-            <element signature="e#0#18#0" expanded="false" />
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#3682#3894#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/delete.png">
+    <entry file="file://$PROJECT_DIR$/diagnostic_hypothesis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="87" column="48" lean-forward="false" selection-start-line="87" selection-start-column="48" selection-end-line="87" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagnose/conf_Testing results neg-scopebox.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hierarchic_vis1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/binary/2dets_4negs/default/rnns/adadelta/0_dropout/binary_2dets_4negs_gru_adad1.txt">
+    <entry file="file://$PROJECT_DIR$/diagnose/diagnostic_regression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-741">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/binary/2dets_4negs/default/rnns/adadelta/0_dropout/binary_2dets_4negs_gru_adad2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-731">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/binary/2dets_4negs/hierarchic_gen/binary_2dets_4negs_gru_allsome.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/binary/2dets_4negs/hierarchic_gen/binary_2dets_4negs_gru_allall.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/binary/2dets_4negs/hierarchic_gen/binary_2dets_4negs_gru_allnot_all.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/binary/2dets_4negs/hierarchic_gen/binary_2dets_4negs_gru_someall.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/binary/2dets_4negs/hierarchic_gen/binary_2dets_4negs_gru_not_allsome.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generate_data/sample_file.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hierarchic_vis_srn.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/binary/2dets_4negs/default/rnns/adadelta/0_dropout/binary_2dets_4negs_srn_adad1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-741">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/binary/2dets_4negs/default/rnns/adadelta/0_dropout/binary_2dets_4negs_srn_adad2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-756">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="227">
+          <caret line="99" column="50" lean-forward="false" selection-start-line="99" selection-start-column="50" selection-end-line="99" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rnn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="28" column="70" lean-forward="false" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
+        <state relative-caret-position="194">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding>
-            <element signature="e#2025#3593#0" expanded="false" />
+            <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#2059#3627#0" expanded="false" />
+            <element signature="e#9706#12001#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generate_data/analyze/load_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#12#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diagnose/diagnostic_visualization.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="57" selection-start-column="4" selection-end-line="58" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generate_data/hierarchic_gen_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="99" column="33" lean-forward="false" selection-start-line="99" selection-start-column="33" selection-end-line="99" selection-end-column="33" />
-          <folding>
-            <element signature="e#1220#1482#0" expanded="false" />
-            <element signature="e#1520#1759#0" expanded="false" />
-            <element signature="e#1793#2806#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/binary/2dets_4negs/binary_2dets_4negs_train.txt_downsampled_0.2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-92689">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/binary/2dets_4negs/binary_2dets_4negs_test.txt_downsampled_0.2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="1501" column="103" lean-forward="false" selection-start-line="1501" selection-start-column="103" selection-end-line="1501" selection-end-column="103" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/binary/2dets_4negs/binary_2dets_4negs_test_downs0.2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22249">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/binary/2dets_4negs/binary_2dets_4negs_train_downs0.2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-92689">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generate_data/make_mini_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hierarchic_vis_gru_frombulk.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hierarchic_generalization.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="41" column="40" lean-forward="false" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generate_data/split_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="104" column="25" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="104" selection-end-column="25" />
-          <folding>
-            <element signature="e#172#185#0" expanded="true" />
-            <element signature="e#586#1465#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="24" column="306" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="306" />
-          <folding />
         </state>
       </provider>
     </entry>

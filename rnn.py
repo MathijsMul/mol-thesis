@@ -5,7 +5,8 @@ import torch.nn.functional as F
 import torch.optim as optim
 import torch.nn.init as init
 import math
-#from diagnostic_hypothesis import diagnostic_labels
+from collections import defaultdict
+from diagnostic_hypothesis import diagnostic_labels
 
 class RNN(nn.Module):
     # Simple Recurrent Network (Elman)
@@ -51,7 +52,7 @@ class RNN(nn.Module):
 
         self.log_softmax = nn.LogSoftmax()
 
-        self.diagnostic = False
+        self.diagnostic = True
 
         if self.diagnostic:
             diagnostic_file = 'delete.txt'
@@ -107,6 +108,23 @@ class RNN(nn.Module):
             embedding = torch.cat((embedding, pad), 0)
 
         return(embedding)
+
+    def get_sentence_vector(self, sentence):
+        sentence_vector, _ = self.rnn_forward(sentence, size_batch=1)
+
+        return(sentence_vector)
+
+    def get_hidden_vectors(self, sentence):
+        vector_to_idx = defaultdict(lambda: len(vector_to_idx))
+        idx_to_vector = dict()
+        connections = dict()
+        idx_to_word = dict()
+        word_to_idx = dict()
+
+        _, hidden_units = self.rnn_forward(sentence, size_batch=1)
+        return(hidden_units)
+        # to return:
+        # vector_to_idx, idx_to_vector, connections, idx_to_word
 
     def make_batch_matrix(self, batch, size_batch):
         seq_lengths = [len(sequence) for sequence in batch]  # list of integers holding information about the batch size at each sequence step
@@ -187,8 +205,11 @@ class RNN(nn.Module):
         # outputs_reordered = torch.stack([item[1] for item in old_order])
 
         if self.diagnostic:
-            # get labels
-            labels = diagnostic_labels(input, hypothesis)
+            # uncomment to get labels:
+            #labels = diagnostic_labels(input, hypothesis)
+
+            # dummy labels:
+            labels = [[0 for i in range(100)] for i in range(100)]
 
             # restore original order
             restore_order_tensor = torch.LongTensor(restore_order)
@@ -217,51 +238,6 @@ class RNN(nn.Module):
             # outputs_reordered = [outputs[order[i]] for i in range(len(outputs))]
 
         return outputs_reordered, hidden_vectors
-
-    # def diagnostic_labels(self, input, hypothesis):
-    #     labels = []
-    #
-    #     if hypothesis == 'brackets':
-    #         for sentence in input:
-    #             sentence_labels = []
-    #             depth = 0
-    #             for word in sentence:
-    #                 if word == '(':
-    #                     depth += 1
-    #                 elif word == ')':
-    #                     depth -= 1
-    #                 sentence_labels += [depth]
-    #             labels += [sentence_labels]
-    #
-    #     elif hypothesis == 'length':
-    #         for sentence in input:
-    #             sentence_labels = []
-    #             length = 0
-    #             for word in sentence:
-    #                 length += 1
-    #                 sentence_labels += [length]
-    #             labels += [sentence_labels]
-    #
-    #     elif hypothesis == 'pos':
-    #         pos_tags = ['bracket', 'noun', 'verb', 'quant', 'neg']
-    #         pos_mapping = {pos_tag : idx for idx, pos_tag in enumerate(pos_tags)}
-    #
-    #         for sentence in input:
-    #             sentence_labels = []
-    #             for word in sentence:
-    #                 if word in ['(', ')']:
-    #                     sentence_labels += [pos_mapping['bracket']]
-    #                 elif word in ['Europeans', 'Germans', 'Italians', 'Romans', 'children']:
-    #                     sentence_labels += [pos_mapping['noun']]
-    #                 elif word in ['fear', 'hate', 'like', 'love']:
-    #                     sentence_labels += [pos_mapping['verb']]
-    #                 elif word in ['all', 'some']:
-    #                     sentence_labels += [pos_mapping['quant']]
-    #                 elif word in ['not']:
-    #                     sentence_labels += [pos_mapping['neg']]
-    #             labels += [sentence_labels]
-    #
-    #     return(labels)
 
 if False:
     import datamanager as dat

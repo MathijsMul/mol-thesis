@@ -34,12 +34,12 @@ if __name__ == '__main__':
     model_nr = sys.argv[5]
 
 # GLOBAL SETTINGS
-if False:
-    train_data_file = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/train/binary_2dets_4negs_train_allall.txt'
-    test_data_file = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/test/binary_2dets_4negs_test_allall.txt'
-    model = 'GRU'
-    num_epochs = 5
-    model_nr = 1
+# if False:
+#     train_data_file = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/train/binary_2dets_4negs_train_allall.txt'
+#     test_data_file = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/test/binary_2dets_4negs_test_allall.txt'
+#     model = 'GRU'
+#     num_epochs = 5
+#     model_nr = 1
 
 num_epochs = int(num_epochs) # number of epochs, Bowman: 72
 word_dim = 25 # dimensionality of word embeddings
@@ -51,7 +51,7 @@ test_all_epochs = True # intermediate accuracy computation after each epoch
 init_mode = None
 bound_layers = 0.05 # bound for uniform initialization of layer parameters
 bound_embeddings = 0.01  # bound for uniform initialization of embeddings
-l2_penalty = 1e-3 #customary: 2e-3 # weight_decay, l2 regularization term
+#l2_penalty = 1e-3 #customary: 2e-3 # weight_decay, l2 regularization term
         # (Michael: tensor model: 2e-3; matrix model: 2e-4,Bowman: matrix: 0.001, tensor: 0.0003)
         # 0.0003 for sumnn
 save_params = False # store params at each epoch
@@ -88,13 +88,16 @@ test_data.load_data(sequential=sequential_loading)
 if model == 'tRNN':
     net = tRNN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,
                 bound_layers=bound_layers, bound_embeddings=bound_embeddings)
+    l2_penalty = 0.001 #bowman
 elif model == 'tRNTN':
     net = tRNTN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,
                bound_layers=bound_layers, bound_embeddings=bound_embeddings)
+    l2_penalty = 0.0003 #bowman
 elif model == 'sumNN':
     net = sumNN(vocab, rels, word_dim=word_dim, cpr_dim=cpr_dim,
                bound_layers=bound_layers, bound_embeddings=bound_embeddings)
     l2_penalty = 0.0003
+    #l2_penalty = 0.0001
 
 elif model in rnns:
     net = RNN(model, vocab, rels, word_dim, n_hidden, cpr_dim, p_dropout=prob_dropout)
@@ -135,6 +138,9 @@ print("Cpr. dim.:             ", cpr_dim)
 print("Batch size:            ", batch_size)
 print("Shuffle samples:       ", shuffle_samples)
 print("Weight initialization: ", init_mode)
+if init_mode == 'uniform':
+    print("Bound embeddings:      ", bound_embeddings)
+    print("Bound layers:          ", bound_layers)
 print("Optimizer:             ", optimizer.__class__.__name__)
 print("L2 penalty:            ", l2_penalty)
 print("Num. train instances:  ", len(train_data.tree_data))
@@ -154,11 +160,11 @@ batches.create_batches()
 #for b in batches.batched_data:
 #    print(len(b))
 
-acc_before_training = compute_accuracy(test_data, rels, net, print_outputs=False, confusion_matrix=False)
-
-print("EPOCH", "\t", "ACCURACY")
-print(str(0), '\t', str(acc_before_training))
-logging.info("Accuracy: %s" % str(acc_before_training))
+print("EPOCH", "\t", "TESTING ACCURACY")
+if test_all_epochs:
+    acc_before_training = compute_accuracy(test_data, rels, net, print_outputs=False, confusion_matrix=False)
+    print(str(0), '\t', str(acc_before_training))
+    logging.info("Accuracy: %s" % str(acc_before_training))
 
 ##################################################################
 
@@ -235,6 +241,11 @@ torch.save(net.state_dict(), 'models/' + model_name)
 
 final_acc = compute_accuracy(test_data, rels, net, print_outputs=False, confusion_matrix=False,batch_size=32)
 print(str(epoch + 1), '\t', str(final_acc))
+
+print('FINAL TRAINING ACCURACY')
+final_training_acc = compute_accuracy(train_data, rels, net, print_outputs=False, confusion_matrix=False,batch_size=32)
+print(str(epoch + 1), '\t', str(final_training_acc))
+
 
 logging.info('End time: %s' % datetime.datetime.now())
 logging.info('Total running time: %s' % timeSince(start_time))

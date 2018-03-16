@@ -1,9 +1,17 @@
 from collections import Counter
+import seaborn as sns
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
 
 def analyze_file(data_file):
-    rels = ['=', '<', '>', 'v', '^', '|', '#']
+    # rels = ['=', '<', '>', 'v', '^', '|', '#']
     # rels = [0,1,2,3,4]
     # rels = ['0', '1', '2', '3', '4']
+    rels = ['#', 'v', '<', '>', '|', '=', '^']
+
+    freq = []
+    freq_idx = []
     freq_dict = Counter()
 
     for rel in rels:
@@ -16,6 +24,8 @@ def analyze_file(data_file):
             all = line.split('\t')
             label = all[0]
             freq_dict[label] += 1
+            freq_idx += [rels.index(label)]
+            freq += [label]
             total += 1
 
     rel_freq_dict = Counter()
@@ -35,24 +45,41 @@ def analyze_file(data_file):
 
     print(dic_to_tex(rel_freq_dict))
 
+    #norm_freq_idx = []
+
     # return(total, freq_dict, rel_freq_dict)
 
-    return(rel_freq_dict)
+    #return(rel_freq_dict)
+    return(freq_idx)
+    #return(freq)
 
-# print(analyze_file('/Users/Mathijs/Documents/School/MoL/thesis/thesis_code/data/binary/negate_det1/split/binary1_neg_det1_train.txt'))
-#print(analyze_file('/Users/Mathijs/Documents/School/MoL/thesis/thesis_code/data/binary/negate_det1/split/binary1_neg_det1_train.txt'))
+if False:
+    f1 = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/unary/nl/bowman/f1_train.txt'
+    dist_f1 = analyze_file(f1)
+    folf1 = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/unary/fol/fol_animals_train_translated_from_nl.txt'
+    dist_folf1 = analyze_file(folf1)
 
-#f = '/Users/Mathijs/Documents/School/MoL/thesis/thesis_code/generate_data/binary1_4negstrain.txt'
-#f = '/Users/Mathijs/Documents/School/MoL/thesis/thesis_code/data/binary/negate_noun1/split/binary1_neg_noun1_test.txt'
-#f = '/Users/Mathijs/Documents/School/MoL/thesis/thesis_code/data/binary/neg_det1_noun1_verb_noun2/binary2_4negs_train.txt'
-#f = '/Users/Mathijs/Documents/School/MoL/thesis/thesis_code/data/binary/2dets_4negs/binary_2dets_4negs_train.txt'
-#f = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/unary/fol/fol_animals_train_translated_from_nl.txt'
-#g = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/unary/nl/nl_data1_animals_train.txt'
-# h = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/binary_2dets_4negs_train.txt'
-# i = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/binary_2dets_4negs_test.txt'
-#print(analyze_file(f))
-#print(analyze_file(g))
-# print(analyze_file(h))
-# print(analyze_file(i))
-# t = '/Users/Mathijs/Documents/School/MoL/thesis/thesis_code/generate_data/binary_2dets_4negs_test.txt'
-# print(analyze_file(t))
+    unary_balanced_fol = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/unary/fol/fol_data1_animals_train.txt_inddown_0.7'
+    dist_unary_balanced_fol = analyze_file(unary_balanced_fol)
+
+def visualize_label_dist(dist1,dist2):
+    rels = ['#', 'v', '<', '>', '|', '=', '^']
+    #middle color:  '#9ecae1'
+    plt.hist([dist1,dist2], color=['#deebf7','#3182bd'], bins=np.arange(8),label=['train', 'test'], normed=1)
+    plt.xticks(np.arange(8)+0.5,rels)
+    plt.legend()
+    plt.savefig('binaryfol_traintest_histograms')
+
+def visualize_one_label_dist(dist):
+    rels = ['#', 'v', '<', '>', '|', '=', '^']
+    plt.hist(dist, color='#3182bd', rwidth=0.4, bins=np.arange(8))
+    plt.xticks(np.arange(8)+0.5,rels)
+    plt.legend()
+    plt.savefig('binaryfol_dist')
+
+binarytrain = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/binary_2dets_4negs_train.txt'
+binarytraindist = analyze_file(binarytrain)
+binarytest = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/binary_2dets_4negs_test.txt'
+binarytestdist = analyze_file(binarytest)
+
+visualize_label_dist(binarytraindist, binarytestdist)

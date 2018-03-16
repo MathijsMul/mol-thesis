@@ -1,0 +1,83 @@
+Loading data from  /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/unary/fol/unary_balanced_fol_train.txt
+Vocabulary: 
+ ['(', ')', 'all', 'growl', 'lt_three', 'lt_two', 'mammals', 'move', 'no', 'not', 'not_all', 'pets', 'reptiles', 'some', 'swim', 'three', 'turtles', 'two', 'walk', 'warthogs']
+Relations:  
+ ['#', '<', '=', '>', '^', 'v', '|']
+Loading data from  /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/unary/fol/unary_balanced_fol_test.txt
+
+
+MODEL SETTINGS
+Model:                  sumNN
+Train data:             /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/unary/fol/unary_balanced_fol_train.txt
+Test data:              /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/unary/fol/unary_balanced_fol_test.txt
+Num. epochs:            50
+Word dim.:              25
+Cpr. dim.:              75
+Batch size:             32
+Shuffle samples:        True
+Weight initialization:  uniform
+Bound embeddings:       0.01
+Bound layers:           0.05
+Optimizer:              Adadelta
+L2 penalty:             0.0003
+Num. train instances:   27683
+Num. test instances:    5489
+Model name:             sumNNunary_balanced_fol_train5.pt
+
+
+EPOCH 	 TESTING ACCURACY
+0 	 15.39
+1 	 38.31
+2 	 48.04
+3 	 55.09
+4 	 55.16
+5 	 57.48
+6 	 57.42
+7 	 62.87
+8 	 61.49
+9 	 63.75
+10 	 62.12
+11 	 66.00
+12 	 65.39
+13 	 67.52
+14 	 66.31
+15 	 68.94
+16 	 67.63
+17 	 66.68
+18 	 70.76
+19 	 69.99
+20 	 71.73
+21 	 72.14
+22 	 72.22
+23 	 71.38
+24 	 72.05
+25 	 74.39
+26 	 70.41
+27 	 75.06
+28 	 75.00
+29 	 76.04
+30 	 74.40
+31 	 75.46
+32 	 76.41
+33 	 74.40
+34 	 74.90
+35 	 75.77
+36 	 75.59
+37 	 77.03
+38 	 77.03
+39 	 75.62
+40 	 75.22
+41 	 75.79
+42 	 76.44
+43 	 76.59
+44 	 75.26
+45 	 76.86
+46 	 77.77
+47 	 76.75
+48 	 76.83
+49 	 77.25
+50 	 76.04
+FINAL TRAINING ACCURACY
+50 	 82.18
+
+Total running time:  10m 58s

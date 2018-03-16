@@ -30,7 +30,7 @@ prover = Prover9(timeout=1)
 mace = Mace(end_size=10)
 
 INDY_DOWNSAMPLE_RATIO = 0.05
-MATLAB_OUTPUT = True
+MATLAB_OUTPUT = False
 PROVER_ON = True # set to False in case we just want to list sentence combinations without running the theorem prover
 FILENAME_STEM = "nothing"
 
@@ -224,23 +224,6 @@ def interpret(sentence, axioms):
     else:
         return("#")
 
-    # if prover.prove(right, axioms + [left]) and prover.prove(left, axioms + [right]):
-    #     relation = '='
-    # elif prover.prove(right, axioms + [left]):
-    #     relation = '<'
-    # elif prover.prove(left, axioms + [right]):
-    #     relation = '>'
-    # elif prover.prove(contradiction, axioms) and not prover.prove(right, axioms + [not_left]):
-    #     relation = "|"
-    # elif prover.prove(contradiction, axioms) and prover.prove(right, axioms + [not_left]):
-    #     relation = "^"
-    # elif prover.prove(right, axioms + [not_left]):
-    #     relation = "v"
-    # else:
-    #     relation = '#'
-    #
-    # return relation
-
 def filter_axioms(axioms, det1, det2, adverb1, adverb2, noun1, noun2, verb1, verb2):
     """Select only relevant axioms, do not consider ones without currently occurring verbs/nouns"""
     noun_axioms = axioms[noun1][noun2] + axioms[noun2][noun1] #+ axioms[noun1][noun1] + axioms[noun2][noun2]
@@ -287,9 +270,12 @@ def all_pairs(ignore_unk=True):
     for d1, d2, na1, na2, n1, n2, va1, va2, v1, v2 in product(dets, dets, adverbs, adverbs, nouns, nouns, adverbs, adverbs, verbs, verbs):
     #for d1, d2, na1, na2, n1, n2, va1, va2, v1, v2 in all_combinations:
 
+        #if True:
         if random.random() < sample_probability:
             d = {}
             s = [[(d1, d2), [(na1, na2), (n1, n2)]], [(va1, va2), (v1, v2)]]
+
+            #s = [[('all', 'all'), [('', ''), ('turtles', 'turtles')]], [('', ''), ("walk", 'move')]]
 
             d['sentence'] = s
             d['premise'] = leaves(s, 0)
@@ -300,6 +286,9 @@ def all_pairs(ignore_unk=True):
 
             if PROVER_ON:
                 d['relation'] = interpret(s, filtered_axioms)
+
+                #print(d)
+            #break
 
             # we must normalize wrt # labels, because otherwise they would completely dominate the data set and make its size explode.
             # two options:
@@ -335,6 +324,10 @@ def sentence_to_parse(sentence):
 
 def matlab_string(d):
     return str(d['relation']) + '\t' + str(sentence_to_parse(d['premise'])) + '\t' + str(sentence_to_parse(d['hypothesis']))
+
+#fa = filter_axioms(axioms, 'all', 'all','', '','turtles', 'turtles',"walk", 'move')
+#interpret(s,fa)
+#exit()
 
 if __name__ == '__main__':
 

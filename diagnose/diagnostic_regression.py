@@ -11,6 +11,8 @@ import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 import torch
 from rnn import RNN
+import pandas as pd
+import seaborn as sns
 
 def load_model(model_path):
     #model_path = 'linreg_length.pkl'
@@ -48,7 +50,7 @@ def compute_acc(hypotheses, predictions):
         acc = metrics.accuracy_score(hypotheses, pred_rounded)
     return (acc)
 
-def plot_predictions(hypotheses, predictions, title, show_boxplot=True, show_violinplot=False, show_confmatrix=False):
+def plot_predictions(hypotheses, predictions, title, show_boxplot=True, show_violinplot=False, show_confmatrix=True):
     #plt.scatter(hypotheses, predictions, s=1, color='black')
     plt.plot(hypotheses, hypotheses, color='blue', linewidth=2)
 
@@ -73,47 +75,38 @@ def plot_predictions(hypotheses, predictions, title, show_boxplot=True, show_vio
                    showmedians=True)
             title += 'violin'
 
+        plt.xticks()
+        plt.yticks()
+        plt.title(title)
+
+        plt.savefig(title)
+        plt.close()
+
     if show_confmatrix:
         # for pos tags:
-        #pos_labels = ['bracket', 'noun', 'verb', 'quant', 'neg']
+        #pos_labels = ['quant', 'noun', 'verb', 'neg']
+        #mon_dirs = ['downward', 'neutral', 'upward']
+        neg_options = ['unnegated', 'negated']
 
-
-
-        # print(hypotheses)
-        # print(predictions)
-        conf = metrics.confusion_matrix(hypotheses, predictions)#, labels=pos_labels)
+        conf = metrics.confusion_matrix(hypotheses, predictions)
         # normalize
         conf = conf.astype('float') / conf.sum(axis=1)[:, np.newaxis]
-        fig = plt.figure()
-        ax = fig.add_subplot(111)
 
-        # cax = ax.matshow(confusion.numpy(), cmap='hot')
-        cax = ax.matshow(conf, cmap='hot')
+        #confusion = pd.DataFrame(conf, index=pos_labels, columns=pos_labels)
+        #confusion = pd.DataFrame(conf, index=mon_dirs, columns=mon_dirs)
+        confusion = pd.DataFrame(conf, index=neg_options, columns=neg_options)
 
-        fig.colorbar(cax)
-
-        # Set up axes
-        # ax.set_xticklabels([''] + rels, rotation=90)
-        #ax.set_xticklabels([''] + pos_labels)
-        #ax.set_yticklabels([''] + pos_labels)
-
-        # Force label at every tick
-        ax.xaxis.set_major_locator(ticker.MultipleLocator(1))
-        ax.yaxis.set_major_locator(ticker.MultipleLocator(1))
-        title = 'Confusion ' + title
+        h = sns.heatmap(confusion, cmap='Blues')
+        h.set_yticklabels(neg_options, rotation=0)
+        plot_name = 'conf_' + title
+        plt.savefig(plot_name)
+        plt.close()
 
         #plot_name = 'conf_' + net.__class__.__name__
 
         #plt.savefig(plot_name)
 
-    plt.xticks()
-    plt.yticks()
-    plt.title(title)
-
-    plt.savefig(title)
-    plt.close()
-
-def train(train_data, classifier, hypothesis, print_train_distribution=False, plot_pred=True):
+def train(train_data, classifier, hypothesis, print_train_distribution=True, plot_pred=True):
 
     if print_train_distribution:
         print('Train distribution:')
@@ -127,6 +120,7 @@ def train(train_data, classifier, hypothesis, print_train_distribution=False, pl
 
     train_hiddens = np.array([item[1].numpy() for item in train_data])
     train_hyps = np.array([item[0].numpy() for item in train_data]).ravel()
+    print(train_hyps)
 
     diag_classifier.fit(train_hiddens, train_hyps)
 
@@ -136,6 +130,8 @@ def train(train_data, classifier, hypothesis, print_train_distribution=False, pl
     print(compute_mse(train_hyps, train_pred))
     print('Training MAE score:')
     print(compute_mae(train_hyps, train_pred))
+    print('Training accuracy:')
+    print(compute_acc(train_hyps, train_pred))
 
     plot_name = 'Training results ' + hypothesis
     if plot_pred:
@@ -163,44 +159,80 @@ def test(test_data, diag_classifier, hypothesis, plot=True):
     print(compute_mse(test_hyps, test_pred))
     print('Testing MAE score:')
     print(compute_mae(test_hyps, test_pred))
+    print('Testing accuracy:')
+    print(compute_acc(test_hyps, test_pred))
 
     plot_name = 'Testing results ' + hypothesis
     if plot:
         plot_predictions(test_hyps, test_pred, plot_name)
 
-if False:
-    data_file = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/diagnose/data/diagnostic_gru_2dets4negs_brackets.txt'
-    #data_file = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/diagnose/data/diagnostic_gru_2dets4negs_pos.txt'
-    #data_file = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/diagnose/data/length_small.txt'
+if True:
+    hypothesis = 'neg-scope'
+    data = 'binaryfol_all'
 
-    d = DiagnosticDataFile(data_file)
-    train_data, test_data = d.split(0.8)
-    print(str(len(train_data)) + ' train instances')
-    print(str(len(test_data)) + ' test instances')
-    hypothesis = 'brackets'
-    classifier = train(train_data, 'logreg', hypothesis)
-    #classifier = load_model('logreg_brackets.pkl')
-    test(test_data, classifier, hypothesis)
+    if True:
+        if data == 'binaryfol_all':
+            if hypothesis == 'rec-dep':
+                data_file = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/diagnose/data/gru-recursive-depth-binaryfol.txt'
+            elif hypothesis == 'word-idx':
+                data_file = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/diagnose/data/gru-word-index-binaryfol.txt'
+            elif hypothesis == 'sem-type':
+                data_file = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/diagnose/data/gru-semantic-type-binaryfol.txt'
+            elif hypothesis == 'mon-dir':
+                #data_file = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/diagnose/data/gru-monotonicity-direction-binaryfol.txt'
+                data_file = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/diagnose/data/gru-monotonicity-direction-binaryfol-positivelabels.txt'
+            elif hypothesis == 'neg-scope':
+                data_file = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/diagnose/data/gru-negation-scope-binaryfol.txt'
+        elif data == 'binaryfol_train':
+            if hypothesis == 'rec-dep':
+                data_file = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/diagnose/data/old/gru-recursive-depth.txt'
+            elif hypothesis == 'word-idx':
+                data_file = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/diagnose/data/old/gru-word-index.txt'
+            elif hypothesis == 'sem-type':
+                data_file = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/diagnose/data/old/gru-semantic-type.txt'
+            elif hypothesis == 'mon-dir':
+                data_file = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/diagnose/data/old/gru-monotonicity-direction.txt'
 
+        # classifier = load_model(
+        #     '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/final_experiments/diag_class/gru/word-idx/logreg_word-idx.pkl')
+        # hypothesis = 'length'
+        # compare_and_plot(s, hypothesis, classifier)
 
+        d = DiagnosticDataFile(data_file)
+        #TODO: implement split that keeps double instances (otherwise only 1 index 1 in all data etc)
+        train_data, test_data = d.split(0.8) #0.8
+        print(str(len(train_data)) + ' train instances')
+        print(str(len(test_data)) + ' test instances')
+
+        classifier = train(train_data, 'logreg', hypothesis)
+        test(test_data, classifier, hypothesis)
 
     exit()
+    classifier = load_model('logreg_word-idx.pkl')
+    #test(test_data, classifier, hypothesis)
 
-    vocab = ['(', ')', 'Europeans', 'Germans', 'Italians', 'Romans', 'all', 'children', 'fear', 'hate', 'like',
-                 'love', 'not', 'some']
+    vocab = ['Europeans', 'Germans', 'Italians', 'Romans', 'all', 'children', 'fear', 'hate', 'like', 'love', 'not',
+             'some']
     rels = ['#', '<', '=', '>', '^', 'v', '|']
 
     word_dim = 25
     n_hidden = 128
     cpr_dim = 75
 
-    model_path = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/models/rnns/gru/GRUbinary_2dets_4negs_train_ada_nodrop_3.pt'
+    model_path = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/final_experiments/binary_fol_rnn/nobrackets/models/GRUbinary_2dets_4negs_train_0bracket_pairs1.pt'
     net = RNN('GRU', vocab, rels, word_dim, n_hidden, cpr_dim)
     net.load_state_dict(torch.load(model_path))
 
-    sentences = ['( ( some Italians  ) ( ( not love ) ( some Romans ) ) )','( ( all Europeans  ) ( ( not love ) ( all ( not Italians ) ) ) )',
-                 '( ( all ( not Germans )  ) ( love ( some Europeans ) ) )', '( ( ( not all ) ( not Europeans )  ) ( love ( some Europeans ) ) )',
-                '( ( some Europeans  ) ( ( not hate ) ( all Europeans ) ) )', '( ( ( not all ) Romans  ) ( love ( some Romans ) ) ) ']
+    # sentences = ['( ( some Italians  ) ( ( not love ) ( some Romans ) ) )','( ( all Europeans  ) ( ( not love ) ( all ( not Italians ) ) ) )',
+    #              '( ( all ( not Germans )  ) ( love ( some Europeans ) ) )', '( ( ( not all ) ( not Europeans )  ) ( love ( some Europeans ) ) )',
+    #             '( ( some Europeans  ) ( ( not hate ) ( all Europeans ) ) )', '( ( ( not all ) Romans  ) ( love ( some Romans ) ) ) ']
+
+    sentences = ['some Italians not love some Romans'] #,
+    #              '( ( all Europeans  ) ( ( not love ) ( all ( not Italians ) ) ) )',
+    #              '( ( all ( not Germans )  ) ( love ( some Europeans ) ) )',
+    #              '( ( ( not all ) ( not Europeans )  ) ( love ( some Europeans ) ) )',
+    #              '( ( some Europeans  ) ( ( not hate ) ( all Europeans ) ) )',
+    #              '( ( ( not all ) Romans  ) ( love ( some Romans ) ) ) ']
 
     for sentence in sentences:
         s = [sentence.split()]
@@ -210,7 +242,7 @@ if False:
 
         test_hiddens = np.array(hidden_vectors[0])
         hyps = np.array([i for i in range(len(test_hiddens))])
-        y_pred = diag_classifier.predict(test_hiddens)
+        y_pred = classifier.predict(test_hiddens)
 
         print('MAE:')
         print(compute_mae(hyps, y_pred))

@@ -1,0 +1,84 @@
+Loading data from  /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/partial_bracketing/train/binary_2dets_4negs_train_0bracket_pairs.txt
+Vocabulary: 
+ ['Europeans', 'Germans', 'Italians', 'Romans', 'all', 'children', 'fear', 'hate', 'like', 'love', 'not', 'some']
+Relations:  
+ ['#', '<', '=', '>', '^', 'v', '|']
+Loading data from  /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/partial_bracketing/test/binary_2dets_4negs_test_0bracket_pairs.txt
+
+
+MODEL SETTINGS
+Model:                  SRN
+Train data:             /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/partial_bracketing/train/binary_2dets_4negs_train_0bracket_pairs.txt
+Test data:              /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/partial_bracketing/test/binary_2dets_4negs_test_0bracket_pairs.txt
+Num. epochs:            50
+Word dim.:              25
+Cpr. dim.:              75
+Batch size:             32
+Shuffle samples:        True
+Weight initialization:  None
+Optimizer:              Adadelta
+L2 penalty:             0
+Num. train instances:   29900
+Num. test instances:    7500
+Num. hidden units:      128
+Num. hidden layers:     1
+Dropout probability:    0
+Model name:             SRNbinary_2dets_4negs_train_0bracket_pairs2.pt
+
+
+EPOCH 	 TESTING ACCURACY
+0 	 9.01
+1 	 61.23
+2 	 76.85
+3 	 80.89
+4 	 83.69
+5 	 84.79
+6 	 86.49
+7 	 87.76
+8 	 87.55
+9 	 86.69
+10 	 87.19
+11 	 88.64
+12 	 88.56
+13 	 88.16
+14 	 88.28
+15 	 87.89
+16 	 88.97
+17 	 87.37
+18 	 87.79
+19 	 88.51
+20 	 89.05
+21 	 87.93
+22 	 88.40
+23 	 88.20
+24 	 88.48
+25 	 88.47
+26 	 87.48
+27 	 88.99
+28 	 87.59
+29 	 89.13
+30 	 88.23
+31 	 88.43
+32 	 88.41
+33 	 87.80
+34 	 88.27
+35 	 87.96
+36 	 87.95
+37 	 87.84
+38 	 88.19
+39 	 88.15
+40 	 87.79
+41 	 87.49
+42 	 87.41
+43 	 87.95
+44 	 87.56
+45 	 87.27
+46 	 88.13
+47 	 87.88
+48 	 88.49
+49 	 87.97
+50 	 88.11
+FINAL TRAINING ACCURACY
+50 	 98.00
+
+Total running time:  149m 52s

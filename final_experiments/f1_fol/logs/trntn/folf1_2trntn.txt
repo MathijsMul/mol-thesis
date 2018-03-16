@@ -1,0 +1,83 @@
+Loading data from  /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/unary/fol/fol_animals_train_translated_from_nl.txt
+Vocabulary: 
+ ['all', 'growl', 'lt_three', 'lt_two', 'mammals', 'move', 'no', 'not', 'not_all', 'pets', 'reptiles', 'some', 'swim', 'three', 'turtles', 'two', 'walk', 'warthogs']
+Relations:  
+ ['#', '<', '=', '>', '^', 'v', '|']
+Loading data from  /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/unary/fol/fol_animals_test_translated_from_nl.txt
+
+
+MODEL SETTINGS
+Model:                  tRNTN
+Train data:             /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/unary/fol/fol_animals_train_translated_from_nl.txt
+Test data:              /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/unary/fol/fol_animals_test_translated_from_nl.txt
+Num. epochs:            50
+Word dim.:              25
+Cpr. dim.:              75
+Batch size:             32
+Shuffle samples:        True
+Weight initialization:  uniform
+Bound embeddings:       0.01
+Bound layers:           0.05
+Optimizer:              Adadelta
+L2 penalty:             0.0003
+Num. train instances:   21856
+Num. test instances:    4494
+Model name:             tRNTNfol_animals_train_translated_from_nl2.pt
+
+
+EPOCH 	 TESTING ACCURACY
+0 	 60.21
+1 	 60.21
+2 	 58.79
+3 	 70.14
+4 	 71.81
+5 	 74.37
+6 	 78.86
+7 	 82.96
+8 	 91.08
+9 	 93.59
+10 	 94.70
+11 	 95.93
+12 	 97.04
+13 	 96.64
+14 	 97.93
+15 	 98.06
+16 	 97.91
+17 	 97.62
+18 	 97.60
+19 	 98.38
+20 	 98.06
+21 	 98.06
+22 	 98.55
+23 	 98.20
+24 	 98.60
+25 	 98.40
+26 	 98.69
+27 	 98.38
+28 	 98.40
+29 	 98.60
+30 	 97.86
+31 	 98.55
+32 	 97.80
+33 	 98.55
+34 	 98.24
+35 	 98.84
+36 	 98.02
+37 	 98.51
+38 	 98.13
+39 	 98.66
+40 	 98.62
+41 	 98.82
+42 	 99.11
+43 	 98.89
+44 	 99.18
+45 	 98.78
+46 	 99.09
+47 	 98.87
+48 	 98.40
+49 	 97.95
+50 	 98.87
+FINAL TRAINING ACCURACY
+50 	 99.49
+
+Total running time:  115m 46s

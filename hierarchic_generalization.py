@@ -14,6 +14,8 @@ srn_best = 83
 
 #dir = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/logs/binary/2dets_4negs/hierarchic_gen/' + MODEL + '/binary_2dets_4negs_' + MODEL + '_'
 dir = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/logs/binary/2dets_4negs/hierarchic_gen/gru/segment_bulk_2det_4negs/binary_2dets_4negs_gru_frombulk_'
+#dir = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/logs/binary/2dets_4negs/hierarchic_gen/srn/binary_2dets_4negs_srn_'
+
 all_results = []
 
 for item1 in DET_SUBJ_LIST[::-1]:
@@ -30,10 +32,11 @@ for item1 in DET_SUBJ_LIST[::-1]:
 
 result = np.array(all_results)
 
-# print(result)
+print(result)
+print(np.average(result))
 # print(np.average(result - srn_best))
 
-#exit()
+exit()
 
 color_palette = sns.color_palette('Blues', 255, desat=.8)
 ax = sns.heatmap(result, annot=True, xticklabels=DET_SUBJ_LIST, yticklabels=DET_SUBJ_LIST[::-1], cmap=color_palette)

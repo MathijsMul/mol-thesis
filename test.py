@@ -5,8 +5,11 @@ from torch.autograd import Variable
 import os
 
 # uncomment to generate confusion matrix in one go:
-# import matplotlib.pyplot as plt
-# import matplotlib.ticker as ticker
+import matplotlib.pyplot as plt
+import matplotlib.ticker as ticker
+import seaborn as sns
+
+import pandas as pd
 from collections import Counter, defaultdict
 
 def compute_accuracy(test_data, rels, net, print_outputs=False, confusion_matrix=False, batch_size=32):
@@ -15,11 +18,13 @@ def compute_accuracy(test_data, rels, net, print_outputs=False, confusion_matrix
 
     n_rels = len(rels)
 
-    if confusion_matrix:
+    if confusion_matrix==True:
+        batch_size=None
         confusion = torch.zeros(n_rels, n_rels)
 
     correct = 0.0
     total = 0
+
 
     if batch_size == None:
         for i, data in enumerate(test_data.tree_data, 0):
@@ -58,29 +63,43 @@ def compute_accuracy(test_data, rels, net, print_outputs=False, confusion_matrix
         if confusion_matrix:
             # create a confusion matrix, indicating for every actual relation (rows) which relation the network guesses (columns)
 
+            print(confusion)
+            print(confusion.sum())
+            print('correct:')
+            print(torch.trace(confusion))
             # Normalize by dividing every row by its sum
             for i in range(n_rels):
                 confusion[i] = confusion[i] / confusion[i].sum()
 
-            # Set up plot
-            fig = plt.figure()
-            ax = fig.add_subplot(111)
-            cax = ax.matshow(confusion.numpy(), cmap='hot')
-            fig.colorbar(cax)
+            # remove diagonal to focus on errors
+            #for i in range(n_rels):
+            #    confusion[i][i] = 0
 
-            # Set up axes
-            #ax.set_xticklabels([''] + rels, rotation=90)
-            ax.set_xticklabels([''] + rels)
-            ax.set_yticklabels([''] + rels)
+            #new_rels = ['#', '<', '=', '>', '^', '︶', '|']
 
-            # Force label at every tick
-            ax.xaxis.set_major_locator(ticker.MultipleLocator(1))
-            ax.yaxis.set_major_locator(ticker.MultipleLocator(1))
+            confusion = pd.DataFrame(confusion.numpy(), index=rels, columns=rels)
+            h = sns.heatmap(confusion, cmap='Blues')
+            h.set_yticklabels(rels, rotation=0)
 
-            # sphinx_gallery_thumbnail_number = 2
-            # plt.show()
+            if False:
+                # Set up plot
+                fig = plt.figure()
+                ax = fig.add_subplot(111)
+                cax = ax.matshow(confusion.numpy(), cmap='hot')
+                fig.colorbar(cax)
 
-            plot_name = 'conf2_' + net.__class__.__name__
+                # Set up axes
+                #ax.set_xticklabels([''] + rels, rotation=90)
+                ax.set_xticklabels([''] + rels)
+                ax.set_yticklabels([''] + rels)
+
+                # Force label at every tick
+                ax.xaxis.set_major_locator(ticker.MultipleLocator(1))
+                ax.yaxis.set_major_locator(ticker.MultipleLocator(1))
+
+                # plt.show()
+
+            plot_name = 'conf_' + net.__class__.__name__
 
             plt.savefig(plot_name)
 

@@ -1,6 +1,7 @@
 import fol_gen as fg
 
 def extend_sentence(split_sentence):
+    print(split_sentence)
     if split_sentence[3] != '(':
         split_sentence = split_sentence[:3] + ['(', ''] + [split_sentence[3]] + [')'] + split_sentence[4:]
     if split_sentence[8] != '(':

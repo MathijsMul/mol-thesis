@@ -1,0 +1,5 @@
+#	( ( all turtles ) walk )	( ( all turtles ) ( not move ) )
+>	( ( all warthogs ) move )	( ( not_all ( not warthogs ) ) swim )
+<	( ( some ( not warthogs ) ) ( not walk ) )	( ( some turtles ) ( not walk ) )
+<	( ( all turtles ) swim )	( ( all ( not warthogs ) ) swim )
+|	( ( all ( not pets ) ) ( not walk ) )	( ( some pets ) ( not walk ) )

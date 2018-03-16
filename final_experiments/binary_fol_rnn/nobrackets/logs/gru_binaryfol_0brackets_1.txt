@@ -1,0 +1,84 @@
+Loading data from  /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/partial_bracketing/train/binary_2dets_4negs_train_0bracket_pairs.txt
+Vocabulary: 
+ ['Europeans', 'Germans', 'Italians', 'Romans', 'all', 'children', 'fear', 'hate', 'like', 'love', 'not', 'some']
+Relations:  
+ ['#', '<', '=', '>', '^', 'v', '|']
+Loading data from  /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/partial_bracketing/test/binary_2dets_4negs_test_0bracket_pairs.txt
+
+
+MODEL SETTINGS
+Model:                  GRU
+Train data:             /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/partial_bracketing/train/binary_2dets_4negs_train_0bracket_pairs.txt
+Test data:              /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/partial_bracketing/test/binary_2dets_4negs_test_0bracket_pairs.txt
+Num. epochs:            50
+Word dim.:              25
+Cpr. dim.:              75
+Batch size:             32
+Shuffle samples:        True
+Weight initialization:  None
+Optimizer:              Adadelta
+L2 penalty:             0
+Num. train instances:   29900
+Num. test instances:    7500
+Num. hidden units:      128
+Num. hidden layers:     1
+Dropout probability:    0
+Model name:             GRUbinary_2dets_4negs_train_0bracket_pairs1.pt
+
+
+EPOCH 	 TESTING ACCURACY
+0 	 18.53
+1 	 35.56
+2 	 34.40
+3 	 54.56
+4 	 78.85
+5 	 85.08
+6 	 89.31
+7 	 93.21
+8 	 94.29
+9 	 95.25
+10 	 95.17
+11 	 95.91
+12 	 96.47
+13 	 96.12
+14 	 96.27
+15 	 96.09
+16 	 95.95
+17 	 96.05
+18 	 96.48
+19 	 96.36
+20 	 96.17
+21 	 96.13
+22 	 96.44
+23 	 96.49
+24 	 96.69
+25 	 96.63
+26 	 96.75
+27 	 96.75
+28 	 96.64
+29 	 96.72
+30 	 96.73
+31 	 96.72
+32 	 96.73
+33 	 96.79
+34 	 96.72
+35 	 96.77
+36 	 96.79
+37 	 96.80
+38 	 96.73
+39 	 96.81
+40 	 96.77
+41 	 96.81
+42 	 96.79
+43 	 96.76
+44 	 96.87
+45 	 96.77
+46 	 96.72
+47 	 96.83
+48 	 96.81
+49 	 96.79
+50 	 96.83
+FINAL TRAINING ACCURACY
+50 	 100.00
+
+Total running time:  168m 0s

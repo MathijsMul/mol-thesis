@@ -1,0 +1,83 @@
+Loading data from  /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/binary_2dets_4negs_train.txt
+Vocabulary: 
+ ['Europeans', 'Germans', 'Italians', 'Romans', 'all', 'children', 'fear', 'hate', 'like', 'love', 'not', 'some']
+Relations:  
+ ['#', '<', '=', '>', '^', 'v', '|']
+Loading data from  /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/binary_2dets_4negs_test.txt
+
+
+MODEL SETTINGS
+Model:                  tRNN
+Train data:             /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/binary_2dets_4negs_train.txt
+Test data:              /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/binary_2dets_4negs_test.txt
+Num. epochs:            50
+Word dim.:              25
+Cpr. dim.:              75
+Batch size:             32
+Shuffle samples:        True
+Weight initialization:  uniform
+Bound embeddings:       0.01
+Bound layers:           0.05
+Optimizer:              Adadelta
+L2 penalty:             0.001
+Num. train instances:   29900
+Num. test instances:    7500
+Model name:             tRNNbinary_2dets_4negs_train4.pt
+
+
+EPOCH 	 TESTING ACCURACY
+0 	 19.04
+1 	 23.96
+2 	 23.96
+3 	 23.96
+4 	 23.96
+5 	 23.96
+6 	 23.96
+7 	 23.96
+8 	 23.96
+9 	 23.96
+10 	 23.96
+11 	 23.96
+12 	 23.96
+13 	 23.96
+14 	 23.96
+15 	 23.96
+16 	 23.96
+17 	 23.96
+18 	 23.96
+19 	 23.96
+20 	 23.96
+21 	 23.96
+22 	 23.96
+23 	 23.96
+24 	 23.96
+25 	 23.96
+26 	 23.96
+27 	 23.96
+28 	 23.96
+29 	 23.96
+30 	 23.96
+31 	 23.96
+32 	 23.96
+33 	 23.96
+34 	 23.96
+35 	 23.96
+36 	 23.96
+37 	 23.96
+38 	 23.96
+39 	 23.96
+40 	 23.96
+41 	 23.96
+42 	 30.41
+43 	 38.79
+44 	 40.28
+45 	 49.85
+46 	 58.23
+47 	 60.27
+48 	 61.24
+49 	 61.32
+50 	 62.49
+FINAL TRAINING ACCURACY
+50 	 63.61
+
+Total running time:  132m 49s

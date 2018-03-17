@@ -46,7 +46,7 @@ word_dim = 25 # dimensionality of word embeddings
 cpr_dim = 75 # output dimensionality of comparison layer
 batch_size = 32 # Bowman takes 32
 shuffle_samples = True
-test_all_epochs = True # intermediate accuracy computation after each epoch
+test_all_epochs = False # intermediate accuracy computation after each epoch
 #init_mode = 'xavier_uniform' # initialization of parameter weights
 init_mode = None
 bound_layers = 0.05 # bound for uniform initialization of layer parameters
@@ -104,7 +104,8 @@ elif model in rnns:
     l2_penalty = 0
 
 # if model_nr:
-model_name = model + train_data_file.split('/')[-1].split('.')[0] + str(model_nr) + '.pt'
+#model_name = model + train_data_file.split('/')[-1].split('.')[0] + str(model_nr) + '.pt'
+model_name = model + train_data_file + '_' + str(model_nr) + '.pt'
 #model_name = net.__class__.__name__ + train_data_file.split('/')[-1].split('.')[0] + str(model_nr) + '.pt'
 #model_name = net.__class__.__name__ + train_data_file.split('/')[-1].split('.')[0] + '.pt'
 

@@ -5,9 +5,9 @@ from torch.autograd import Variable
 import os
 
 # uncomment to generate confusion matrix in one go:
-import matplotlib.pyplot as plt
-import matplotlib.ticker as ticker
-import seaborn as sns
+# import matplotlib.pyplot as plt
+# import matplotlib.ticker as ticker
+# import seaborn as sns
 
 import pandas as pd
 from collections import Counter, defaultdict

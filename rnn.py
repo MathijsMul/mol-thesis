@@ -6,7 +6,7 @@ import torch.optim as optim
 import torch.nn.init as init
 import math
 from collections import defaultdict
-from diagnostic_hypothesis import diagnostic_labels
+#from diagnostic_hypothesis import diagnostic_labels
 
 class RNN(nn.Module):
     # Simple Recurrent Network (Elman)

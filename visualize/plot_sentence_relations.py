@@ -39,7 +39,7 @@ trntn.load_state_dict(torch.load(model_path))
 total_correct = 0
 total = 0
 
-downsample_ratio = 0.025
+downsample_ratio = 0.03
 sentence_to_idx = defaultdict(lambda: len(sentence_to_idx))
 idx_to_sentence = dict()
 idx_to_vector = dict()
@@ -47,7 +47,6 @@ idx_to_vector = dict()
 relation_lines = {}
 for rel in rels:
     relation_lines[rel] = []
-
 
 rel_count = 0
 for idx, item in enumerate(test_data.tree_data):
@@ -58,28 +57,17 @@ for idx, item in enumerate(test_data.tree_data):
 
         if correct == '100.00':
             relation = item[0]
-            if True:
-            #if relation in ['<', '>']:
-            #if relation in ['|', 'v']:
-                left_sentence = ' '.join(item[1].leaves())
-                right_sentence = ' '.join(item[2].leaves())
-                idx_to_sentence[sentence_to_idx[left_sentence]] = left_sentence
-                idx_to_sentence[sentence_to_idx[right_sentence]] = right_sentence
-
-
-
-
-                relation_lines[relation] += [[sentence_to_idx[left_sentence], sentence_to_idx[right_sentence]]]
-
-                # TODO: map to their sentence vectors by applying learned composition function
-                idx_to_vector[sentence_to_idx[left_sentence]] = trntn.get_sentence_vector(item[1])
-                idx_to_vector[sentence_to_idx[right_sentence]] = trntn.get_sentence_vector(item[2])
-
-                rel_count += 1
+            left_sentence = ' '.join(item[1].leaves())
+            right_sentence = ' '.join(item[2].leaves())
+            idx_to_sentence[sentence_to_idx[left_sentence]] = left_sentence
+            idx_to_sentence[sentence_to_idx[right_sentence]] = right_sentence
+            relation_lines[relation] += [[sentence_to_idx[left_sentence], sentence_to_idx[right_sentence]]]
+            idx_to_vector[sentence_to_idx[left_sentence]] = trntn.get_sentence_vector(item[1])
+            idx_to_vector[sentence_to_idx[right_sentence]] = trntn.get_sentence_vector(item[2])
+            rel_count += 1
 
 print('Count: ', str(rel_count))
 vectors_to_plot = torch.stack(idx_to_vector.values()).data.numpy()
-
 
 def pca(vectors, out_dim):
     pca = PCA(n_components=out_dim)
@@ -88,43 +76,31 @@ def pca(vectors, out_dim):
     idx_to_pca_vector = {idx: projections[idx, :] for idx in range(vectors.shape[0])}
     return (idx_to_pca_vector)
 
-
 def tsne(vectors, out_dim):
     tsne = TSNE(n_components=out_dim)
     projections = tsne.fit_transform(vectors)
     idx_to_tsne_vector = {idx: projections[idx, :] for idx in range(vectors.shape[0])}
     return (idx_to_tsne_vector)
 
-
-# idx_to_pca_vector = pca(vectors_to_plot, 2)
-# idx_to_tsne_vector = tsne(vectors_to_plot, 2)
-
 idx_to_projection = pca(vectors_to_plot, 2)
-# idx_to_projection = tsne(vectors_to_plot, 2)
 
 for point in idx_to_projection.items():
     plt.scatter(point[1][0], point[1][1], color='black', s=2)
     idx = point[0]
     # to annotate points:
-    #plt.annotate(idx, (point[1][0], point[1][1]), size=8)
-
-print(idx_to_sentence)
+    # plt.annotate(idx, (point[1][0], point[1][1]), size=8)
 
 colors = ['#a6cee3', '#1f78b4', '#b2df8a', '#33a02c', '#fb9a99', '#e31a1c', '#fdbf6f']
-
 rel_to_color = {rels[i]: colors[i] for i in range(len(rels))}
-
 two_colors = ['#4393c3','#d6604d']
 
 lines = []
 handles = []
 for rel in rels:
-    #if rel in ['<', '=', '>']:
     for idx, pair in enumerate(relation_lines[rel]):
         x1, y1 = idx_to_projection[pair[0]]
         x2, y2 = idx_to_projection[pair[1]]
         line = plt.plot([x1, x2], [y1, y2], color=rel_to_color[rel], lw=0.5)
-
 
 line_1, = plt.plot([0, 0], [0, 0], label='Line 1', color=colors[0])
 line_2, = plt.plot([0, 0], [0, 0], label='Line 2', color=colors[1])
@@ -135,13 +111,5 @@ line_6, = plt.plot([0, 0], [0, 0], label='Line 6', color=colors[5])
 line_7, = plt.plot([0, 0], [0, 0], label='Line 7', color=colors[6])
 plt.legend([line_1, line_2, line_3, line_4, line_5, line_6, line_7], rels)
 
-if False:
-    # for plotting only two relations:
-    line_a, = plt.plot([0, 0], [0, 0], label='Line 1', color='#4393c3')
-    line_b, = plt.plot([0, 0], [0, 0], label='Line 1', color='#d6604d')
-
-    #plt.legend([line_1, line_4], ['<', '>'])
-    plt.legend([line_a, line_b], ['v', '|'])
-
-plt.savefig('sentencevectors-trntn-binaryfol-relations2.eps', format='eps', dpi=500)
+plt.savefig('sentencevectors-trntn-binaryfol-relations8.png', format='png', dpi=500)
 plt.show()

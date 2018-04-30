@@ -1,7 +1,6 @@
 """
 plot sentence vectors as outputted by different models,
-connect vectors according to their true entailment relation
-(only for correct classifications)
+color according to different constituents
 """
 
 import torch
@@ -13,10 +12,7 @@ import random
 from collections import defaultdict
 from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
-import matplotlib.patches as mpatches
-import matplotlib as mpl
 from mpl_toolkits.mplot3d import Axes3D
-import math
 from sklearn.manifold import TSNE
 
 # random.seed(9001)
@@ -28,7 +24,7 @@ word_dim = 25
 n_hidden = 128
 cpr_dim = 75
 
-model_type = 'gru'
+model_type = 'trntn'
 
 if model_type == 'trntn':
     test_data_file = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/binary_2dets_4negs_test.txt'
@@ -52,7 +48,7 @@ elif model_type == 'gru':
 total_correct = 0
 total = 0
 
-downsample_ratio = 0.6 #0.6
+downsample_ratio = 0.6
 sentence_to_idx = defaultdict(lambda: len(sentence_to_idx))
 idx_to_sentence = dict()
 idx_to_vector = dict()
@@ -191,7 +187,6 @@ for idx, item in enumerate(test_data.tree_data):
             correct = compute_accuracy(instance, rels, trntn, print_outputs=False, confusion_matrix=False, batch_size=1)
 
         if correct == '100.00':
-            #print(item)
             relation = item[0]
 
             if model_type == 'gru':
@@ -300,14 +295,12 @@ for idx, item in enumerate(test_data.tree_data):
 print('Count: ', str(rel_count))
 vectors_to_plot = torch.stack(idx_to_vector.values()).data.numpy()
 
-
 def pca(vectors, out_dim):
     pca = PCA(n_components=out_dim)
     pca.fit(vectors)
     projections = pca.transform(vectors)
     idx_to_pca_vector = {idx: projections[idx, :] for idx in range(vectors.shape[0])}
     return (idx_to_pca_vector)
-
 
 def tsne(vectors, out_dim):
     tsne = TSNE(n_components=out_dim)
@@ -316,13 +309,6 @@ def tsne(vectors, out_dim):
     return (idx_to_tsne_vector)
 
 idx_to_projection = pca(vectors_to_plot, 2)
-# idx_to_projection = tsne(vectors_to_plot, 2)
-# print(idx_to_projection)
-
-# darkred = '#b2182b'
-# lightred = '#f4a582'
-# darkblue = '#2166ac'
-# lightblue = '#92c5de'
 
 red5 = '#67001f'
 red4 = '#b2182b'
@@ -368,8 +354,8 @@ def plot(n):
             #plt.scatter(point[1][0], point[1][1], color=noun_to_color[idx_to_noun1[idx]], s=2)
             #plt.scatter(point[1][0], point[1][1], color=noun_to_color[idx_to_noun2[idx]], s=2)
             #plt.scatter(point[1][0], point[1][1], color=verb_to_color[idx_to_verb[idx]], s=2)
-            plt.scatter(point[1][0], point[1][1], color=quant_to_color[idx_to_quant1[idx]], s=2)
-            #plt.scatter(point[1][0], point[1][1], color=quant2_to_color[idx_to_quant2[idx]], s=2)
+            #plt.scatter(point[1][0], point[1][1], color=quant_to_color[idx_to_quant1[idx]], s=2)
+            plt.scatter(point[1][0], point[1][1], color=quant2_to_color[idx_to_quant2[idx]], s=2)
             #plt.scatter(point[1][0], point[1][1], color=np_to_color[idx_to_np2[idx]], s=2)
             #plt.scatter(point[1][0], point[1][1], color=neg_to_color[idx_to_negquant1[idx]], s=2)
             #plt.scatter(point[1][0], point[1][1], color=neg_to_color[idx_to_negnoun1[idx]], s=2)
@@ -392,7 +378,7 @@ def plot(n):
         for point in idx_to_projection.items():
             #z = projections[:, 2]
 
-            # Reorder the labels to have colors matching the cluster results
+            # reorder the labels to have colors matching the cluster results
             #y = np.choose(y, [1, 2, 0]).astype(np.float)
             ax.scatter(point[1][0], point[1][1], point[1][2])
 
@@ -409,9 +395,9 @@ def plot(n):
     # plt.legend([line_1, line_2, line_3, line_4], verbs)  # numpoints=1)
 
     # for quant2
-    # line_1 = plt.scatter(legend_x, legend_y, label='Line 1', color=twocolors[0], s=15)
-    # line_2 = plt.scatter(legend_x, legend_y, label='Line 2', color=twocolors[1], s=15)
-    # plt.legend([line_1, line_2], ['some', 'all'])
+    line_1 = plt.scatter(legend_x, legend_y, label='Line 1', color=twocolors[0], s=15)
+    line_2 = plt.scatter(legend_x, legend_y, label='Line 2', color=twocolors[1], s=15)
+    plt.legend([line_1, line_2], ['some', 'all'])
 
     # for verbquant2
     # line_1 = plt.scatter(legend_x, legend_y, label='Line 1', color=red3, s=15)
@@ -435,8 +421,5 @@ def plot(n):
     plt.ylim(1.05 * ymin, 1.05 * ymax)
 
     #plt.title('Verb')
-    plt.savefig('sentencevectors-gru-binaryfol-quant1.eps', format='eps', dpi=500)
+    plt.savefig('sentencevectors-trntn-binaryfol-quant2b.png', format='png', dpi=500)
     plt.show()
-
-print(idx_to_sentence)
-plot(2)

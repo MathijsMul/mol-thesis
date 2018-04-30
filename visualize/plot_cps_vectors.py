@@ -10,12 +10,8 @@ from trntn import tRNTN
 import datamanager as dat
 from test import compute_accuracy
 import random
-from collections import defaultdict
 from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
-import matplotlib.patches as mpatches
-import matplotlib as mpl
-from mpl_toolkits.mplot3d import Axes3D
 import math
 from sklearn.manifold import TSNE
 
@@ -28,7 +24,8 @@ word_dim = 25
 #n_hidden = 128
 cpr_dim = 75
 
-test_data_file = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/binary_2dets_4negs_test.txt'
+#test_data_file = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/binary_2dets_4negs_test.txt'
+test_data_file='/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/junk/toplot.txt'
 test_data = dat.SentencePairsDataset(test_data_file)
 test_data.load_data(sequential=False)
 
@@ -36,10 +33,10 @@ model_path = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/final_experi
 trntn = tRNTN(vocab, rels, word_dim, cpr_dim, None, None)
 trntn.load_state_dict(torch.load(model_path))
 
-downsample_ratio = 1
+downsample_ratio = 1 #10/7500
 dim_red = 'PCA' # or 'tSNE'
-annotate = False
-connect = False
+annotate = True
+connect = True
 
 def plot_cps_vectors(save, nr_points_to_plot):
     nr_points_plotted = 0
@@ -50,17 +47,12 @@ def plot_cps_vectors(save, nr_points_to_plot):
             instance.tree_data = [item]
             correct = compute_accuracy(instance, rels, trntn, print_outputs=False, confusion_matrix=False, batch_size=1)
 
-            if correct == '100.00':
+            if correct == '100.00' and item[1].leaves()[0] == 'all':
                 plotted_sentence = ''.join(item[1].leaves())
 
                 # only left sentence considered
-                # print(idx)
                 vector_to_idx, idx_to_vector, connections, idx_to_word = trntn.get_cps_vectors(item[1])
-                #print(vector_to_idx, idx_to_vector, connections, idx_to_word)
                 nr_points_plotted += 1
-
-                #break
-
                 vectors_to_plot = torch.stack(idx_to_vector.values()).numpy()
 
                 def pca(vectors, out_dim):
@@ -85,14 +77,21 @@ def plot_cps_vectors(save, nr_points_to_plot):
                 for i, point in enumerate(idx_to_projection.items()):
                     if i == (num_points - 1):
                         # plot sentence vector in different color
-                        plt.scatter(point[1][0], point[1][1], color='#d6604d', s=3)
-                        #plt.annotate(plotted_sentence, (point[1][0], point[1][1]), size=8, color='black')
+                        plt.scatter(point[1][0], point[1][1],s=3,color='black')
+                        #plt.scatter(point[1][0], point[1][1], s=3, color='#d6604d')
                     else:
-                        plt.scatter(point[1][0], point[1][1], color='#4393c3', s=3)
+                        plt.scatter(point[1][0], point[1][1],s=3,color='black')
+                        #plt.scatter(point[1][0], point[1][1], s=3, color='#4393c3')
 
                     if annotate:
                         idx = point[0]
-                        plt.annotate(idx_to_word[idx], (point[1][0], point[1][1]), size=8, color='#1f78b4')
+                        word = idx_to_word[idx]
+                        if word == 'Europeans':
+                            plt.annotate(idx_to_word[idx], (point[1][0] - 0.7, point[1][1] + 0.05), size=8, color='#1f78b4')
+                        # elif word == 'Germans':
+                        #     plt.annotate(idx_to_word[idx], (point[1][0], point[1][1] + 0.05), size=8, color='#1f78b4')
+                        else:
+                            plt.annotate(idx_to_word[idx], (point[1][0], point[1][1]), size=8, color='#1f78b4')
 
                 if connect:
                     max_length = 0
@@ -104,7 +103,6 @@ def plot_cps_vectors(save, nr_points_to_plot):
                             max_length = full_length
 
                     for pair in connections.values():
-                        # print(pair)
                         x1, y1 = idx_to_projection[pair[0]]
                         x2, y2 = idx_to_projection[pair[1]]
                         full_length = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
@@ -115,17 +113,19 @@ def plot_cps_vectors(save, nr_points_to_plot):
                         elif dim_red == 'tSNE':
                             line = plt.arrow(x1, y1, dx, dy, color='black', lw=0.3, head_width=5)
 
+                plot_path = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/' + plotted_sentence + '.png'
+
+                if save:
+                    plt.savefig(plot_path, dpi=500)
+                    plt.show()
+                    plt.clf()
+
                 if nr_points_plotted == nr_points_to_plot:
                     break
 
-
-    plot_path = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/plots/cps_vectors/' + plotted_sentence #+ '.eps'
+    plot_path = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/' + plotted_sentence + '.png'
 
     if save:
-        #plt.savefig(plot_path, format='eps', dpi=1000)
-        plt.savefig(plot_path)
-    plt.show()
-    #plt.clf()
-
-
-plot_cps_vectors(save=True,nr_points_to_plot=1000)
+        plt.savefig(plot_path, dpi=500)
+        plt.show()
+        plt.clf()

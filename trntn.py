@@ -20,7 +20,6 @@ class tRNTN(nn.Module):
         self.voc_size = len(vocab)
 
         # vocabulary matrix
-        #self.voc = nn.Linear(self.voc_size, self.word_dim)
         self.voc = nn.Embedding(self.voc_size, self.word_dim)
 
         # composition matrix
@@ -41,7 +40,6 @@ class tRNTN(nn.Module):
         self.word_dict = {}
         for word in vocab:
             # create one-hot encodings for words in vocabulary
-            # self.word_dict[word] = Variable(torch.eye(self.voc_size)[:,vocab.index(word)], requires_grad=True)
             self.word_dict[word] = Variable(torch.LongTensor([vocab.index(word)])) #.view(-1)
 
         # activation functions
@@ -53,9 +51,7 @@ class tRNTN(nn.Module):
 
     def initialize(self, mode):
         """
-        Initialization of parameters
-
-        :return:
+        initialization of parameters
         """
 
         # always initialize biases as zero vectors:
@@ -64,7 +60,6 @@ class tRNTN(nn.Module):
         self.sm.bias.data.fill_(0)
 
         if mode == 'xavier_uniform':
-            # much beter results
             init.xavier_uniform(self.voc.weight)
             init.xavier_uniform(self.cps.weight, gain = 5/3) # recommended gain for tanh
             init.xavier_uniform(self.cpr.weight, gain = math.sqrt(2/(1 + (0.01**2)))) # rec. gain for leakyrelu
@@ -96,9 +91,12 @@ class tRNTN(nn.Module):
             kron = torch.ger(cps_l, cps_r).view(-1)
             cps_t = self.cps_t(kron)
 
-            #TODO: activated or not?
-            activated_cps = self.tanh(cps + cps_t)
-            return activated_cps
+            # return unactivated:
+            return(cps + cps_t)
+
+            # to return activated:
+            # activated_cps = self.tanh(cps) + self.tanh(cps_t)
+            # return activated_cps
 
     def get_cps_vectors(self, sentence):
         vector_to_idx = defaultdict(lambda: len(vector_to_idx))
@@ -126,14 +124,13 @@ class tRNTN(nn.Module):
             else:
                 cps_l, idx_left_child = apply_cps(sentence_tree[0])
                 cps_r, idx_right_child = apply_cps(sentence_tree[1])
-
                 cps = self.cps(Variable(torch.cat((cps_l, cps_r))))
 
                 # compute kronecker product for child nodes
                 kron = torch.ger(cps_l, cps_r).view(-1)
                 cps_t = self.cps_t(Variable(kron))
 
-                activated_cps = self.tanh(cps + cps_t).data
+                activated_cps = (self.tanh(cps) + self.tanh(cps_t)).data
                 idx_to_vector[vector_to_idx[activated_cps]] = activated_cps
                 idx = vector_to_idx[activated_cps]
 
@@ -166,15 +163,12 @@ class tRNTN(nn.Module):
             # compute kronecker product for child nodes, multiply this with cps tensor
             kron = torch.ger(left_cps,right_cps).view(-1)
             apply_cpr_t = self.cpr_t(kron)
-            # TODO: was first:
-            #activated_cpr = self.relu(apply_cpr + apply_cpr_t)
             activated_cpr = self.relu(apply_cpr) + self.relu(apply_cpr_t)
             to_softmax = self.sm(activated_cpr).view(1, self.num_rels)
             output = F.log_softmax(to_softmax)
             outputs[idx,:] = output
 
         return(outputs) # size batch_size x num_classes
-
 
     def compose(self, tree):
         if tree.label() == '.': # leaf nodes: get word embedding
@@ -189,9 +183,5 @@ class tRNTN(nn.Module):
             # compute kronecker product for child nodes
             kron = torch.ger(cps_l, cps_r).view(-1)
             cps_t = self.cps_t(kron)
-            # TODO: WARNING ! CHECK IF THIS HAS BIG IMPACT
-            # first:
-            #activated_cps = self.tanh(cps + cps_t)
             activated_cps = self.tanh(cps) + self.tanh(cps_t)
             return activated_cps
-

@@ -45,9 +45,7 @@ class tRNN(nn.Module):
 
     def initialize(self, mode):
         """
-        Initialization of parameters
-
-        :return:
+        initialization of parameters
         """
 
         # always initialize biases as zero vectors:
@@ -56,7 +54,6 @@ class tRNN(nn.Module):
         self.sm.bias.data.fill_(0)
 
         if mode == 'xavier_uniform':
-            # much beter results
             init.xavier_uniform(self.voc.weight)
             init.xavier_uniform(self.cps.weight, gain = 5/3) # recommended gain for tanh
             init.xavier_uniform(self.cpr.weight, gain = math.sqrt(2/(1 + (0.01**2)))) # rec. gain for leakyrelu
@@ -76,7 +73,6 @@ class tRNN(nn.Module):
 
     def forward(self, inputs):
         """
-
         :param inputs: list of lists of form [left_tree, right_tree], to support minibatch of size > 1
         :return: outputs, tensor of dimensions batch_size x num_classes
         """
@@ -92,23 +88,16 @@ class tRNN(nn.Module):
             apply_cpr = self.cpr(torch.cat((left_cps, right_cps)))
             activated_cpr = self.relu(apply_cpr)
             to_softmax = self.sm(activated_cpr).view(1, self.num_rels)
-            # NLL loss function requires log probabilities! so must use log_softmax here instead of softmax:
             output = F.log_softmax(to_softmax)
             outputs[idx,:] = output
         return(outputs) # size: batch_size x num_classes
 
     def compose(self, tree):
         if tree.label() == '.': # leaf nodes: get word embedding
-            # word_onehot = self.word_dict[tree[0]]
-            # emb = self.voc(word_onehot)
-
             embedded = self.voc(self.word_dict[tree[0]]).view(-1)
             return(embedded)
-
         else:
             concat = torch.cat((self.compose(tree[0]), self.compose(tree[1])))
             cps = self.cps(concat)
             activated_cps = self.tanh(cps)
             return activated_cps
-
-

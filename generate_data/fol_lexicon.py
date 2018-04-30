@@ -1,3 +1,7 @@
+"""
+lexicon for FOL data generation
+"""
+
 from itertools import product
 
 FOR = "<"
@@ -102,7 +106,7 @@ def get_taxonomy(name):
 
 def get_lexicon(nouns, verbs, noun_matrix, verb_matrix):
 
-    # New lexicon only contains information for nouns and verbs
+    # new lexicon only contains information for nouns and verbs
     lexicon = {}
 
     # Only take upper half of matrices, because lower half is implied and we don't want equivalent axioms

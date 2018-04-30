@@ -7,13 +7,8 @@ from rnn import RNN
 import datamanager as dat
 from test import compute_accuracy
 import random
-from collections import defaultdict
 from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
-import matplotlib.patches as mpatches
-import matplotlib as mpl
-from mpl_toolkits.mplot3d import Axes3D
-import math
 from sklearn.manifold import TSNE
 import numpy as np
 
@@ -58,8 +53,7 @@ def generate_plot():
                     idx_to_vector = {i : np.array(hidden_units[i]) for i in range(len(hidden_units))}
                     idx_to_word = {i : item[1][i] for i in range(len(item[1]))}
                     connections = [[i, i + 1] for i in range(len(item[1]) - 1)]
-        #            vector_to_idx, idx_to_vector, connections, idx_to_word = gru.get_hidden_vectors([item[1]])
-        #            print(vector_to_idx, idx_to_vector, connections, idx_to_word)
+                    # vector_to_idx, idx_to_vector, connections, idx_to_word = gru.get_hidden_vectors([item[1]])
                     break
 
     vectors_to_plot = np.stack(idx_to_vector.values())
@@ -88,7 +82,6 @@ def generate_plot():
         plt.annotate(idx_to_word[idx], (point[1][0], point[1][1]), size=10, color='#1f78b4')
 
     for pair in connections:
-        #print(pair)
         x1, y1 = idx_to_projection[pair[0]]
         x2, y2 = idx_to_projection[pair[1]]
         to_right = x2 > x1

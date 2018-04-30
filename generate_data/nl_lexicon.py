@@ -1,3 +1,7 @@
+"""
+Bowman's NL lexicon
+"""
+
 from itertools import product
 
 FOR = "<"

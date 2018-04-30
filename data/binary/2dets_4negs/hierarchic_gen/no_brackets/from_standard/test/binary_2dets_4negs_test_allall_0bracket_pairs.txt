@@ -1,0 +1,606 @@
+<	all Europeans not like some Romans	all Italians not love some Romans
+=	all Europeans fear all not Italians	all Europeans fear all not Italians
+>	all not Europeans not fear all not Romans	all not Germans love some not Europeans
+<	all not Romans not fear all Germans	all not Europeans not fear all not Romans
+<	all not Europeans love some not Europeans	all not Europeans not fear all not Germans
+|	all not Romans not like all Italians	all not Romans love all not Germans
+|	all not Europeans love some not children	all not Italians not like some not children
+#	all not Romans hate some not Germans	all not Romans like all not Europeans
+<	all Italians fear all children	all Romans fear all children
+|	all Europeans love all children	all Romans fear some children
+#	all Germans hate all not Germans	all Romans like some not children
+|	all not Romans love all not Germans	all Germans not love some not Italians
+<	all Europeans like all not Romans	all Europeans not hate some Germans
+>	all Germans not hate all Germans	all Europeans love all not Italians
+>	all not Italians not like all not Romans	all not Romans fear some not Romans
+#	all not Europeans hate some Germans	all children not hate some children
+|	all Europeans love all not Italians	all Europeans fear some not Italians
+|	all Germans not like some Romans	all Germans like some Romans
+|	all Europeans fear some Romans	all Romans love all Europeans
+>	all Germans not fear some not Romans	all Germans like all not Romans
+=	all not Romans fear some not Germans	all not Romans fear some not Germans
+|	all not Romans not like all not Europeans	all not Romans like all not Romans
+<	all Germans hate all not Romans	all Germans not like all Germans
+|	all Italians hate all Italians	all Romans not hate all Romans
+|	all not Germans love all Europeans	all Romans hate some Italians
+>	all not Europeans not like some Italians	all not Romans fear all Europeans
+|	all Romans fear some not children	all Europeans not fear some not children
+|	all not Europeans not love all not Italians	all not Italians love all not Romans
+|	all not Germans love some not Europeans	all Italians fear all not Romans
+>	all Italians not fear all not Germans	all not Germans not fear all Romans
+=	all not Europeans not hate all not Romans	all not Europeans not hate all not Romans
+>	all Germans not hate all Romans	all Europeans not hate all Romans
+<	all Europeans not fear some not children	all Romans not fear some not children
+<	all Romans hate all Romans	all Romans hate some Italians
+#	all not Romans hate all not Europeans	all not children not love some not Europeans
+|	all not Italians not love some not Romans	all Germans love some not Europeans
+<	all Europeans fear some Romans	all Italians not love all Romans
+#	all not Germans fear some not children	all not Italians not love some not children
+>	all not Europeans not fear all not Romans	all not Romans like all not Europeans
+|	all not Italians love all Europeans	all not Romans not love all Europeans
+|	all not Romans love some not Italians	all not Europeans fear all not Italians
+|	all Italians fear all Europeans	all not Germans like all Italians
+<	all not Italians hate all not Italians	all not Italians hate some not Romans
+|	all not Italians love all not Italians	all not Germans fear some Germans
+|	all Germans hate all not Germans	all not Romans not hate all not Germans
+|	all not Italians not fear some not Italians	all not Germans fear all not Italians
+#	all not Romans not fear all not Germans	all Germans not like some Romans
+#	all Europeans hate some Germans	all not Europeans not fear all Germans
+|	all not Romans not love some not Romans	all not Germans love some Germans
+|	all Germans fear some not Germans	all not Romans love all not Germans
+#	all not Italians like some Germans	all Europeans love all children
+=	all Romans not hate some Germans	all Romans not hate some Germans
+<	all not Romans like some Germans	all Germans like some not Italians
+<	all not Romans love some not Romans	all not Europeans love some not Romans
+>	all not Europeans not hate all not Italians	all not Europeans like some not Europeans
+|	all Italians fear some Germans	all Europeans not fear some not Romans
+<	all not Romans love all not Germans	all not Romans like all not Europeans
+>	all not Romans not like some Europeans	all not Romans fear all Europeans
+<	all not children like some not Italians	all not children not fear all not Italians
+<	all not Romans love all not Romans	all not Italians love all not Romans
+|	all not Europeans love all not Germans	all not Romans hate some not Germans
+>	all Europeans not hate all not Italians	all Europeans not hate some not Germans
+>	all not Romans love all not Europeans	all not Romans love all not Romans
+|	all not Germans not like some not Germans	all not Germans like all not Romans
+<	all Romans love all not Germans	all Romans not hate some Romans
+<	all not Romans love some Italians	all not Europeans not fear all Italians
+#	all Romans not hate some Europeans	all not Romans not fear some not children
+|	all Germans fear all not Italians	all not Italians like some not Italians
+=	all Europeans fear some not children	all Europeans fear some not children
+>	all Romans not like all not Germans	all Italians fear some Italians
+|	all not Italians like some Germans	all not Germans not like some not Romans
+>	all Europeans not like all Romans	all Europeans fear some Romans
+<	all not Romans fear all Europeans	all Germans not like some Romans
+>	all Italians not like all not Germans	all not Germans not like some not Germans
+=	all not Romans like some Germans	all not Romans like some Germans
+#	all Italians not like all children	all not Europeans hate some Europeans
+|	all not Germans hate all not Italians	all not Romans love some not Italians
+|	all Germans fear all not Italians	all Europeans like some not Europeans
+#	all Italians not fear some not children	all not Italians love some Italians
+<	all Europeans love some Europeans	all Romans like some Europeans
+>	all not Europeans not love some Germans	all not Germans not like some not Italians
+<	all not Germans hate all not Italians	all Italians hate all Germans
+<	all Europeans not hate some Germans	all Germans not hate all not Romans
+#	all Europeans hate all not children	all not children hate all Germans
+>	all not Romans not fear all not Germans	all not Romans like some Romans
+#	all not Italians fear all not Germans	all Europeans not like all Germans
+|	all Italians fear some not Italians	all not Germans like all not Italians
+#	all Europeans not fear some Germans	all Europeans like all not Europeans
+#	all not Italians fear some not Europeans	all Germans not hate some children
+|	all not Europeans not love some not Germans	all not Romans love all not Europeans
+|	all not Romans like some Germans	all not Europeans fear all Germans
+#	all not Germans love all Europeans	all not Italians hate some not Europeans
+>	all Romans not fear some not Europeans	all Romans like all not Italians
+=	all Italians fear all not Romans	all Italians fear all not Romans
+#	all Europeans not love some Germans	all children not like all Italians
+<	all not Romans love all not Germans	all not Italians love all Italians
+>	all Romans not fear all not children	all Italians like some not children
+|	all Germans not hate all not Italians	all not Italians hate all not Romans
+|	all not Germans fear some Germans	all Romans love all Europeans
+#	all Germans not hate all not Romans	all not Europeans not fear all Italians
+|	all not Germans not like some not Romans	all Italians like all not Italians
+#	all not children hate some not Romans	all Romans fear some Germans
+<	all not Germans not like some not Germans	all Italians not like all not Romans
+#	all not Europeans hate some children	all not children love some Romans
+=	all not Italians not fear all Europeans	all not Italians not fear all Europeans
+>	all not Europeans like all Germans	all not Europeans love all not Romans
+#	all not Europeans not love some not Romans	all not Germans fear all not Italians
+>	all Italians like all not Italians	all not Germans like all not Romans
+|	all not Italians hate all Europeans	all not Romans like some Germans
+|	all Europeans not like all not children	all Romans love all not children
+|	all Germans love some Italians	all not Italians fear all not Germans
+>	all Italians not love all not Romans	all not Germans not like some not Germans
+|	all not children love some Italians	all not children not love some not Germans
+|	all not Germans fear some not Germans	all not Romans love all not Germans
+|	all Romans fear all Romans	all Italians love all Europeans
+>	all not Europeans love all not Germans	all not Romans love all not Germans
+#	all not Italians love some Germans	all Italians not like all not Romans
+<	all not Italians not hate some not children	all Germans not hate some not children
+|	all Romans love all Romans	all Romans not love all Romans
+>	all Europeans not hate all not Italians	all Europeans not hate all not Europeans
+>	all Germans not like all not Romans	all Germans fear all not Germans
+>	all not Italians not fear all Europeans	all not Italians like some Italians
+>	all Romans not love all Romans	all Europeans fear all Italians
+<	all not Italians fear all not Europeans	all not Europeans not like all not Romans
+|	all Romans love all Europeans	all Italians not like all Europeans
+#	all not Germans hate all not Europeans	all children not like some Germans
+#	all children not hate all Italians	all Italians not like all Italians
+|	all not Italians fear all Italians	all Germans love some Italians
+|	all not Europeans not fear all Germans	all not Germans fear all Germans
+|	all not Romans love all not Italians	all not Italians hate some Germans
+>	all Germans not fear all not Italians	all Germans not fear all not Europeans
+#	all not Germans love some Germans	all not Italians not like all Romans
+>	all children not fear some Italians	all children like all Italians
+>	all Germans not hate all Germans	all not Romans like all not Italians
+<	all not Germans hate some children	all Italians not like all children
+<	all not Romans love some not Romans	all not Italians love some not Romans
+>	all Italians not fear some Italians	all Europeans like all Italians
+|	all Italians not like some not Romans	all Romans like some not Romans
+>	all not Europeans like some not Europeans	all not Romans love all not Italians
+>	all Romans not fear all not children	all Europeans not fear all not children
+#	all Germans hate some not Romans	all not Romans not like some Italians
+>	all not Italians not love all Europeans	all not Romans hate some Italians
+#	all not Italians not hate some Germans	all Italians hate some not Germans
+<	all Europeans love all Romans	all Romans love all Romans
+>	all not Europeans not fear all not Romans	all not Italians love some Germans
+|	all not Germans love some Germans	all not Germans fear all not Italians
+<	all not Italians not fear some not Italians	all not Italians not fear all not Germans
+|	all Germans not like some not Italians	all not Italians love some not Italians
+|	all not Europeans like some not Europeans	all not Romans hate all not Romans
+#	all Germans hate all Germans	all Germans love some Italians
+=	all Italians hate all Germans	all Italians hate all Germans
+>	all children not fear all not Italians	all children love some Germans
+<	all children not hate all Romans	all children not hate all Europeans
+=	all Europeans like all not Romans	all Europeans like all not Romans
+#	all Germans not hate some Europeans	all Germans not like all Italians
+>	all not Italians love all Italians	all not Italians love all Europeans
+<	all not Romans love all not Italians	all not Romans not fear all not Germans
+|	all Germans fear all not Italians	all not Italians not fear some not Germans
+#	all not Romans like all Romans	all Germans not hate all not Romans
+<	all not Romans love all not Italians	all not Italians not fear all not Germans
+<	all Italians fear all Romans	all Italians not love some Romans
+#	all Italians not like all not Germans	all Romans not hate all children
+>	all not children not hate all not Germans	all not children love all not Italians
+<	all Europeans hate all not Romans	all Romans not like some not Italians
+#	all not Italians not hate some not children	all not children like all not Europeans
+<	all not Romans love all not Germans	all not Italians not fear some not Germans
+<	all Italians not fear some Italians	all Italians not fear all Europeans
+|	all Romans not fear some Romans	all Italians fear all Romans
+#	all not Italians fear some not Europeans	all Germans hate all children
+|	all Germans hate all Germans	all not Italians not hate some Europeans
+|	all Romans like all not Italians	all Europeans fear some not Italians
+>	all not Italians not love some not children	all not Romans fear all not children
+|	all not Italians hate some Germans	all not Europeans not hate some not Italians
+#	all Romans love all Romans	all children love all Europeans
+>	all Romans not like all not children	all Italians hate some not children
+=	all not Italians fear all Italians	all not Italians fear all Italians
+|	all not Germans hate all not Italians	all not Italians like some not Italians
+|	all Italians love all Europeans	all Romans not love all Romans
+<	all not Romans love all not Romans	all not Europeans love some not Europeans
+|	all Italians fear all Europeans	all Europeans love some Germans
+<	all not Italians hate some not Romans	all Germans not like all not Romans
+|	all children love some Germans	all children hate all not Romans
+#	all Romans not fear some not children	all not Italians not like some not Germans
+<	all not Italians like some Germans	all Germans not hate all not Romans
+#	all not Europeans not fear some not children	all Europeans like some children
+|	all Italians fear all not Romans	all Romans love some not Italians
+>	all Italians love some Europeans	all not Germans love some Germans
+<	all Germans fear all not Italians	all Germans not like all Germans
+>	all Romans like some not Romans	all Romans love some not Italians
+|	all children love all Europeans	all children hate some Romans
+<	all children hate some Romans	all children hate some Europeans
+|	all not Romans fear all Europeans	all not Romans like some Germans
+>	all Romans not hate some Romans	all Europeans love all Romans
+|	all Germans hate all not Germans	all not Romans not hate all Italians
+#	all Romans not fear some not Europeans	all Europeans not hate some not Germans
+|	all Italians love all not Italians	all Italians hate some Germans
+|	all not children love some not Europeans	all not children fear all not Germans
+>	all not Italians not hate some Romans	all not Romans like all Romans
+|	all Germans not like all Romans	all Germans love all Romans
+>	all Romans fear some Germans	all not Germans fear some Germans
+|	all Germans love some Italians	all not Romans not like some Italians
+#	all children hate all not Romans	all not children fear all children
+#	all not Romans not hate some not Romans	all Germans not love all Italians
+#	all Germans hate some not Romans	all Europeans not fear all Europeans
+>	all Italians not hate all not Germans	all Europeans like some Italians
+>	all Germans not like all not Romans	all Germans not like all Germans
+<	all Romans fear some Germans	all Romans not like all Europeans
+#	all Italians fear some not Italians	all Europeans not love all Europeans
+<	all not Italians not hate all Romans	all Germans not hate all Italians
+#	all Romans hate some Romans	all Romans hate all children
+|	all not Italians fear all not Europeans	all not Germans love some not Europeans
+|	all not Romans love some not Germans	all not Europeans not love some not Germans
+|	all not Romans like some Romans	all not Europeans not like some Europeans
+>	all not Europeans not hate some Romans	all not Europeans not hate some Italians
+#	all Europeans hate all not children	all Germans fear all not Italians
+>	all not Europeans love all not Romans	all not Italians love all not Romans
+>	all Germans not fear all Italians	all Germans love some Italians
+|	all Romans love some not Italians	all Romans not like some not Italians
+|	all not Romans love all not Germans	all Germans fear some not Germans
+>	all Italians not fear all not Germans	all not Germans like all not Italians
+|	all Europeans like some not Europeans	all Europeans fear all not Italians
+=	all not Germans fear some not Germans	all not Germans fear some not Germans
+|	all Europeans fear some not children	all Romans not fear some not children
+>	all not Europeans not hate some not Europeans	all not Romans love all not Romans
+#	all not Italians hate some not Romans	all not Romans not fear some not Europeans
+#	all Germans fear all not Germans	all not Romans hate some not children
+|	all not Romans fear all Europeans	all not Romans like some Romans
+|	all not Germans like all not Romans	all Romans fear all not Germans
+<	all Italians love all Europeans	all Romans love all Europeans
+|	all not Italians hate all not Italians	all Germans not hate all not Italians
+>	all Romans not like all not Romans	all not Germans not like some not Romans
+#	all not Europeans like some not Europeans	all Germans not like some Romans
+>	all not Europeans not like some Italians	all not Romans not like some Europeans
+<	all not Italians love some Germans	all not Italians not fear all Germans
+|	all Romans hate all Europeans	all Europeans love some Germans
+|	all not Germans not like some not Germans	all not Romans like all not Romans
+<	all Germans hate all Europeans	all Germans not love some Europeans
+|	all Germans fear some not Europeans	all Europeans love all not Romans
+>	all not Europeans not hate some not Europeans	all not Romans love all not Italians
+|	all Europeans fear some not Germans	all Italians love all not Germans
+<	all Italians not like all Italians	all Italians not like all not Germans
+<	all not Romans love all not Germans	all Germans not fear all not Italians
+|	all not Italians love all not Romans	all not Germans not like some not Germans
+#	all not children fear some not Italians	all children not love all not Germans
+>	all Italians not like all not Romans	all not Germans hate all not Italians
+<	all not children like some not Europeans	all not children not fear all not Romans
+|	all not Germans like some Italians	all Italians fear all Europeans
+<	all not Italians not like some not Germans	all Germans not like some Romans
+|	all Germans like all not Romans	all not Italians not like some Germans
+|	all Germans hate all not Germans	all not Italians love all not Italians
+<	all Europeans not hate some Romans	all Romans not hate all Italians
+>	all not Romans like all not Europeans	all not Romans love all not Europeans
+#	all not Germans not like some not Romans	all Europeans fear some not Germans
+#	all not Romans not fear all Italians	all Romans not hate some Germans
+>	all not children not fear all not Romans	all not children like some not Europeans
+=	all not children not fear some Romans	all not children not fear some Romans
+>	all Romans hate some not Italians	all not Germans hate some Germans
+|	all not Romans not hate some not Romans	all not Italians hate all not Italians
+>	all not Europeans not love some not Romans	all not Romans hate all not Romans
+|	all Germans like all not Romans	all Europeans fear some not Italians
+|	all Germans hate all not Germans	all not Romans not hate all Romans
+|	all Italians not like all not Europeans	all Europeans like all not Europeans
+<	all Germans hate all Europeans	all Germans hate all Germans
+#	all Germans not like some Romans	all not Italians fear all not Europeans
+|	all not Germans not fear some not Italians	all Romans fear all not Germans
+|	all not Italians fear all Italians	all not Europeans not fear all Romans
+#	all not Germans fear some not Germans	all Europeans love all children
+>	all not Italians like some not Italians	all not Italians love all not Italians
+|	all not Europeans not like some not children	all not Germans like some not children
+>	all not Europeans not like all not Romans	all not Italians not like all not Romans
+|	all not Romans hate all not Romans	all not Romans love all not Romans
+|	all Europeans love all not Romans	all Italians not like all not Italians
+#	all children hate all not children	all Europeans like some Italians
+#	all children not hate all not Romans	all Germans not like some children
+|	all Italians not fear some not Germans	all Europeans fear some Romans
+|	all not Germans love all Europeans	all Romans not like all Europeans
+|	all Romans fear all not Germans	all Italians love all not Italians
+<	all children like all not Germans	all children not fear all not Italians
+>	all not Romans not like all Italians	all not Romans hate some Italians
+>	all Romans hate some Romans	all Italians hate all Italians
+<	all Italians love all Europeans	all Romans not fear all Romans
+|	all not Romans hate all not children	all not Germans like some not children
+>	all not Germans not fear some not Italians	all not Germans like all not Romans
+|	all Italians love all not Italians	all not Germans not love all not Italians
+#	all Italians hate some not Europeans	all not Romans not hate all Europeans
+#	all Romans hate some not children	all not children not like all not Italians
+=	all not children fear all Germans	all not children fear all Germans
+|	all Germans like all Europeans	all Europeans fear some Romans
+<	all not Romans love all not Italians	all not Italians like some not Romans
+#	all children not like all children	all not children not hate some not children
+>	all Italians not like all not Germans	all Italians not like all Italians
+|	all not Europeans love all not Germans	all not Romans not like all Romans
+#	all not Germans fear some not Romans	all not Romans fear all Europeans
+|	all not Germans not fear all Romans	all not Italians fear all Italians
+>	all not children not hate all not children	all not children not hate some not children
+|	all Romans fear all not Germans	all not Germans not fear some not Italians
+>	all not children not like all Italians	all not children hate some Romans
+#	all Germans like some not Italians	all not Romans not fear some not children
+#	all Romans not hate all Romans	all not Germans love some not Romans
+#	all Romans not love all Romans	all not Italians not love some children
+|	all not Italians love some Romans	all not Romans not love some Italians
+|	all not Germans fear all Romans	all Romans like all Romans
+|	all not Italians hate all not Italians	all not Germans like all not Italians
+|	all not Italians hate all Europeans	all not Italians not hate all Romans
+|	all not Romans like all not Romans	all not Germans fear some Germans
+|	all Europeans hate some not Italians	all Europeans like all not Romans
+|	all not children love some not Europeans	all not children not love some not Europeans
+|	all not Germans hate all Romans	all Romans like all Romans
+#	all Germans like some not Italians	all not Germans hate all not Italians
+#	all Italians not love all not Italians	all Germans hate all not children
+>	all not children not fear all Europeans	all not children like some Italians
+|	all Europeans like some children	all Romans fear all children
+#	all not Italians not like some Germans	all not Europeans fear all not children
+<	all not Germans like all Italians	all Italians not fear some Italians
+#	all not Germans not like some children	all not children not hate some Europeans
+>	all Romans not like all Europeans	all Romans hate some Italians
+|	all not Germans not like all Germans	all Romans like all not Italians
+>	all Germans not fear all not Italians	all not Romans like all Germans
+>	all not children not hate all not Germans	all not children like some Italians
+<	all not Germans not fear all not Romans	all not Europeans not fear all not Romans
+>	all Germans hate all not Europeans	all not Italians hate all not Italians
+|	all not Romans hate all not Romans	all not Europeans love all not Romans
+<	all not Germans fear all not Italians	all not Europeans not love some not Italians
+#	all Europeans not like all Romans	all Europeans not love some Germans
+#	all not children fear all not Germans	all not Europeans love all children
+<	all not Italians not fear some not Germans	all not Italians not fear some Italians
+#	all children fear some Italians	all not Italians fear all Italians
+>	all not Europeans not hate all not Romans	all not Europeans love some not Italians
+|	all not Germans fear some Germans	all Italians like all not Italians
+>	all Germans not love some not Italians	all Europeans not love some not Romans
+#	all Germans not love all Romans	all not Europeans not like some Europeans
+#	all not Europeans not like some Europeans	all not Germans not love some children
+#	all not children hate some not Romans	all not children love some not Romans
+>	all Romans love all Romans	all Europeans love all Romans
+|	all Europeans like some not Europeans	all Germans hate all not Romans
+=	all not Germans hate some Europeans	all not Germans hate some Europeans
+#	all Germans not love some Italians	all children love all Europeans
+<	all not Romans like all not Romans	all not Italians like some not Romans
+|	all Germans not hate all not Romans	all not Italians hate all not Romans
+>	all not Europeans like all Germans	all not Germans love all Europeans
+=	all children hate all Europeans	all children hate all Europeans
+|	all not Germans fear some not Germans	all not Germans not fear some not Germans
+<	all children love some Germans	all children not fear all not Italians
+|	all Germans hate some Germans	all Europeans like all not Romans
+|	all Germans not love some Italians	all Germans love some Italians
+<	all not Romans love some not Italians	all not Italians like some not Romans
+>	all not Europeans not hate some Romans	all not Italians not hate some Europeans
+<	all not Germans love all Europeans	all not Europeans not hate some Italians
+|	all Italians hate all not Italians	all Romans love some not Italians
+<	all not Romans like some Romans	all not Italians not fear all Romans
+=	all Romans hate all Romans	all Romans hate all Romans
+>	all not Germans not love all Germans	all not Germans fear some Germans
+>	all Europeans like all not Europeans	all Europeans like all not Romans
+#	all not Germans love some Germans	all Romans fear all Romans
+>	all not Europeans not hate all not Romans	all not Italians like some not Italians
+|	all Italians like all not Italians	all not Germans not like some not Italians
+#	all not Romans like all Romans	all not Europeans hate some children
+|	all not Italians not like some not Germans	all Germans like all not Romans
+>	all children hate some Europeans	all children hate some Romans
+<	all Germans not love some Europeans	all Germans not love some Italians
+>	all Romans not like some not Italians	all Italians fear all not Romans
+<	all not Romans love all not Romans	all not Italians not fear all not Germans
+|	all not Romans not fear some Romans	all not Romans fear some Romans
+|	all Europeans not fear some not Germans	all Europeans fear some not Germans
+|	all not Italians not fear some Europeans	all not Germans fear some Germans
+#	all Germans hate all children	all not Romans love some Italians
+>	all children fear some Europeans	all children fear some Italians
+#	all Romans not love all Romans	all not Italians hate some not children
+#	all children not fear some Germans	all Germans like some not children
+|	all not Italians love some not Italians	all not Italians hate all not Italians
+<	all not children love some not Europeans	all not children not fear all not Italians
+#	all not Germans not fear some not Germans	all Europeans not fear some not Romans
+>	all Romans not love all Italians	all not Germans hate all Romans
+#	all Germans not like all Italians	all not Europeans like some not Europeans
+#	all not children hate some not Germans	all not children not hate all not children
+=	all Germans like all not Romans	all Germans like all not Romans
+<	all not Italians not hate some not Romans	all not Europeans not hate some not Europeans
+<	all Europeans love all not Romans	all Italians not hate some not Romans
+=	all not Europeans not hate some not Italians	all not Europeans not hate some not Italians
+|	all not Germans not hate some not Romans	all Italians hate some not Europeans
+<	all not Germans not like some not Germans	all Italians not like all not Germans
+|	all not Italians love all not Italians	all not Italians hate some Germans
+|	all Germans hate all Germans	all not Italians love some Germans
+<	all not Romans like all not Italians	all not Italians not fear some not Italians
+<	all not Italians like some not Romans	all Germans not hate all not Romans
+|	all Italians love some not Italians	all Europeans not love some not Romans
+|	all Italians not like all children	all Europeans love all children
+=	all not Europeans not fear all Romans	all not Europeans not fear all Romans
+>	all Germans hate all Germans	all Europeans hate all not Romans
+#	all not children hate all Germans	all not Romans not love all Italians
+|	all Romans not love all Italians	all Italians love all Europeans
+=	all Europeans not hate some Romans	all Europeans not hate some Romans
+#	all not children love some not Europeans	all Europeans not hate some not children
+<	all Europeans fear some not Italians	all Italians not love all not Romans
+|	all Germans like all not Romans	all not Romans fear some not Romans
+>	all not Europeans not love some not Europeans	all not Italians hate all not Italians
+=	all not Germans hate all not Italians	all not Germans hate all not Italians
+>	all Italians not like all Europeans	all Italians not like all Italians
+<	all not Romans not like some not Germans	all not Europeans not like some Italians
+>	all Italians not love all not Italians	all not Germans not like some not Romans
+#	all not Romans not hate some not Europeans	all not Germans hate some children
+>	all Romans not hate all Romans	all Italians not hate some not Germans
+=	all not children love some Italians	all not children love some Italians
+#	all Germans fear all not Germans	all not Romans like all Romans
+=	all not Italians hate some not children	all not Italians hate some not children
+|	all Germans hate all not Germans	all not Romans not hate some not Romans
+>	all Romans not hate some Germans	all not Germans like all not Italians
+>	all Romans not fear some not Europeans	all not Germans not fear some not Germans
+>	all Italians love some Italians	all not Germans love all Europeans
+#	all not Italians hate some not Romans	all Germans not hate all Italians
+|	all Romans hate some not Italians	all Europeans like all not Romans
+=	all not Italians hate all not Italians	all not Italians hate all not Italians
+#	all Italians love some Europeans	all not Europeans not fear all Germans
+|	all not Italians love all Italians	all not Romans hate some Italians
+#	all Italians not like all not Romans	all not Italians hate all not Italians
+|	all Italians like all not Italians	all Italians fear some not Italians
+#	all Europeans hate some not Italians	all children not love all Germans
+>	all Germans hate some not Romans	all Germans hate all not Germans
+#	all Germans not hate all not Europeans	all Romans not hate some Europeans
+|	all not Italians hate all not Italians	all not Germans not hate some not Romans
+|	all not Romans not love all Europeans	all not Germans love all Europeans
+|	all Italians like all children	all Romans fear some children
+>	all not Europeans not hate all not Italians	all not Europeans love some not Italians
+=	all Europeans like some children	all Europeans like some children
+<	all not children fear all not Romans	all not children fear some not Germans
+#	all Europeans not fear some children	all Romans like all not Italians
+#	all not Italians not hate some not Romans	all Romans love some not Italians
+|	all Italians not love all Romans	all not Germans love all Europeans
+|	all Europeans fear all not Italians	all Romans love all not Germans
+>	all not Romans not love all Italians	all not Romans not like all Italians
+#	all not Italians love all Europeans	all Italians fear all Romans
+#	all Germans like some not Italians	all not children love all Italians
+<	all not Germans love all Europeans	all Romans not fear some Romans
+=	all Italians not hate some not Germans	all Italians not hate some not Germans
+=	all not Germans love all Europeans	all not Germans love all Europeans
+<	all not Germans love all Europeans	all Romans not hate all Romans
+#	all Europeans like all Italians	all not Italians fear all not Germans
+#	all Germans hate all not Romans	all Romans not fear all Romans
+|	all Romans fear all children	all Europeans not fear all children
+<	all not Europeans love some not Romans	all not Europeans not fear all not Romans
+<	all not Romans hate all not Romans	all Germans not like all not Romans
+<	all Italians love some Europeans	all Romans like some Europeans
+=	all not children like all not Europeans	all not children like all not Europeans
+|	all not Italians hate some Europeans	all Germans not hate some Europeans
+#	all not Germans hate some Europeans	all Romans fear some not children
+|	all not Europeans like some not Europeans	all not Italians hate all not Romans
+|	all not Romans love some not Romans	all not Italians hate all not Romans
+<	all not Germans fear all not Italians	all not Germans fear all Germans
+|	all not Europeans not love some not Italians	all not Europeans love some not Europeans
+<	all not Romans not like some Italians	all not Romans not like some Romans
+<	all not Romans hate all not Romans	all Germans hate some not Romans
+>	all not Europeans not fear all Italians	all not Italians love some Romans
+|	all not Romans fear some not Germans	all not Romans love all not Germans
+|	all Europeans love some Germans	all Europeans hate all not Romans
+|	all Italians love all not Germans	all not Germans not like some not Germans
+|	all not Romans love some not Germans	all Germans fear all not Germans
+>	all not Italians not hate some Germans	all not Romans love all not Italians
+|	all not Italians love some Germans	all not Italians hate all not Romans
+<	all Europeans fear all Italians	all Romans not like some Romans
+|	all Germans like all not Europeans	all not Romans not like all not Europeans
+|	all Europeans love all not Italians	all Europeans not love all not Europeans
+|	all not Italians hate some not children	all not Germans not hate some not children
+#	all not Romans hate all not children	all Italians not hate some not Romans
+#	all children not hate some children	all Germans not love all children
+>	all not Europeans not love some not Italians	all not Germans not like some not Italians
+|	all Germans hate some not Romans	all not Italians love all not Romans
+>	all Romans not like all not Germans	all Europeans fear all not Italians
+>	all not Europeans like all Germans	all not Germans like all not Italians
+#	all Germans not hate some not children	all Germans not like some not Italians
+#	all not Europeans not hate some Romans	all not Italians not fear all not Romans
+=	all not children love some not Romans	all not children love some not Romans
+#	all Italians hate some not children	all not children hate all Germans
+<	all not Romans not like all Romans	all not Italians not love all Europeans
+|	all not Italians love some Germans	all not Italians not love some not Romans
+#	all not Romans hate some Italians	all Romans not fear all not Europeans
+<	all not Romans not like some not Germans	all not Romans not like some not Europeans
+>	all Romans like some not Romans	all Romans like some not Europeans
+|	all Germans not hate some Europeans	all Germans hate all Germans
+<	all Europeans like some Italians	all Italians not fear all Italians
+|	all Europeans not hate some Germans	all Romans hate some Germans
+|	all not Italians like some not Romans	all not Italians hate all not Romans
+|	all Romans love some not Italians	all Europeans fear all not Romans
+>	all not Italians not fear all Germans	all not Romans not fear all Germans
+|	all not Romans love all not Romans	all Germans hate all not Romans
+<	all Germans love some not Europeans	all Germans not hate all not Europeans
+|	all not Europeans love all not Romans	all not Europeans hate some Germans
+>	all Germans not hate all not Romans	all not Italians like some not Romans
+>	all Romans not hate all not Europeans	all not Germans love some not Europeans
+>	all Italians not like all not Italians	all Italians hate some Germans
+>	all not Germans fear some not Germans	all not Germans fear all not Italians
+>	all Romans not fear all not Germans	all Italians love some Italians
+>	all not Europeans not hate all not Italians	all not Europeans love all not Germans
+>	all Germans not like all Germans	all Europeans fear all not Romans
+>	all Germans not fear all not Italians	all not Italians not fear some not Romans
+>	all not Europeans not fear all not Romans	all not Italians love some not Italians
+|	all Romans like all Romans	all not Germans not like some not Germans
+>	all not Italians love some not Italians	all not Romans love some not Italians
+#	all not children fear some Germans	all Romans not like all Europeans
+|	all not Germans not fear some not Italians	all Romans fear some Germans
+|	all not Europeans fear some not children	all not Romans not fear some not children
+>	all Romans like all not Italians	all Italians love all not Italians
+#	all Europeans not hate all Romans	all not Italians not hate some children
+>	all not Romans like all Romans	all not Romans love all Romans
+#	all not Romans not like some Italians	all not Italians not like some not children
+|	all Germans fear some not Europeans	all not Romans like all not Italians
+>	all Germans not hate all not Romans	all Germans like some not Italians
+|	all not children love some Romans	all not children not love some not Germans
+#	all not Romans like some Romans	all not children not fear all not Italians
+<	all Europeans not fear some not Romans	all Europeans not fear some Germans
+|	all not children not fear all not Italians	all not children fear all not Romans
+<	all not children love some not Europeans	all not children like some not Europeans
+>	all Germans hate some not Germans	all not Romans hate some Italians
+|	all Germans not hate some not children	all not Italians hate some not children
+|	all Europeans fear all not Romans	all Europeans not fear some not Germans
+#	all not Germans not like some children	all not Romans not like some Europeans
+#	all not Europeans fear all children	all Europeans fear some Romans
+#	all children not like all Germans	all children not hate some children
+<	all Europeans like all not Romans	all Germans like all not Romans
+|	all Italians like all not Italians	all not Germans hate all not Italians
+=	all not Italians hate some not Romans	all not Italians hate some not Romans
+|	all not Europeans love all Germans	all not Germans not like all Germans
+>	all Germans not fear all not Italians	all not Italians not fear some not Germans
+>	all Germans like all not Romans	all not Romans love all not Romans
+#	all Romans not hate all Germans	all not Romans not hate some not Romans
+>	all not Europeans not hate some not Europeans	all not Germans like all not Italians
+#	all Romans not love all Romans	all Italians not fear some Italians
+<	all not Italians love all not Romans	all Germans like all not Romans
+|	all Germans not hate some not Germans	all Germans hate some not Germans
+#	all not Romans not like some Europeans	all children hate some Europeans
+#	all not Europeans not fear all Germans	all children love some Germans
+>	all not Italians like some not Italians	all not Romans love all not Romans
+|	all not children fear all not Romans	all not children not fear all not Romans
+#	all Romans not hate all Romans	all children not love some not children
+|	all Germans love some Italians	all not Romans not love some Italians
+<	all not Germans hate all not Italians	all not Europeans not love some Germans
+|	all not Romans fear all children	all not Italians like some children
+>	all not Europeans fear all children	all not Romans fear all children
+>	all Romans not fear some not Europeans	all not Germans not fear some not Europeans
+|	all not Romans love all not Germans	all not Romans not like all Italians
+|	all Germans love some Europeans	all Germans hate all Europeans
+>	all Germans not hate all Germans	all not Romans love all not Romans
+|	all not Europeans fear all Germans	all not Romans like some Germans
+=	all Europeans not fear some children	all Europeans not fear some children
+|	all not Germans hate all not Europeans	all Romans love some not Europeans
+#	all Europeans not hate some not children	all Romans fear some not children
+<	all not Europeans love all Germans	all not Europeans like all Germans
+|	all not children not fear all not Romans	all not children fear all not Romans
+|	all Germans fear some not Europeans	all Europeans like all not Europeans
+|	all Romans love all Europeans	all Romans not like some Romans
+|	all Germans fear all not Germans	all not Romans not fear all not Germans
+>	all not Europeans not fear all Germans	all not Romans like some Germans
+<	all Italians not like all Italians	all Romans not like all not Germans
+|	all not Italians love all not Italians	all Germans not like all Germans
+>	all Romans not fear some not children	all Romans like all not children
+#	all Romans not hate all Germans	all not Italians not hate all Germans
+#	all not children like all Romans	all Germans not hate all not Romans
+|	all Italians fear all not Romans	all Italians not fear some not Germans
+>	all Europeans not love all Europeans	all Europeans fear some Romans
+<	all not Romans not hate all Italians	all not Romans not hate all Europeans
+<	all not Germans love some not Europeans	all not Europeans not hate all not Romans
+<	all Germans fear all not Germans	all Germans not love some Italians
+>	all Germans not like some children	all not Romans hate all children
+<	all Italians fear some Germans	all Italians not like all not Italians
+>	all Germans like some not Italians	all not Italians love all not Italians
+>	all Romans not fear some Romans	all Romans like all Romans
+|	all not Romans love all not Romans	all not Italians hate all not Italians
+<	all not Italians not hate some Romans	all not Europeans not hate some Romans
+<	all not Germans not like some not Italians	all not Europeans not love some not Europeans
+|	all not Germans love some not Europeans	all not Germans hate all not Europeans
+<	all Romans love all not Germans	all Romans love all Romans
+=	all Germans not love some Italians	all Germans not love some Italians
+<	all not Germans love some Germans	all not Europeans love some not Romans
+|	all Germans like all not Romans	all Europeans hate some Germans
+<	all Europeans hate all not Romans	all Germans not like some not Italians
+>	all not children not like all not Germans	all not children fear all not Romans
+<	all not Germans hate all Romans	all Romans not like all Europeans
+#	all Romans like some Italians	all Germans not hate some not children
+<	all not Romans fear all Europeans	all not Europeans fear all Germans
+|	all not Italians fear all not Germans	all not Germans not fear all not Europeans
+<	all Europeans fear some not children	all Romans fear some not children
+|	all Italians love all Europeans	all Romans not like all Europeans
+<	all not Romans love some not Italians	all not Italians love some not Romans
+|	all not Romans like some Romans	all not Europeans hate all Italians
+|	all Italians love some Italians	all not Germans not love some Italians
+#	all not Germans not fear some not Europeans	all Italians not love all Romans
+#	all Italians not fear all Italians	all not children not hate all not children
+|	all Europeans hate some not Italians	all Italians love all not Italians
+>	all not children not love all Romans	all not children hate some Romans
+<	all Italians fear some Italians	all Romans not love all Italians
+>	all not Europeans not fear all not Germans	all not Italians love some Italians
+>	all not Europeans not fear all not Romans	all not Germans not fear all not Europeans
+<	all not Germans not hate some not Romans	all not Europeans not hate some not Italians
+<	all Europeans fear all Italians	all Italians not like all Italians
+>	all not Europeans not like all not Romans	all not Italians hate some not Romans
+|	all not Europeans love all not Romans	all not Germans hate some Germans
+|	all Germans hate all not Romans	all not Romans love some not Romans
+#	all Romans fear all not Germans	all not Germans not like some not Italians
+#	all Europeans not fear some children	all not Italians hate some Germans
+|	all Germans not like some not Italians	all not Italians love all not Italians
+#	all Germans fear all children	all not Italians like some not Romans
+#	all not Romans fear all Europeans	all Romans hate some Italians
+|	all Germans not fear some not Romans	all not Italians fear some not Europeans
+#	all not Germans fear some not children	all not Romans fear some Romans
+#	all children not hate all Romans	all not Italians not fear all Romans
+|	all not Romans not like some Europeans	all not Romans love some Italians
+<	all not Germans fear some Germans	all Romans fear some Germans

@@ -1,3 +1,7 @@
+"""
+produce data set with negation as only label
+"""
+
 import random
 
 in_file = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/binary_2dets_4negs_test.txt'

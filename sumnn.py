@@ -41,9 +41,7 @@ class sumNN(nn.Module):
 
     def initialize(self, mode):
         """
-        Initialization of parameters
-
-        :return:
+        initialization of parameters
         """
 
         # always initialize biases as zero vectors:
@@ -51,7 +49,6 @@ class sumNN(nn.Module):
         self.sm.bias.data.fill_(0)
 
         if mode == 'xavier_uniform':
-            # much beter results
             init.xavier_uniform(self.voc.weight)
             init.xavier_uniform(self.cpr.weight, gain = math.sqrt(2/(1 + (0.01**2)))) # rec. gain for leakyrelu
             init.xavier_uniform(self.sm.weight)
@@ -88,7 +85,6 @@ class sumNN(nn.Module):
 
     def forward(self, inputs):
         """
-
         :param inputs: list of lists of form [left_tree, right_tree], to support minibatch of size > 1
         :return: outputs, tensor of dimensions batch_size x num_classes
         """

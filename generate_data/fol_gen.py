@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 """
 Code for generating simple quantified statements and calculating
 their FOL relation.
@@ -20,17 +18,12 @@ from nltk.sem import Expression
 
 read_expr = Expression.fromstring
 
-# Currently Prover9, first used TableauProver, but that one could not handle any sentences with quantifiers
-# three or lt_three. Prover9 still gives problems with these, though.
-# timeout set to 1 second, because for higher running times no solution is found anyway => switch to Mace4 model builder
-# in such cases
+# initialize theorem prover and model builder
 prover = Prover9(timeout=1)
-
-# model builder Mace, checks for satisfying models with max domain size 10. actually this could still be decreased.
 mace = Mace(end_size=10)
 
 INDY_DOWNSAMPLE_RATIO = 0.05
-MATLAB_OUTPUT = False
+FILE_OUTPUT = False
 PROVER_ON = True # set to False in case we just want to list sentence combinations without running the theorem prover
 FILENAME_STEM = "nothing"
 
@@ -48,7 +41,10 @@ nl_dets, nl_det_matrix = nl_lex.dets, nl_lex.det_matrix
 nl_lexicon = nl_lex.get_lexicon(nouns, verbs, nl_dets, noun_matrix, verb_matrix, nl_det_matrix)
 
 def leaves(s, dim):
-    """For visualizing an aligned tree s. dim=0 for premise; dim=1 for hypothesis."""
+    """
+    from Bowman, for visualizing an aligned tree s. dim=0 for premise; dim=1 for hypothesis
+    """
+
     l = []
     for x in s:
         if isinstance(x, tuple):
@@ -58,6 +54,12 @@ def leaves(s, dim):
     return l
 
 def general_axioms(lexicon):
+    """
+    generate total list of axioms
+
+    :param lexicon: lexical relations
+    :return: list of axioms
+    """
 
     axioms = {}
     for noun1 in nouns:
@@ -72,7 +74,7 @@ def general_axioms(lexicon):
     for pair, relation in lexicon.items():
         axiom_strings = []
 
-        # equivalence: redundant, because we only have self-equivalence of primitives
+        # equivalence is redundant, because we only have self-equivalence of primitives
 
         # forward entailment
         if relation == '<':
@@ -97,10 +99,9 @@ def general_axioms(lexicon):
             axiom_strings += ['all x.((not {}(x)) -> {}(x) )'.format(pair[0], pair[1])]
 
         for axiom_string in axiom_strings:
-            #print(axiom_string)
             axioms[pair[0]][pair[1]] += [read_expr(axiom_string)]
 
-    # Remove duplicates
+    # remove duplicates
     for term, axiom_dict in axioms.items():
         for term, axiom_list in axiom_dict.items():
             axiom_list = list(set(axiom_list))
@@ -110,7 +111,9 @@ def general_axioms(lexicon):
 axioms = general_axioms(fol_lexicon)
 
 def sentence_to_fol(sentence):
-    """Formalizes list of sentence compounds as recognizable FOL wff, without MOST/NOT_MOST"""
+    """
+    formalizes list of sentence compounds as recognizable FOL wff
+    """
 
     det = sentence[0]
 
@@ -158,23 +161,24 @@ def sentence_to_fol(sentence):
             parse_end = sentence[4] + '(x) and ' + sentence[4] + '(y) and ' + sentence[4] + '(z)'
         parse_end += 'and x != y and x != z and y != z'
 
-    # Universal statements take implication
+    # universal statements take implication
     if det in ['all', 'not_all']:
         parse = parse_start + parse_mid + ' -> ' + parse_end + ')'
 
-    # Existential statements take conjunction
+    # existential statements take conjunction
     else:
         parse = parse_start + parse_mid + ' and ' + parse_end + ')'
 
-    # Negate sentence for negated quantifiers
+    # negate sentence for negated quantifiers
     if det in ['not_all', 'no', 'lt_two', 'lt_three']:
         parse = 'not (' + parse + ')'
 
     return parse
 
 def interpret(sentence, axioms):
-    """Determine relation between sentences"""
-    #TODO: check seven entailment relations
+    """
+    determine relation between sentences
+    """
 
     left_fol = sentence_to_fol(leaves(sentence, 0))
     print(left_fol)
@@ -225,14 +229,16 @@ def interpret(sentence, axioms):
         return("#")
 
 def filter_axioms(axioms, det1, det2, adverb1, adverb2, noun1, noun2, verb1, verb2):
-    """Select only relevant axioms, do not consider ones without currently occurring verbs/nouns"""
+    """
+    select only relevant axioms, do not consider ones without currently occurring verbs/nouns
+    """
+
     noun_axioms = axioms[noun1][noun2] + axioms[noun2][noun1] #+ axioms[noun1][noun1] + axioms[noun2][noun2]
     verb_axioms = axioms[verb1][verb2] + axioms[verb2][verb1]
 
     existence_axioms = []
 
-    # Existential import axioms if necessary (not for existential statements)
-    # take care of negated terms
+    # existential import axioms
     if det1 in ['all', 'not_all']:
         if adverb1 == '':
             existence_axioms += [read_expr('exists x.({}(x))'.format(noun1))]
@@ -254,62 +260,44 @@ def filter_axioms(axioms, det1, det2, adverb1, adverb2, noun1, noun2, verb1, ver
     return relevant_axioms
 
 def all_sentences():
+    """
+    generator for all sentences
+    """
     for det, na, n, va, v in product(dets, adverbs, nouns, adverbs, verbs):
         sentence = tuple([det, na, n, va, v])
         yield sentence
 
 def all_pairs(ignore_unk=True):
-    """Generator for the current grammar and lexicon. Yields dicts with useful info."""
-
-    #count_control = 0
-
-    # Uncomment to randomize order of sentence combinations (optional)
-    #all_combinations = list(product(dets, dets, adverbs, adverbs, nouns, nouns, adverbs, adverbs, verbs, verbs))
-    #random.shuffle(all_combinations)
+    """
+    generator for the current grammar and lexicon
+    """
 
     for d1, d2, na1, na2, n1, n2, va1, va2, v1, v2 in product(dets, dets, adverbs, adverbs, nouns, nouns, adverbs, adverbs, verbs, verbs):
-    #for d1, d2, na1, na2, n1, n2, va1, va2, v1, v2 in all_combinations:
-
-        #if True:
         if random.random() < sample_probability:
             d = {}
             s = [[(d1, d2), [(na1, na2), (n1, n2)]], [(va1, va2), (v1, v2)]]
-
-            #s = [[('all', 'all'), [('', ''), ('turtles', 'turtles')]], [('', ''), ("walk", 'move')]]
 
             d['sentence'] = s
             d['premise'] = leaves(s, 0)
             d['hypothesis'] = leaves(s, 1)
 
-            # Filter axioms to reduce recursive depth of proof
+            # filter axioms to reduce recursive depth of proof
             filtered_axioms = filter_axioms(axioms, d1, d2, na1, na2, n1, n2, v1, v2)
 
             if PROVER_ON:
                 d['relation'] = interpret(s, filtered_axioms)
 
-                #print(d)
-            #break
-
-            # we must normalize wrt # labels, because otherwise they would completely dominate the data set and make its size explode.
-            # two options:
-            # 1. only accept pair labeled with # if if it is also labeled # in NL (and not ?) (time consuming)
-            # 2. only accept label # with probability 1/p, where p ~ 10
             if d['relation'] == "#":
-                if nl.interpret(s, nl_lexicon, nl.projectivity)[0] != "?": # option 1
+                if nl.interpret(s, nl_lexicon, nl.projectivity)[0] != "?":
                     yield d
             else:
                 yield d
 
-def label_distribution():
-    """Calculates the distribution of labels for the current grammar."""
-    counts = defaultdict(int)
-    for d in all_pairs():
-        counts[d['relation']] += 1
-    total = float(sum(counts.values()))
-    for key, val in sorted(counts.items(), key=itemgetter(1), reverse=True):
-        print(key, val, val / total)
-
 def sentence_to_parse(sentence):
+    """
+    add brackets according to syntactic structure
+    """
+
     parse = ' ( ( ' + sentence[0] + ' '
     if sentence[1] == 'not':
         parse = parse + '( ' + sentence[1] + ' ' + sentence[2] + ' ) ) '
@@ -322,37 +310,15 @@ def sentence_to_parse(sentence):
     return parse
 
 
-def matlab_string(d):
+def file_string(d):
     return str(d['relation']) + '\t' + str(sentence_to_parse(d['premise'])) + '\t' + str(sentence_to_parse(d['hypothesis']))
 
-#fa = filter_axioms(axioms, 'all', 'all','', '','turtles', 'turtles',"walk", 'move')
-#interpret(s,fa)
-#exit()
-
 if __name__ == '__main__':
-
-    if MATLAB_OUTPUT:
-
+    if FILE_OUTPUT:
         training_file = open(FILENAME_STEM + "train.txt", 'w')
         test_file = open(FILENAME_STEM + "test.txt", 'w')
 
         counters = {}
-        #data = all_pairs()
-        #
-        # print('This many items:')
-        # print(len(list(data)))
-
-        # sentences = set()
-        # for counter, d in enumerate(data):
-        #     if counter % 100 == 0:
-        #         print('Analyzing sentence pair %d' % counter)
-        #     sentences.add(tuple(d['premise']))
-        #     print(d['premise'])
-        #     print(tuple(d['premise']))
-        #     sentences.add(tuple(d['hypothesis']))
-        #
-        # sentence_list = list(sentences)
-        # random.shuffle(sentence_list)
 
         sentences = set() # is set even necessary here? there won't be duplicates anyway in the cartesian product
         for counter, s in enumerate(all_sentences()):
@@ -365,19 +331,13 @@ if __name__ == '__main__':
 
         test_examples = sentence_list[1:int(.33 * len(sentence_list))]
 
-        # Original Bowman code was horribly inefficient for this part. Analyzed all labels twice, but once only to construct
-        # the list of single sentences.
         for counter, d in enumerate(all_pairs()):
-            #print(counter)
             if counter % 100 == 0:
                 print('Analyzing pair %d' % counter)
-
-
-
             if tuple(d['premise']) in test_examples and tuple(d['hypothesis']) in test_examples:
-                test_file.write(matlab_string(d) + "\n")
+                test_file.write(file_string(d) + "\n")
             elif not (tuple(d['premise']) in test_examples or tuple(d['hypothesis']) in test_examples):
-                training_file.write(matlab_string(d) + "\n")
+                training_file.write(file_string(d) + "\n")
 
         training_file.close()
         test_file.close()

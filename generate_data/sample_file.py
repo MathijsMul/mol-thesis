@@ -1,3 +1,7 @@
+"""
+sample data
+"""
+
 import random
 
 def sample_file(file_in, ratio):
@@ -8,10 +12,10 @@ def sample_file(file_in, ratio):
                 if random.random() < ratio:
                     fout.write(line)
 
-file_in = 'binary_2dets_4negs_2457_train.txt'
-ratio = 0.75
-sample_file(file_in, ratio)
+f = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/generate_data/binary_2dets_4negs_train578_test69_train.txt'
+ratio = 0.33
+sample_file(f, ratio)
 
-file_in = 'binary_2dets_4negs_2457_test.txt'
+g = '/Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/generate_data/binary_2dets_4negs_train578_test69_test.txt'
 ratio = 0.25
-sample_file(file_in, ratio)
+sample_file(g, ratio)

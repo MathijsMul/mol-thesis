@@ -1,0 +1,1818 @@
+>	not all not Europeans not hate all linguists	not some not Germans not hate all linguists
+v	all not linguists not love some not Europeans	some not linguists not hate all not Europeans
+#	not all Italians not love all not linguists	all not Germans like some Italians
+<	not some not linguists not like all not Germans	not all not linguists hate some not Europeans
+#	not all Italians not hate some not linguists	not all Germans not fear some Italians
+#	some not Romans not like all Germans	all not Germans fear some not linguists
+#	some Romans fear all linguists	not some not Italians not like all not linguists
+#	not all not linguists hate some not linguists	not all linguists love all Romans
+>	not all Germans not fear some not linguists	all not Italians fear some not linguists
+v	not all linguists hate some not Europeans	not all linguists not hate some not Romans
+#	not all not Italians fear some not Europeans	not all Europeans not love some linguists
+=	some not Romans hate all linguists	some not Romans hate all linguists
+#	all linguists love all not Europeans	some not Romans fear some not Italians
+v	not some linguists not like some not Romans	some linguists not love all not Germans
+v	all not linguists not fear some Germans	some not linguists not like all not Italians
+<	not some not linguists not hate some Italians	not some not linguists love all not Germans
+=	some Italians hate some not linguists	not all Italians not hate some not linguists
+#	all not Italians not like some Germans	some Italians hate some not linguists
+|	all not Europeans love some not linguists	all not Italians not like some not linguists
+>	some linguists not fear all Europeans	all linguists love some Europeans
+v	some not Italians not love all not linguists	not all not Italians not love all not linguists
+#	all not linguists not love all not Italians	not all Romans not hate all not linguists
+|	all not linguists love some not Europeans	some not linguists fear all not Romans
+<	not some linguists not like some not linguists	not some linguists fear all not linguists
+|	some Italians not like some not linguists	all not Germans like some not linguists
+#	some Italians like all not Germans	all not Romans hate all linguists
+>	not some linguists fear all Romans	not some linguists not love some Romans
+#	not all not Romans not hate all not Italians	not some linguists fear all Romans
+<	all Italians fear all linguists	all Romans fear all linguists
+<	some not linguists like some Romans	some not linguists not fear all Europeans
+#	some Italians hate all not Italians	all Italians fear all linguists
+|	all Europeans love all linguists	all Romans fear some linguists
+<	not all not linguists not hate all not Germans	some not linguists hate all Romans
+>	not all linguists not like some not Germans	some linguists like all not Italians
+#	not all not linguists not hate some Germans	not some not Romans hate all Italians
+#	all Germans hate all not Germans	all Romans like some not linguists
+>	some not Europeans fear some not linguists	all not Europeans fear some not linguists
+v	not all not linguists not like some not Germans	some not linguists not love some not Germans
+#	not some not Romans not like all linguists	not all linguists fear all not Italians
+#	some Germans love all linguists	not some Europeans not like all Italians
+v	some Germans not fear some linguists	not some Germans like all linguists
+#	not some not linguists hate some Italians	not all not Italians not like some not Italians
+#	some Romans fear all not linguists	some not Italians love all Europeans
+<	not some Europeans not hate some linguists	all Germans not love all linguists
+#	all not Romans fear all linguists	some Romans not hate some linguists
+#	not all Germans not love all not Germans	all Romans like some not linguists
+|	all linguists not like some Europeans	not some linguists not love some Romans
+#	some Europeans love all linguists	some Romans not love all not Europeans
+#	all not Europeans hate some Germans	all linguists not hate some linguists
+<	not all not Europeans not fear some linguists	some not Italians not like all linguists
+#	all Europeans not fear some linguists	not all not Germans like all Italians
+|	not all not Europeans hate all linguists	not some not Italians not hate all linguists
+#	all not Europeans love all Germans	some not Germans like some not linguists
+v	some not Romans love some not linguists	not some Germans love some not linguists
+#	not all linguists love all Germans	not all not Europeans not love some not Italians
+#	not some linguists hate some not Romans	some not Germans love some Romans
+#	some not Europeans not like all Italians	all not linguists not hate all not linguists
+>	not all not Italians love some not linguists	some not Europeans not love some not linguists
+#	some Germans fear all not Italians	not all linguists love all not Germans
+#	some not Italians like all Europeans	all linguists fear all not Romans
+=	not some Germans not hate all linguists	not some Germans not hate all linguists
+|	not some linguists hate some not Romans	all linguists hate all not Germans
+#	some not linguists like some not Europeans	some Romans love all not Romans
+v	not some linguists fear all Europeans	not all linguists not fear all Romans
+#	some not Europeans like some not Italians	all linguists not like all Italians
+>	not all Germans not like some linguists	not some Germans not like some linguists
+#	not all not linguists not love some not linguists	not some Europeans hate some not Europeans
+#	not some linguists love some not Italians	not all not Germans not love some not Romans
+#	not all not Romans hate some Germans	not all not Romans hate all linguists
+#	not all Europeans fear all Italians	not some linguists not like all not Europeans
+v	some linguists hate some not Germans	not some linguists hate some Romans
+#	some not linguists not fear some Romans	all Italians hate some Germans
+#	not some not linguists like all not Romans	all Europeans like all not Europeans
+>	not some Germans love some not linguists	not some not Romans like some not linguists
+#	some not linguists not like all not Italians	some not Romans hate some Germans
+#	all Italians not like all linguists	some linguists not fear all not Europeans
+#	not all not linguists not like some not Romans	not some Italians not fear some Italians
+v	not some linguists fear some not Italians	some linguists not like all not Italians
+<	all linguists not like some Europeans	not all linguists love some Germans
+#	not some not Germans fear some Europeans	some not linguists not hate some not Germans
+#	not some not linguists like some Germans	some Germans not fear some Europeans
+#	not all not linguists not like all not Germans	not all Germans not fear all not Germans
+>	not all Europeans fear all linguists	not all Romans not love some linguists
+v	all Germans not hate some linguists	not all not Italians love all linguists
+#	some Romans like all not Germans	not all Italians not hate some not linguists
+#	not all not Italians not fear some Romans	not all linguists not like all linguists
+#	some not linguists not fear some Italians	not all Romans hate some not Italians
+>	some not linguists fear all not Europeans	some not linguists fear all not Italians
+|	all Romans fear some not linguists	all Europeans not fear some not linguists
+#	some not linguists hate all linguists	not all Italians not hate all Romans
+#	not all linguists not like some not Europeans	all not Germans not fear some not Italians
+>	all not linguists not like all not Italians	not some not linguists not fear some not Italians
+#	all not Europeans not love some not Italians	not all linguists not hate all not Romans
+<	not all linguists not like some not Europeans	not all linguists not like some not Germans
+#	some not linguists hate some not linguists	some not linguists like all not Romans
+<	some not linguists not like all Europeans	some not linguists not love all Europeans
+#	not all linguists hate all linguists	some Italians fear some not Romans
+#	some linguists fear some not Italians	all Germans not fear some not Romans
+^	not some Italians not like all linguists	some Italians not like all linguists
+|	not all not linguists not hate all not Romans	all not linguists like some not Europeans
+|	all not linguists hate some not Europeans	not some not linguists not love all not Romans
+=	not some not Italians not fear some not linguists	all not Italians fear some not linguists
+#	all not Italians not like all not linguists	not some Italians not fear some Romans
+#	some not Italians not love all not Romans	not all Italians love all not linguists
+v	not some Italians like some not linguists	not all not Germans not like some not linguists
+#	not some Italians fear some not linguists	all Europeans not hate some not linguists
+#	not all not Germans not fear all Italians	not all not linguists not love all not Romans
+#	not some not Italians not like all not linguists	not some not Italians not like all Europeans
+#	some not Romans like some linguists	not all not linguists not like all not Germans
+<	all Europeans not fear some not linguists	all Romans not fear some not linguists
+#	not all linguists not love all not linguists	all Germans love some Europeans
+#	all not Romans hate all not Europeans	all not linguists not love some not Europeans
+#	not all not Romans love all Europeans	all linguists not love some not linguists
+#	some Italians hate all not Romans	not all Germans love some linguists
+#	not all not linguists love some Germans	not some Europeans love all not Italians
+#	not all not Italians not fear some not Italians	not all not linguists fear some not Romans
+#	not all not Romans hate some not linguists	not all not linguists like some Europeans
+>	not all linguists fear all linguists	not all linguists not love some linguists
+#	not all Italians not like all not Europeans	not all Romans hate some linguists
+#	all not Germans fear some not linguists	all not Italians not love some not linguists
+#	not all Romans not like all linguists	some not linguists not love all linguists
+|	all not linguists fear some Germans	some not linguists like all not Romans
+#	not all not Germans not hate all not Romans	not some Italians not fear some linguists
+#	some Romans not fear all Romans	some not Europeans not hate some not linguists
+v	some not Romans like some linguists	not all not Romans like some linguists
+#	not some Germans like all Germans	some not Romans not hate all linguists
+#	not all not linguists not love all Italians	some Europeans love some not Europeans
+#	not all not linguists hate some linguists	all Europeans fear some not Italians
+#	some Romans love all linguists	all Italians not love all not Romans
+#	all linguists not hate all not Germans	not all Germans like some not Germans
+>	not all not Germans like some linguists	some not Germans fear all linguists
+#	not all not linguists not fear all not linguists	not some not Italians not love all Italians
+v	some linguists not fear some not Europeans	not all linguists love all not Germans
+|	not all not linguists not hate all not linguists	all not linguists not hate some not linguists
+>	some not linguists not love some Romans	all not linguists fear all not Germans
+=	not some linguists fear some Italians	not some linguists fear some Italians
+#	some linguists hate all not Europeans	some Germans not fear some Germans
+#	some Europeans fear all not Germans	all not linguists hate some not Europeans
+<	all not Romans not love all not linguists	not all not Italians love all not linguists
+#	some linguists love all not Italians	not all not linguists love all linguists
+>	not all not Europeans love all linguists	not some not Europeans not fear some linguists
+#	not some not Italians not love all linguists	all linguists hate all not Romans
+#	not all Germans not fear some not linguists	not some not Europeans not fear some not linguists
+|	all not Europeans fear some not linguists	not some not Romans not like all not linguists
+#	not some not Italians not like all not linguists	all not linguists hate some Romans
+#	all not Germans not fear all Romans	some not linguists not hate some not Germans
+#	not all Italians like some not Italians	not all Italians like some linguists
+>	not all Germans like all not linguists	all Europeans not like all not linguists
+#	some not Germans not love all not Germans	all not linguists not hate some not linguists
+|	not some not linguists love some Europeans	all not linguists love some Italians
+#	some not Germans not fear all linguists	all not Europeans hate all Italians
+#	not all not Italians love all linguists	not all not Italians not love all not Germans
+#	some not Europeans not hate some not linguists	not some linguists not hate some Germans
+#	not all Romans not love all linguists	not some not Europeans not fear some not linguists
+#	not all not Romans hate some not linguists	not some not linguists hate all not Romans
+#	some Europeans like some Germans	some not Romans fear all not linguists
+<	not all Germans not fear all linguists	not all not Romans like some linguists
+#	some linguists hate all not linguists	not some not Italians fear all Romans
+#	all not Italians like some Germans	all Europeans love all linguists
+#	not some linguists not hate all linguists	all Romans fear all not Germans
+^	all not Germans like some not linguists	some not Germans not like some not linguists
+|	not some linguists not hate some linguists	all linguists not hate some linguists
+#	not all not linguists not like all not Germans	not all Germans not like some Romans
+#	some Romans like some linguists	all Italians hate all Germans
+v	all not linguists not like all not Germans	some not linguists not hate some not Germans
+#	some not linguists not love all not Romans	not all not Germans not love some not Romans
+#	not all not Europeans not fear all not linguists	all not Romans not fear some linguists
+#	some Europeans not like some not linguists	not all Romans fear some Italians
+=	not some not linguists fear some not Romans	not some not linguists fear some not Romans
+|	not some not Romans like all not linguists	not some not Germans not love all not linguists
+#	not all Romans not hate some not linguists	all not Germans fear some not Romans
+v	not all linguists fear all not Italians	all linguists not love all not Germans
+=	not all Europeans like all not linguists	not all Europeans like all not linguists
+|	not some linguists not like some Romans	not all linguists not fear all Romans
+#	all Romans not hate some Germans	some not linguists like some not Europeans
+#	all linguists not love all Italians	not some Europeans fear all linguists
+#	some not Germans not like some not Romans	not some linguists like all not Germans
+=	some not linguists not like some not Italians	some not linguists not like some not Italians
+#	all not linguists fear some Germans	not all not Italians love some not Italians
+v	not all not linguists not fear all not Germans	not all not linguists fear all not Germans
+#	not some linguists love some linguists	all not Europeans love all not Romans
+#	not all Romans not love some not linguists	not all Germans not fear all not Germans
+#	not some not Germans not hate some not linguists	not all not Germans love some not Germans
+<	some Romans fear all not linguists	some Europeans not like some not linguists
+<	some linguists hate all not Germans	not all linguists love all not Romans
+#	all not linguists not love some not Europeans	not all Europeans not love all not Italians
+#	not all linguists fear some not Italians	some not Italians not hate some Europeans
+#	all Europeans not love all Romans	some Italians not like all linguists
+>	not all not linguists not fear all Italians	not all not linguists not fear all not Germans
+<	some linguists love all not Italians	not all linguists hate some not Europeans
+#	all Italians not like some not Romans	not all not Europeans hate some linguists
+#	some linguists love all not Italians	not some Italians like some Romans
+<	all not linguists like some not Italians	all not linguists not fear all not Italians
+#	some Romans not love some linguists	not all Romans not hate all not Italians
+>	some linguists love all Romans	all linguists love all Europeans
+#	some Germans not hate all Europeans	all not linguists fear some Italians
+#	not all not Europeans not fear all Italians	all not linguists not like some Romans
+#	not some not linguists not like all not Germans	not all Europeans not love some not Italians
+#	all not linguists hate some not Germans	not all not Italians love some linguists
+|	all linguists not like some Germans	not some linguists not love some Germans
+|	all Europeans not like all not linguists	not all Italians not love all not linguists
+#	not some not Italians like all not Italians	some not Europeans like all linguists
+=	some Romans like all not linguists	not all Romans not like all not linguists
+>	not all linguists fear all linguists	some linguists like some linguists
+^	not all linguists not hate all Italians	all linguists not hate all Italians
+<	all Italians like some not linguists	not some Italians hate all not linguists
+#	not all not linguists not love all Italians	all not Europeans not hate all not Italians
+v	not all Europeans not like some linguists	all Germans not like some linguists
+v	all not linguists not hate all not Germans	some not linguists not love all not Romans
+#	all linguists not like all Germans	some not Germans like some Italians
+#	not all linguists not like some not Germans	not some not Romans fear all Italians
+#	not all linguists love all Germans	not all linguists fear some not Romans
+#	all not Romans not hate all Europeans	not all Italians not fear all linguists
+<	some not Europeans like all linguists	some not Europeans not hate some linguists
+#	some not Italians fear all not Italians	some linguists hate all Italians
+#	all not Italians fear all Germans	not all Romans not fear some not linguists
+|	all not linguists love some Romans	not some not linguists not hate all not Germans
+v	not all not Romans not like all not linguists	not all not Italians love all not linguists
+v	some not Germans not like some not linguists	not all Italians not like some not linguists
+#	not some Romans love all Germans	not all not linguists not hate all Italians
+v	some not Germans not like all linguists	not all not Romans not like all linguists
+#	not some linguists hate all not Germans	not all not Germans love some not Germans
+<	some not linguists like some not Europeans	not all not linguists not like some not Germans
+#	some not linguists not like all linguists	not all not Italians like all not linguists
+#	not some not Europeans not like all not Europeans	not all linguists not hate some not Europeans
+#	not all Europeans fear all Romans	some linguists not love all Romans
+<	not some linguists fear some not Romans	not all linguists fear all not Germans
+v	all Italians not hate all linguists	not all not Germans like some linguists
+#	not all not linguists hate some not Europeans	not some Europeans not like all not Europeans
+>	not all Germans love some linguists	all not Romans hate all linguists
+=	all not linguists fear all linguists	not some not linguists not fear all linguists
+#	not all Italians like some not Italians	some not Europeans not love some not linguists
+#	some Italians not like all linguists	all not Romans not fear all Romans
+#	all Romans not hate some Europeans	all not Romans not fear some not linguists
+#	not some Italians not like all not linguists	not some Germans not love some not Italians
+|	not all Europeans not like all not linguists	not some Europeans not hate some not linguists
+#	all Europeans not hate some not linguists	some Europeans love some Europeans
+#	all not linguists like all Germans	some not Italians like some not Romans
+#	not some Italians not like some not Romans	some not Germans not like some not linguists
+|	not all not linguists not love all Italians	not some not linguists not hate some Italians
+v	all not linguists not like all not Germans	not all not linguists fear some not Germans
+<	some not linguists love some not linguists	some not linguists like some not linguists
+v	some linguists not love all Romans	not all linguists not like all Romans
+#	all not Italians not fear some linguists	not all not Europeans fear all Romans
+|	all Italians like all linguists	not some Italians not fear some linguists
+|	all not Germans fear all linguists	not all Italians not like some linguists
+=	all Europeans fear some not linguists	all Europeans fear some not linguists
+<	not some not Germans hate all not linguists	not all Italians hate all not linguists
+>	some Italians not like some not linguists	not all Romans not hate all not linguists
+^	not some Italians fear all linguists	not all Italians not fear all linguists
+#	not all not Italians not love some Romans	some not linguists love some not linguists
+#	not all not linguists like some Romans	not all not Germans hate all not Germans
+^	not some linguists not fear all Germans	some linguists not fear all Germans
+#	not some not Germans fear all Europeans	not some not Romans like all linguists
+^	some not linguists fear all not Europeans	all not linguists not fear all not Europeans
+#	all not Romans love some Italians	some Romans like some not linguists
+|	all Germans fear all linguists	not some Europeans fear all linguists
+|	some not linguists not love some not Germans	all not linguists love some Romans
+^	some not linguists not love some Romans	all not linguists love some Romans
+<	not all Italians not love all not linguists	not all Europeans not like all not linguists
+#	not all Italians not fear some not Germans	not all not linguists fear all not Germans
+|	not some not Romans like some not linguists	all Germans like some not linguists
+#	not some not Italians not hate all not linguists	not all not Germans not like some not linguists
+#	not all not Romans love all Italians	all linguists not love some not Germans
+<	not some not Italians not hate all linguists	all Germans hate all linguists
+>	all linguists fear some Europeans	not some linguists not fear some Italians
+#	some not Europeans like all linguists	not some not Germans hate some not Germans
+#	not all Germans not fear all linguists	all not linguists fear some not Italians
+#	not all not Romans not love all Europeans	all linguists not hate all Romans
+#	not some linguists love some not Italians	not all Romans hate some linguists
+#	not some linguists hate some Romans	not all linguists not like some Germans
+#	not some not Germans fear some not Romans	not all linguists not fear some linguists
+#	not some not Italians not like some not Italians	some linguists not hate all Germans
+#	not all Europeans hate some linguists	not all Germans not fear some not linguists
+<	not all Romans not hate all not linguists	some not Germans not like some not linguists
+>	not all linguists not like all Germans	some linguists love all not Italians
+#	all Germans hate some not linguists	not some not Germans not love some not Romans
+=	not some Germans not hate all not linguists	all Germans hate all not linguists
+v	some not linguists not love all not Germans	all not linguists like all Romans
+#	not all not Romans fear all Europeans	not all not Germans not love some not linguists
+#	all linguists love some Germans	not all not Italians hate some Germans
+#	not all not Romans not fear all not linguists	all not Europeans love some not Europeans
+|	not some linguists not fear some Germans	some linguists love all not Italians
+#	all Europeans love some not linguists	not all not Europeans not like all not Germans
+#	not some Europeans not fear all linguists	not some not linguists like some linguists
+#	not all not Romans not hate some Europeans	not all linguists not like some Germans
+#	all Italians not like all linguists	all not Europeans hate some Europeans
+#	not all not Europeans love all linguists	all linguists like all Italians
+#	all not Europeans love all linguists	not some not Romans not like all not Europeans
+#	not some Romans not love some Romans	not some Romans not hate all not linguists
+<	all not linguists not fear all not Europeans	not all not linguists fear all not Germans
+v	all Germans not love all linguists	not all Europeans hate some linguists
+#	not all not Italians love some not linguists	some linguists not like all not linguists
+#	not all Romans not fear some not linguists	not some Germans like all not Europeans
+#	all not Italians fear all not Europeans	not all linguists not fear some linguists
+#	all Italians not fear some not linguists	all not Italians love some Italians
+>	not some not Europeans love all not linguists	not some not Romans like all not linguists
+#	not some not Europeans love all linguists	all not Europeans hate some Europeans
+|	not some not Romans not like some not linguists	not all not Romans not fear all not linguists
+v	some not linguists not love all Europeans	not all not linguists fear some Germans
+#	some not Italians not love some Germans	not some Germans like all linguists
+>	not some Germans like all linguists	not some Germans not hate some linguists
+#	all Romans fear all not Germans	not all Germans not fear all not linguists
+#	some not linguists love some not linguists	not all Germans not fear all not Italians
+#	all not linguists fear some Germans	some not Romans not hate some Romans
+#	some linguists fear some not linguists	not all not Romans not hate some not Germans
+<	some not linguists not fear all Italians	some not linguists not fear all Europeans
+#	some not linguists fear all not Italians	not all Italians like all Germans
+#	all linguists love all Europeans	some Romans not hate all Italians
+|	some not linguists like some Romans	not some not linguists like some Europeans
+#	all Europeans hate all not linguists	all not linguists hate all Germans
+<	not all not linguists not fear all not Romans	some not linguists fear all not Europeans
+>	not some not Europeans love all linguists	all not Germans hate some linguists
+#	not some not linguists not fear some not Italians	not all Romans like all not Romans
+|	not all not linguists fear all Romans	all not linguists fear all not Germans
+#	some Europeans like some Germans	some not linguists not hate some not Europeans
+#	not all not linguists not fear all not linguists	some linguists hate some Italians
+#	all not linguists love some Italians	some Italians fear all linguists
+<	not some linguists like all Romans	not all linguists love all Italians
+#	all not Italians love all not Italians	not some not Romans not fear some not linguists
+<	not all not linguists not love some linguists	not all not linguists not like some linguists
+#	not some not Germans fear all not linguists	all not Italians not fear some not Europeans
+#	all not Italians fear some not Europeans	all Germans not hate some linguists
+#	not all not linguists like some Europeans	not all not Germans not like some Germans
+#	not all not linguists not hate some not linguists	not some Germans not love some not Italians
+#	not some not Europeans not love all not Romans	all not linguists not hate all Romans
+v	some not Romans like some linguists	not some not Europeans love some linguists
+>	not some linguists like some Romans	not some linguists not hate all not Germans
+#	some not Italians hate some not Italians	not all linguists hate all linguists
+#	some not Italians not love all not Romans	all Germans not like some linguists
+<	some linguists love all not Italians	not all linguists fear some not Italians
+#	some Romans love all Europeans	some linguists not love all not Germans
+#	some Romans fear some not Italians	some Europeans fear all linguists
+#	not all Romans not fear some not linguists	not all not Germans not like some Germans
+#	not all not Europeans not like all Romans	not all not Germans not like some not linguists
+#	not some not Romans not like all not Europeans	some linguists like all not Italians
+#	all Europeans not love some Germans	all linguists not like all Italians
+>	all Romans not fear all not linguists	all Italians like some not linguists
+v	not all not linguists not like some Europeans	some not linguists not love some Europeans
+<	all not Europeans not love all linguists	not all not Europeans love all linguists
+#	some not Italians not love some linguists	all not Italians love some Italians
+v	not all not Italians not like some not linguists	some not Germans not like some not linguists
+#	all not linguists hate some not Romans	all Romans fear some Germans
+>	not all linguists love some Germans	not all linguists not hate all not Romans
+#	all not Europeans hate some linguists	all not linguists love some Romans
+#	all not Romans not fear some linguists	not some Germans not love all Italians
+#	not some not linguists like some linguists	some not Europeans fear all Italians
+#	some Romans not hate all not Romans	not some not Romans like all not linguists
+#	all not Europeans fear some not linguists	not all not Italians not like all Italians
+v	some not Europeans not hate some linguists	all not Europeans not love all linguists
+>	not some not Europeans not fear some not linguists	not some not Italians not fear some not linguists
+#	not some Romans not love some Romans	not some linguists not hate some Germans
+#	not some Germans not like some linguists	some Germans love some Italians
+^	all linguists not love some linguists	not all linguists not love some linguists
+=	not all not linguists not hate all Italians	not all not linguists not hate all Italians
+#	not all linguists fear some not Romans	some Germans not hate some not Europeans
+#	some not linguists not like some not Italians	not some not Romans love some not Romans
+#	not all Italians not love all not Romans	all Europeans fear all linguists
+=	not all Germans love all not linguists	not all Germans love all not linguists
+#	some Germans like some linguists	not some not linguists hate some Europeans
+#	not all not Europeans not love some not Italians	not some linguists love some not Italians
+#	all not Italians love all Europeans	not all not Italians love some not linguists
+#	some linguists love some not Germans	not all Romans hate some Germans
+>	not some linguists love some not Italians	all linguists hate all not Romans
+#	not all not Germans not fear all Europeans	some not linguists fear all not Romans
+#	not all not Europeans love all linguists	not some Italians hate some Germans
+#	not all Italians like some linguists	some linguists love all Romans
+#	some Europeans like some not Italians	not all not Italians not fear some linguists
+|	all Europeans not like all not linguists	all Romans love all not linguists
+#	some not Germans love some Romans	all Romans not hate all linguists
+#	not some Romans not hate all linguists	all Italians not love all Romans
+|	all not linguists love some Italians	all not linguists not love some not Germans
+<	not some not linguists not hate all not Italians	not some not linguists like all not Germans
+v	not some Germans not love some linguists	not all Europeans love some linguists
+#	some not Romans not like all Germans	not all linguists not love some linguists
+#	not some Romans like some linguists	not some not Europeans love all linguists
+#	some linguists fear some not linguists	not some not Romans fear all not Germans
+>	not all not linguists love some Germans	some not linguists not like some not Italians
+v	some not Germans not like all not linguists	some not Italians not hate some not linguists
+#	not all not Europeans like all linguists	all not Italians fear some not Europeans
+#	some not Europeans fear all Italians	all Germans hate some not linguists
+<	all not Italians not hate some not linguists	all Germans not hate some not linguists
+#	not some Germans not hate all linguists	not some not Romans fear all Europeans
+#	not all not Italians fear all Germans	not all Romans not hate some not linguists
+v	all linguists not fear some Italians	some linguists not love all not Germans
+=	not all Romans hate some linguists	not all Romans hate some linguists
+#	not all not linguists not love some linguists	some Italians like all Italians
+|	not all not linguists not love all Europeans	all not linguists not love all Germans
+#	all not Europeans love all linguists	not some not Germans not like some not Germans
+#	not some not Romans not love some not Italians	not some Germans hate some linguists
+#	all Italians hate some Germans	not some Italians not hate all linguists
+>	not some not Europeans love some linguists	not some not Germans not hate all linguists
+#	not all not Romans not like all not linguists	not all not Europeans not like some not linguists
+#	not all Italians love all not linguists	all not linguists love some Italians
+^	some Europeans fear some linguists	all Europeans not fear some linguists
+#	some not Germans hate all linguists	not all not Europeans fear all linguists
+#	not all Italians not hate some not linguists	not some linguists fear all Romans
+#	all not Germans hate all not Europeans	all linguists not like some Germans
+|	not some linguists not like all not Romans	all linguists fear some not Italians
+#	all Romans like some not Romans	not all Italians love all not linguists
+#	all linguists not hate all Italians	all Italians not like all Italians
+#	not some not Italians not hate all linguists	all not Germans fear all Germans
+v	some not linguists not hate some linguists	not all not linguists like all linguists
+#	not all not linguists not like some not linguists	all not Europeans not like all not Romans
+#	some Romans not fear all not linguists	not all not linguists not like some not Germans
+|	all not Europeans fear all not linguists	not some not Germans fear all not linguists
+#	not all not Europeans not fear some linguists	all not Italians hate all not Italians
+>	not all Italians like all linguists	not some Europeans not hate some linguists
+v	all Romans hate some linguists	not all Europeans hate some linguists
+>	not all Italians love all not linguists	all Europeans fear some not linguists
+<	some not linguists fear all not Romans	some not linguists fear all not Italians
+#	not some linguists fear all Europeans	some linguists hate all Europeans
+|	not all Romans not fear some not linguists	not some Italians not like all not linguists
+#	not all Germans love all not linguists	not some not Europeans fear all not linguists
+#	not all not linguists hate all Germans	all linguists not love some not Germans
+#	all Romans not fear some not linguists	not all not Germans fear all linguists
+|	all not Germans not like some linguists	some not Europeans love some linguists
+#	not some not linguists love all not Germans	some not linguists hate some not linguists
+=	not some linguists hate some linguists	not some linguists hate some linguists
+#	all linguists not hate all Romans	not some not Europeans not hate some not Germans
+#	some not Europeans hate all Italians	not all not Europeans not love some not linguists
+>	not all Europeans fear all linguists	some Germans like some linguists
+v	some not linguists not fear some Italians	all not linguists not like all not Germans
+^	not some not linguists fear all Italians	some not linguists fear all Italians
+#	all Europeans not fear all linguists	some Romans fear some not Italians
+<	not all linguists love all Italians	some linguists not love all not Germans
+#	not all not Europeans fear all Germans	all linguists love some Germans
+>	not all not Romans fear some linguists	all not Romans not fear some linguists
+<	not all Romans not love some linguists	not all not Germans hate all linguists
+#	some not Europeans not hate some not linguists	all not Romans fear all not linguists
+>	all linguists not fear some Italians	all linguists like all Italians
+<	all Germans hate all linguists	not all not Italians not hate all linguists
+#	all not Europeans not like some not linguists	some not Italians fear some not Italians
+>	not all Romans like some linguists	not some Romans not hate all linguists
+<	all not Germans hate some linguists	all Italians not like all linguists
+v	some linguists not fear some not Europeans	not some linguists love all not Romans
+#	not all not Europeans like all Germans	all linguists fear all not Romans
+>	not some not Europeans not love all not linguists	not some not Germans not love all not linguists
+#	not all Romans fear all Europeans	not some not linguists hate some Italians
+>	not all not Italians like all not linguists	all not Italians not like all not linguists
+v	some not Italians not like all linguists	not all not Italians fear some linguists
+#	not all not Romans not fear all not Romans	all not linguists hate some not Germans
+#	not some linguists not fear all Germans	not all not linguists not love some not Germans
+>	not all linguists love all Italians	not some linguists not fear some Italians
+#	some not Romans not hate some not Romans	not some not linguists not like some Italians
+#	not all not linguists not hate all not Germans	not some not Italians not fear some Italians
+#	not all not Romans not love all not Europeans	not some not Europeans not hate all not linguists
+#	not all Europeans like all not linguists	all not Italians love all Italians
+#	all Italians hate some linguists	not some linguists not hate all linguists
+>	not all linguists fear some not Italians	some linguists like all not Romans
+#	all Italians not hate some not Romans	not some linguists not love all Romans
+#	not some not Romans not like all linguists	not all linguists fear all linguists
+>	some not linguists not fear all linguists	not all not linguists not love some linguists
+<	all Italians fear all linguists	not some Romans like some linguists
+#	all linguists not like all Italians	not all Italians fear some not Europeans
+#	not all linguists fear some not Italians	not all Romans not fear some Europeans
+#	all Romans not love some not linguists	not all not linguists love some not Germans
+#	not all not linguists fear all Romans	not all linguists not hate some not Europeans
+>	all Romans not fear all not linguists	all Europeans not fear all not linguists
+#	all not Germans like some not linguists	not some linguists not fear some Germans
+#	not all linguists love some not Romans	all not Romans hate some not Germans
+|	not all not linguists not like some Germans	all not linguists hate all Germans
+#	not some not linguists not hate all not Italians	all Germans hate all Europeans
+|	all not Germans like some not linguists	not some not Romans like some not linguists
+v	not some linguists not love all Germans	not all linguists love all not Romans
+<	all not Romans hate all not linguists	not all Germans not hate all not linguists
+#	not all not linguists not fear all not linguists	all Italians not fear all Europeans
+#	not all linguists not hate all not Romans	some linguists fear all Europeans
+<	all linguists not hate some linguists	not all linguists hate some linguists
+#	not all not Romans hate all linguists	not some not Italians fear all Romans
+|	some not linguists fear some not Europeans	all not linguists love all not Italians
+#	not all not Italians not love some not linguists	not some Germans hate all Germans
+>	not all linguists love some not linguists	all linguists not love some not linguists
+#	all linguists love all not Europeans	not all not linguists not love all Europeans
+#	not all Germans not love some not Germans	not some not Italians not fear some linguists
+>	some Europeans not love all linguists	all Italians hate some linguists
+#	not some not Germans like some not Italians	all not linguists not fear all not Romans
+#	not all Italians not like some not Italians	all not Romans hate all linguists
+#	not all not Germans not hate some not linguists	some not linguists fear all Italians
+v	some not Romans like some not linguists	some not Germans not like some not linguists
+#	some not Italians not fear some not Italians	all not linguists not hate all not linguists
+#	not some not Romans like some not Germans	not all not linguists not hate all not Romans
+<	all Romans hate all linguists	not all not Germans like some linguists
+v	not all linguists love all not Romans	not all linguists fear all not Germans
+|	not some Italians not like all linguists	all Romans hate some linguists
+#	not all Italians not like some linguists	not all Romans not fear some not Romans
+|	all not Europeans love some not linguists	not some not Romans like some not linguists
+>	all linguists not fear all not Italians	all linguists love some Germans
+#	not some linguists not love some Germans	not all Europeans hate some linguists
+#	not some not Romans hate all Italians	not all not linguists love some Germans
+<	all linguists not hate all Romans	all linguists not hate all Europeans
+|	some not Romans love some not linguists	all not Romans fear all not linguists
+>	not some not linguists hate some Italians	all not linguists not hate some Europeans
+#	not some Romans fear some not Europeans	some Europeans not like some linguists
+#	some not linguists not like some linguists	not all linguists not like some not Europeans
+#	not some Germans not hate all linguists	not some not Romans love all Europeans
+|	not all linguists not hate all linguists	all linguists not hate some linguists
+|	all Europeans not fear all linguists	not all Germans not fear all linguists
+>	some Italians not like some linguists	all Romans hate all linguists
+^	some not linguists not fear all Europeans	all not linguists fear all Europeans
+<	all linguists not hate all Romans	not all linguists hate all Italians
+>	all Germans hate some not linguists	not some Europeans not hate some not linguists
+#	not all Italians not like some not linguists	all Italians love all Germans
+|	not some not Romans not like all not linguists	not all not Italians like all not linguists
+|	not all Italians not love all not linguists	all Europeans fear some not linguists
+#	all not Romans not like some Europeans	not some linguists hate some Romans
+#	some linguists fear some Germans	some Europeans not like some linguists
+#	some not Germans like some not linguists	not all linguists fear some Romans
+#	not all not Italians not love all Germans	all not Romans fear all linguists
+#	not some Romans not like some not Germans	not some not Italians not love some linguists
+v	some not Italians not hate all not linguists	all not Italians not like some not linguists
+#	some not linguists not hate all linguists	not some not Europeans like all Italians
+=	not all not Italians hate all not linguists	not all not Italians hate all not linguists
+#	some not Italians fear some Europeans	some not linguists like some not Italians
+#	not all not Romans not love all not Europeans	not all linguists not fear all Europeans
+#	some not Romans hate some linguists	not some linguists not hate some Germans
+#	all Italians not like all not Germans	all Romans not hate all linguists
+|	not all Germans not fear all linguists	not some Germans not love some linguists
+#	not all Germans fear some not Germans	not some linguists not like some not Romans
+<	all Europeans hate all not linguists	some Europeans not like some not linguists
+v	not all not linguists hate all Italians	all not linguists not like some Romans
+v	all not linguists not fear all not Italians	some not linguists not like some not Italians
+#	not some not Italians fear all Romans	all not Europeans fear all linguists
+#	some linguists like all not Romans	all not Germans not fear some not Germans
+>	all not linguists not hate all not Germans	all not linguists love all not Italians
+#	all Germans hate some not Romans	some not linguists not like all linguists
+#	not all not Europeans not hate all linguists	all not Italians hate some Europeans
+#	some not linguists not like all Romans	some Italians not fear some Italians
+#	all Romans love all linguists	not all Italians not hate some not linguists
+#	all not Europeans not hate all not Italians	not all Europeans not love some linguists
+#	all not Italians not hate some not linguists	all not linguists like all not Europeans
+#	not all Italians like some not Romans	not all linguists not like all Germans
+#	all not Italians not like all not linguists	not some Italians not love all not Germans
+|	all Europeans love all linguists	some Germans not love all linguists
+#	not some not linguists not fear all linguists	not all not linguists not fear all not linguists
+#	all not Italians fear some not Europeans	all Germans hate all linguists
+<	not some linguists not like some Romans	all linguists not hate all Europeans
+<	all Romans love all linguists	not some Romans hate some linguists
+v	some not linguists not fear all Italians	all not linguists fear all Romans
+#	not some not linguists hate some linguists	not all Romans not hate some not Romans
+|	not some not linguists not fear all not Germans	all not linguists love some not Europeans
+#	all not Germans not fear all Europeans	not all not Italians not hate all linguists
+>	not all linguists love some Germans	all linguists fear all not Italians
+>	all not Italians not love some not linguists	all not Romans fear all not linguists
+>	some not Romans not love some linguists	not all Germans not fear all linguists
+>	not all not linguists hate some not linguists	not some not linguists hate some not linguists
+#	not some Europeans hate some not Europeans	not all linguists love some not linguists
+#	all Romans love all Romans	all linguists love all Europeans
+#	some linguists love all Romans	not some Europeans hate some not Europeans
+v	some not Romans hate all linguists	all not Europeans not hate all linguists
+|	not all not linguists not hate some not Germans	not some not linguists not like all not Germans
+<	not all not linguists not love all Europeans	not all not linguists not love all Italians
+#	some Italians like some not Italians	not all not linguists not love all Europeans
+>	all Romans not like all not linguists	all Italians hate some not linguists
+#	not all Germans not fear all not Italians	not all Romans like some linguists
+v	not all not Romans not like all linguists	all Germans not love all linguists
+#	not all not linguists not fear all not linguists	not all Italians like all Europeans
+#	not some not linguists hate some Italians	not some Italians like all Romans
+v	all linguists not hate all Italians	not all linguists like some Italians
+#	not all Germans like all Romans	some not Europeans like some linguists
+>	not all linguists love some not Romans	not all linguists not hate all not Romans
+|	not all Germans not love some not linguists	all not Romans hate all not linguists
+#	some Germans not fear some Italians	all linguists not hate all Europeans
+v	not all not Italians hate all not linguists	not some Germans love some not linguists
+#	not some not Germans not fear some not Germans	not some not linguists like some Europeans
+#	not all not linguists love some Germans	not all Italians like all linguists
+|	all linguists love some Germans	all linguists hate all not Romans
+#	all Romans not fear some not linguists	all not Italians not like some not Germans
+#	some not Germans hate all not linguists	not all not Europeans like some Italians
+>	not all not linguists fear some Germans	not some not linguists not like all Germans
+#	not some linguists not love some not Romans	all Italians hate some not Europeans
+|	not all not Europeans not love some not linguists	not some not Romans not fear all not linguists
+<	some not Europeans like all linguists	not all not Europeans hate some linguists
+#	not all Germans not love some not linguists	not all Germans fear some not Germans
+#	not some linguists not love all not Italians	not all Europeans not hate some not linguists
+#	all not linguists not hate some Europeans	not some Italians not love some Italians
+<	all not Europeans love some not linguists	some not Germans not fear all not linguists
+#	all not Europeans not fear some not linguists	all Europeans like some linguists
+#	not all not linguists not love some linguists	not some not Germans hate some not Germans
+#	not some not linguists not hate all Italians	not some not Europeans not hate all Germans
+<	not some not linguists not love all not linguists	not some not linguists hate all not linguists
+#	all not Europeans not fear all not Romans	not all Germans not fear all not linguists
+#	all Germans hate all not linguists	not some Europeans not fear some not Romans
+v	not some not linguists hate all not Romans	not all not linguists not hate some not Germans
+v	some not Germans hate all linguists	not all not Italians hate all linguists
+|	all linguists love all Europeans	all linguists hate some Romans
+|	some not linguists love some Italians	not some not linguists not fear all Italians
+<	all linguists hate some Romans	all linguists hate some Europeans
+#	not all not Germans not fear some not linguists	all Germans not hate all not Italians
+v	not all Romans like some linguists	some Romans like some linguists
+v	not some linguists not like all not Europeans	some linguists not love all not Germans
+#	not all not Europeans love all not Italians	some Romans not hate some linguists
+#	not some Romans fear some Romans	not all Italians like all linguists
+#	all Germans hate all not Germans	not some linguists not hate some not Romans
+#	some not linguists not like some linguists	all Europeans hate all not Romans
+|	not some Europeans not fear all linguists	all Europeans not fear all linguists
+#	not all Europeans not hate some not linguists	some Germans like all not Europeans
+#	not some not linguists not hate some not Italians	all Germans hate some not Germans
+>	not all not Italians not love some not linguists	not all Germans not love some not linguists
+#	all not Europeans not love all linguists	not some Germans hate all not linguists
+#	all Germans not love some not linguists	not all not Italians not love all not Romans
+#	all Romans not hate some Europeans	some not Europeans not hate some linguists
+#	not all not Germans not like some not Germans	some Europeans like all not linguists
+#	not all linguists hate all linguists	not all Europeans fear some Germans
+v	some Europeans not like some not linguists	not some Germans hate all not linguists
+#	not some not Germans not love all not linguists	not some not Italians like some Romans
+#	not all Romans hate some Germans	not some not linguists like some Europeans
+#	not some not linguists not fear all Italians	not some Romans love some Romans
+|	some linguists hate some not Europeans	all linguists love all not Europeans
+|	all not linguists love some not Europeans	all not linguists fear all not Germans
+>	some not Romans like some linguists	some Germans like some linguists
+<	all Italians fear all linguists	some not Germans fear all linguists
+#	all not linguists fear all linguists	some Germans like all not Romans
+v	not all not linguists not love some Germans	not all not linguists love some Germans
+#	not some linguists fear some Germans	not all not Germans like all Romans
+#	not some Italians not love all not Germans	all not linguists not fear all not Italians
+#	all not Italians like some Italians	some not Italians not love some linguists
+<	not all not linguists not fear all not Romans	not all not linguists love some Germans
+#	not some Italians not fear some linguists	not all not Italians fear some not Europeans
+|	all Europeans not hate some not linguists	not some Europeans not hate some not linguists
+#	some not Romans hate some Germans	not all not Italians fear some linguists
+#	not all not linguists not like some linguists	not all Italians not like some Europeans
+#	not all not Italians not love some Romans	all Romans fear all linguists
+#	not some linguists love all not Italians	not all not Europeans fear some Germans
+#	not all linguists not like all Romans	all not linguists fear all Romans
+v	all linguists not hate all not Romans	some linguists hate all not Europeans
+#	not some not Europeans fear all not Romans	not all Europeans fear all linguists
+|	some not Europeans love all not linguists	not some not Romans not fear some not linguists
+#	not all Romans not fear all not linguists	some not Europeans fear some Europeans
+<	all not Romans fear all not linguists	not all Germans not fear all not linguists
+>	not all not Italians not love some not linguists	not all not Europeans not love some not linguists
+#	some not Europeans fear some Germans	not all not Romans like some linguists
+#	all linguists love all Europeans	not all Italians hate some Europeans
+#	all linguists hate all not Romans	all not linguists fear all linguists
+#	all not linguists not like all not linguists	not some not linguists not hate all not Germans
+#	not all linguists fear all linguists	some Italians not hate some Europeans
+#	some not Romans fear some linguists	not some linguists fear some Italians
+#	not some not Italians not fear some not linguists	all Romans fear all linguists
+#	not all linguists not fear some linguists	all not linguists not love some not Europeans
+#	not some linguists fear all Romans	not all not Germans hate all not Germans
+#	not all not linguists not love all Italians	all not linguists not love all not Italians
+=	not some Italians not like all not linguists	not some Italians not like all not linguists
+=	not all linguists love some not linguists	not all linguists love some not linguists
+#	all Romans like some not linguists	not all not Romans fear some Germans
+#	not some Europeans fear some linguists	not all not Italians not love all not Romans
+#	not some not Romans like some not linguists	not all not Germans not hate all Europeans
+#	not some linguists hate some Romans	all not Europeans hate some linguists
+>	not all Romans not like all linguists	all Europeans love all linguists
+<	not some not linguists not fear all Italians	not all not linguists like some Romans
+#	all Romans hate some Romans	all Romans hate all linguists
+#	some Italians love some not linguists	not all not Germans love some not Romans
+>	not some linguists not hate some not Romans	all linguists hate all not Germans
+#	not all Germans not like all not Romans	all Germans hate all linguists
+#	not some not Italians hate some not Germans	not all linguists love some Germans
+#	not all linguists not hate all not Romans	not all not Romans hate some not linguists
+v	all Germans love some linguists	some Europeans not love some linguists
+#	not some not Europeans not hate some not Germans	some not Romans not hate all linguists
+#	some Italians not like some linguists	some Europeans fear all Europeans
+#	all Europeans hate all not linguists	all Germans fear all not Italians
+#	not all not Italians hate some not Italians	some not Romans fear some linguists
+>	not some not linguists love some Europeans	all not linguists fear all Europeans
+v	not some not linguists love all not Germans	some not linguists like some not Italians
+|	all not Europeans not hate all linguists	not some not Italians not hate all linguists
+#	not all not linguists not like some Europeans	not all Germans hate all not Germans
+#	some not Europeans not like all not Germans	not all Italians love some not linguists
+|	some Germans like some linguists	all Germans fear all linguists
+#	some Italians fear all linguists	all Italians not fear some not linguists
+#	not some Germans fear all not Germans	not some not Italians not love some linguists
+v	not some linguists like some Romans	some linguists not fear all Europeans
+#	not some Italians not hate some linguists	all Europeans fear all Germans
+#	all Europeans not fear some not linguists	not all Italians not hate some not Italians
+#	not some linguists not love some not Romans	not some not Europeans love some linguists
+#	all not Romans love some not Germans	not all not linguists fear all not Germans
+|	all Europeans not fear some linguists	some Germans fear some linguists
+#	all not Germans hate some linguists	not some not Germans not fear some Germans
+#	not some Italians fear some not linguists	not all not linguists not like some linguists
+#	not some not linguists not like all Germans	all not Europeans hate some Europeans
+v	all not Europeans fear all not linguists	some not Germans not fear all not linguists
+#	not all not linguists fear some not Germans	some Germans love some Italians
+<	all not linguists not love all Romans	some not linguists not love all not Germans
+v	not all not Italians love some not linguists	all Germans like some not linguists
+#	not some not Romans like all Italians	all Italians not like all linguists
+#	all Europeans like all Italians	some not Europeans not fear all not linguists
+>	not some linguists hate all not Germans	all linguists love some not Germans
+#	some not Europeans not hate some not linguists	not some Germans not like some linguists
+v	some not linguists not love some Romans	not all not linguists not like some not Germans
+#	all Germans hate all not linguists	some Italians hate some Germans
+#	some Germans like some not Romans	not all Germans not fear some not linguists
+|	all Europeans fear some not linguists	all Romans not fear some not linguists
+>	not all linguists not fear some Europeans	not some linguists not fear some Italians
+=	not some linguists love all Italians	not some linguists love all Italians
+|	some not Europeans love all not linguists	all not Italians not like all not linguists
+#	all not Germans not fear some not Germans	some Italians not like some not linguists
+#	not all not linguists not love some not Germans	not all Germans not fear all not Germans
+|	not all not linguists not fear all not Germans	not some not linguists not like some Italians
+#	all Germans fear all not Germans	all not Romans hate some not linguists
+#	all linguists not hate all not Romans	some not Europeans fear all not Europeans
+<	all not linguists like some not Italians	not all not linguists not like some not Romans
+#	some not Romans not like some Germans	not some Italians not hate all linguists
+#	not all not linguists hate all not Romans	all Germans not hate all not Italians
+>	not some linguists like all not Germans	not some linguists not fear some Italians
+#	some not Italians not love some linguists	not some not Europeans love all Germans
+#	not some linguists not fear all Germans	all not Germans fear some Germans
+v	all not Europeans not love all linguists	not all not Italians fear some linguists
+|	not some not Italians not hate some not linguists	some not Europeans not hate some not linguists
+#	all linguists not love some linguists	not some not Italians love some Romans
+v	some not Italians not hate some linguists	not all not Europeans like all linguists
+|	not some linguists not love all not Italians	all linguists not love some not Germans
+|	all Italians like all linguists	not all Romans like all linguists
+#	some not Europeans not fear all not Romans	not some linguists like some not Europeans
+#	some linguists fear all not Germans	not all Europeans not love all Italians
+#	not some not Europeans not like all linguists	not all not linguists hate some not Europeans
+|	some linguists fear all not Italians	all linguists love some Germans
+#	some Germans not fear all Germans	all linguists not hate all Europeans
+#	some Germans not hate some Europeans	all not linguists not like all not linguists
+#	not some not Italians not like all not linguists	not some Romans like some linguists
+<	not some not Italians not hate all not linguists	not some Germans love some not linguists
+#	some Romans not love all not Romans	some Italians fear all linguists
+#	not some not linguists not hate all not Europeans	all not Italians not fear all Romans
+#	some not linguists not love some not Germans	not some Germans not love some not Italians
+#	not all linguists not hate some Italians	some not linguists not hate some linguists
+#	some not Italians not hate all not Romans	some Italians hate some not linguists
+#	not all Romans fear all Italians	not some linguists fear some not Romans
+#	not some not Europeans not fear some linguists	not all linguists not like all Romans
+#	all Italians like all linguists	not all not linguists not fear some linguists
+v	some not linguists not like some Romans	not all not linguists hate all Italians
+#	all Romans love all linguists	some Germans not love all Germans
+^	not all not Germans fear all linguists	not some not Germans not fear all linguists
+#	all not Romans hate some Italians	some not linguists love all linguists
+#	some linguists fear some Germans	not all not Romans not fear all Europeans
+#	some linguists hate all Europeans	not all not Italians not fear all not Italians
+#	not all linguists love some not linguists	not some not Germans not hate all not Europeans
+<	not all Germans not fear all not linguists	some not Romans fear all not linguists
+<	not all Germans not love some not linguists	some Europeans love some not linguists
+#	not some Italians hate all not linguists	some not Italians like all Europeans
+<	all not Europeans love some not linguists	not all not Europeans not like some not linguists
+>	not all not Italians like all not linguists	all not Italians fear some not linguists
+<	not some linguists not hate all linguists	not all linguists not hate all linguists
+#	all Italians not love all not Italians	some linguists hate all not linguists
+#	all not Europeans not like some Italians	not all not linguists hate some not linguists
+|	all not Germans like some not linguists	some Italians not like some not linguists
+#	not all linguists love all Germans	not some Romans hate some not Europeans
+#	some linguists fear all Italians	some linguists fear some not Italians
+v	some not linguists not love all not Romans	not all not linguists not love all not Romans
+<	some linguists not like all not Italians	not all linguists love all not Romans
+>	not all not Germans not like some not linguists	some Italians like some not linguists
+|	not all Romans not like all linguists	not some Europeans like all linguists
+#	not some linguists not fear all Germans	not all not Italians not fear some not Italians
+#	not all Europeans not hate some not linguists	some Italians fear some Romans
+<	not some linguists like all not Europeans	not some linguists love all not Italians
+#	not all linguists not hate all linguists	not all not Europeans not like some Germans
+#	not all Italians not fear all not Italians	some Romans fear all linguists
+^	all not linguists not love some not linguists	some not linguists love some not linguists
+#	some not Europeans not love all linguists	some Europeans not love some Europeans
+#	not some not Germans not hate all linguists	some not linguists like all not Romans
+#	all not Romans fear all linguists	not all not Germans fear all Europeans
+>	some not linguists not love all not Romans	all not linguists not love all not Italians
+|	not all linguists not hate all not Romans	not some linguists hate all Germans
+#	all not linguists fear some not Italians	all linguists not love all not Germans
+#	all not Germans not love some linguists	some Romans hate some Romans
+#	all not Romans not fear all Germans	not all not Romans hate some not linguists
+<	all not linguists like some not Europeans	all not linguists not fear all not Romans
+#	all not linguists like all Germans	not all not linguists not hate some Europeans
+v	some linguists love all Romans	all linguists not love all not Germans
+#	not all Germans hate all not Germans	not some linguists like some Romans
+#	not all not linguists not hate some linguists	not some Europeans fear all not Romans
+>	some not Romans like some not linguists	not all Germans not love some not linguists
+v	some not linguists not fear some Romans	not some not linguists love all not Germans
+#	not all linguists not hate some not Europeans	some Germans not hate some Romans
+<	not all not linguists not hate all not linguists	some not linguists hate some not linguists
+#	not some Italians fear some not Italians	all not Italians not hate some not linguists
+#	not all linguists not like all Italians	not all linguists like all Germans
+#	not some not Romans like some not linguists	all not Italians like some not Italians
+<	all Europeans love some not linguists	some Europeans love some not linguists
+v	all linguists not love all not Europeans	some linguists not fear some not Europeans
+#	not all Romans not like all linguists	some not Italians hate some not Europeans
+#	not all not linguists fear all Romans	all Germans not love all linguists
+v	not all linguists fear all not Germans	not some linguists love all not Italians
+#	all not linguists not love some not linguists	some Europeans fear all not linguists
+<	not some linguists not fear some not Europeans	not some linguists love all not Romans
+#	not all not linguists hate all not Romans	all not Romans not hate all Europeans
+#	not some not Europeans hate some Europeans	some not linguists love all not Romans
+v	some not linguists not love some Romans	not some not linguists not like some Italians
+=	some not Europeans hate all linguists	some not Europeans hate all linguists
+|	not some linguists hate all Romans	some linguists hate all Europeans
+#	all not linguists not hate all Romans	not some not Italians not love some linguists
+v	some linguists not love all not Germans	not all linguists not love all not Germans
+|	not all linguists not hate some Italians	all linguists like all not Germans
+#	not all Germans not love all not Italians	all not Italians like some linguists
+>	not all linguists love all not Romans	not all linguists not hate some not Romans
+<	some not linguists fear all not Italians	some not linguists fear all not Europeans
+|	not all not Italians not love all not linguists	not some not Romans not fear some not linguists
+#	not some linguists not hate all linguists	not some not Europeans like all Italians
+#	not all not Italians hate some Germans	not all Europeans fear all linguists
+#	not some Europeans love all not linguists	some not Germans not love all not Germans
+>	all not linguists not fear all not Romans	all not linguists like some not Europeans
+=	all not linguists not fear some Romans	all not linguists not fear some Romans
+#	all not linguists not fear all not Romans	some Romans fear some not Romans
+^	not some linguists not love all Romans	some linguists not love all Romans
+#	some linguists not hate all Italians	some not Romans not hate all not Germans
+#	some not Romans not hate all Romans	some not linguists fear some not Europeans
+|	not some linguists fear all not Romans	all linguists fear all not Romans
+#	some Europeans fear some linguists	not all not Germans not like some not Germans
+|	not some not Italians not hate all not linguists	not some not Germans hate all not linguists
+#	all not Italians hate all Europeans	not all not linguists not fear some not Italians
+<	all not Romans fear all not linguists	not all not Europeans not fear all not linguists
+#	not some Italians not hate all Romans	some linguists not fear all Romans
+#	some not Romans like some not Romans	not all linguists hate all Romans
+#	not all Germans hate some Italians	not some linguists fear all not linguists
+>	all not linguists not love some linguists	not some not linguists not fear all linguists
+#	some linguists hate all not Europeans	not all not linguists not like all not Germans
+#	all not linguists fear all not Germans	some Italians like all Italians
+#	all Italians not love all not Italians	some not linguists not like all Romans
+>	some Italians not like all linguists	all Romans hate some linguists
+#	some linguists like all not Italians	all not Europeans not hate some not Italians
+#	not all not Romans hate all linguists	not all not Italians love all linguists
+#	not some Romans not love all Italians	not all Europeans not like some linguists
+#	not all not Italians not love some not linguists	all linguists like all Italians
+#	not some Romans not like some linguists	some Germans not fear some linguists
+>	some not Europeans not love some linguists	not all not Europeans not hate all linguists
+#	some linguists hate all Italians	all not Italians not fear some not Germans
+#	not some Europeans fear all linguists	all Italians not love all not Romans
+|	not some not Romans not fear all not linguists	not all not Italians not love some not linguists
+#	not some Europeans not love all not linguists	some not Germans love some Romans
+|	not all not Europeans not love some not linguists	all not Romans fear all not linguists
+>	not some linguists love all not Romans	not some linguists not fear some Germans
+|	not some not linguists not fear all Italians	all not linguists love some Romans
+^	all linguists not like all Germans	not all linguists not like all Germans
+#	not some linguists not hate some linguists	all Germans fear some not Germans
+#	some not linguists hate some Germans	not all not Romans love some Europeans
+#	all Europeans love all not Italians	not all not Germans like some linguists
+#	all not Germans not love some linguists	not some not Romans not fear some not linguists
+#	some not Germans not love all Romans	not some not linguists not fear all Romans
+#	all not Germans fear some not Germans	all Europeans love all linguists
+#	all not Germans love some not Europeans	not all not Italians not fear some linguists
+>	not all Romans like some linguists	not some Italians not hate all linguists
+|	all not linguists love some Italians	not some not linguists not hate all not Germans
+#	not some linguists fear some not Italians	all not Europeans fear some not linguists
+v	all linguists not like all linguists	some linguists like some linguists
+>	not all not linguists not love all Italians	all not linguists love all Italians
+v	not some Germans like all not linguists	some Europeans like all not linguists
+#	not some not Italians not hate all not Europeans	all Europeans fear all linguists
+#	some not linguists not love some Europeans	not all not Europeans not hate some not Italians
+|	all not Europeans not like some not linguists	all not Germans like some not linguists
+#	some Italians not like some not Germans	not some not linguists not hate some Europeans
+#	all Italians hate all Germans	not some linguists like all not Europeans
+>	not some linguists fear all Europeans	not some linguists not like some Italians
+>	all not Italians not love some linguists	not some not Italians not hate all linguists
+#	not some linguists not fear all Italians	not some not Romans fear all not Italians
+#	not some not linguists not love all not Romans	not all Italians love some Italians
+#	not some not Italians hate all not Europeans	all not Europeans not hate all linguists
+|	all linguists not hate all Romans	some linguists hate all Europeans
+=	some not linguists fear some linguists	not all not linguists not fear some linguists
+#	all not Germans not like some not Italians	not all not linguists not love all not Romans
+#	some linguists not hate all Germans	some not Italians not love all Italians
+>	some linguists like some linguists	all linguists like all linguists
+<	all linguists like all not Germans	not some linguists hate some Romans
+#	not some Italians not like all not linguists	not all linguists love all not Germans
+#	all not Italians not hate some linguists	some Italians fear all linguists
+#	not some linguists fear all Europeans	all Italians hate all not Italians
+#	all linguists hate all not linguists	all Europeans like some Italians
+#	all not Germans fear all Romans	not some not Germans not hate all linguists
+=	not some not linguists not like some linguists	not some not linguists not like some linguists
+#	all linguists not hate all not Romans	all Germans not like some linguists
+#	some not Romans hate some Romans	not some not linguists not fear all Romans
+#	all not Romans hate some not linguists	not all linguists fear all linguists
+v	not all linguists hate some not Europeans	all linguists not love all not Italians
+#	some not Germans not like all linguists	not some not Europeans not love some Romans
+#	not all linguists like some Italians	not all Germans not love all Europeans
+v	not all Italians not like all linguists	not all Italians like all linguists
+#	some not linguists not love all not Germans	some Romans not hate all not linguists
+#	not some Romans not fear some not Europeans	not all linguists hate some not linguists
+v	some linguists love all Romans	not all linguists love all Romans
+#	some not linguists love some not linguists	some not Germans not love all Romans
+#	not some not linguists not like all Germans	not all Romans love all Romans
+#	not some Italians not fear some Italians	not some not linguists not fear some not Italians
+#	not some not linguists love all not Germans	some not Romans hate some not Italians
+v	some not linguists not love all not Germans	not all not linguists hate all not Romans
+#	all not linguists fear all Romans	not some not linguists not hate some not Italians
+#	not all not Italians not hate all Germans	all Germans hate all not linguists
+#	not all not Germans not hate some linguists	all not Romans love all not Germans
+#	all not Europeans fear all not linguists	not all Germans not like all Germans
+|	not all Romans not fear all not linguists	not some not Germans fear all not linguists
+>	some linguists not love some not Romans	all linguists fear all not Romans
+v	not all linguists fear some not Romans	some linguists not like all not Romans
+<	not some not Italians not hate some not linguists	not all Germans love all not linguists
+<	all linguists like all not Germans	all linguists not fear all not Italians
+=	not some Europeans fear all linguists	all Europeans not fear all linguists
+#	not some not Romans not love all Europeans	not all not Romans not fear all not linguists
+#	not all Germans like some Europeans	not all Europeans not hate some not linguists
+=	not all linguists not hate all linguists	not all linguists not hate all linguists
+#	not all Germans not fear all not Germans	not some not linguists fear all Italians
+#	not some Europeans not like some Romans	not all linguists not hate some Italians
+#	not some linguists not hate all not linguists	all Europeans fear some Romans
+<	some Germans fear some linguists	some not Italians not like all linguists
+#	not some linguists not hate all not Germans	not some Germans like all not linguists
+#	some Romans not hate all Germans	not some Europeans like all linguists
+|	not some linguists not fear some Germans	not all linguists not like all Germans
+|	all not linguists love some not Europeans	not all not linguists not fear all not Romans
+#	not all not linguists fear all not Germans	all not Europeans not love some not Italians
+#	all not linguists fear all not Germans	not all Germans not love all not Italians
+|	all not Romans hate all not linguists	all not Germans like some not linguists
+#	some not Germans not hate all Romans	all not Italians not fear some linguists
+#	not some linguists not fear some not Europeans	all not Romans like all not Italians
+#	not some not linguists love all not Germans	all Europeans love all not Italians
+v	some linguists not like all not Romans	not all linguists fear some not Italians
+#	not all not Romans not fear some not Italians	not some not linguists not fear all not Europeans
+#	not some not Romans not fear all not linguists	not some not Romans not fear all not Germans
+|	not all linguists not fear some not Europeans	not some linguists not love all not Italians
+#	all Italians fear all Europeans	not all Italians not like all linguists
+>	not all not linguists hate some not Europeans	all not linguists like all not Europeans
+#	all linguists not hate all not Romans	not some not Europeans not fear some Germans
+#	not some not Europeans hate all not Germans	not all not Europeans not hate all linguists
+v	not all not Romans hate all linguists	all Germans not like some linguists
+#	all Romans hate some not linguists	all not linguists not like all not Italians
+v	some linguists not love all not Germans	not all linguists fear some Romans
+#	not some Italians hate all not linguists	some not Italians love all Germans
+=	all not linguists fear all Germans	all not linguists fear all Germans
+>	not all linguists like all not linguists	some linguists fear some not linguists
+#	not all Europeans fear all not Romans	some linguists not like all not Romans
+#	not all Romans not fear some not Europeans	not all linguists fear all not Germans
+#	all Europeans hate all not linguists	not all not Romans like all Germans
+#	not all not Germans not hate some not Italians	all Germans fear all not linguists
+#	some linguists hate all not linguists	not all not linguists fear some not Germans
+#	all Europeans fear all not Romans	some not linguists fear some not Europeans
+#	not all linguists not love all not Germans	all not linguists not love some not Germans
+|	all not linguists love some Italians	not some not linguists not hate all Italians
+#	all Italians hate some not Germans	not all not Germans like some linguists
+|	not all linguists fear some not Romans	not some linguists not fear some Germans
+#	not all Italians hate some not Romans	some linguists not love all Romans
+#	not some Germans hate all Italians	not all Italians hate all not linguists
+v	not all not Europeans hate all linguists	not all not Romans like some linguists
+#	all not Germans hate all Germans	not some Italians not like all not linguists
+#	some not Italians not fear all Germans	all Romans not love some not linguists
+#	some Romans not hate all not linguists	some not Germans like all not Germans
+#	some not Romans fear some linguists	not all Germans hate some Romans
+#	all linguists not like all linguists	all not linguists not hate some not linguists
+|	not some not linguists like some Europeans	all not linguists like some Italians
+<	not all Romans not hate some not linguists	not all not Germans not hate some not linguists
+>	all not linguists not hate all not linguists	all not linguists not hate some not linguists
+>	all not linguists not like all Italians	all not linguists hate some Romans
+#	not all not Romans hate all linguists	not some not Europeans love some Europeans
+#	not some linguists like some Romans	some Italians fear all linguists
+#	not some not Europeans not hate all not linguists	some not Germans not like all not Europeans
+#	some not linguists not like some not Italians	not some Germans not love all Europeans
+#	all Germans like some not Italians	all not Romans not fear some not linguists
+#	all Romans not like all not linguists	not all not linguists not hate some Europeans
+#	not all not linguists love some not Romans	not all not Italians not hate all Germans
+#	not some not linguists not love all not Romans	not some Europeans fear all not Romans
+>	not some Italians fear all linguists	not some not Germans not like some linguists
+>	not all Italians not hate some not linguists	not all Romans not hate some not linguists
+#	some not linguists not fear some Germans	not all not Europeans not hate all linguists
+v	not all not Italians love some linguists	not all Germans hate all linguists
+#	all Romans not love all Romans	all not Italians not love some linguists
+#	not all not Italians not like some Romans	some not linguists not hate all linguists
+#	all not linguists not love some not Europeans	not some Europeans not hate some not linguists
+#	not some not linguists not love some Romans	not some not Germans not love all not Italians
+v	all linguists like all not Germans	some linguists not love all not Germans
+#	not all not linguists like some Europeans	all Germans not hate all not Romans
+v	not all linguists hate all Italians	not all linguists like some Italians
+v	some Europeans not love all linguists	all Italians like all linguists
+#	all Europeans love all linguists	not all Romans not fear some not Italians
+v	all Italians not hate all linguists	some not Germans hate all linguists
+#	not all not linguists hate some not linguists	all Europeans like some linguists
+>	not all not Germans not love some not linguists	some Italians love some not linguists
+|	not all not linguists fear some not Romans	all not linguists fear some not Italians
+#	all not Europeans hate all Italians	some linguists hate some not Germans
+<	not all linguists not like all linguists	not all linguists fear all linguists
+>	some not Germans hate all not linguists	not all Romans not hate all not linguists
+#	not some not Germans not fear some Italians	not all linguists hate all not linguists
+=	not all not linguists fear all Romans	not all not linguists fear all Romans
+|	all not linguists love some not Europeans	all not linguists not love some not Europeans
+v	not all not linguists not like some not Romans	all not linguists not love some not Europeans
+#	all not linguists not hate some not linguists	not all Germans not like all Germans
+#	some Italians not like all linguists	not some Europeans like some Italians
+#	not some Germans not love some not Italians	all not linguists fear all not Germans
+#	not some linguists fear all not Romans	not some not Romans not hate some Germans
+#	all Italians not love all not Italians	all Germans hate all not linguists
+#	all not linguists not fear some Germans	some not Italians not hate some not linguists
+>	all not linguists not fear all Europeans	all not linguists like some Italians
+#	not some Romans not hate some not Germans	not all not Italians love some linguists
+|	all Europeans like some linguists	all Romans fear all linguists
+#	not some not linguists love some linguists	some not Romans not hate some not Italians
+<	some linguists fear some Germans	some linguists not like all not Italians
+#	all not Italians not like some Germans	all not Europeans fear all not linguists
+#	all not Germans not like some linguists	all not linguists not hate some Europeans
+<	all not linguists fear some not Germans	some not linguists not love all not Germans
+v	some not linguists not like some not Italians	not all not linguists hate all not Romans
+#	all not Romans not fear all not Germans	some not Germans not like all not linguists
+#	not all not Europeans like all linguists	some Italians not love all Europeans
+#	not all not linguists not hate some not Italians	some Italians not like some not Europeans
+>	all not linguists not hate all not Germans	all not linguists like some Italians
+#	not some Germans not hate all not linguists	not all not Germans not like some not Italians
+>	some not Germans not like some not linguists	all not Europeans fear all not linguists
+v	not some not Romans like all linguists	not all not Romans fear some linguists
+#	all linguists love some not Germans	not some not linguists like all not Romans
+=	not some not linguists like all not Italians	not some not linguists like all not Italians
+#	some not Germans hate all linguists	all not Germans not fear all Romans
+#	not some linguists not love all Germans	not some not Italians hate some not Europeans
+#	not all not Germans not fear all not Italians	some not Italians not like all linguists
+#	not some linguists like all not Europeans	not some not linguists like all Germans
+|	not all not linguists not hate some Germans	all not linguists love all not Italians
+#	not all Germans fear all not Italians	some linguists love some Italians
+#	all not linguists fear all not Romans	not some not Germans not hate some not Germans
+<	not some linguists not hate some Germans	all linguists not love all Germans
+#	not some Romans not hate all not Romans	not some linguists not hate some linguists
+#	all Germans not love all linguists	some Italians hate all not Romans
+v	not all linguists love all not Germans	not some linguists not love some not Romans
+#	not all not linguists not fear some Germans	not all not linguists not fear all not linguists
+#	all not linguists fear all not Germans	all not Europeans love all linguists
+v	some not Germans not like all linguists	not some Italians not like all linguists
+#	some not Germans like some not linguists	not all not Germans not love some not Europeans
+#	not all Italians not hate all Romans	not all linguists not hate all Italians
+#	not all not Romans not fear some Italians	all not Romans hate all linguists
+#	some not linguists not hate some not Germans	not all not Europeans hate all not Romans
+#	some not linguists not fear all Europeans	some not Germans love all Italians
+#	some not Germans fear all Europeans	all not linguists not love some not Europeans
+#	all linguists fear some Italians	all not Italians fear all Italians
+#	not some not linguists not love some Romans	not some not Romans like all not linguists
+#	not some Italians love all Romans	some Italians like all not linguists
+#	not all Europeans like some not Italians	not some not Romans not fear some not linguists
+#	not all Europeans not love all not Romans	not all linguists not like all not Germans
+#	some not Germans not fear all linguists	not all linguists not fear some not Europeans
+#	not some not linguists hate some not linguists	some not Europeans hate all Europeans
+#	not all not Italians not love all not Germans	all Romans hate some not linguists
+#	not all Italians not like some not linguists	all Europeans love all Romans
+<	not all linguists not hate some Italians	some linguists not love all not Germans
+#	some not linguists not hate all linguists	some Romans not love some Romans
+#	some not linguists not love some Romans	not some Romans like all not Europeans
+#	not some Italians not hate some not Germans	not all not Italians not love some not linguists
+#	all not Europeans not like some Europeans	all not Germans not love some linguists
+#	some Italians not love all not Italians	some linguists like all Romans
+#	not some not linguists not like all not linguists	some Romans like all not Italians
+#	all not linguists hate some not Romans	all not linguists love some not Romans
+<	not all linguists love some not Romans	not all linguists love some Germans
+#	some not Romans hate some linguists	not some not Romans not like all Italians
+>	all not linguists not hate some not Europeans	not some not linguists not like all not Germans
+|	all Germans fear all linguists	not all Germans not like some linguists
+#	not all not Romans hate all linguists	not all not Italians hate some not Europeans
+v	not all linguists like all not Germans	not some linguists hate some Romans
+#	not some Europeans hate all not Germans	some Europeans not like some not linguists
+#	all Germans not love some Italians	all linguists love all Europeans
+#	all not linguists not like all linguists	not some Germans love some not Europeans
+v	some Europeans not like some not linguists	not some Italians hate all not linguists
+#	not some linguists fear some not Romans	not some not Germans not fear all Germans
+=	all linguists hate all Europeans	all linguists hate all Europeans
+<	all linguists love some Germans	all linguists not fear all not Italians
+#	not all Germans love some linguists	all linguists not fear all not Italians
+#	not all not linguists not love all Italians	all Romans like some Europeans
+#	some not Italians not love some linguists	not all Romans not hate all not Italians
+#	some not Europeans not fear all not linguists	some not Europeans fear some Germans
+v	not all not Germans not hate all not linguists	some not Italians not hate all not linguists
+>	not all linguists love all Italians	not all linguists not hate some Italians
+#	not all Romans not hate some Europeans	not all not linguists not hate all not Germans
+#	not some not Europeans like some not Romans	all linguists hate some not Romans
+#	some not Italians not love some linguists	all not Germans like all not Romans
+#	some not linguists not hate some Italians	not all Europeans not love all Italians
+#	all not Romans hate all not Romans	not some linguists fear some not Romans
+>	some not linguists not fear all Europeans	all not linguists like some Italians
+#	some linguists love some Romans	all Italians not hate all not Germans
+#	all not linguists fear all not Romans	not some not linguists hate some not Italians
+>	some not linguists not love some Romans	not all not linguists love some not Germans
+#	not all not Italians love all not linguists	some Italians not love some not Europeans
+|	not some Europeans not love all not linguists	all Romans hate some not linguists
+>	not all not Italians like all linguists	all not Germans hate some linguists
+>	not all not Germans not like some not linguists	all Romans like some not linguists
+>	not all linguists fear some Romans	not some linguists fear some Italians
+|	some not Europeans like all linguists	all not Germans hate some linguists
+#	not some Italians not love all not Germans	not some not Italians not hate all linguists
+v	some not linguists not love all not Romans	not all not linguists fear all not Germans
+|	all not linguists fear all not Romans	not all not linguists not like all not Germans
+#	not all linguists not fear all Romans	not all Romans hate some linguists
+#	some Germans like some Romans	not some not Italians love all linguists
+#	not some not Italians not love some Romans	not all Romans not love some not linguists
+<	some Germans like some linguists	some not Romans like some linguists
+#	not some linguists hate all not Germans	not all not Europeans not like some not linguists
+#	some not Germans not love all not Romans	all Germans not love all linguists
+v	some Europeans not love some linguists	all Europeans not fear all linguists
+#	some Germans not love all linguists	all Italians not like all Europeans
+#	some Germans love some Italians	not some Germans not like all linguists
+#	some Europeans not fear some not Romans	some not Italians not hate some not linguists
+#	some linguists like all not Italians	not all linguists not like some not Italians
+#	all not linguists not fear all not Italians	not some Germans not love some not Italians
+#	all not linguists like some not Italians	not all not Italians not love all Germans
+v	not some not Italians hate all linguists	not all not Italians love some linguists
+>	not all linguists love all not Germans	not all linguists like all not Germans
+<	all Europeans not like all not linguists	not some Germans like all not linguists
+^	all Italians like all linguists	some Italians not like all linguists
+|	some linguists love all not Italians	all linguists hate all not Germans
+#	not some Europeans not hate some not linguists	some Germans love all not Romans
+|	all not linguists not hate some Europeans	some not linguists hate some Germans
+#	not some not Europeans fear all not linguists	not all not Europeans hate all not Italians
+#	not some not Europeans not fear some Germans	not some not linguists not fear all not Germans
+#	all not Romans like all Romans	all not Europeans hate some linguists
+v	all not Europeans fear all linguists	some not Romans not fear all linguists
+>	not all not linguists not fear some not Romans	all not linguists fear some not Italians
+#	not all not linguists hate some not Europeans	not all not Germans not fear all not Italians
+#	some not Europeans not hate some linguists	not all not Germans not like all not Germans
+#	not all Romans like all linguists	all not Germans fear some Germans
+#	not all linguists not like some Germans	all not Italians not like all Romans
+>	not some linguists fear some Germans	not some linguists fear some not Italians
+#	some linguists love some Italians	not all not Italians not hate some not Germans
+#	not all linguists not fear all Romans	all not Italians like some not Romans
+#	not all not Germans hate some not Europeans	not some not Germans not hate all linguists
+#	not all Europeans not fear some Romans	not some linguists not fear some Europeans
+|	not all not Europeans like all linguists	not some not Italians not love all linguists
+#	some linguists hate all Europeans	not some Germans fear some not Italians
+>	all linguists hate some Europeans	all linguists hate some Romans
+#	not some Germans not hate some Europeans	not all not Romans like some linguists
+#	all Europeans not fear all not linguists	some not Germans not fear all not Europeans
+#	not some Germans not fear all Italians	not some not Italians hate all linguists
+v	some not Romans not hate all linguists	not all Germans love some linguists
+|	not all Italians love all not linguists	not some Europeans not love all not linguists
+>	not all linguists love all not Germans	all linguists not love all not Germans
+v	some Europeans not love some linguists	not some Germans not like some linguists
+v	not some linguists like some Romans	some linguists not hate all Italians
+>	not some not linguists hate some Italians	not some not linguists not like all not Germans
+#	not all not Germans not hate all not linguists	not some not Romans fear all not Germans
+v	all Romans not love some not linguists	some Italians not hate all not linguists
+#	not all Europeans not fear all Europeans	some Europeans not love some linguists
+>	not some not Europeans like all not linguists	all not Germans fear some not linguists
+<	all not Europeans not hate all linguists	some not Romans not hate all linguists
+<	all not Romans hate all linguists	not all not Italians not hate all linguists
+#	all not Italians not fear some Europeans	some Romans like all not linguists
+#	not all Germans like all not linguists	all not linguists not fear all not Romans
+#	not all not Italians fear some linguists	not some not Germans not like all Europeans
+#	not all Europeans love all not Italians	not all not Europeans hate some linguists
+#	not all Europeans love some linguists	some not Europeans not like all Italians
+#	all not Italians not hate some not linguists	not some not Italians not love some not Romans
+|	not all Germans not hate all not linguists	not some not Romans not like some not linguists
+v	all not Europeans not hate all linguists	not all not Germans like some linguists
+#	some Germans like some Romans	some not Italians not love some linguists
+#	not some linguists fear some not Romans	not all not Romans fear some Germans
+#	all Germans hate all linguists	all not Romans love some Italians
+>	all linguists fear some Europeans	all linguists fear some Italians
+#	not all not Europeans fear some Romans	some Italians not like some linguists
+>	not some not linguists fear all not Romans	all not linguists like all not Germans
+#	not some not linguists not fear all linguists	all linguists fear all not Romans
+#	all Romans not love all Romans	all not Italians hate some not linguists
+#	some not Europeans like all linguists	not some not linguists not love all not Romans
+#	not some not Italians hate some not linguists	not all not Europeans not love some not linguists
+<	not some Europeans not hate some not linguists	not some Germans like all not linguists
+v	not some Romans hate some linguists	some Europeans not love all linguists
+v	not all Germans not like some linguists	some Europeans not love some linguists
+#	not all Italians not hate some not linguists	all Italians not fear all Italians
+#	all linguists not fear some Germans	all Germans like some not linguists
+#	all linguists not love some not linguists	not all linguists like some Italians
+<	all not linguists love some not Europeans	all not linguists not fear all not Italians
+<	all linguists love all Europeans	not all linguists not like all Germans
+#	not some Italians fear all linguists	some Germans not like some Germans
+#	all Romans fear some Germans	some not linguists like some not linguists
+>	some linguists not hate all Germans	all linguists like some Germans
+>	some not linguists not hate some Italians	some not linguists not hate some not Germans
+#	all not linguists hate some not Germans	all not linguists not hate all not linguists
+>	some Europeans like all not linguists	all Romans like all not linguists
+>	not all not Romans like some linguists	all not Europeans fear all linguists
+|	some not Europeans like all linguists	not some not Europeans not fear some linguists
+>	not some not linguists hate all not Romans	all not linguists love some not Europeans
+#	some not Italians fear all not Italians	not all not linguists fear all Romans
+#	not all not Germans not fear all Germans	some Romans fear all not linguists
+>	not all not Romans not fear all not linguists	not some not Romans not fear all not linguists
+v	not all not Romans not hate some linguists	not some Germans hate some linguists
+=	not all linguists hate all Romans	not all linguists hate all Romans
+v	all Germans not like some linguists	not all not Romans hate all linguists
+#	not some not Romans like some not linguists	all Germans not hate all not Romans
+#	not all Europeans love some not Italians	all Germans hate all linguists
+^	all linguists not fear all Romans	not all linguists not fear all Romans
+#	some not linguists hate some not Germans	all not Germans fear all linguists
+>	not all linguists love all not Romans	not all linguists like all Germans
+#	all Germans not hate all Romans	some not linguists hate some not Germans
+<	some not linguists hate all Romans	some not linguists not love some Romans
+#	not some Germans not like some not linguists	not some Germans not love all Europeans
+#	some not Romans fear some not Italians	not all Italians not like some linguists
+>	some not linguists not hate all not Europeans	some not linguists like some not Europeans
+v	all not linguists like all Germans	some not linguists not like all Europeans
+>	not some linguists hate some Romans	all linguists love all Europeans
+<	not some Italians not hate some linguists	not some Romans love all linguists
+#	all not Italians not love some not linguists	not some not Romans fear some not linguists
+#	not some linguists love all not Italians	not some not Europeans love all Germans
+#	not all Germans not like some linguists	some Romans love all Italians
+|	all Italians not like all linguists	all Europeans love all linguists
+|	not some not Germans not love all not linguists	all not Italians fear some not linguists
+#	all not linguists hate all Germans	all not Romans not love all Italians
+#	not all Romans not fear some not linguists	some linguists love some Italians
+#	not all Europeans hate all Europeans	not some Europeans fear all linguists
+|	all Romans love all not linguists	not all Romans not hate some not linguists
+#	some not Germans not like some not linguists	not some not Germans not like some not Germans
+v	some Romans not fear all not linguists	all Romans not love some not linguists
+#	all not Europeans not love all linguists	not all not linguists hate all Germans
+#	not some linguists not fear some Germans	not all not linguists like some Europeans
+#	not some Italians not hate some not Germans	all linguists hate all not linguists
+|	all linguists not love all not Italians	not some linguists not love all not Italians
+#	not some Europeans like some not Romans	not all not Germans not hate some linguists
+<	not all not Europeans fear all linguists	not all not Germans fear all linguists
+#	all not linguists love some not Europeans	all Europeans not hate some not linguists
+#	not some not linguists not fear all not Germans	not all Germans not like some not Romans
+v	not all not linguists fear all not Germans	not some not linguists love some Romans
+#	not all Germans not like all Germans	all Germans not love some not linguists
+#	not all not linguists not fear all Italians	some Germans like some Romans
+<	all Germans not hate some not linguists	some not Italians not hate some not linguists
+<	some not linguists love all not Romans	not all not linguists fear all not Germans
+#	not all Romans not hate all Italians	some linguists hate all not Europeans
+|	all not linguists not fear all not Europeans	some not linguists fear all not Romans
+#	all not Europeans not hate all not Romans	not all not linguists hate some not Europeans
+#	all not Italians not fear some linguists	not all Romans love all Romans
+#	not all linguists like all not linguists	not all linguists like all Germans
+>	not all not linguists not fear some not Romans	not all not linguists not fear some Germans
+#	some not linguists hate some Germans	all Germans not like all Italians
+>	all Romans fear all linguists	not some Europeans not fear all linguists
+<	all linguists fear all not Romans	not all linguists love all not Germans
+#	all not Romans not hate some not Europeans	all not Germans hate some linguists
+#	some not Romans hate some not Italians	all not linguists hate some not Europeans
+#	all not Italians fear all Germans	not all Germans hate all linguists
+=	all not linguists love some Italians	all not linguists love some Italians
+#	all not Europeans love all linguists	not all Romans not hate some Europeans
+#	not all not Germans not hate some Europeans	not all linguists hate some linguists
+>	not all linguists fear some Romans	not some linguists not love all Romans
+#	not some not Romans hate some not Europeans	not some linguists not hate all not linguists
+|	all Europeans love all linguists	some Europeans fear some linguists
+#	not all not linguists fear some not Romans	all Italians hate all Italians
+=	all not Italians hate some not linguists	all not Italians hate some not linguists
+v	not all linguists hate some Italians	all linguists not love all not Germans
+#	not all not linguists not love some not Germans	all Romans like some Italians
+<	all linguists love all Europeans	not all linguists hate some Italians
+|	some not linguists not like all not Italians	all not linguists love all not Italians
+#	not some not linguists not love all not Romans	all linguists hate all not Romans
+v	not all not Germans like some linguists	all Italians not hate all linguists
+#	not all not linguists not hate all not Germans	not all not Romans not hate some Germans
+#	some Germans fear some not Romans	all not Italians not love some linguists
+#	not all Germans not fear some not linguists	some linguists fear all Italians
+<	some Italians love some not linguists	some Europeans love some not linguists
+|	all Italians not fear some linguists	not some Italians not fear some linguists
+#	not some not linguists not like some Italians	not all Germans hate all linguists
+#	some not Romans fear all not Italians	not all linguists not love all not Germans
+#	not some Italians not hate all Romans	all not linguists not fear some Germans
+#	some linguists not fear some not Europeans	all not Italians hate some Europeans
+<	not all not linguists not fear some Europeans	some not linguists not love all Europeans
+<	all not linguists fear all not Germans	some not linguists fear all not Europeans
+|	not all not linguists not love some not Germans	not some not linguists not fear all not Germans
+<	some not linguists love some Italians	not all not linguists fear all not Germans
+#	some not linguists love all not Romans	all Romans not fear some not linguists
+^	not some linguists not hate all not linguists	not all linguists hate all not linguists
+|	not some not linguists not like all not Germans	some not linguists not like all Romans
+#	some not Germans not like all not Germans	all linguists not like all Italians
+|	all Romans love all not linguists	not some Europeans love all not linguists
+<	not some linguists not love all not Italians	all linguists not hate all not Germans
+=	not all linguists not like all linguists	not all linguists not like all linguists
+<	not some linguists not love all not Italians	not some linguists not like all not Europeans
+<	not all not Europeans not fear all not linguists	not all not Romans not fear all not linguists
+>	not all not Italians love all linguists	not all not Europeans love all linguists
+#	all not linguists fear all not Germans	some Romans not love all not Europeans
+#	not all linguists hate all Romans	some not Romans hate all linguists
+<	some linguists fear some Germans	not all linguists like all Germans
+#	some linguists not hate all Italians	not some linguists not hate some Europeans
+#	all Europeans hate some not Italians	all linguists not love all Germans
+#	some not linguists not fear all Europeans	not some Romans not like some not Germans
+^	not some not linguists hate all not linguists	not all not linguists not hate all not linguists
+#	not all Italians hate all not Italians	not all not Italians like all not linguists
+#	some not linguists not like some not Italians	all linguists fear some Italians
+>	not some not linguists like all not Italians	not some not linguists not fear all not Germans
+|	all not Italians hate some not linguists	not some not Italians hate some not linguists
+v	not all not linguists fear all not Germans	not some not linguists not fear all Romans
+#	not all linguists not hate all not Romans	all not linguists fear some Germans
+=	some not Romans fear all linguists	some not Romans fear all linguists
+>	some Europeans not love some linguists	all Germans hate all linguists
+>	not some not Europeans love all not linguists	all not Germans fear some not linguists
+#	not all Romans not fear some not Romans	all linguists hate all Europeans
+>	all Germans hate all not linguists	not some not Italians not hate all not linguists
+v	some not linguists not like some Romans	all not linguists not fear all Europeans
+|	not some linguists not fear some not Europeans	all linguists love all not Europeans
+#	not all Romans not like all Europeans	not all not Italians love some not linguists
+=	not all linguists hate all Italians	some linguists not hate all Italians
+#	all not Europeans not love all linguists	not some not Germans not hate some Europeans
+|	all Italians like all linguists	all Romans fear some linguists
+#	not all not Europeans not like all Romans	not all linguists like all Germans
+#	not some not linguists love some Romans	not all not Germans like some Europeans
+#	not all Italians not like some not Italians	some not Germans hate some not linguists
+|	all Italians like all linguists	not some not Germans like all linguists
+=	all Europeans like some linguists	all Europeans like some linguists
+<	all not linguists fear all not Romans	all not linguists fear some not Germans
+#	not some not Italians not love some linguists	some not linguists love some not linguists
+#	not some not linguists like some linguists	some not Germans fear all not Europeans
+#	some Italians not like some Europeans	all not linguists love some not Romans
+#	not some not linguists not like all not linguists	not some not linguists not like all Italians
+>	all Italians not fear some not linguists	not some not Germans not love all not linguists
+|	not all not linguists not hate all not Germans	all not linguists love some not Europeans
+#	not some not Europeans not hate all Germans	some Europeans love some not linguists
+#	all Europeans not fear some linguists	all Romans like all not Italians
+v	not all linguists love all not Germans	not all linguists fear some not Germans
+<	all Italians fear all linguists	not all Italians not fear all linguists
+#	all Europeans not fear some linguists	not some not Italians not fear some Romans
+|	not all linguists like all Germans	all linguists love all Europeans
+>	some not linguists not love all not Germans	all not linguists not like all not Germans
+=	not some not Europeans love some linguists	not some not Europeans love some linguists
+<	all not linguists not fear all not Germans	not all not linguists fear all not Germans
+>	not all linguists hate some not Romans	some linguists like all not Romans
+#	not some not Europeans not fear some linguists	not all not Italians not love some not Germans
+<	all not linguists love some not Europeans	not all not linguists not like some not Romans
+#	some Italians like all not linguists	not all not linguists not like all not Germans
+#	some linguists love some Italians	all Italians not fear some linguists
+#	some not Europeans not fear all not linguists	not some Italians hate all Europeans
+#	not all Europeans not hate all Italians	all not Germans hate some linguists
+|	some not linguists love all not Romans	all not linguists hate some not Romans
+#	not some Europeans fear all not Romans	some not linguists not fear all not linguists
+#	not some Germans not hate some linguists	not some Italians not fear some not Europeans
+#	some Romans fear all not linguists	not all linguists hate all linguists
+|	some linguists not hate some linguists	not some linguists not hate all linguists
+#	all not Europeans love some not Romans	not some not Romans like all not linguists
+#	not some not Europeans love all linguists	not some Italians like some not linguists
+#	not some not linguists hate some not Italians	not some Romans like all not Europeans
+#	not all not linguists love some not Romans	all not linguists fear some Italians
+v	not all not linguists like all Germans	all not linguists not fear some Germans
+#	all Germans like some not Italians	all not linguists love all Italians
+#	not all Germans not fear all not Italians	all not linguists not hate some not linguists
+#	not all not Italians not like all Italians	not all not Europeans hate all linguists
+#	not all linguists not hate all Romans	not some Europeans not hate some not Europeans
+>	not all Europeans not like all not linguists	not all Romans not like all not linguists
+<	not all not linguists not hate some Romans	some not linguists hate some not Germans
+|	not all linguists not fear some Europeans	all linguists love all Europeans
+#	not all not Germans not hate some not linguists	not all Romans hate some not Italians
+<	all not linguists fear all not Romans	not some not linguists not fear all not Europeans
+>	not all linguists not like some not Germans	not some linguists not love all not Italians
+^	all not linguists not hate all linguists	some not linguists hate all linguists
+#	not all Germans love all Italians	all linguists love some linguists
+#	some Europeans fear some linguists	not all Europeans not fear some Romans
+#	not all Europeans love some not Italians	all not linguists hate all Germans
+#	all not linguists not like some Europeans	some not Europeans not hate some Europeans
+#	all linguists love all not Europeans	not all not linguists not love some linguists
+#	all not Europeans not fear all not Romans	not some linguists not like some not Europeans
+<	not some not Italians not hate all linguists	all Germans not like some linguists
+|	all Romans fear all linguists	all Europeans not fear all linguists
+v	all Germans not hate some linguists	some not Romans hate some linguists
+v	not all linguists hate some not Romans	not all linguists not hate some not Romans
+=	all not linguists like all not Europeans	all not linguists like all not Europeans
+#	all Germans not like some Romans	some Europeans love all linguists
+=	not some not linguists love some Romans	not some not linguists love some Romans
+#	all not Germans hate some Europeans	all Romans fear some not linguists
+<	some not Europeans fear all linguists	some not Romans not love some linguists
+>	not all linguists fear some not Germans	not all linguists not like all not Germans
+#	not all Italians hate all not linguists	not all not Europeans like all Germans
+#	not some linguists like all not Europeans	not all not Romans not fear some not Italians
+|	not some not Europeans fear all not linguists	all not Europeans fear all not linguists
+#	not all Romans hate some Romans	not all not linguists not love all not Romans
+>	not some Germans not like some linguists	all not Italians like some linguists
+#	all not Romans not like all Europeans	not some linguists not like some not Europeans
+#	all not Italians like some linguists	some not Europeans not hate some Europeans
+v	not all linguists like all not Germans	not all linguists fear some Romans
+v	not all not linguists like some Romans	all not linguists not fear all not Germans
+#	not all Romans not love some not linguists	not all linguists not love all not linguists
+<	all not Europeans love some not linguists	not all not Germans not like some not linguists
+#	all linguists hate all not Germans	not all not Europeans fear all not Europeans
+#	not all Germans not like some linguists	not some not Italians fear some Italians
+#	all not linguists fear all linguists	not some Germans not hate all not Germans
+#	some Germans not love some not Italians	some not linguists not fear all Italians
+#	not all not Romans not love all Romans	all not Europeans fear all linguists
+>	some linguists not fear some not Europeans	not all linguists fear some not Germans
+<	all linguists hate all not Germans	some linguists not love some not Germans
+#	some not Germans fear some Germans	all not linguists not like all not Germans
+#	all not Italians not fear some not Germans	not all Romans not hate some not linguists
+v	some not Italians not hate all not linguists	all not Europeans not like some not linguists
+#	some not Romans like all not Italians	all not linguists like all Romans
+#	not some not Europeans not fear all Italians	all linguists not love all not Europeans
+#	some not Europeans not fear all linguists	all not Romans not like some Italians
+>	some not linguists love some not Romans	all not linguists love some not Romans
+#	not all Italians not love all not linguists	some not Europeans like all not Germans
+#	some not linguists love some not linguists	not all linguists hate some not Romans
+#	all Europeans not fear some linguists	some not linguists not like all not Italians
+v	some Romans like some not linguists	all Romans not love some not linguists
+#	all Germans love some linguists	not all not Europeans love all not Italians
+#	all not Romans fear some Romans	not some not linguists like all not Romans
+#	all not Germans fear all linguists	not all Europeans love some Italians
+|	some Romans not hate all linguists	not some not Germans not hate all linguists
+#	not some not linguists not fear all Romans	all Italians not like all Europeans
+#	some linguists not hate all Germans	all Romans like some not Europeans
+^	not some not Italians not hate all not linguists	not all not Italians hate all not linguists
+#	all Romans not love some not linguists	some Italians not like all Italians
+#	some Europeans not love all linguists	some Europeans not love some Europeans
+#	not all not Italians fear some linguists	not all not linguists not love all Europeans
+#	not some not linguists like all not Italians	not some not Italians not fear all Europeans
+#	all not Italians not like all not linguists	some Italians not like some Europeans
+#	not all Romans not fear all not linguists	not some Germans not love all Europeans
+#	not all not Romans not hate all Romans	all linguists not fear some Germans
+#	not all linguists like all Germans	all not Europeans love some Germans
+#	some not linguists hate some Germans	all Germans hate some not Germans
+#	not some not Germans not like all Europeans	some Romans not hate some linguists
+|	all not Italians hate some not linguists	all not Germans not hate some not linguists
+|	not some linguists not like all not Romans	all linguists hate all not Germans
+#	all not Italians love all not Italians	not all not linguists like some Europeans
+#	all not Romans hate all not linguists	all Italians not hate some not Romans
+<	all Europeans fear all linguists	not all Germans not fear all linguists
+#	some not Romans not like some Germans	not some linguists not like some not linguists
+#	all linguists not hate some linguists	all Germans not love all linguists
+#	not all not linguists not fear all not linguists	some not Europeans fear some not linguists
+#	some Romans hate some Romans	not some linguists not like some Romans
+#	some Romans not like all Romans	not some not linguists hate some Europeans
+#	some Romans like some linguists	not some not Europeans not like all not Romans
+#	not all Italians love some not linguists	some not Europeans not love some not Europeans
+>	some not Romans like some not linguists	some not Romans love some not linguists
+#	not all Europeans love some linguists	not all not Italians not fear some Romans
+#	all not Europeans not like some not linguists	not some not Europeans not hate some not Germans
+#	not some not linguists not hate all Italians	not all not linguists not love some Germans
+#	some linguists hate some not Germans	not some not linguists not like some Italians
+#	not all not linguists fear some Germans	all not Romans hate some not linguists
+<	not some linguists not hate all not Germans	not some linguists like some not Europeans
+#	not all not linguists fear some not Romans	all not linguists love all Italians
+#	not all Germans hate some Italians	not all not linguists like all linguists
+|	all not Europeans fear all linguists	some not Europeans love some linguists
+#	some not Germans like some Europeans	some linguists fear some not linguists
+#	not some not Italians not fear some linguists	not all not Europeans hate all not Italians
+v	all Romans not love some not linguists	some not Germans like some not linguists
+v	not all not Europeans like all linguists	some not Europeans not hate some linguists
+>	not all Romans like some linguists	all not Germans not like some linguists
+#	not all not linguists not hate some linguists	all linguists love some not Germans
+#	not some not Europeans not fear all Romans	not all Germans not like some linguists
+#	some not Germans love all not Italians	some not Italians not hate some linguists
+#	all not linguists not love some not Europeans	some not Italians not fear all Italians
+#	some not linguists love some Italians	not some Europeans not fear all linguists
+#	all linguists love some Europeans	not all Europeans not hate some Romans
+#	some not Germans hate all linguists	all linguists hate some Romans
+#	not some not linguists not hate some Italians	all not Italians not fear some not Germans
+#	not all not Germans like all not Germans	all linguists not love some not Romans
+<	all not Europeans hate some linguists	some not Romans hate some linguists
+#	all Germans not hate some not linguists	all Germans not like some not Italians
+<	all not linguists hate some not Europeans	some not linguists not like all not Europeans
+>	some not Romans not love some linguists	not all not Italians not hate all linguists
+v	all not Italians not hate some linguists	not all not Italians love all linguists
+v	not all not linguists like all Germans	not all not linguists fear some Germans
+=	all not linguists love some not Romans	all not linguists love some not Romans
+#	not all linguists not like some Germans	not all Germans love some linguists
+#	some not Europeans not hate some linguists	not all not Europeans love some not Romans
+<	all not Europeans love some not linguists	some not Europeans not fear all not linguists
+#	some not Europeans like some Germans	all Germans fear all not linguists
+<	not some not Germans not love all not linguists	not some Italians not like all not linguists
+#	all not Europeans not love some not Italians	not all not linguists not fear all Italians
+#	all not Europeans not hate some not Europeans	not all Germans not like some linguists
+#	all Italians hate some not linguists	all not linguists hate all Germans
+#	all Germans like some Romans	some not Romans not love some linguists
+#	not all Germans not love all not Germans	all Romans not fear some not linguists
+>	not all not Europeans like all linguists	not some not Europeans not fear some linguists
+|	all linguists hate all not Germans	some linguists like all not Romans
+#	not some Italians not fear all Italians	all linguists not hate all not Romans
+|	not all not Italians not love all not linguists	all not Italians hate some not linguists
+|	all not Germans fear all linguists	not all not Europeans fear all linguists
+#	some not Romans like some linguists	all linguists not like all Germans
+#	all not linguists like some not Italians	some linguists love some Italians
+=	not some linguists fear all Europeans	not some linguists fear all Europeans
+#	some not Europeans fear all Italians	not some not Europeans fear all not linguists
+#	some not Romans fear all linguists	not some Italians not fear some Romans
+>	not some linguists love all not Italians	all linguists hate all not Germans
+v	not all linguists not fear all Romans	some linguists not fear all Europeans
+=	not some not linguists not fear some not Italians	not some not linguists not fear some not Italians
+>	all linguists not hate all not Germans	not some linguists not like some Italians
+#	not some not Romans not like all not Europeans	not some Germans like all not linguists
+v	some not linguists not fear some Germans	not some not linguists like all not Italians
+<	not all linguists not like some not Europeans	some linguists not fear all not Europeans
+#	some not linguists not love some Europeans	all not Europeans love all Germans
+#	not some not Romans not hate some Italians	some not Romans not love some linguists
+v	all not linguists not fear all Europeans	some not linguists fear all Romans
+#	some not linguists not like all not Italians	not all not Romans not hate all Italians
+>	not all not linguists not love some not Germans	not some not linguists not love some Romans
+>	all Germans like some not linguists	not some not Romans not like some not linguists
+#	all not Romans fear some Romans	not some linguists not hate all linguists
+#	not all not Germans like all Italians	some not linguists not like some not Italians
+<	not all not Italians like all linguists	not all not Italians love all linguists
+>	not all not linguists fear some not Germans	not all not linguists not like all not Germans
+#	not all not linguists not love all Italians	not some not Italians not love all linguists
+>	not some linguists not love some not Romans	all linguists love some Germans
+<	not some not linguists like all Germans	not some not linguists like all not Italians
+#	not some linguists not fear some Europeans	all not Italians like some Italians
+v	some not linguists not love all not Germans	not all not linguists fear some not Germans
+#	not some linguists not like some Italians	not all not linguists not hate some Romans
+#	not some not Germans not like some linguists	some not linguists not fear some Germans
+#	not some not linguists not hate some Italians	not some Italians not hate all linguists
+|	not some not linguists not hate all not Italians	some not linguists like some not Italians
+<	not some not Germans like all linguists	not all not Italians love all linguists
+#	not all not Europeans not love some not linguists	not all Italians like some Italians
+<	all not linguists fear all Romans	not some not linguists love some Romans
+^	all not linguists love some Romans	some not linguists not love some Romans
+#	some Germans hate all not Europeans	not all Germans not fear all linguists
+v	not all linguists not fear some Europeans	all linguists not fear some Germans
+v	not all linguists not like all Germans	all linguists not love all not Italians
+#	not some Europeans love all Germans	not all not Europeans not fear some linguists
+=	some not Germans hate all not linguists	not all not Germans not hate all not linguists
+^	some Romans not hate all linguists	all Romans hate all linguists
+<	some Italians not like some linguists	not all Europeans love some linguists
+<	not all not linguists not like some not Germans	not all not linguists fear all not Germans
+#	not some linguists not like all linguists	not some Italians not fear some Romans
+|	not all not linguists not love some Germans	not some not linguists love some Europeans
+#	not some linguists not love all Germans	all not Europeans fear all linguists
+#	some linguists not like all not linguists	not all not Germans not fear some not Italians
+#	not all not linguists not fear some Europeans	not all Italians like some not Italians
+|	all Germans like some not linguists	not all Germans not fear all not linguists
+=	not some linguists not hate some linguists	not some linguists not hate some linguists
+#	not some linguists like some Romans	all Italians fear some Germans
+#	all not linguists fear some Germans	all Romans not like all Europeans
+#	not some not Europeans hate all not Italians	some not Germans hate all linguists
+|	some not linguists not like all Romans	all not linguists like all not Germans
+#	all linguists not love some linguists	some Germans not love some Romans
+#	not some Germans like some not Romans	not some Germans love some not linguists
+v	not all Romans not like all not linguists	not all Europeans like all not linguists
+#	all Romans fear all linguists	some Germans hate all Romans
+#	all not Italians hate all Europeans	not all not linguists not love all Europeans
+|	all not Europeans fear some not linguists	all not Romans not fear some not linguists
+#	some Italians not hate all not linguists	not some not Europeans hate all not Europeans
+#	some not linguists love some not linguists	all not Europeans not like all Germans
+|	not all not Italians not like some not linguists	all not Romans hate all not linguists
+|	all not Europeans fear some not linguists	not all not Europeans not like all not linguists
+#	all Europeans not hate all Romans	all not Italians not hate some linguists
+#	all linguists fear some Europeans	not some not Europeans not love all not Germans
+#	not all not Romans like some linguists	all not Romans not like some Italians
+>	not all not Romans hate some not linguists	not some not Romans not like all not linguists
+v	not all linguists not hate all Romans	some linguists not hate all Italians
+|	not some not Germans not like some linguists	some not Europeans fear all linguists
+#	all not Romans not like some Italians	all not Italians not like some not linguists
+#	not all linguists like all Germans	not some not Italians not hate some not linguists
+#	not some linguists not love all Romans	some Europeans fear all Europeans
+#	some linguists not fear all Romans	some Germans like all not Europeans
+<	not some not Romans not like some not linguists	not some not Europeans fear all not linguists
+#	not some not Romans not fear some not linguists	all Germans not hate all Germans
+|	all not linguists love some Romans	all not linguists not love some not Germans
+#	not all Europeans not fear all Europeans	some not Europeans not hate some not linguists
+#	all not Romans like some Romans	all not linguists not fear all not Italians
+#	not all linguists fear some Europeans	all Europeans not hate some Italians
+<	not all Romans not love some not linguists	not all not Germans not love some not linguists
+v	not all not linguists not fear some Europeans	all not linguists not fear some Germans
+#	not all Germans not fear some not linguists	all not Romans not fear all Germans
+#	some linguists like all not Romans	not all Romans like some not Romans
+<	all not linguists love all Italians	some not linguists not fear some Italians
+#	not all Romans not hate all not linguists	not some not Germans love all not Europeans
+>	some not linguists not love all not Germans	some not linguists fear all not Romans
+#	not some linguists love all Italians	all Romans not like all not linguists
+#	not some not Europeans not hate all Europeans	not all not linguists love some Germans
+>	not all not linguists hate all Italians	not some not linguists not like some Italians
+#	not all not Italians hate all not linguists	some not Europeans not like all Romans
+>	not some not linguists not hate all Romans	not some not linguists not hate all Italians
+>	some not Romans like some not linguists	not all not Italians not like some not linguists
+#	not some not linguists not hate all Romans	some Italians fear all Romans
+|	all not linguists not fear all not Italians	all not linguists fear all not Romans
+#	not all not Europeans love all not Italians	not all linguists not like all not Germans
+<	all not linguists love some not Europeans	all not linguists like some not Europeans
+#	all not linguists not fear all Europeans	not all not Romans fear all not Germans
+#	not some not linguists not like some linguists	some Germans love all Europeans
+#	some not Romans not like some not Germans	all not Germans not like some linguists
+#	some Germans not fear some Italians	not some linguists hate some not Romans
+#	not all Romans not fear all not Romans	all not linguists like all Romans
+#	some not Germans like some not linguists	not some Germans fear all not Germans
+<	all linguists hate all Europeans	not all linguists not hate all Italians
+|	all Germans not hate some not linguists	all not Italians hate some not linguists
+#	not all not linguists not love all not Romans	some Germans not love all linguists
+#	all not Germans not like some linguists	all not Romans not like some Europeans
+#	all linguists fear some Europeans	some not Germans not like some not linguists
+#	all not Europeans fear all linguists	all Europeans fear some Romans
+#	all linguists not fear all not Italians	not some not Italians like all Germans
+#	some not Europeans not hate some linguists	not all not Romans not fear all not linguists
+v	all not linguists not hate all not Germans	some not linguists not like some Romans
+#	all linguists not like all Germans	all linguists not hate some linguists
+#	some Europeans not fear some Germans	all linguists not hate some Romans
+=	not all not linguists not like some not linguists	not all not linguists not like some not linguists
+v	not all linguists love all not Romans	not some linguists hate some not Romans
+>	some not Germans not like all not linguists	not all Italians not hate some not linguists
+^	not some linguists like all Romans	some linguists like all Romans
+|	all linguists love some Germans	some linguists hate all Europeans
+#	not some Italians not like all not linguists	not some Romans love some not linguists
+#	all not Italians hate all Europeans	not some not Germans fear all not linguists
+#	all Germans hate all Germans	some Romans like all not linguists
+>	some not linguists not like all linguists	not all not linguists not fear some linguists
+|	not all linguists not hate some linguists	all linguists like all linguists
+#	not some Romans hate all not Romans	not some not linguists not fear all not Europeans
+|	some Germans like some linguists	all Germans hate all linguists
+v	some not Germans not hate some not linguists	all Italians hate some not linguists
+|	some Italians not like some not linguists	all Europeans love some not linguists
+<	some not Europeans fear all linguists	not all not Germans like some linguists
+#	all Italians not fear some not linguists	not some not Romans fear some not Germans
+#	all Germans hate some not Romans	not some not Europeans love some linguists
+#	some not Italians not love some not Romans	not some not Italians not fear some linguists
+|	not some Europeans not hate some not linguists	all Germans not hate some not linguists
+#	some not linguists fear all not Italians	all Italians love all Germans
+#	some not Germans like some not linguists	all Italians hate some not Europeans
+#	all not Italians not hate some linguists	not all Italians hate some not Europeans
+|	not some not Germans like all linguists	not all Romans not love all linguists
+|	not all Germans not love some not linguists	not some not Italians not hate all not linguists
+#	not all not Germans not hate some not linguists	some Germans hate all Romans
+#	not some not Romans not hate all Europeans	all not linguists hate all Germans
+#	all not linguists hate some Romans	not some not Europeans not fear all not Europeans
+#	all not linguists not fear all not Romans	not all Germans not love some not Europeans
+>	some not linguists not like some Romans	all not linguists fear all not Germans
+|	all not Germans fear some not linguists	not some not Romans not like all not linguists
+v	not all not linguists love some Germans	not all not linguists not like some Germans
+#	not some Italians not hate all linguists	not all Germans fear all Germans
+#	some not Europeans like all linguists	not some Italians not hate some not Europeans
+#	all Europeans fear some Romans	not all not Europeans like all linguists
+#	not all Romans not hate some not linguists	all not Italians not hate some Germans
+#	not some not linguists not love all not linguists	some not Italians hate some not Europeans
+<	all Romans hate some not linguists	not all Europeans not hate some not linguists
+#	not all not linguists not hate some Germans	all not Romans love all not Germans
+#	not some Europeans fear some linguists	not all Italians love all Italians
+#	all not Romans not fear some linguists	some not linguists not fear some Italians
+#	not all linguists not love some Germans	some Italians not fear some not Italians
+#	not all linguists not like all linguists	not all not Italians not love some not Germans
+v	not some Germans like all not linguists	not all Europeans not like all not linguists
+#	not all not linguists not like some linguists	all not Germans hate all not Italians
+|	some linguists hate some not Europeans	not some linguists hate some not Romans
+>	not all not Italians love all linguists	not some not Germans like all linguists
+#	not some Italians fear all Italians	all Italians not fear some not linguists
+#	not some linguists fear all Romans	not all linguists not hate all Romans
+#	all not Romans not like some Europeans	all linguists hate some Europeans
+|	some Romans not hate all not linguists	all Europeans hate all not linguists
+#	all not Europeans not fear all Germans	all linguists love some Germans
+|	not some linguists not like some not Europeans	some linguists hate all not Germans
+#	some not linguists not love all Europeans	some Germans love some Germans
+#	not some not Italians hate all linguists	some Germans like all not Romans
+|	all not linguists fear all not Romans	all not linguists not fear all not Romans
+#	all Romans not hate all Romans	all linguists not love some not linguists
+#	not some not Germans not fear all Germans	all Italians not fear some not linguists
+>	not all Romans like some linguists	not some Romans like some linguists
+#	not some not Germans fear some not Romans	not some Europeans fear some linguists
+#	some not Italians not love some linguists	all not Italians not hate some not linguists
+#	all not Romans not hate some not Romans	not some Germans not like all linguists
+#	not all not linguists not hate some not Italians	all Romans hate all linguists
+|	all not Romans fear all linguists	all not Italians like some linguists
+|	all linguists hate all not Germans	not some linguists hate all Romans
+#	not some not linguists not like all Germans	not all Italians fear all Germans
+>	all not Europeans fear all linguists	all not Romans fear all linguists
+#	some not Europeans not love some not Europeans	not some linguists fear all not Romans
+<	not some linguists not like all not Romans	not some linguists not like all not Europeans
+#	not all Germans not hate all not linguists	some not linguists not love all not Romans
+#	all not linguists hate some not Romans	not some Germans fear some not Italians
+#	not all Romans like all Italians	not all not linguists fear some not Romans
+#	some linguists hate some not Germans	not some not Germans not hate some not Italians
+>	some Romans not hate some linguists	not all Romans not like all linguists
+v	not all Europeans like all not linguists	not some Italians fear some not linguists
+#	not some not linguists not hate all not Italians	not some not linguists hate some Europeans
+#	some linguists not love some not Romans	some not Italians not love some linguists
+>	not some not Europeans love some linguists	all not Germans not like some linguists
+#	some not linguists not fear all Italians	not all linguists fear some not Romans
+#	all not Italians love all Europeans	some Romans like all not linguists
+#	some linguists love some not Germans	not all Germans not like all Europeans
+v	not some Germans not hate some not linguists	not all not Romans hate some not linguists
+#	not some not linguists like all not Germans	not some not Europeans not like some linguists
+#	not all Romans love some not Europeans	not all not Romans not like all not linguists
+#	some Germans not love some Europeans	not all not Europeans like all linguists
+#	some not linguists not love all not Germans	not all not Romans fear some linguists
+>	not all not linguists not like some not Germans	some not linguists like some not Europeans
+#	some not linguists not fear all Italians	not all Italians not like some Germans
+#	not all not linguists not like some linguists	not all Europeans not hate all not Germans
+|	not some not Italians love all linguists	some Germans love all linguists
+<	not all not linguists not hate some not Italians	some not linguists not love all not Romans
+#	all not Germans not love all not Italians	not some Italians not like all not linguists
+#	all not linguists like some not Europeans	not some not Germans hate all not Europeans
+#	some not Germans hate all linguists	not all not linguists not fear some not Italians
+#	all Europeans fear some not Italians	some not linguists fear some not Europeans
+>	some not Romans like some linguists	all not Italians like some linguists
+#	all not linguists like all not Germans	not all not linguists not love some not linguists
+#	all linguists not hate all not Germans	not some not Europeans love all Romans
+=	all Europeans not fear some linguists	all Europeans not fear some linguists
+#	not some not Romans not fear some not linguists	not some linguists not hate all not linguists
+#	all Europeans not hate some not linguists	all Romans fear some not linguists
+#	not all Germans not fear all linguists	all not Italians not like all not Romans
+|	all not linguists not fear all not Romans	all not linguists fear all not Romans
+#	not some not Romans not like some Romans	not all linguists not like some not Europeans
+|	all not linguists not like all not linguists	not some not linguists not love all not linguists
+>	not some not linguists love some Romans	not some not linguists not fear all Italians
+<	not some linguists not love all not Italians	all linguists not fear some Germans
+|	all linguists like all not Germans	not all linguists not fear some Romans
+#	not some not linguists hate some Europeans	all not Europeans not love some Italians
+#	all not linguists hate some not Germans	not all Europeans not love all Romans
+<	not some Europeans not hate some linguists	not some Europeans like all linguists
+#	not some not linguists fear all not linguists	all not Italians not fear all Europeans
+<	not some not Germans not like some linguists	some not Romans like some linguists
+#	some not linguists not like all linguists	not all linguists not hate some Italians
+<	some linguists hate some not Europeans	not all linguists love all not Germans
+#	all linguists like some not linguists	not all not Italians hate all Italians
+#	some not Romans fear all linguists	not some not Romans not hate some Italians
+#	not some not linguists not fear all Italians	some not Germans not like all not Romans
+#	not some linguists not hate some Germans	not some Europeans not love all not linguists
+|	all Romans like some not linguists	not some Romans not hate all not linguists
+#	all linguists hate all Europeans	not some Romans love all Europeans
+#	not some linguists not hate some Europeans	some Italians not like some not Europeans
+>	all Romans not fear some not linguists	all Romans like all not linguists
+#	all not Germans fear some not linguists	not some Romans not like some linguists
+=	not all not Germans not love some not linguists	not all not Germans not love some not linguists
+#	some Europeans not love some Italians	not all not linguists love all linguists
+#	some not linguists not like some Romans	some linguists love some Italians
+#	some Germans fear all Europeans	not some linguists like some Germans
+#	not all not Europeans fear all not Europeans	not all Romans not hate some not linguists
+#	all not linguists hate some not Germans	not some linguists like some not Europeans
+#	not some not linguists hate some linguists	all Romans not hate some Romans
+#	all not linguists like all Romans	all Germans not hate all not Romans
+v	not all not linguists love some not Germans	not all not linguists not like some not Germans
+<	all not linguists hate all Germans	not some not linguists like some Germans
+#	some Germans like all not Italians	not all not linguists not fear all not Germans
+#	all Germans not hate some not Germans	not some Italians fear all linguists
+|	all not Italians like all linguists	not all not Italians not fear some linguists
+#	not some not linguists not hate some not Italians	some not Romans love some Germans
+#	all not linguists like all not Europeans	not some linguists hate all not linguists
+#	not some not Italians hate all Germans	all Europeans love some not linguists
+#	not some not Germans not hate all linguists	not some not Europeans not fear some Romans
+>	some not Germans not hate some not linguists	some not Europeans not hate some not linguists
+#	not some linguists not like some not Europeans	all not Europeans not hate some Romans
+#	not all not linguists like all Germans	all not Europeans not fear all not Germans
+<	not all not linguists not fear all not Germans	not all not linguists love some not Germans
+#	not some Romans not hate some not Europeans	not all linguists not like all linguists
+#	not all Europeans not love some linguists	not some Europeans love all not Italians
+#	some not Europeans love all not Europeans	some not linguists fear all not Europeans
+#	not some Germans not hate some not linguists	not some not Germans love all not Europeans
+#	not all Italians like some not Romans	all not Italians like all linguists
+#	not some Italians not fear some linguists	not all not linguists not love all not Romans
+>	not all linguists not like all Germans	not some linguists not like all not Romans
+#	not some not Germans not hate some not Italians	not all not linguists not hate some not Europeans
+#	all Europeans like some Italians	not some linguists love all not Italians
+>	all Germans not like some linguists	all not Romans hate all linguists
+#	all Germans fear some not Germans	not some not linguists not like all Germans
+#	all not Italians not fear some not Italians	not some Germans like all not linguists
+#	some Italians love some not linguists	not all Europeans not love some not Italians
+#	not some not Germans love some not Italians	not some linguists love all Romans
+#	all not Europeans fear some not linguists	some not linguists not love some Europeans
+|	all Europeans like some linguists	not all Italians not fear all linguists
+<	all linguists love some not Germans	some linguists love some not Germans
+#	some not Italians not love all not linguists	all not linguists love some not Romans
+|	not some not linguists not hate all not Germans	some not linguists love some Italians
+<	some Italians hate some not linguists	some not Germans hate some not linguists
+<	some not Europeans like some linguists	some not Romans not hate all linguists
+=	some not linguists not fear all Italians	some not linguists not fear all Italians
+=	some Romans not hate all linguists	some Romans not hate all linguists
+#	not all linguists fear some Europeans	not all not Europeans not love some not Europeans
+|	some not linguists hate some Germans	all not linguists like all Germans
+#	all Europeans not love all Europeans	not some linguists love all Italians
+#	all Europeans not hate all not Europeans	not all linguists like all not linguists
+v	some not linguists not love some not Germans	not all not linguists not love some not Germans
+|	not all not Europeans not fear all not linguists	not some not Romans not like some not linguists
+#	some Italians not like some linguists	some not Europeans not fear all not Italians
+#	all Germans fear all not linguists	some Italians not like all Italians
+#	all not Europeans fear all not linguists	not some not Germans like some not Italians
+#	not all linguists hate some linguists	not some not linguists hate some not linguists
+#	not all Europeans not like some not Romans	some not linguists not like all not Europeans
+#	some Italians fear some Romans	not all not Italians not love all not linguists
+#	not some not linguists not like some linguists	not some Italians fear all not Germans
+<	not some linguists hate all not Europeans	all linguists not hate all not Romans
+#	not some not Germans not like some linguists	not some Europeans not like all Italians
+#	some not linguists love some not linguists	not all not linguists not like some not Germans
+>	all not linguists not like all not Germans	all not linguists fear all not Romans
+#	not some Germans not love some linguists	all not Italians hate all not Italians
+#	all Romans like some Italians	all Germans not hate some not linguists
+#	not some linguists hate all Romans	some not Romans love all not Romans
+>	all linguists not love all not Europeans	not some linguists not fear some not Europeans
+v	some not linguists not love all Europeans	not some not linguists hate some Europeans
+#	not some not linguists not hate some Europeans	not all linguists hate some not Europeans
+#	some Germans not love some not Italians	not some not linguists love some linguists
+#	some Romans fear all not Italians	not all Romans not fear some not linguists
+#	not all not linguists not hate all not Romans	not some not Europeans fear all not Romans
+<	not some not linguists not fear all not Germans	not all not linguists like some Romans
+#	some not Italians not love some Germans	all not Romans not fear some linguists
+#	not all linguists not hate some Italians	not all not Italians not love all not Romans
+<	all linguists hate all not Germans	not some linguists love all not Italians
+#	not all not linguists not hate some Romans	some Romans not hate some linguists
+<	all Europeans fear some not linguists	all Romans fear some not linguists
+#	some not linguists fear some not Europeans	not all not Europeans not fear some not Europeans
+v	not all not Italians fear some linguists	some not Italians not like all linguists
+#	not some linguists love all Italians	some Germans not fear all Germans
+^	some Romans not like some linguists	not some Romans not like some linguists
+<	not all Germans not love some not linguists	not all not Italians not love some not linguists
+#	some linguists hate all not Europeans	some not Romans love some Germans
+#	all Italians not fear all Italians	all not linguists not hate all not linguists
+#	all linguists love some linguists	some not Europeans not love all not Germans
+#	not all not Italians like all not Germans	some not linguists not like all not Europeans
+<	all not Romans hate all not linguists	not all not Germans not hate all not linguists
+#	not all not Germans not like some Germans	not some linguists not hate some Europeans
+#	not all Germans not fear all not Germans	not all not linguists not fear some Europeans
+#	all not linguists hate some Romans	some not Italians hate all Europeans
+#	not some Romans like all not linguists	all not linguists not love all Germans
+v	all Italians not fear some not linguists	not all Italians love all not linguists
+>	all not linguists not love all Romans	all not linguists hate some Romans
+#	not some not Italians not love all linguists	not some Romans love some Romans
+#	not some Germans not like all linguists	all Germans hate some not Romans
+#	some linguists fear some not linguists	all Italians hate some linguists
+#	some Romans not like some not Italians	not all not Europeans love all linguists
+#	all not Germans hate some Europeans	not all linguists love all Italians
+v	some Romans not like some linguists	all Romans not hate all linguists
+#	all not linguists love some Italians	not some not Italians not hate all not Italians
+=	some not linguists not love some Europeans	some not linguists not love some Europeans
+#	not all not Romans not love some Germans	not some linguists not hate some Europeans
+>	some not Germans hate all linguists	not some not Italians not hate all linguists
+^	not some linguists like all Romans	not all linguists not like all Romans
+#	not all Italians fear all Germans	not all linguists not love all not Germans
+#	not all not linguists like all linguists	not all not linguists not fear all not linguists
+#	some Romans not hate some linguists	some Romans not love all not Italians
+|	not all linguists hate some not Romans	not some linguists not hate some Germans
+#	not all linguists fear some not Germans	some Europeans not hate some not Romans
+#	all Europeans not fear some linguists	all not Italians hate some Germans
+#	not all not Europeans not hate all linguists	not all Italians not like some Germans
+#	all Germans fear all linguists	all not Italians like some not Romans
+<	all not Germans not like some linguists	some not Romans not love some linguists
+#	some not Germans not love some Europeans	all not linguists not hate all not linguists
+#	some not linguists not hate some not Europeans	not all linguists fear some not Romans
+=	some not linguists hate all linguists	some not linguists hate all linguists
+#	all Romans not love some not linguists	some not Italians like all Romans
+#	all not Italians not fear some Europeans	not all linguists fear some Europeans
+#	some not linguists love all not Romans	not some not Europeans love all Romans
+#	all not Germans fear some not linguists	all not Romans fear some Romans
+#	not all not linguists hate some not Europeans	some Europeans not like some Europeans
+#	all not Italians hate all not Italians	some linguists fear all not Germans
+>	all linguists not love all not Germans	not some linguists like all Romans
+#	not all linguists not like all linguists	some Germans like all not Italians
+>	not all linguists like all Germans	not some linguists not hate some Germans
+#	not some Italians love all Romans	some linguists hate all not linguists
+#	all linguists not love some not Europeans	not some Romans love all not Germans
+#	not all not Europeans hate all linguists	some linguists not love all not Germans
+v	not some Germans love some not linguists	some not Romans like some not linguists
+#	not some linguists hate some Europeans	all Germans love some linguists
+#	not some not linguists hate all not Romans	all not Italians love some Italians
+#	not all not linguists not fear some Europeans	all Italians hate all Italians
+#	all Germans not hate all Italians	not some Germans hate some linguists
+#	all linguists not hate all Romans	all not Italians not fear all Romans
+#	not all not linguists not love some not linguists	not all not Italians not hate all linguists
+|	not some not linguists not love some Romans	not all not linguists not fear all Italians
+<	some Italians fear all linguists	some Europeans not like some linguists
+=	all not linguists not like all not Germans	not some not linguists like all not Germans
+#	not all not linguists fear some not Germans	not all not Germans not fear all Italians

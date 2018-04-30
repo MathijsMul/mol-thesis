@@ -1,0 +1,34 @@
+Loading data from  /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/no_brackets/from_bulk/train/binary_2dets_4negs_bulk_not_someall_train_0bracket_pairs.txt
+Vocabulary: 
+ ['Europeans', 'Germans', 'Italians', 'Romans', 'all', 'children', 'fear', 'hate', 'like', 'love', 'not', 'some']
+Relations:  
+ ['#', '<', '=', '>', '|']
+Loading data from  /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/no_brackets/from_bulk/test/binary_2dets_4negs_bulk_not_someall_test_0bracket_pairs.txt
+
+
+MODEL SETTINGS
+Model:                  GRU
+Train data:             /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/no_brackets/from_bulk/train/binary_2dets_4negs_bulk_not_someall_train_0bracket_pairs.txt
+Test data:              /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/no_brackets/from_bulk/test/binary_2dets_4negs_bulk_not_someall_test_0bracket_pairs.txt
+Num. epochs:            50
+Word dim.:              25
+Cpr. dim.:              75
+Batch size:             32
+Shuffle samples:        True
+Weight initialization:  None
+Optimizer:              Adadelta
+L2 penalty:             0
+Num. train instances:   5371
+Num. test instances:    1343
+Num. hidden units:      128
+Num. hidden layers:     1
+Dropout probability:    0
+Model name:             GRUbinary_2dets_4negs_bulk_not_someall_train_0bracket_pairs2.pt
+
+
+EPOCH 	 TESTING ACCURACY
+50 	 87.34
+FINAL TRAINING ACCURACY
+50 	 100.00
+
+Total running time:  5m 54s

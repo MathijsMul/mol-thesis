@@ -1,3 +1,7 @@
+"""
+chunk large data files
+"""
+
 lines_per_file = 600000
 smallfile = None
 
@@ -25,7 +29,6 @@ with open(f) as bigfile:
     if smallfile:
         smallfile.close()
 
-        #
 with open('bulk2dets4negs_1bulk.txt', 'r') as f:
     for idx, l in enumerate(f):
         continue

@@ -1,0 +1,34 @@
+Loading data from  /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/no_brackets/from_standard/train/binary_2dets_4negs_train_not_allnot_all_0bracket_pairs.txt
+Vocabulary: 
+ ['Europeans', 'Germans', 'Italians', 'Romans', 'all', 'children', 'fear', 'hate', 'like', 'love', 'not', 'some']
+Relations:  
+ ['#', '<', '=', '>', 'v']
+Loading data from  /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/no_brackets/from_standard/test/binary_2dets_4negs_test_not_allnot_all_0bracket_pairs.txt
+
+
+MODEL SETTINGS
+Model:                  SRN
+Train data:             /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/no_brackets/from_standard/train/binary_2dets_4negs_train_not_allnot_all_0bracket_pairs.txt
+Test data:              /Users/mathijs/Documents/Studie/MoL/thesis/mol_thesis/data/binary/2dets_4negs/hierarchic_gen/no_brackets/from_standard/test/binary_2dets_4negs_test_not_allnot_all_0bracket_pairs.txt
+Num. epochs:            50
+Word dim.:              25
+Cpr. dim.:              75
+Batch size:             32
+Shuffle samples:        True
+Weight initialization:  None
+Optimizer:              Adadelta
+L2 penalty:             0
+Num. train instances:   2092
+Num. test instances:    575
+Num. hidden units:      128
+Num. hidden layers:     1
+Dropout probability:    0
+Model name:             SRNbinary_2dets_4negs_train_not_allnot_all_0bracket_pairs5.pt
+
+
+EPOCH 	 TESTING ACCURACY
+50 	 77.04
+FINAL TRAINING ACCURACY
+50 	 100.00
+
+Total running time:  1m 47s
